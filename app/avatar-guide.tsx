@@ -8,6 +8,11 @@ import {
   ModelTurntable,
   type Object3DVersion,
 } from "./object-asset-inspector";
+import {
+  copyProductionPath,
+  isLocalProductionBrowser,
+  runtimeApiBase,
+} from "./runtime-api";
 
 type AvatarRender = {
   id: string;
@@ -176,7 +181,7 @@ const unrealGuide = avatarUnrealData as {
   proofs: UnrealProof[];
 };
 
-const API = "http://127.0.0.1:3498";
+const API = runtimeApiBase();
 
 function formatResolution(render: AvatarRender) {
   return `${render.width.toLocaleString()} × ${render.height.toLocaleString()}`;
@@ -193,6 +198,15 @@ function useSourceReveal() {
 
   async function revealPath(path: string, label: string) {
     setSourceMessage("");
+    if (!isLocalProductionBrowser()) {
+      try {
+        await copyProductionPath(path);
+        setSourceMessage(`Copied ${label} · open on the production Mac`);
+      } catch {
+        setSourceMessage("Finder actions are available in the local production app.");
+      }
+      return;
+    }
     try {
       const response = await fetch(`${API}/api/reveal`, {
         method: "POST",

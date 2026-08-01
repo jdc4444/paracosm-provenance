@@ -1,6 +1,8 @@
 /** Cloudflare Worker entry point for the vinext-starter template. */
 import { handleImageOptimization, DEFAULT_DEVICE_SIZES, DEFAULT_IMAGE_SIZES } from "vinext/server/image-optimization";
 import handler from "vinext/server/app-router-entry";
+import initialFeedbackData from "../data/feedback.json";
+import shotRegistryData from "../data/canonical/shot-registry.json";
 
 interface Env {
   ASSETS: Fetcher;
@@ -23,6 +25,51 @@ type UploadedPart = {
 
 const MEDIA_PREFIX = "/archive/";
 const MEDIA_API_PREFIX = "/api/media/";
+const FEEDBACK_KEY = "site-state/feedback.json";
+
+type FeedbackRecord = {
+  id: string;
+  title?: string;
+  name?: string;
+  noteDescription: string;
+  dependency: string;
+  parentIds?: string[];
+  shotIds: string[];
+  retiredShotIds?: string[];
+  status?: string;
+};
+
+type FeedbackData = {
+  updatedAt: string;
+  parents: FeedbackRecord[];
+  notes: FeedbackRecord[];
+  generalNotes: FeedbackRecord[];
+  editNotes: FeedbackRecord[];
+  [key: string]: unknown;
+};
+
+type FeedbackUpdate = {
+  kind?: string;
+  id?: string;
+  title?: string;
+  noteDescription?: string;
+  dependency?: string;
+  parentIds?: string[];
+  shotIds?: string[];
+  status?: string;
+};
+
+const initialFeedback = initialFeedbackData as FeedbackData;
+const validShotIds = new Set(
+  (shotRegistryData.shots as Array<{ shotId: string }>).map(
+    (shot) => shot.shotId,
+  ),
+);
+const activeShotIds = new Set(
+  (shotRegistryData.shots as Array<{ shotId: string; active?: boolean }>)
+    .filter((shot) => shot.active)
+    .map((shot) => shot.shotId),
+);
 
 function mediaKey(pathname: string, prefix: string): string | null {
   let key: string;
@@ -51,7 +98,126 @@ function uploadAuthorized(request: Request, env: Env): boolean {
 }
 
 function jsonResponse(value: unknown, status = 200): Response {
-  return Response.json(value, { status });
+  return Response.json(value, {
+    status,
+    headers: { "cache-control": "no-store" },
+  });
+}
+
+function feedbackRecordsForKind(feedback: FeedbackData, kind: string) {
+  if (kind === "note") return feedback.notes;
+  if (kind === "general") return feedback.generalNotes;
+  if (kind === "edit") return feedback.editNotes;
+  return feedback.parents;
+}
+
+function validateFeedbackUpdate(body: FeedbackUpdate) {
+  if (!body.kind || !["note", "parent", "general", "edit"].includes(body.kind)) {
+    throw new Error("A valid feedback record kind is required.");
+  }
+  if (!body.id) throw new Error("A feedback record id is required.");
+  if (
+    typeof body.noteDescription !== "string" ||
+    body.noteDescription.length > 10_000
+  ) {
+    throw new Error("Note Description must be text under 10,000 characters.");
+  }
+  if (typeof body.dependency !== "string" || body.dependency.length > 10_000) {
+    throw new Error("Dependency must be text under 10,000 characters.");
+  }
+  if (
+    body.kind !== "parent" &&
+    body.title !== undefined &&
+    (!body.title.trim() || body.title.length > 300)
+  ) {
+    throw new Error("Note must have a name under 300 characters.");
+  }
+  if (
+    !Array.isArray(body.shotIds) ||
+    body.shotIds.some((shotId) => !validShotIds.has(shotId))
+  ) {
+    throw new Error("Shot assignments must use known stable shot ids.");
+  }
+  if (
+    body.parentIds !== undefined &&
+    (body.kind !== "note" ||
+      !body.parentIds.length ||
+      body.parentIds.some((parentId) => !parentId))
+  ) {
+    throw new Error("Parent must be one or more valid feedback categories.");
+  }
+  if (
+    body.kind === "edit" &&
+    body.status !== undefined &&
+    !["to-incorporate", "incorporated", "superseded"].includes(body.status)
+  ) {
+    throw new Error("Edit status is not recognized.");
+  }
+  if (body.kind === "edit" && body.shotIds.length !== 2) {
+    throw new Error("A swap edit must keep exactly two shot assignments.");
+  }
+}
+
+async function readHostedFeedback(env: Env): Promise<FeedbackData> {
+  const stored = await env.MEDIA.get(FEEDBACK_KEY);
+  if (!stored) return structuredClone(initialFeedback);
+  return stored.json<FeedbackData>();
+}
+
+async function handleFeedback(request: Request, env: Env): Promise<Response> {
+  if (request.method === "GET") {
+    return jsonResponse(await readHostedFeedback(env));
+  }
+  if (request.method !== "POST") {
+    return new Response("Method Not Allowed", {
+      status: 405,
+      headers: { Allow: "GET, POST" },
+    });
+  }
+
+  try {
+    const body = (await request.json()) as FeedbackUpdate;
+    validateFeedbackUpdate(body);
+    const feedback = await readHostedFeedback(env);
+    const records = feedbackRecordsForKind(feedback, body.kind!);
+    const record = records.find((item) => item.id === body.id);
+    if (!record) return jsonResponse({ error: "Feedback record not found." }, 404);
+
+    if (body.kind === "note" && body.parentIds !== undefined) {
+      const parentIds = [...new Set(body.parentIds)];
+      const knownParents = new Set(feedback.parents.map((parent) => parent.id));
+      const invalidParent = parentIds.find((parentId) => !knownParents.has(parentId));
+      if (invalidParent) {
+        return jsonResponse({ error: `Unknown feedback parent: ${invalidParent}` }, 400);
+      }
+      record.parentIds = parentIds;
+    }
+
+    const shotIds = [...new Set(body.shotIds!)];
+    record.noteDescription = body.noteDescription!;
+    record.dependency = body.dependency!;
+    record.shotIds = shotIds;
+    record.retiredShotIds = shotIds.filter((shotId) => !activeShotIds.has(shotId));
+    if (body.kind !== "parent" && typeof body.title === "string") {
+      record.title = body.title.trim();
+    }
+    if (body.kind === "edit" && typeof body.status === "string") {
+      record.status = body.status;
+    }
+    feedback.updatedAt = new Date().toISOString();
+    await env.MEDIA.put(FEEDBACK_KEY, JSON.stringify(feedback), {
+      httpMetadata: {
+        contentType: "application/json; charset=utf-8",
+        cacheControl: "no-store",
+      },
+    });
+    return jsonResponse({ ok: true, feedback, record });
+  } catch (error) {
+    return jsonResponse(
+      { error: error instanceof Error ? error.message : "Unable to save feedback." },
+      400,
+    );
+  }
 }
 
 async function handleMediaUpload(request: Request, env: Env): Promise<Response> {
@@ -183,6 +349,14 @@ const worker = {
 
     if (url.pathname.startsWith(MEDIA_API_PREFIX)) {
       return handleMediaUpload(request, env);
+    }
+
+    if (url.pathname === "/api/feedback") {
+      return handleFeedback(request, env);
+    }
+
+    if (url.pathname === "/api/feedback/update") {
+      return handleFeedback(request, env);
     }
 
     if (url.pathname.startsWith(MEDIA_PREFIX)) {

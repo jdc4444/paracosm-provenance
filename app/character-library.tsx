@@ -17,6 +17,11 @@ import {
   type AvatarGuideSelection,
 } from "./avatar-guide";
 import { RightInspectorPanel } from "./right-inspector-panel";
+import {
+  copyProductionPath,
+  isLocalProductionBrowser,
+  runtimeApiBase,
+} from "./runtime-api";
 
 type CharacterSource = {
   id: string;
@@ -101,7 +106,7 @@ const library: CharacterLibraryData = {
   cues: combinedCues,
 };
 
-const API = "http://127.0.0.1:3498";
+const API = runtimeApiBase();
 const CLOSEUP_PREVIEW_ROOT =
   "/archive/character-reference/abby/expression-library/previews";
 const AVATAR_MOCKUP_ROOT =
@@ -924,6 +929,15 @@ export function CharacterLibrary() {
 
   async function revealSource(source: CharacterSource) {
     setSourceMessage("");
+    if (!isLocalProductionBrowser()) {
+      try {
+        await copyProductionPath(source.originalPath);
+        setSourceMessage(`Copied ${source.fileName} · open on the production Mac`);
+      } catch {
+        setSourceMessage("Finder actions are available in the local production app.");
+      }
+      return;
+    }
     try {
       const response = await fetch(`${API}/api/reveal`, {
         method: "POST",

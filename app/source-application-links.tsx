@@ -1,5 +1,11 @@
 "use client";
 
+import {
+  containingDirectory,
+  copyProductionPath,
+  isLocalProductionBrowser,
+} from "./runtime-api";
+
 type SourceApplicationLineageNode = {
   kind: string;
   path?: string;
@@ -345,6 +351,15 @@ export function SourceApplicationLinks({
   ) {
     const path = sourcePath(node);
     if (!path) return;
+    if (!isLocalProductionBrowser()) {
+      try {
+        await copyProductionPath(containingDirectory(path));
+        onMessage?.("Copied folder path · open on the production Mac");
+      } catch {
+        onMessage?.("Finder actions are available in the local production app.");
+      }
+      return;
+    }
     try {
       const response = await fetch(`${apiBase}/api/reveal`, {
         method: "POST",

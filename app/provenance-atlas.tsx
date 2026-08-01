@@ -19,6 +19,11 @@ import { RightInspectorPanel } from "./right-inspector-panel";
 import { ShotCardDetails } from "./shot-card-details";
 import { deriveShotDisplayName } from "./shot-card-name";
 import {
+  copyProductionPath,
+  isLocalProductionBrowser,
+  runtimeApiBase,
+} from "./runtime-api";
+import {
   SourceApplicationLinks,
   resolveC4DEvidenceStatus,
   type C4DCameraProofTone,
@@ -858,7 +863,7 @@ type AtlasState = {
   };
 };
 
-const API = "http://127.0.0.1:3498";
+const API = runtimeApiBase();
 const evidenceLabels: Record<string, string> = {
   confirmed: "Confirmed",
   visually_confirmed: "Visual match",
@@ -1964,6 +1969,15 @@ export function ProvenanceAtlas() {
 
   async function reveal(path?: string) {
     if (!path) return;
+    if (!isLocalProductionBrowser()) {
+      try {
+        await copyProductionPath(path);
+        setScanMessage(`Copied ${fileName(path)} · Finder actions stay on the production Mac.`);
+      } catch {
+        setScanMessage("Finder actions are available in the local production app.");
+      }
+      return;
+    }
     try {
       await post("/api/reveal", { path });
     } catch (actionError) {
@@ -1973,6 +1987,15 @@ export function ProvenanceAtlas() {
 
   async function revealAndCopyPath(path?: string) {
     if (!path) return;
+    if (!isLocalProductionBrowser()) {
+      try {
+        await copyProductionPath(path);
+        setScanMessage(`Copied ${fileName(path)} · open it on the production Mac.`);
+      } catch {
+        setScanMessage("Source-file actions are available in the local production app.");
+      }
+      return;
+    }
     try {
       await post("/api/reveal", { path, copyPath: true });
       setScanMessage(`Opened in Finder · copied ${fileName(path)}`);
@@ -1987,6 +2010,16 @@ export function ProvenanceAtlas() {
 
   async function openNode(node: LineageNode) {
     if (!node.path && !node.projectPath) return;
+    if (!isLocalProductionBrowser()) {
+      const path = node.projectPath || node.path;
+      try {
+        await copyProductionPath(path!);
+        setScanMessage(`Copied ${fileName(path)} · creative-app launch stays on the production Mac.`);
+      } catch {
+        setScanMessage("Creative-app launch is available in the local production app.");
+      }
+      return;
+    }
     try {
       await post("/api/open", {
         path: node.projectPath || node.path,
