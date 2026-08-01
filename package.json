@@ -32,6 +32,7 @@
     "proxy:hover": "python3 scripts/build_hover_proxy.py",
     "build": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext build",
     "build:code": "PARACOSM_BUILD_WITHOUT_PUBLIC=1 WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext build",
+    "build:hosted": "npm run build:code && node scripts/stage-hosted-public.mjs",
     "start": "node scripts/dev.mjs --built",
     "test": "npm run build && python3 -m unittest tests/test_canonical_edl.py tests/test_c4d_relink_safety.py && node --test tests/rendered-html.test.mjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
