@@ -1,0 +1,45 @@
+{
+  "updatedAt": "2026-07-29",
+  "cues": {
+    "facial-focused-stare": [
+      {
+        "id": "r2-corrected-face",
+        "label": "Corrected Final Avatar face",
+        "detail": "Final Avatar face proportions with the approved animation outfit.",
+        "image": "/archive/character-reference/abby/mockup-performance-library/2026-07-29/versions/facial-focused-stare/r2-corrected-face.png"
+      }
+    ],
+    "facial-knowing-smirk": [
+      {
+        "id": "r2-corrected-face",
+        "label": "Corrected Final Avatar face",
+        "detail": "Final Avatar face proportions with the approved animation outfit.",
+        "image": "/archive/character-reference/abby/mockup-performance-library/2026-07-29/versions/facial-knowing-smirk/r2-corrected-face.png"
+      }
+    ],
+    "facial-scared": [
+      {
+        "id": "r2-corrected-face",
+        "label": "Corrected Final Avatar face",
+        "detail": "Final Avatar face proportions with the approved animation outfit.",
+        "image": "/archive/character-reference/abby/mockup-performance-library/2026-07-29/versions/facial-scared/r2-corrected-face.png"
+      }
+    ],
+    "movement-1-open-question": [
+      {
+        "id": "r2-corrected-face",
+        "label": "Corrected Final Avatar face",
+        "detail": "Final Avatar face proportions with the approved animation outfit.",
+        "image": "/archive/character-reference/abby/mockup-performance-library/2026-07-29/versions/movement-1-open-question/r2-corrected-face.png"
+      }
+    ],
+    "movement-2-guarded": [
+      {
+        "id": "r2-corrected-face",
+        "label": "Corrected Final Avatar face",
+        "detail": "Final Avatar face proportions with the approved animation outfit.",
+        "image": "/archive/character-reference/abby/mockup-performance-library/2026-07-29/versions/movement-2-guarded/r2-corrected-face.png"
+      }
+    ]
+  }
+}

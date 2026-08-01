@@ -1,0 +1,1438 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-07-28T15:10:28.108Z",
+  "sourceFolder": "AK-Paracosm Animation References",
+  "objects": [
+    {
+      "id": "chandelier",
+      "name": "Chandelier",
+      "category": "Lighting",
+      "image": "/archive/objects/chandelier.png",
+      "sourceFiles": [
+        "04BCCEAE-B858-4D42-B83D-28535CB96BA0.HEIC"
+      ]
+    },
+    {
+      "id": "stair-railing",
+      "name": "Stair Railing",
+      "category": "Architecture",
+      "image": "/archive/objects/stair-railing.png",
+      "sourceFiles": [
+        "04BCCEAE-B858-4D42-B83D-28535CB96BA0.HEIC",
+        "BEA3A15F-3EDC-4B59-BE0A-45A08C289A42.HEIC"
+      ]
+    },
+    {
+      "id": "window",
+      "name": "Window",
+      "category": "Architecture",
+      "image": "/archive/objects/window.png",
+      "sourceFiles": [
+        "0FEAC846-1B2A-4BA0-B021-196D80EC43B2.HEIC"
+      ]
+    },
+    {
+      "id": "door",
+      "name": "Door",
+      "category": "Architecture",
+      "image": "/archive/objects/door.png",
+      "sourceFiles": [
+        "1D9D5E16-F610-4F67-A2A6-C666B0A59E92.HEIC",
+        "C3E83039-5167-4CC0-924D-B7C9F058E7F0.HEIC"
+      ]
+    },
+    {
+      "id": "wall-panel",
+      "name": "Wall Panel",
+      "category": "Architecture",
+      "image": "/archive/objects/wall-panel.png",
+      "sourceFiles": [
+        "268A5E70-47B1-4E43-9BA4-C7470774401C.HEIC",
+        "30858248-F31E-4269-85D9-1152C2E35D13.HEIC"
+      ]
+    },
+    {
+      "id": "monkey-lamp",
+      "name": "Monkey Lamp",
+      "category": "Lighting",
+      "image": "/archive/objects/monkey-lamp.png",
+      "sourceFiles": [
+        "2BEC13BD-8184-4B7C-B3F5-3AB76B4A3A38.HEIC"
+      ]
+    },
+    {
+      "id": "yellow-lamp",
+      "name": "Yellow Lamp",
+      "category": "Lighting",
+      "image": "/archive/objects/yellow-lamp.png",
+      "sourceFiles": [
+        "2BEC13BD-8184-4B7C-B3F5-3AB76B4A3A38.HEIC"
+      ]
+    },
+    {
+      "id": "bed",
+      "name": "Bed",
+      "category": "Furniture",
+      "image": "/archive/objects/bed-v2.png",
+      "sourceFiles": [
+        "30858248-F31E-4269-85D9-1152C2E35D13.HEIC"
+      ]
+    },
+    {
+      "id": "red-dresser",
+      "name": "Red Dresser",
+      "category": "Furniture",
+      "image": "/archive/objects/red-dresser.png",
+      "sourceFiles": [
+        "35C230FF-8F6E-456D-BF73-CEE6D11DC30F.HEIC"
+      ]
+    },
+    {
+      "id": "house-b",
+      "name": "House B",
+      "category": "Architecture",
+      "image": "/archive/objects/house-b-architectural-angles-palette-v2/06-front-right-three-quarter.png",
+      "sourceFiles": [
+        "0FEAC846-1B2A-4BA0-B021-196D80EC43B2.HEIC",
+        "3659CFAC-C7FC-4B57-B73A-58CC3EBF1C05.HEIC",
+        "477CEFAE-0730-44F8-805B-641C6E1FA826.HEIC",
+        "612413A2-64D7-42A2-936E-87AE9DE08C5A.HEIC",
+        "E5D8BCF6-B66E-4ECC-973B-1B32BB464397.HEIC",
+        "FBCD3373-00D6-427A-90FD-F6BCD07E0FE8.HEIC"
+      ],
+      "alternateImages": [
+        {
+          "id": "patchwork-facade-study-v2",
+          "label": "Patchwork façade study · v2",
+          "image": "/archive/objects/house-b-patchwork-study-v2.png",
+          "description": "A focused material revision using the half-timber grid and pastel infill structure from E5D8BCF6. House massing, openings, porch, and Cut 1 axis remain unchanged."
+        },
+        {
+          "id": "palette-oxblood-copper-v1",
+          "label": "Palette study · Oxblood + Copper",
+          "image": "/archive/objects/house-b-palette-oxblood-copper-v1.png",
+          "description": "Warm PALETTE colorway using oxblood, lacquer red, copper, peach, porcelain, black cherry, and restrained antique-gold details."
+        },
+        {
+          "id": "palette-midnight-cobalt-v1",
+          "label": "Palette study · Midnight + Cobalt",
+          "image": "/archive/objects/house-b-palette-midnight-cobalt-v1.png",
+          "description": "Cool PALETTE colorway using midnight blue, cobalt, petrol, mauve, lilac, ice, porcelain, and restrained antique-gold details."
+        },
+        {
+          "id": "palette-petrol-jade-v1",
+          "label": "Palette study · Petrol + Jade",
+          "image": "/archive/objects/house-b-palette-petrol-jade-v1.png",
+          "description": "Botanical PALETTE colorway using petrol, blue-green, ice, porcelain, ink, and restrained antique-gold details."
+        },
+        {
+          "id": "palette-mulberry-blush-v1",
+          "label": "Palette study · Mulberry + Blush",
+          "image": "/archive/objects/house-b-palette-mulberry-blush-v1.png",
+          "description": "Romantic PALETTE colorway using mulberry, mauve, dusty rose, blush, porcelain, black cherry, and restrained antique-gold details."
+        },
+        {
+          "id": "palette-porcelain-ink-v1",
+          "label": "Palette study · Porcelain + Ink",
+          "image": "/archive/objects/house-b-palette-porcelain-ink-v1.png",
+          "description": "Graphic PALETTE colorway using porcelain, stone cream, stage black, black cherry, dusty taupe, and restrained antique-gold details."
+        },
+        {
+          "id": "palette-violet-rust-v1",
+          "label": "Palette study · Violet + Rust",
+          "image": "/archive/objects/house-b-palette-violet-rust-v1.png",
+          "description": "Eccentric PALETTE colorway using deep violet, muted violet, oxblood, copper-rust, lilac, powder cream, and restrained antique-gold details."
+        },
+        {
+          "id": "angle-test-midnight-oxblood-v1",
+          "label": "Angle-set test · Midnight + Oxblood",
+          "image": "/archive/objects/house-b-angle-test-midnight-oxblood-v1.png",
+          "description": "Approved Cut 1 architecture recolored in midnight blue, oxblood, black cherry, charcoal, and restrained antique-gold accents."
+        },
+        {
+          "id": "angle-test-petrol-jade-mulberry-blush-v1",
+          "label": "Angle-set test · Petrol/Jade + Mulberry/Blush",
+          "image": "/archive/objects/house-b-angle-test-petrol-jade-mulberry-blush-v1.png",
+          "description": "Approved Cut 1 architecture recolored in petrol, jade-blue, mulberry, aubergine, blush, ink, and restrained antique-gold accents."
+        },
+        {
+          "id": "angle-test-petrol-jade-oxblood-copper-v1",
+          "label": "Angle-set test · Petrol/Jade + Oxblood/Copper",
+          "image": "/archive/objects/house-b-angle-test-petrol-jade-oxblood-copper-v1.png",
+          "description": "Approved Cut 1 architecture recolored in petrol, jade-blue, oxblood, copper, rust, black cherry, and restrained antique-gold accents."
+        },
+        {
+          "id": "angle-test-midnight-cobalt-green-v1",
+          "label": "Angle-set test · Midnight/Cobalt + Green",
+          "image": "/archive/objects/house-b-angle-test-midnight-cobalt-green-v1.png",
+          "description": "Approved Cut 1 architecture in midnight and cobalt, with every former violet zone replaced by moss, olive, and restrained sage."
+        },
+        {
+          "id": "architectural-front-right-original-v1",
+          "label": "Approved front-right · Original palette v1",
+          "image": "/archive/objects/house-exterior-variation-b-stepped-modular.png",
+          "description": "The original approved House B front-right design before the saturated PALETTE color pass."
+        },
+        {
+          "id": "architectural-angle-contact-sheet-original-v1",
+          "label": "Architectural angle set · Original palette v1",
+          "image": "/archive/objects/house-b-architectural-angles/contact-sheet.jpg",
+          "description": "The complete original nine-view architectural set before the saturated PALETTE color pass. All nine full-resolution source views remain preserved in the original angle-set folder."
+        },
+        {
+          "id": "architectural-angle-contact-sheet",
+          "label": "Architectural angle set · PALETTE v2",
+          "image": "/archive/objects/house-b-architectural-angles-palette-v2/contact-sheet.jpg",
+          "description": "The approved nine-view design with more saturated PALETTE color: porcelain, violet, peach, oxblood, petrol, ink, and antique gold. Rear-facing studies remain conservative inferences."
+        },
+        {
+          "id": "cut1-front-elevation",
+          "label": "Cut 1 front elevation",
+          "image": "/archive/objects/house-b-architectural-angles-palette-v2/01-cut1-front-elevation.png",
+          "description": "Centered shot-facing elevation preserving the window, living-room, and kitchen camera axis."
+        },
+        {
+          "id": "right-entrance-elevation",
+          "label": "Right entrance elevation",
+          "image": "/archive/objects/house-b-architectural-angles-palette-v2/02-right-entrance-elevation.png",
+          "description": "Porch, golden doorway, canopy, balcony, string lights, vessels, and plants."
+        },
+        {
+          "id": "left-elevation",
+          "label": "Left elevation",
+          "image": "/archive/objects/house-b-architectural-angles-palette-v2/03-left-elevation.png",
+          "description": "Wide curtained-room module and stepped connection into the Cut 1 core."
+        },
+        {
+          "id": "rear-elevation",
+          "label": "Rear elevation · inferred",
+          "image": "/archive/objects/house-b-architectural-angles-palette-v2/04-rear-elevation-inferred.png",
+          "description": "Conservative rear study derived from the locked footprint, roof volumes, and kitchen depth."
+        },
+        {
+          "id": "front-left-three-quarter",
+          "label": "Front-left three-quarter",
+          "image": "/archive/objects/house-b-architectural-angles-palette-v2/05-front-left-three-quarter.png",
+          "description": "Cut 1 façade with the wide-room module and left-hand roof junctions exposed."
+        },
+        {
+          "id": "front-right-three-quarter",
+          "label": "Front-right three-quarter",
+          "image": "/archive/objects/house-b-architectural-angles-palette-v2/06-front-right-three-quarter.png",
+          "description": "Approved B composition showing the Cut 1 core and entrance module together."
+        },
+        {
+          "id": "rear-left-three-quarter",
+          "label": "Rear-left three-quarter · inferred",
+          "image": "/archive/objects/house-b-architectural-angles-palette-v2/07-rear-left-three-quarter-inferred.png",
+          "description": "Inferred rear wall with the left module and chimney relationship."
+        },
+        {
+          "id": "rear-right-three-quarter",
+          "label": "Rear-right three-quarter · inferred",
+          "image": "/archive/objects/house-b-architectural-angles-palette-v2/08-rear-right-three-quarter-inferred.png",
+          "description": "Inferred rear wall with the compact entrance volume receding around the far corner."
+        },
+        {
+          "id": "roof-plan",
+          "label": "Roof plan",
+          "image": "/archive/objects/house-b-architectural-angles-palette-v2/09-roof-plan.png",
+          "description": "Top-down study of ridges, valleys, setbacks, chimney, porch roof, and modular footprint."
+        }
+      ]
+    },
+    {
+      "id": "roof",
+      "name": "Roof",
+      "category": "Architecture",
+      "image": "/archive/objects/roof.png",
+      "sourceFiles": [
+        "0FEAC846-1B2A-4BA0-B021-196D80EC43B2.HEIC",
+        "3659CFAC-C7FC-4B57-B73A-58CC3EBF1C05.HEIC",
+        "477CEFAE-0730-44F8-805B-641C6E1FA826.HEIC",
+        "612413A2-64D7-42A2-936E-87AE9DE08C5A.HEIC",
+        "E5D8BCF6-B66E-4ECC-973B-1B32BB464397.HEIC",
+        "FBCD3373-00D6-427A-90FD-F6BCD07E0FE8.HEIC"
+      ],
+      "alternateImages": [
+        {
+          "id": "rear-right-angle",
+          "label": "Rear-right angle",
+          "image": "/archive/objects/roof-angle-rear-right.png",
+          "description": "Opposite three-quarter study clarifying the rear slopes, ridge junctions, and valley seams."
+        },
+        {
+          "id": "overhead-angle",
+          "label": "Overhead angle",
+          "image": "/archive/objects/roof-angle-overhead.png",
+          "description": "High oblique study clarifying the roof footprint, intersecting planes, shingle flow, ridges, and eaves."
+        }
+      ]
+    },
+    {
+      "id": "chimney",
+      "name": "Chimney",
+      "category": "Architecture",
+      "image": "/archive/objects/chimney.png",
+      "sourceFiles": [
+        "3659CFAC-C7FC-4B57-B73A-58CC3EBF1C05.HEIC",
+        "477CEFAE-0730-44F8-805B-641C6E1FA826.HEIC",
+        "612413A2-64D7-42A2-936E-87AE9DE08C5A.HEIC",
+        "FBCD3373-00D6-427A-90FD-F6BCD07E0FE8.HEIC"
+      ]
+    },
+    {
+      "id": "tower",
+      "name": "Tower",
+      "category": "Architecture",
+      "image": "/archive/objects/tower.png",
+      "sourceFiles": [
+        "3784B80E-504A-4B06-8685-CD4E0E3D9ECB.HEIC",
+        "685BEEEE-9CF6-44BD-87A0-76FDB70B8601.HEIC"
+      ]
+    },
+    {
+      "id": "star-mirror",
+      "name": "Star Mirror",
+      "category": "Decor",
+      "image": "/archive/objects/star-mirror.png",
+      "sourceFiles": [
+        "39D9DD9A-0B99-45F1-980E-19C6C241C2A0.HEIC",
+        "8CF3FD36-D31B-4578-8469-BB77D91AAF97.HEIC"
+      ]
+    },
+    {
+      "id": "antique-lamp",
+      "name": "Antique Lamp",
+      "category": "Lighting",
+      "image": "/archive/objects/antique-lamp.png",
+      "sourceFiles": [
+        "39D9DD9A-0B99-45F1-980E-19C6C241C2A0.HEIC"
+      ]
+    },
+    {
+      "id": "wood-lamp",
+      "name": "Wood Lamp",
+      "category": "Lighting",
+      "image": "/archive/objects/wood-lamp.png",
+      "sourceFiles": [
+        "3C931E9A-EB6E-4743-A841-B8D3E62F16D8.HEIC"
+      ]
+    },
+    {
+      "id": "red-shelf",
+      "name": "Red Shelf",
+      "category": "Furniture",
+      "image": "/archive/objects/red-shelf.png",
+      "sourceFiles": [
+        "425AAA2A-63A6-461B-9FFB-F120062ACD44.HEIC"
+      ]
+    },
+    {
+      "id": "doll",
+      "name": "Doll",
+      "category": "Toys",
+      "image": "/archive/objects/doll.png",
+      "sourceFiles": [
+        "425AAA2A-63A6-461B-9FFB-F120062ACD44.HEIC"
+      ]
+    },
+    {
+      "id": "monkey-sculpture",
+      "name": "Monkey Sculpture",
+      "category": "Decor",
+      "image": "/archive/objects/monkey-sculpture.png",
+      "sourceFiles": [
+        "425AAA2A-63A6-461B-9FFB-F120062ACD44.HEIC"
+      ]
+    },
+    {
+      "id": "pigeon",
+      "name": "Pigeon",
+      "category": "Decor",
+      "image": "/archive/objects/pigeon.png",
+      "sourceFiles": [
+        "425AAA2A-63A6-461B-9FFB-F120062ACD44.HEIC"
+      ]
+    },
+    {
+      "id": "colorful-house",
+      "name": "Colorful House",
+      "category": "Models",
+      "image": "/archive/objects/colorful-house.png",
+      "sourceFiles": [
+        "425AAA2A-63A6-461B-9FFB-F120062ACD44.HEIC",
+        "7E0CF4B5-3B33-4705-A0F5-5312ABE2A1EC.HEIC"
+      ]
+    },
+    {
+      "id": "light-switch",
+      "name": "Light Switch",
+      "category": "Decor",
+      "image": "/archive/objects/light-switch.png",
+      "sourceFiles": [
+        "5E8641CA-BA42-4BBE-9757-85FFB9019E7A.HEIC"
+      ]
+    },
+    {
+      "id": "books",
+      "name": "Books",
+      "category": "Props",
+      "image": "/archive/objects/books.png",
+      "sourceFiles": [
+        "628FD0FE-1B5C-48B5-9976-B3BB087931A6.HEIC",
+        "EEE06351-36D7-4BC1-A009-92832F0F1543.HEIC"
+      ]
+    },
+    {
+      "id": "bubble-bottle",
+      "name": "Bubble Bottle",
+      "category": "Props",
+      "image": "/archive/objects/bubble-bottle.png",
+      "sourceFiles": [
+        "628FD0FE-1B5C-48B5-9976-B3BB087931A6.HEIC",
+        "EEE06351-36D7-4BC1-A009-92832F0F1543.HEIC"
+      ]
+    },
+    {
+      "id": "stained-glass-lamp",
+      "name": "Stained Glass Lamp",
+      "category": "Lighting",
+      "image": "/archive/objects/stained-glass-lamp.png",
+      "sourceFiles": [
+        "64270D3E-A5E4-44EC-BCD3-F0F0A1E9F2B6.HEIC"
+      ]
+    },
+    {
+      "id": "ice-cream-shop",
+      "name": "Ice Cream Shop",
+      "category": "Models",
+      "image": "/archive/objects/ice-cream-shop.png",
+      "sourceFiles": [
+        "74765ABB-2A20-4EC0-B25E-B96FB4348DDD.HEIC",
+        "EEE06351-36D7-4BC1-A009-92832F0F1543.HEIC"
+      ]
+    },
+    {
+      "id": "hanging-ornament",
+      "name": "Hanging Ornament",
+      "category": "Decor",
+      "image": "/archive/objects/hanging-ornament.png",
+      "sourceFiles": [
+        "8CF3FD36-D31B-4578-8469-BB77D91AAF97.HEIC"
+      ]
+    },
+    {
+      "id": "small-chandelier",
+      "name": "Small Chandelier",
+      "category": "Lighting",
+      "image": "/archive/objects/small-chandelier.png",
+      "sourceFiles": [
+        "8CF3FD36-D31B-4578-8469-BB77D91AAF97.HEIC"
+      ]
+    },
+    {
+      "id": "flower-mirror",
+      "name": "Flower Mirror",
+      "category": "Decor",
+      "image": "/archive/objects/flower-mirror.png",
+      "sourceFiles": [
+        "8CF3FD36-D31B-4578-8469-BB77D91AAF97.HEIC"
+      ]
+    },
+    {
+      "id": "butterfly",
+      "name": "Butterfly",
+      "category": "Decor",
+      "image": "/archive/objects/butterfly.png",
+      "sourceFiles": [
+        "8CF3FD36-D31B-4578-8469-BB77D91AAF97.HEIC"
+      ]
+    },
+    {
+      "id": "amber-vase",
+      "name": "Amber Vase",
+      "category": "Tabletop",
+      "image": "/archive/objects/amber-vase.png",
+      "sourceFiles": [
+        "8CF3FD36-D31B-4578-8469-BB77D91AAF97.HEIC"
+      ]
+    },
+    {
+      "id": "green-lamp",
+      "name": "Green Lamp",
+      "category": "Lighting",
+      "image": "/archive/objects/green-lamp.png",
+      "sourceFiles": [
+        "B48B87B6-23F9-4FA0-B3AF-966602AA6030.HEIC"
+      ]
+    },
+    {
+      "id": "piano",
+      "name": "Piano",
+      "category": "Instruments",
+      "image": "/archive/objects/piano.png",
+      "sourceFiles": [
+        "B97C442C-264F-447A-B9E7-C5F34869CD89.HEIC",
+        "EEE06351-36D7-4BC1-A009-92832F0F1543.HEIC"
+      ]
+    },
+    {
+      "id": "piano-stool",
+      "name": "Piano Stool",
+      "category": "Furniture",
+      "image": "/archive/objects/piano-stool.png",
+      "sourceFiles": [
+        "B97C442C-264F-447A-B9E7-C5F34869CD89.HEIC"
+      ]
+    },
+    {
+      "id": "white-house",
+      "name": "White House",
+      "category": "Models",
+      "image": "/archive/objects/white-house.png",
+      "sourceFiles": [
+        "BC8A8D60-A52B-415A-B385-D837AE0BF603.HEIC"
+      ]
+    },
+    {
+      "id": "glass-window-display",
+      "name": "Glass Window Display",
+      "category": "Architecture",
+      "image": "/archive/objects/glass-window-display.png",
+      "sourceFiles": [
+        "C20875DC-86A1-4D86-A757-1F9D1F4E9C49.HEIC"
+      ]
+    },
+    {
+      "id": "flower-urn",
+      "name": "Flower Urn",
+      "category": "Decor",
+      "image": "/archive/objects/flower-urn.png",
+      "sourceFiles": [
+        "CD90194D-81FE-42D4-928E-67983ECF1A71.HEIC",
+        "EEE06351-36D7-4BC1-A009-92832F0F1543.HEIC"
+      ]
+    },
+    {
+      "id": "purple-dresser",
+      "name": "Purple Dresser",
+      "category": "Furniture",
+      "image": "/archive/objects/purple-dresser.png",
+      "sourceFiles": [
+        "8CF3FD36-D31B-4578-8469-BB77D91AAF97.HEIC",
+        "CDDE65B8-6770-46A3-BB97-C1C56759D4CB.HEIC"
+      ]
+    },
+    {
+      "id": "red-lamp",
+      "name": "Red Lamp",
+      "category": "Lighting",
+      "image": "/archive/objects/red-lamp.png",
+      "sourceFiles": [
+        "D4AFFC17-B1E0-45A9-9E4C-3DBDABE5A9D7.HEIC"
+      ]
+    },
+    {
+      "id": "bass-guitar",
+      "name": "Bass Guitar",
+      "category": "Instruments",
+      "image": "/archive/objects/bass-guitar.png",
+      "sourceFiles": [
+        "D4AFFC17-B1E0-45A9-9E4C-3DBDABE5A9D7.HEIC"
+      ]
+    },
+    {
+      "id": "keyboard",
+      "name": "Keyboard",
+      "category": "Instruments",
+      "image": "/archive/objects/keyboard.png",
+      "sourceFiles": [
+        "D4AFFC17-B1E0-45A9-9E4C-3DBDABE5A9D7.HEIC"
+      ]
+    },
+    {
+      "id": "painting",
+      "name": "Painting",
+      "category": "Decor",
+      "image": "/archive/objects/painting.png",
+      "sourceFiles": [
+        "D72E881F-1C92-46C9-A926-7F69F191545A.HEIC"
+      ]
+    },
+    {
+      "id": "black-mug",
+      "name": "Black Mug",
+      "category": "Tabletop",
+      "image": "/archive/objects/black-mug.png",
+      "sourceFiles": [
+        "D72E881F-1C92-46C9-A926-7F69F191545A.HEIC"
+      ]
+    },
+    {
+      "id": "snails",
+      "name": "Snails",
+      "category": "Decor",
+      "image": "/archive/objects/snails.png",
+      "sourceFiles": [
+        "D72E881F-1C92-46C9-A926-7F69F191545A.HEIC"
+      ]
+    },
+    {
+      "id": "front-canopy",
+      "name": "Front Canopy",
+      "category": "Architecture",
+      "image": "/archive/objects/front-canopy.png",
+      "sourceFiles": [
+        "E5D8BCF6-B66E-4ECC-973B-1B32BB464397.HEIC"
+      ]
+    },
+    {
+      "id": "outdoor-plants",
+      "name": "Outdoor Plants",
+      "category": "Architecture",
+      "image": "/archive/objects/outdoor-plants.png",
+      "sourceFiles": [
+        "E5D8BCF6-B66E-4ECC-973B-1B32BB464397.HEIC"
+      ]
+    },
+    {
+      "id": "floor-lamp",
+      "name": "Floor Lamp",
+      "category": "Lighting",
+      "image": "/archive/objects/floor-lamp.png",
+      "sourceFiles": [
+        "EEE06351-36D7-4BC1-A009-92832F0F1543.HEIC"
+      ]
+    },
+    {
+      "id": "cafe-model",
+      "name": "Cafe Model",
+      "category": "Models",
+      "image": "/archive/objects/cafe-model.png",
+      "sourceFiles": [
+        "EEE06351-36D7-4BC1-A009-92832F0F1543.HEIC"
+      ]
+    },
+    {
+      "id": "wall-hanging",
+      "name": "Wall Hanging",
+      "category": "Decor",
+      "image": "/archive/objects/wall-hanging.png",
+      "sourceFiles": [
+        "F06F8B5C-59CB-4FEC-88B7-51B911E0573B.HEIC"
+      ]
+    },
+    {
+      "id": "bridge",
+      "name": "Bridge",
+      "category": "Architecture",
+      "image": "/archive/objects/bridge.png",
+      "sourceFiles": [
+        "F78358D9-BA46-4EAB-A83F-A3425D8ED05E.HEIC"
+      ]
+    },
+    {
+      "id": "lantern",
+      "name": "Lantern",
+      "category": "Lighting",
+      "image": "/archive/objects/lantern.png",
+      "sourceFiles": [
+        "F78358D9-BA46-4EAB-A83F-A3425D8ED05E.HEIC"
+      ]
+    }
+  ],
+  "generatedGroups": [
+    {
+      "id": "wall-plates",
+      "category": "Decor",
+      "imageDirectory": "/archive/objects/split",
+      "sourceFiles": [
+        "6201DF42-C0C8-4966-BCC5-18165E13D01C.HEIC"
+      ],
+      "objects": [
+        {
+          "id": "green-wall-plate",
+          "name": "Green Wall Plate"
+        },
+        {
+          "id": "lavender-wall-plate",
+          "name": "Lavender Wall Plate"
+        },
+        {
+          "id": "orange-wall-plate",
+          "name": "Orange Wall Plate"
+        },
+        {
+          "id": "purple-wall-plate",
+          "name": "Purple Wall Plate"
+        }
+      ]
+    },
+    {
+      "id": "glass-vessels",
+      "category": "Glassware",
+      "imageDirectory": "/archive/objects/split",
+      "sourceFiles": [
+        "C20875DC-86A1-4D86-A757-1F9D1F4E9C49.HEIC"
+      ],
+      "objects": [
+        {
+          "id": "blue-oval-goblet",
+          "name": "Blue Oval Goblet"
+        },
+        {
+          "id": "yellow-square-bottle",
+          "name": "Yellow Square Bottle"
+        },
+        {
+          "id": "blue-patterned-tumbler",
+          "name": "Blue Patterned Tumbler"
+        },
+        {
+          "id": "orange-cordial-glass",
+          "name": "Orange Cordial Glass"
+        },
+        {
+          "id": "blue-cordial-glass",
+          "name": "Blue Cordial Glass"
+        },
+        {
+          "id": "purple-cordial-glass",
+          "name": "Purple Cordial Glass"
+        },
+        {
+          "id": "clear-wine-glass-left",
+          "name": "Clear Wine Glass Left"
+        },
+        {
+          "id": "blue-decanter-left",
+          "name": "Blue Decanter Left"
+        },
+        {
+          "id": "olive-flute-glass",
+          "name": "Olive Flute Glass"
+        },
+        {
+          "id": "teal-patterned-tumbler",
+          "name": "Teal Patterned Tumbler"
+        },
+        {
+          "id": "purple-tumbler",
+          "name": "Purple Tumbler"
+        },
+        {
+          "id": "amber-round-bottle",
+          "name": "Amber Round Bottle"
+        },
+        {
+          "id": "white-pyramid-bottle",
+          "name": "White Pyramid Bottle"
+        },
+        {
+          "id": "blue-wine-goblet",
+          "name": "Blue Wine Goblet"
+        },
+        {
+          "id": "clear-green-tumbler",
+          "name": "Clear Green Tumbler"
+        },
+        {
+          "id": "blue-highball",
+          "name": "Blue Highball"
+        },
+        {
+          "id": "yellow-square-tumbler",
+          "name": "Yellow Square Tumbler"
+        },
+        {
+          "id": "clear-square-tumbler",
+          "name": "Clear Square Tumbler"
+        },
+        {
+          "id": "blue-round-vase",
+          "name": "Blue Round Vase"
+        },
+        {
+          "id": "clear-wine-glass-center",
+          "name": "Clear Wine Glass Center"
+        },
+        {
+          "id": "yellow-tall-bottle-center",
+          "name": "Yellow Tall Bottle Center"
+        },
+        {
+          "id": "blue-speckled-vase",
+          "name": "Blue Speckled Vase"
+        },
+        {
+          "id": "small-blue-bottle",
+          "name": "Small Blue Bottle"
+        },
+        {
+          "id": "clear-engraved-goblet",
+          "name": "Clear Engraved Goblet"
+        },
+        {
+          "id": "yellow-slender-bottle",
+          "name": "Yellow Slender Bottle"
+        },
+        {
+          "id": "green-teardrop-bottle",
+          "name": "Green Teardrop Bottle"
+        },
+        {
+          "id": "blue-martini-glass",
+          "name": "Blue Martini Glass"
+        },
+        {
+          "id": "cobalt-round-vase",
+          "name": "Cobalt Round Vase"
+        },
+        {
+          "id": "turquoise-flask",
+          "name": "Turquoise Flask"
+        },
+        {
+          "id": "clear-small-tumbler",
+          "name": "Clear Small Tumbler"
+        },
+        {
+          "id": "tall-turquoise-bottle",
+          "name": "Tall Turquoise Bottle"
+        },
+        {
+          "id": "small-turquoise-bottle",
+          "name": "Small Turquoise Bottle"
+        },
+        {
+          "id": "cobalt-decanter-right",
+          "name": "Cobalt Decanter Right"
+        },
+        {
+          "id": "clear-spire-bottle",
+          "name": "Clear Spire Bottle"
+        }
+      ]
+    },
+    {
+      "id": "wardrobe",
+      "category": "Wardrobe",
+      "imageDirectory": "/archive/objects/wardrobe",
+      "alternateImageDirectories": [
+        {
+          "id": "tossed-floor",
+          "label": "Casually tossed",
+          "directory": "/archive/objects/wardrobe/tossed",
+          "description": "Unworn and naturally settled on a white studio floor."
+        }
+      ],
+      "objects": [
+        {
+          "id": "argyle-high-neck-top",
+          "name": "Argyle High-Neck Top",
+          "sourceFiles": [
+            "wardrobe/instagram-DT78HgUiAQC-02.jpg",
+            "wardrobe/instagram-DWCLiCVCBD9-01.jpg"
+          ]
+        },
+        {
+          "id": "black-deconstructed-coat-dress",
+          "name": "Black Deconstructed Coat Dress",
+          "sourceFiles": [
+            "wardrobe/instagram-DV6Gy_RlD6n-02.jpg"
+          ]
+        },
+        {
+          "id": "black-lace-crop-top",
+          "name": "Black Lace Crop Top",
+          "sourceFiles": [
+            "wardrobe/instagram-DM3VeHLSKx2-01.jpg"
+          ]
+        },
+        {
+          "id": "black-lace-up-platform-boots",
+          "name": "Black Lace-Up Platform Boots",
+          "sourceFiles": [
+            "wardrobe/instagram-DPl5AbyCGmP-01.jpg",
+            "wardrobe/instagram-DV6Gy_RlD6n-01.jpg"
+          ]
+        },
+        {
+          "id": "blue-jeweled-headpiece",
+          "name": "Blue Jeweled Headpiece",
+          "sourceFiles": [
+            "wardrobe/instagram-DX8CFhugOPd-01.jpg"
+          ]
+        },
+        {
+          "id": "brown-satin-bow-blouse",
+          "name": "Brown Satin Bow Blouse",
+          "sourceFiles": [
+            "wardrobe/instagram-DXfD-kuj_yT-01.jpg"
+          ]
+        },
+        {
+          "id": "burgundy-button-corset",
+          "name": "Burgundy Button Corset",
+          "sourceFiles": [
+            "wardrobe/instagram-DNxkTnsULRa-01.jpg",
+            "wardrobe/instagram-DZA0hdEFMx8-01.jpg",
+            "wardrobe/instagram-DZA0hdEFMx8-02.jpg"
+          ],
+          "alternateImages": [
+            {
+              "id": "three-quarter-3d-input",
+              "label": "3D reconstruction angle",
+              "image": "/archive/objects/wardrobe/3d-inputs/burgundy-button-corset-three-quarter.png",
+              "description": "Generated three-quarter catalog view exposing the hollow wearable interior for the Meshy multiview rerun."
+            }
+          ]
+        },
+        {
+          "id": "crystal-tiara",
+          "name": "Crystal Tiara",
+          "sourceFiles": [
+            "wardrobe/instagram-DYm9ytzFS4j-01.jpg",
+            "wardrobe/instagram-DYm9ytzFS4j-02.jpg"
+          ]
+        },
+        {
+          "id": "gray-bustle-dress",
+          "name": "Gray Bustle Dress",
+          "sourceFiles": [
+            "wardrobe/instagram-DUgAjvhCDHz-01.jpg"
+          ]
+        },
+        {
+          "id": "gray-opera-gloves",
+          "name": "Gray Opera Gloves",
+          "sourceFiles": [
+            "wardrobe/instagram-DX8CFhugOPd-01.jpg",
+            "wardrobe/instagram-DX8CFhugOPd-02.jpg"
+          ]
+        },
+        {
+          "id": "ivory-pleated-skirt",
+          "name": "Ivory Pleated Skirt",
+          "sourceFiles": [
+            "wardrobe/instagram-DX8CFhugOPd-01.jpg",
+            "wardrobe/instagram-DX8CFhugOPd-02.jpg"
+          ]
+        },
+        {
+          "id": "ivory-striped-corset",
+          "name": "Ivory Striped Corset",
+          "sourceFiles": [
+            "wardrobe/instagram-DX8CFhugOPd-01.jpg",
+            "wardrobe/instagram-DX8CFhugOPd-02.jpg"
+          ]
+        },
+        {
+          "id": "mustard-military-jacket",
+          "name": "Mustard Military Jacket",
+          "sourceFiles": [
+            "wardrobe/instagram-DV6Gy_RlD6n-01.jpg"
+          ]
+        },
+        {
+          "id": "navy-taffeta-dress",
+          "name": "Navy Taffeta Dress",
+          "sourceFiles": [
+            "wardrobe/instagram-DancEOBld60-01.jpg",
+            "wardrobe/instagram-DancEOBld60-02.jpg"
+          ]
+        },
+        {
+          "id": "orange-sheer-shoulder-cape",
+          "name": "Orange Sheer Shoulder Cape",
+          "sourceFiles": [
+            "wardrobe/instagram-DXH2k29FQEp-01.jpg"
+          ]
+        },
+        {
+          "id": "pale-blue-brocade-jacket",
+          "name": "Pale Blue Brocade Jacket",
+          "sourceFiles": [
+            "wardrobe/instagram-DYm9ytzFS4j-01.jpg",
+            "wardrobe/instagram-DYm9ytzFS4j-02.jpg"
+          ]
+        },
+        {
+          "id": "pink-ruffle-trousers",
+          "name": "Pink Ruffle Trousers",
+          "sourceFiles": [
+            "wardrobe/instagram-DNxkTnsULRa-01.jpg"
+          ]
+        },
+        {
+          "id": "pink-striped-corset",
+          "name": "Pink Striped Corset",
+          "sourceFiles": [
+            "wardrobe/instagram-Da3oo3WkrHU-01.jpg",
+            "wardrobe/instagram-DU3rvJnkqc1-01.jpg",
+            "wardrobe/instagram-DXH2k29FQEp-01.jpg"
+          ]
+        },
+        {
+          "id": "pink-tiered-mini-skirt",
+          "name": "Pink Tiered Mini Skirt",
+          "sourceFiles": [
+            "wardrobe/instagram-Da3oo3WkrHU-01.jpg",
+            "wardrobe/instagram-DU3rvJnkqc1-01.jpg"
+          ]
+        },
+        {
+          "id": "purple-ruffle-skirt",
+          "name": "Purple Ruffle Skirt",
+          "sourceFiles": [
+            "wardrobe/instagram-DZA0hdEFMx8-01.jpg",
+            "wardrobe/instagram-DZA0hdEFMx8-02.jpg"
+          ]
+        },
+        {
+          "id": "red-beret",
+          "name": "Red Beret",
+          "sourceFiles": [
+            "wardrobe/instagram-DV6Gy_RlD6n-01.jpg"
+          ]
+        },
+        {
+          "id": "red-knee-boots",
+          "name": "Red Knee Boots",
+          "sourceFiles": [
+            "wardrobe/instagram-DYfcoqvFcBk-01.jpg",
+            "wardrobe/instagram-DYfcoqvFcBk-02.jpg"
+          ]
+        },
+        {
+          "id": "red-shaggy-coat",
+          "name": "Red Shaggy Coat",
+          "sourceFiles": [
+            "wardrobe/instagram-DYfcoqvFcBk-01.jpg",
+            "wardrobe/instagram-DYfcoqvFcBk-02.jpg"
+          ]
+        },
+        {
+          "id": "silver-puff-sleeve-dress",
+          "name": "Silver Puff-Sleeve Dress",
+          "sourceFiles": [
+            "wardrobe/instagram-DVgp-wgiFZZ-01.jpg",
+            "wardrobe/instagram-DWCLiCVCBD9-02.jpg"
+          ]
+        },
+        {
+          "id": "striped-long-sleeve-bodysuit",
+          "name": "Striped Long-Sleeve Bodysuit",
+          "sourceFiles": [
+            "wardrobe/instagram-DNtVQXMQHUg-02.jpg"
+          ]
+        },
+        {
+          "id": "striped-short-sleeve-top",
+          "name": "Striped Short-Sleeve Top",
+          "sourceFiles": [
+            "wardrobe/instagram-DancEOBld60-01.jpg",
+            "wardrobe/instagram-DancEOBld60-02.jpg",
+            "wardrobe/instagram-DPELifdCElC-01.jpg",
+            "wardrobe/instagram-DPELifdCElC-02.jpg"
+          ]
+        },
+        {
+          "id": "tartan-coat-dress",
+          "name": "Tartan Coat Dress",
+          "sourceFiles": [
+            "wardrobe/instagram-DPl5AbyCGmP-01.jpg",
+            "wardrobe/instagram-DPl5AbyCGmP-02.jpg"
+          ]
+        },
+        {
+          "id": "teal-pleated-skirt",
+          "name": "Teal Pleated Skirt",
+          "sourceFiles": [
+            "wardrobe/instagram-DYfcoqvFcBk-01.jpg",
+            "wardrobe/instagram-DYfcoqvFcBk-02.jpg"
+          ]
+        },
+        {
+          "id": "white-lilac-corset-dress",
+          "name": "White Lilac Corset Dress",
+          "sourceFiles": [
+            "wardrobe/instagram-DUq9zriCIag-01.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wardrobe-historical",
+      "category": "Wardrobe",
+      "imageDirectory": "/archive/objects/wardrobe",
+      "objects": [
+        {
+          "id": "black-tie-strap-crop-top",
+          "name": "Black Tie-Strap Crop Top",
+          "sourceFiles": [
+            "wardrobe/instagram-C30vf4AIsdT-01.jpg"
+          ]
+        },
+        {
+          "id": "black-tiered-tulle-skirt",
+          "name": "Black Tiered Tulle Skirt",
+          "sourceFiles": [
+            "wardrobe/instagram-C30vf4AIsdT-01.jpg"
+          ]
+        },
+        {
+          "id": "red-crochet-tights",
+          "name": "Red Crochet Tights",
+          "sourceFiles": [
+            "wardrobe/instagram-C30vf4AIsdT-01.jpg"
+          ]
+        },
+        {
+          "id": "champagne-ruffle-corset-dress",
+          "name": "Champagne Ruffle Corset Dress",
+          "sourceFiles": [
+            "wardrobe/instagram-C30vf4AIsdT-03.jpg"
+          ]
+        },
+        {
+          "id": "gray-technical-jacket",
+          "name": "Gray Technical Jacket",
+          "sourceFiles": [
+            "wardrobe/instagram-C3BgvhGubHJ-01.jpg"
+          ]
+        },
+        {
+          "id": "cream-cargo-trousers",
+          "name": "Cream Cargo Trousers",
+          "sourceFiles": [
+            "wardrobe/instagram-C3BgvhGubHJ-01.jpg"
+          ]
+        },
+        {
+          "id": "lime-open-knit-scarf",
+          "name": "Lime Open-Knit Scarf",
+          "sourceFiles": [
+            "wardrobe/instagram-C3BgvhGubHJ-01.jpg"
+          ]
+        },
+        {
+          "id": "olive-crochet-bag",
+          "name": "Olive Crochet Bag",
+          "sourceFiles": [
+            "wardrobe/instagram-C3BgvhGubHJ-01.jpg"
+          ]
+        },
+        {
+          "id": "brown-lace-up-boots",
+          "name": "Brown Lace-Up Boots",
+          "sourceFiles": [
+            "wardrobe/instagram-C3BgvhGubHJ-01.jpg"
+          ]
+        },
+        {
+          "id": "white-fluffy-earmuffs",
+          "name": "White Fluffy Earmuffs",
+          "sourceFiles": [
+            "wardrobe/instagram-C3BgvhGubHJ-01.jpg"
+          ]
+        },
+        {
+          "id": "pink-striped-shag-sweater",
+          "name": "Pink Striped Shag Sweater",
+          "sourceFiles": [
+            "wardrobe/instagram-C4y3uCBPrg8-01.jpg"
+          ]
+        },
+        {
+          "id": "burgundy-sheer-column-dress",
+          "name": "Burgundy Sheer Column Dress",
+          "sourceFiles": [
+            "wardrobe/instagram-C5OtnduvOA5-01.jpg"
+          ]
+        },
+        {
+          "id": "white-mega-platform-sneakers",
+          "name": "White Mega Platform Sneakers",
+          "sourceFiles": [
+            "wardrobe/instagram-C5jcK6PvBy3-01.jpg"
+          ]
+        },
+        {
+          "id": "pink-ruffle-top",
+          "name": "Pink Ruffle Top",
+          "sourceFiles": [
+            "wardrobe/instagram-DD0O1WnMt35-01.jpg"
+          ]
+        },
+        {
+          "id": "pink-tie-dye-tights",
+          "name": "Pink Tie-Dye Tights",
+          "sourceFiles": [
+            "wardrobe/instagram-DD0O1WnMt35-01.jpg"
+          ]
+        },
+        {
+          "id": "lavender-check-fuzzy-shoes",
+          "name": "Lavender Check Fuzzy Shoes",
+          "sourceFiles": [
+            "wardrobe/instagram-DD0O1WnMt35-01.jpg"
+          ]
+        },
+        {
+          "id": "olive-cropped-military-jacket",
+          "name": "Olive Cropped Military Jacket",
+          "sourceFiles": [
+            "wardrobe/instagram-DEX0NszoId7-01.jpg"
+          ]
+        },
+        {
+          "id": "black-culottes",
+          "name": "Black Culottes",
+          "sourceFiles": [
+            "wardrobe/instagram-DEX0NszoId7-01.jpg"
+          ]
+        },
+        {
+          "id": "bronze-abstract-gown",
+          "name": "Bronze Abstract Gown",
+          "sourceFiles": [
+            "wardrobe/instagram-DGwWXEqSiE4-02.jpg"
+          ]
+        },
+        {
+          "id": "black-sheer-striped-top",
+          "name": "Black Sheer Striped Top",
+          "sourceFiles": [
+            "wardrobe/instagram-DHCA6tgSYQv-02.jpg"
+          ]
+        },
+        {
+          "id": "black-bow-bubble-skirt",
+          "name": "Black Bow Bubble Skirt",
+          "sourceFiles": [
+            "wardrobe/instagram-DHCA6tgSYQv-02.jpg"
+          ]
+        },
+        {
+          "id": "red-ribbed-tights",
+          "name": "Red Ribbed Tights",
+          "sourceFiles": [
+            "wardrobe/instagram-DHCA6tgSYQv-02.jpg"
+          ]
+        },
+        {
+          "id": "multicolor-ribbed-top",
+          "name": "Multicolor Ribbed Top",
+          "sourceFiles": [
+            "wardrobe/instagram-DHeTQuUyNen-01.jpg"
+          ]
+        },
+        {
+          "id": "green-knit-mini-skirt",
+          "name": "Green Knit Mini Skirt",
+          "sourceFiles": [
+            "wardrobe/instagram-DHeTQuUyNen-01.jpg"
+          ]
+        },
+        {
+          "id": "purple-plaid-tights",
+          "name": "Purple Plaid Tights",
+          "sourceFiles": [
+            "wardrobe/instagram-DHeTQuUyNen-02.jpg"
+          ]
+        },
+        {
+          "id": "silver-over-ear-headphones",
+          "name": "Silver Over-Ear Headphones",
+          "sourceFiles": [
+            "wardrobe/instagram-DHeTQuUyNen-02.jpg"
+          ]
+        },
+        {
+          "id": "multicolor-mesh-top",
+          "name": "Multicolor Mesh Top",
+          "sourceFiles": [
+            "wardrobe/instagram-DICgYMPz--0-01.jpg"
+          ]
+        },
+        {
+          "id": "pink-ruffle-mini-skirt",
+          "name": "Pink Ruffle Mini Skirt",
+          "sourceFiles": [
+            "wardrobe/instagram-DICgYMPz--0-01.jpg"
+          ]
+        },
+        {
+          "id": "green-platform-sneakers",
+          "name": "Green Platform Sneakers",
+          "sourceFiles": [
+            "wardrobe/instagram-DICgYMPz--0-01.jpg"
+          ]
+        },
+        {
+          "id": "blue-striped-fuzzy-sweater",
+          "name": "Blue Striped Fuzzy Sweater",
+          "sourceFiles": [
+            "wardrobe/instagram-DIuF0E7TzEg-01.jpg"
+          ]
+        },
+        {
+          "id": "purple-pleated-skirt",
+          "name": "Purple Pleated Skirt",
+          "sourceFiles": [
+            "wardrobe/instagram-DIuF0E7TzEg-01.jpg"
+          ]
+        },
+        {
+          "id": "pink-lace-up-boots",
+          "name": "Pink Lace-Up Boots",
+          "sourceFiles": [
+            "wardrobe/instagram-DIuF0E7TzEg-01.jpg"
+          ]
+        },
+        {
+          "id": "black-mary-jane-flats",
+          "name": "Black Mary Jane Flats",
+          "sourceFiles": [
+            "wardrobe/instagram-DIuF0E7TzEg-03.jpg"
+          ]
+        },
+        {
+          "id": "navy-pinstripe-ruffle-dress",
+          "name": "Navy Pinstripe Ruffle Dress",
+          "sourceFiles": [
+            "wardrobe/instagram-DKnNUmzz6OU-01.jpg"
+          ]
+        },
+        {
+          "id": "red-corset-top",
+          "name": "Red Corset Top",
+          "sourceFiles": [
+            "wardrobe/instagram-DKxyWOtuWuD-01.jpg"
+          ]
+        },
+        {
+          "id": "red-tiered-maxi-skirt",
+          "name": "Red Tiered Maxi Skirt",
+          "sourceFiles": [
+            "wardrobe/instagram-DKxyWOtuWuD-03.jpg"
+          ]
+        },
+        {
+          "id": "burgundy-orange-circle-dress",
+          "name": "Burgundy Orange Circle Dress",
+          "sourceFiles": [
+            "wardrobe/instagram-DLIhWcZA2xQ-01.jpg"
+          ]
+        },
+        {
+          "id": "teal-sculpted-corset",
+          "name": "Teal Sculpted Corset",
+          "sourceFiles": [
+            "wardrobe/instagram-DK7cgTXORhj-01.jpg"
+          ],
+          "alternateImages": [
+            {
+              "id": "three-quarter-3d-input",
+              "label": "3D reconstruction angle",
+              "image": "/archive/objects/wardrobe/3d-inputs/teal-sculpted-corset-three-quarter.png",
+              "description": "Generated three-quarter catalog view exposing the hollow wearable interior for the Meshy multiview rerun."
+            }
+          ]
+        },
+        {
+          "id": "burgundy-cape-keyhole-top",
+          "name": "Burgundy Cape Keyhole Top",
+          "sourceFiles": [
+            "wardrobe/instagram-DLYnLOLJPxT-02.jpg"
+          ]
+        },
+        {
+          "id": "navy-corset-vest",
+          "name": "Navy Corset Vest",
+          "sourceFiles": [
+            "wardrobe/instagram-DLYnLOLJPxT-04.jpg"
+          ],
+          "alternateImages": [
+            {
+              "id": "hollow-top-3d-input-v3",
+              "label": "Hollow top view",
+              "image": "/archive/objects/wardrobe/3d-inputs/navy-corset-vest-top-v3.png",
+              "description": "Overhead Meshy input exposing the collar, torso cavity, armholes, and open hem."
+            },
+            {
+              "id": "hollow-side-3d-input-v3",
+              "label": "Hollow side view",
+              "image": "/archive/objects/wardrobe/3d-inputs/navy-corset-vest-side-v3.png",
+              "description": "Orthographic side Meshy input establishing shell depth and open passages."
+            },
+            {
+              "id": "hollow-bottom-3d-input-v3",
+              "label": "Hollow underside view",
+              "image": "/archive/objects/wardrobe/3d-inputs/navy-corset-vest-bottom-v3.png",
+              "description": "Underside Meshy input exposing the open hem, collar passage, and both armholes."
+            }
+          ]
+        },
+        {
+          "id": "blue-polka-dot-blouse",
+          "name": "Blue Polka-Dot Blouse",
+          "sourceFiles": [
+            "wardrobe/instagram-DLYnLOLJPxT-04.jpg"
+          ]
+        },
+        {
+          "id": "navy-bubble-skirt",
+          "name": "Navy Bubble Skirt",
+          "sourceFiles": [
+            "wardrobe/instagram-DLYnLOLJPxT-04.jpg"
+          ]
+        },
+        {
+          "id": "star-knee-socks",
+          "name": "Star Knee Socks",
+          "sourceFiles": [
+            "wardrobe/instagram-DLYnLOLJPxT-04.jpg"
+          ]
+        },
+        {
+          "id": "black-mary-jane-wedges",
+          "name": "Black Mary Jane Wedges",
+          "sourceFiles": [
+            "wardrobe/instagram-DLYnLOLJPxT-04.jpg"
+          ]
+        },
+        {
+          "id": "black-sheer-ruffle-blouse",
+          "name": "Black Sheer Ruffle Blouse",
+          "sourceFiles": [
+            "wardrobe/instagram-DMDtrhwSVvv-01.jpg"
+          ]
+        },
+        {
+          "id": "navy-striped-velvet-skirt",
+          "name": "Navy Striped Velvet Skirt",
+          "sourceFiles": [
+            "wardrobe/instagram-DMDtrhwSVvv-01.jpg"
+          ]
+        },
+        {
+          "id": "geometric-striped-tights",
+          "name": "Geometric Striped Tights",
+          "sourceFiles": [
+            "wardrobe/instagram-DMDtrhwSVvv-01.jpg"
+          ]
+        },
+        {
+          "id": "black-knee-boots",
+          "name": "Black Knee Boots",
+          "sourceFiles": [
+            "wardrobe/instagram-DMDtrhwSVvv-01.jpg"
+          ]
+        }
+      ]
+    }
+  ]
+}

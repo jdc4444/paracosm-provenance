@@ -1,0 +1,1549 @@
+{
+  "pipeline": {
+    "id": "abby-unreal-performance",
+    "label": "Abby · Unreal performance capture",
+    "application": "Unreal Engine 5.6.1",
+    "capturedAt": "2024-11-19",
+    "processedAt": "2026-07-31",
+    "archiveVersion": "MySlate v010–v021 · combined queue v006–v036",
+    "registryVersion": "MySlate v021 · ordered queue complete",
+    "archiveRoot": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/JD/00 Reference/Unreal/_Codex Derived/MySlate_2_iPhone/2026-07-30/Windows_Proof_Archive_v010",
+    "bodyArchiveRoot": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/JD/00 Reference/Unreal/_Codex Derived/MySlate_2_iPhone/2026-07-30/Windows_Proof_Archive_v012_BodyRigDiagnostic",
+    "capture": {
+      "duration": "162.4085 s",
+      "rgb": "9,744 frames · 60 fps",
+      "depth": "30 fps · 640 × 360",
+      "device": "iPhone17,2",
+      "identity": "ID_Performer_MySlate_2_TrueDepth_v005",
+      "rawFrames": 1503,
+      "unrealAssets": 53
+    },
+    "gate": {
+      "label": "TrueDepth accepted · combined queue archived",
+      "status": "approved",
+      "detail": "The full MySlate TrueDepth take remains accepted. The UE 5.8.1 combined face+body queue is complete: Loose sway approved, four long vertical takes archived as candidates with coverage limits, VID_1–4 retained as partial-body diagnostics, and hand-only VID_5 rejected."
+    }
+  },
+  "proofs": [
+    {
+      "id": "full-repaired-take",
+      "label": "Full repaired take",
+      "version": "accepted v046 · render v049",
+      "status": "approved",
+      "statusLabel": "Full take accepted",
+      "interval": "0.0–162.3667 s",
+      "sourceFrames": "4,871 rendered frames · 30 fps",
+      "solveOffsets": "TrueDepth solve frames 0–4,870",
+      "processedFrames": "4,871 / 4,871",
+      "summary": "The accepted full TrueDepth performance, shown as one clean Unreal render with the approved Abby presentation camera, map and lighting.",
+      "verdict": "Accepted for non-destructive face/head transfer. Only the known 17–26 second over-expression interval is damped; the rest of the full v040 performance is unchanged.",
+      "sourcePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/JD/00 Reference/Unreal/_Codex Derived/MySlate_2_iPhone/2026-07-30/Windows_Proof_Archive_v020_UnrealFullRender_v049/Outputs/MySlate_2_Abby_Unreal_Full_Render_v049",
+      "sourceFile": "MySlate_2_Abby_Unreal_Full_Repaired_v049_960x540_30fps.mp4",
+      "archivePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/JD/00 Reference/Unreal/_Codex Derived/MySlate_2_iPhone/2026-07-30/Windows_Proof_Archive_v020_UnrealFullRender_v049",
+      "depthDiagnostic": "The under-120 px TrueDepth face-width warning remains in the original solve. The selected v043 family repair corrects the proven neutral-interval amplitude failure without replacing the depth solve.",
+      "lineage": [
+        "CD_MySlate_2_iPhone_v002 · RGB + TrueDepth",
+        "ID_Performer_MySlate_2_TrueDepth_v005",
+        "full source performance v040",
+        "selected repair proof v043 / gate v045",
+        "full repaired sequence v046",
+        "warm-start presentation render v049"
+      ],
+      "observations": [
+        "No previous Unreal performance take and no video-only tracking were used.",
+        "The selected repair changes face-control excursion only from 17–26 seconds, with boundary ramps; head and neck timing remain at 100%.",
+        "The first full render v048 exposed startup hair deformation and was preserved as diagnostic evidence. Render v049 adds warm-up before frame zero without trimming or retiming the animation.",
+        "The site movie is H.264/avc1, 960 × 540, 30 fps, browser fast-start verified and SHA-256 matched after private Dropbox transfer.",
+        "Canonical Abby Unreal, C4D and source-capture assets remain untouched."
+      ],
+      "primaryVersionId": "full-video-v049",
+      "versions": [
+        {
+          "id": "full-video-v049",
+          "label": "Full Unreal render · clean v049",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v049/MySlate_2_Abby_Unreal_Full_Repaired_v049_960x540_30fps.mp4",
+          "mediaType": "video",
+          "poster": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v049/MySlate_2_Abby_Unreal_Full_Repaired_v049_poster.jpg",
+          "width": 960,
+          "height": 540,
+          "status": "approved",
+          "note": "Complete 162.3667-second accepted performance; 4,871 frames with settled hair before frame zero."
+        },
+        {
+          "id": "repair-proof-v045",
+          "label": "Approved 8.5-second repair proof v045",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v046/MySlate_2_source_vs_Abby_repaired_proof_v045.gif",
+          "width": 768,
+          "height": 274,
+          "status": "approved",
+          "note": "Exact source-vs-Abby gate proof for the repaired 17.5–26.0 second interval."
+        },
+        {
+          "id": "repair-sheet-v045",
+          "label": "Repair proof contact sheet v045",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v046/MySlate_2_repaired_proof_contact_sheet_v045.png",
+          "width": 796,
+          "height": 2924,
+          "status": "approved",
+          "note": "Exact-frame still evidence for eyes, brows, mouth and head-motion review."
+        }
+      ],
+      "artifacts": [
+        {
+          "label": "Full render validation v050",
+          "kind": "Report",
+          "url": "/archive/character-reference/abby/avatar-guide/unreal-myslate/documents/MySlate_2_Abby_Unreal_Full_Render_report_v050.md"
+        },
+        {
+          "label": "Repair and transfer report v047",
+          "kind": "Report",
+          "url": "/archive/character-reference/abby/avatar-guide/unreal-myslate/documents/MySlate_2_TrueDepth_face_repair_and_transfer_report_v047.md"
+        },
+        {
+          "label": "Version registry v021",
+          "kind": "Registry",
+          "url": "/archive/character-reference/abby/avatar-guide/unreal-myslate/documents/MySlate_2_VERSION_REGISTRY_v021.md"
+        },
+        {
+          "label": "Full-render archive inventory v020",
+          "kind": "Manifest",
+          "url": "/archive/character-reference/abby/avatar-guide/unreal-myslate/documents/ARCHIVE_INVENTORY_v020.csv"
+        },
+        {
+          "label": "Version registry v019",
+          "kind": "Registry",
+          "url": "/archive/character-reference/abby/avatar-guide/unreal-myslate/documents/MySlate_2_VERSION_REGISTRY_v019.md"
+        },
+        {
+          "label": "Repair archive inventory v018",
+          "kind": "Manifest",
+          "url": "/archive/character-reference/abby/avatar-guide/unreal-myslate/documents/ARCHIVE_INVENTORY_v018.csv"
+        }
+      ]
+    },
+    {
+      "id": "rgb-only-control-v016",
+      "label": "RGB-only control",
+      "version": "video-only v016",
+      "status": "rejected",
+      "statusLabel": "Rejected · no depth",
+      "interval": "17.0–26.0 s",
+      "sourceFrames": "RGB 1020–1559 · full portrait frames",
+      "solveOffsets": "Mono footage frames 0–269",
+      "processedFrames": "270 / 270",
+      "summary": "A strict nine-second control tracked only the untouched portrait RGB frames from MySlate_2_iPhone.mov. It used no depth sequence, calibration, performer identity, prior animation, body take or amplitude repair.",
+      "verdict": "Rejected for the full take: the source turns substantially while Abby stays front-facing, and the eye and lip curves contain large one-frame discontinuities.",
+      "sourcePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/JD/00 Reference/Unreal/_Codex Derived/MySlate_2_iPhone/2026-07-30/Windows_Proof_Archive_v021_MySlate_RGBOnly_v016/Deliverables",
+      "sourceFile": "MySlate_2_17p0_26p0_TrueDepth_vs_RGBOnly_v016.gif",
+      "archivePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/JD/00 Reference/Unreal/_Codex Derived/MySlate_2_iPhone/2026-07-30/Windows_Proof_Archive_v021_MySlate_RGBOnly_v016",
+      "identity": "None · UE 5.6 MonoFootage route",
+      "captureNoteLabel": "Input",
+      "depthDiagnostic": "RGB pixels only. The solve received zero depth sequences, zero camera calibrations and no TrueDepth-derived curves.",
+      "lineage": [
+        "MySlate_2_iPhone.mov RGB pixels only",
+        "270-frame portrait image sequence",
+        "UE 5.6 MonoFootage solve v002",
+        "Abby presentation proof v005",
+        "Control Rig head diagnostic v011",
+        "rejected comparison v016"
+      ],
+      "observations": [
+        "The full 162.4085-second video-only run was not started.",
+        "The source head turn is absent: 15 audited head and neck rotation channels contain zero dynamic keys.",
+        "Eye aim steps by as much as 16.90 degrees in one frame, with left/right divergence risk.",
+        "Several lip-together controls jump by a full 1.0 in one frame.",
+        "The accepted TrueDepth lane remains the production result; this comparison is preserved as diagnostic evidence."
+      ],
+      "primaryVersionId": "rgb-only-comparison-v016",
+      "versions": [
+        {
+          "id": "rgb-only-comparison-v016",
+          "label": "Source · TrueDepth · RGB-only comparison",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/rgb-only-v016/MySlate_2_17p0_26p0_TrueDepth_vs_RGBOnly_v016.gif",
+          "poster": "/archive/character-reference/abby/avatar-guide/unreal-myslate/rgb-only-v016/MySlate_2_17p0_26p0_TrueDepth_vs_RGBOnly_v016_poster.jpg",
+          "width": 1096,
+          "height": 408,
+          "status": "rejected",
+          "note": "Synchronized 9.045-second comparison. The right-hand RGB-only lane remains front-facing during the source head turn."
+        },
+        {
+          "id": "rgb-only-contact-v016",
+          "label": "Six-frame comparison contact sheet",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/rgb-only-v016/MySlate_2_17p0_26p0_TrueDepth_vs_RGBOnly_contact_v016.jpg",
+          "width": 1096,
+          "height": 2448,
+          "status": "rejected",
+          "note": "Matched source frames 1, 54, 108, 162, 216 and 269 for close still review."
+        }
+      ],
+      "artifacts": [
+        {
+          "label": "RGB video-only test report v016",
+          "kind": "Report",
+          "url": "/archive/character-reference/abby/avatar-guide/unreal-myslate/documents/REPORT_MySlate_2_RGB_video_only_v016.md"
+        },
+        {
+          "label": "RGB-only manifest v016",
+          "kind": "Manifest",
+          "url": "/archive/character-reference/abby/avatar-guide/unreal-myslate/documents/MANIFEST_MySlate_2_RGBOnly_v016.json"
+        },
+        {
+          "label": "Archive verification v016",
+          "kind": "Verification",
+          "url": "/archive/character-reference/abby/avatar-guide/unreal-myslate/documents/ARCHIVE_VERIFICATION_MySlate_2_RGBOnly_v016.md"
+        },
+        {
+          "label": "RGB-only version registry v016",
+          "kind": "Registry",
+          "url": "/archive/character-reference/abby/avatar-guide/unreal-myslate/documents/VERSION_REGISTRY_MySlate_2_RGBOnly_v016.md"
+        }
+      ]
+    },
+    {
+      "id": "source-package",
+      "label": "TrueDepth source package",
+      "version": "ingest v002 · registry v013",
+      "status": "approved",
+      "statusLabel": "Approved input",
+      "interval": "Full take · 162.4085 s",
+      "summary": "Canonical RGB, TrueDepth and take metadata are preserved together. No video-only tracking was used.",
+      "verdict": "The source package and performer identity are valid, versioned and read-only.",
+      "sourcePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/JD/00 Reference/Unreal/_Codex Derived/MySlate_2_iPhone/2026-07-30/Windows_Proof_Archive_v010",
+      "sourceFile": "Windows_Proof_Archive_v010",
+      "depthDiagnostic": "The promoted neutral identity face is under 120 px wide in the depth map; this remains a likely source of solve-amplitude error.",
+      "lineage": [
+        "CD_MySlate_2_iPhone_v002",
+        "ID_Performer_MySlate_2_TrueDepth_v005",
+        "SK_ID_Performer_MySlate_2_TrueDepth_v005"
+      ],
+      "observations": [
+        "1,580 archive files were size/hash verified with zero mismatches across the facial and body-rig mirrors.",
+        "35 native Unreal derived assets and 1,503 raw proof frames remain in the immutable archives.",
+        "Canonical Abby Unreal, C4D and capture files were not overwritten."
+      ],
+      "primaryVersionId": "source-survey-v009",
+      "versions": [
+        {
+          "id": "source-survey-v009",
+          "label": "Full-take source survey",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v009/MySlate_2_full_take_5s_sampling_v009.png",
+          "width": 1224,
+          "height": 1192,
+          "status": "diagnostic",
+          "note": "Source-only five-second sampling across the complete take."
+        }
+      ],
+      "artifacts": [
+        {
+          "label": "Version registry v011",
+          "kind": "Registry",
+          "url": "/archive/character-reference/abby/avatar-guide/unreal-myslate/documents/MySlate_2_VERSION_REGISTRY_v011.md"
+        },
+        {
+          "label": "Archive inventory v010",
+          "kind": "Manifest",
+          "url": "/archive/character-reference/abby/avatar-guide/unreal-myslate/documents/ARCHIVE_INVENTORY_v010.csv"
+        },
+        {
+          "label": "Windows preflight",
+          "kind": "Report",
+          "url": "/archive/character-reference/abby/avatar-guide/unreal-myslate/documents/MySlate_2_iPhone_Windows_preflight_2026-07-30.md"
+        },
+        {
+          "label": "Execution status",
+          "kind": "Report",
+          "url": "/archive/character-reference/abby/avatar-guide/unreal-myslate/documents/MySlate_2_Windows_execution_status_2026-07-30.md"
+        },
+        {
+          "label": "Version registry v013",
+          "kind": "Registry",
+          "url": "/archive/character-reference/abby/avatar-guide/unreal-myslate/documents/MySlate_2_VERSION_REGISTRY_v013.md"
+        },
+        {
+          "label": "Body-rig archive inventory v012",
+          "kind": "Manifest",
+          "url": "/archive/character-reference/abby/avatar-guide/unreal-myslate/documents/ARCHIVE_INVENTORY_v012.csv"
+        }
+      ]
+    },
+    {
+      "id": "proof-17-26",
+      "label": "17–26 s transfer proof",
+      "version": "performer identity v005",
+      "status": "rejected",
+      "statusLabel": "Rejected proof",
+      "interval": "17.0–26.0 s",
+      "sourceFrames": "RGB 1020–1560",
+      "solveOffsets": "Depth 510–780",
+      "processedFrames": "270 / 270",
+      "summary": "The current performer-ID proof uses only the MySlate TrueDepth take and the approved Abby actor.",
+      "verdict": "Head-turn timing is correct, but a largely neutral performer drives severe facial gesticulation. Do not extend this solve to the full take.",
+      "sourcePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/JD/00 Reference/Unreal/_Codex Derived/MySlate_2_iPhone/2026-07-30/Windows_Proof_Archive_v010/Windows_Outputs/outputs/MySlate_2_iPhone_proof_v009_PerformerID",
+      "sourceFile": "MySlate_2_source_vs_Abby_proof_PerformerID_v009.gif",
+      "depthDiagnostic": "All proof identity frames retain the under-120 px face-width warning.",
+      "lineage": [
+        "MHP performer proof v005",
+        "official sequence v006",
+        "body/head + face bakes v007",
+        "presentation sequence v008",
+        "comparison v009"
+      ],
+      "observations": [
+        "No previous Unreal performance take was blended into this proof.",
+        "The face, rather than body animation, causes the apparent gesticulation.",
+        "The earlier incorrect-identity comparison remains selectable below for lineage."
+      ],
+      "primaryVersionId": "performer-id-v009",
+      "versions": [
+        {
+          "id": "performer-id-v009",
+          "label": "Performer identity comparison v009",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v009/MySlate_2_source_vs_Abby_proof_PerformerID_v009.gif",
+          "width": 768,
+          "height": 274,
+          "status": "rejected",
+          "note": "Correct TrueDepth and performer-ID lineage; rejected for excessive facial amplitude."
+        },
+        {
+          "id": "performer-id-sheet-v009",
+          "label": "Performer identity contact sheet v009",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v009/MySlate_2_source_vs_Abby_contact_sheet_PerformerID_v009.png",
+          "width": 796,
+          "height": 2924,
+          "status": "rejected",
+          "note": "Still evidence of the source/output amplitude mismatch."
+        },
+        {
+          "id": "early-comparison-v016",
+          "label": "Earlier incorrect-identity comparison v016",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v016/MySlate_2_source_vs_Abby_proof_v016.gif",
+          "width": 768,
+          "height": 274,
+          "status": "superseded",
+          "note": "Superseded early comparison retained for version history."
+        },
+        {
+          "id": "early-sheet-v016",
+          "label": "Earlier incorrect-identity contact sheet v016",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v016/MySlate_2_source_vs_Abby_contact_sheet_v016.png",
+          "width": 796,
+          "height": 2924,
+          "status": "superseded",
+          "note": "Superseded source-paired stills."
+        }
+      ],
+      "artifacts": [
+        {
+          "label": "Proof evidence v009",
+          "kind": "Report",
+          "url": "/archive/character-reference/abby/avatar-guide/unreal-myslate/documents/MySlate_2_proof_evidence_v009.md"
+        },
+        {
+          "label": "Performer-ID Face_Archetype v005",
+          "kind": "FBX",
+          "url": "/archive/character-reference/abby/avatar-guide/unreal-myslate/exports/Face_Archetype_MySlate_2_17s_26s_PerformerID_v005.fbx",
+          "download": true
+        },
+        {
+          "label": "Early Face_Archetype v002",
+          "kind": "FBX",
+          "url": "/archive/character-reference/abby/avatar-guide/unreal-myslate/exports/Face_Archetype_MySlate_2_17s_26s_v002.fbx",
+          "download": true
+        }
+      ]
+    },
+    {
+      "id": "focused-neutral",
+      "label": "Focused / near-neutral",
+      "version": "proof v020",
+      "status": "candidate",
+      "statusLabel": "Best neutral",
+      "interval": "10.5–13.7 s",
+      "sourceFrames": "RGB 630–822",
+      "solveOffsets": "Depth 315–411",
+      "processedFrames": "96 / 96",
+      "summary": "A restrained interval used to determine whether the solver is uniformly overdriven.",
+      "verdict": "Best neutral diagnostic. Eyes and blinks are broadly plausible; brows, cheeks, jaw and lips stay close to source.",
+      "sourcePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/JD/00 Reference/Unreal/_Codex Derived/MySlate_2_iPhone/2026-07-30/Windows_Proof_Archive_v010/Windows_Outputs/outputs/MySlate_2_expression_v020_FocusedNeutral_10p5_13p7",
+      "sourceFile": "MySlate_2_source_vs_Abby_v020.gif",
+      "depthDiagnostic": "All 96 processed frames warn that face width is under 120 px.",
+      "lineage": [
+        "MHP v020",
+        "official sequence v020",
+        "body/head + face bakes v020",
+        "presentation sequence v020"
+      ],
+      "observations": [
+        "Clean v027 comparisons begin after the 15-frame asset-streaming window.",
+        "No wild gesticulation is visible in this interval."
+      ],
+      "primaryVersionId": "abby-video-v027",
+      "versions": [
+        {
+          "id": "abby-video-v027",
+          "label": "Abby render · clean video",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v020/abby-clean-v027.mp4",
+          "mediaType": "video",
+          "poster": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v020/abby-clean-v027.jpg",
+          "width": 960,
+          "height": 540,
+          "status": "candidate",
+          "note": "Independent Unreal render with no source-layout crop."
+        },
+        {
+          "id": "source-video-v027",
+          "label": "Source · full portrait video",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v020/source-full-frame-v027.mp4",
+          "mediaType": "video",
+          "poster": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v020/source-full-frame-v027.jpg",
+          "width": 720,
+          "height": 1280,
+          "status": "candidate",
+          "note": "Complete uncropped portrait frame from the exact ingested MOV."
+        },
+        {
+          "id": "clean-v027",
+          "label": "Archive · paired crop v027",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v020/source-vs-abby-clean-v027.gif",
+          "width": 768,
+          "height": 277,
+          "status": "candidate",
+          "note": "Cropped only for the legacy side-by-side presentation."
+        },
+        {
+          "id": "clean-sheet-v027",
+          "label": "Archive · contact-sheet crop v027",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v020/contact-sheet-clean-v027.png",
+          "width": 796,
+          "height": 2085,
+          "status": "candidate",
+          "note": "Cropped presentation evidence; not the media supplied to Unreal."
+        },
+        {
+          "id": "original-v020",
+          "label": "Archive · original paired crop v020",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v020/source-vs-abby-original-v020.gif",
+          "width": 768,
+          "height": 277,
+          "status": "superseded",
+          "note": "Legacy cropped layout retained with the initial asset-streaming frames."
+        },
+        {
+          "id": "original-sheet-v020",
+          "label": "Archive · original sheet crop v020",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v020/contact-sheet-original-v020.png",
+          "width": 796,
+          "height": 2085,
+          "status": "superseded",
+          "note": "Legacy cropped still layout retained for lineage only."
+        }
+      ],
+      "artifacts": []
+    },
+    {
+      "id": "soft-smile",
+      "label": "Soft smile",
+      "version": "proof v021",
+      "status": "candidate",
+      "statusLabel": "Promising",
+      "interval": "28.6–33.5 s",
+      "sourceFrames": "RGB 1716–2010",
+      "solveOffsets": "Depth 858–1005",
+      "processedFrames": "147 / 147",
+      "summary": "A low-to-moderate positive expression test using the same performer identity and TrueDepth take.",
+      "verdict": "Recognizable and materially better than the 17–26 s proof, although eye widening and smile anatomy remain stylized.",
+      "sourcePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/JD/00 Reference/Unreal/_Codex Derived/MySlate_2_iPhone/2026-07-30/Windows_Proof_Archive_v010/Windows_Outputs/outputs/MySlate_2_expression_v021_SoftSmile_28p6_33p5",
+      "sourceFile": "MySlate_2_source_vs_Abby_v021.gif",
+      "depthDiagnostic": "All 147 processed frames warn that face width is under 120 px.",
+      "lineage": [
+        "MHP v021",
+        "official sequence v021",
+        "body/head + face bakes v021",
+        "presentation sequence v021"
+      ],
+      "observations": [
+        "Smile timing is recognizable.",
+        "Brows remain restrained and head motion is stable."
+      ],
+      "primaryVersionId": "abby-video-v027",
+      "versions": [
+        {
+          "id": "abby-video-v027",
+          "label": "Abby render · clean video",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v021/abby-clean-v027.mp4",
+          "mediaType": "video",
+          "poster": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v021/abby-clean-v027.jpg",
+          "width": 960,
+          "height": 540,
+          "status": "candidate",
+          "note": "Independent Unreal render with no source-layout crop."
+        },
+        {
+          "id": "source-video-v027",
+          "label": "Source · full portrait video",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v021/source-full-frame-v027.mp4",
+          "mediaType": "video",
+          "poster": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v021/source-full-frame-v027.jpg",
+          "width": 720,
+          "height": 1280,
+          "status": "candidate",
+          "note": "Complete uncropped portrait frame from the exact ingested MOV."
+        },
+        {
+          "id": "clean-v027",
+          "label": "Archive · paired crop v027",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v021/source-vs-abby-clean-v027.gif",
+          "width": 768,
+          "height": 277,
+          "status": "candidate",
+          "note": "Cropped only for the legacy side-by-side presentation."
+        },
+        {
+          "id": "clean-sheet-v027",
+          "label": "Archive · contact-sheet crop v027",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v021/contact-sheet-clean-v027.png",
+          "width": 796,
+          "height": 2085,
+          "status": "candidate",
+          "note": "Cropped presentation evidence; not the media supplied to Unreal."
+        },
+        {
+          "id": "original-v021",
+          "label": "Archive · original paired crop v021",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v021/source-vs-abby-original-v021.gif",
+          "width": 768,
+          "height": 277,
+          "status": "superseded",
+          "note": "Legacy cropped layout retained with the initial asset-streaming frames."
+        },
+        {
+          "id": "original-sheet-v021",
+          "label": "Archive · original sheet crop v021",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v021/contact-sheet-original-v021.png",
+          "width": 796,
+          "height": 2085,
+          "status": "superseded",
+          "note": "Legacy cropped still layout retained for lineage only."
+        }
+      ],
+      "artifacts": []
+    },
+    {
+      "id": "delighted-side-glance",
+      "label": "Delighted side glance",
+      "version": "proof v022",
+      "status": "candidate",
+      "statusLabel": "Best expressive",
+      "interval": "57.4–64.2 s",
+      "sourceFrames": "RGB 3444–3852",
+      "solveOffsets": "Depth 1722–1926",
+      "processedFrames": "204 / 204",
+      "summary": "A gaze, head-turn and smile interval used to test whether the valid head motion can be preserved.",
+      "verdict": "Strongest expressive match. Gaze and head-turn timing transfer well; the eyelids and teeth are occasionally stronger than source.",
+      "sourcePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/JD/00 Reference/Unreal/_Codex Derived/MySlate_2_iPhone/2026-07-30/Windows_Proof_Archive_v010/Windows_Outputs/outputs/MySlate_2_expression_v022_DelightedSideGlance_57p4_64p2",
+      "sourceFile": "MySlate_2_source_vs_Abby_v022.gif",
+      "depthDiagnostic": "All 204 processed frames warn that face width is under 120 px.",
+      "lineage": [
+        "MHP v022",
+        "official sequence v022",
+        "body/head + face bakes v022",
+        "presentation sequence v022"
+      ],
+      "observations": [
+        "Turn direction and timing are correct.",
+        "Positive expression timing is captured without the severe 17–26 s overdrive."
+      ],
+      "primaryVersionId": "abby-video-v027",
+      "versions": [
+        {
+          "id": "abby-video-v027",
+          "label": "Abby render · clean video",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v022/abby-clean-v027.mp4",
+          "mediaType": "video",
+          "poster": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v022/abby-clean-v027.jpg",
+          "width": 960,
+          "height": 540,
+          "status": "candidate",
+          "note": "Independent Unreal render with no source-layout crop."
+        },
+        {
+          "id": "source-video-v027",
+          "label": "Source · full portrait video",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v022/source-full-frame-v027.mp4",
+          "mediaType": "video",
+          "poster": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v022/source-full-frame-v027.jpg",
+          "width": 720,
+          "height": 1280,
+          "status": "candidate",
+          "note": "Complete uncropped portrait frame from the exact ingested MOV."
+        },
+        {
+          "id": "clean-v027",
+          "label": "Archive · paired crop v027",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v022/source-vs-abby-clean-v027.gif",
+          "width": 768,
+          "height": 277,
+          "status": "candidate",
+          "note": "Cropped only for the legacy side-by-side presentation."
+        },
+        {
+          "id": "clean-sheet-v027",
+          "label": "Archive · contact-sheet crop v027",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v022/contact-sheet-clean-v027.png",
+          "width": 796,
+          "height": 2085,
+          "status": "candidate",
+          "note": "Cropped presentation evidence; not the media supplied to Unreal."
+        },
+        {
+          "id": "original-v022",
+          "label": "Archive · original paired crop v022",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v022/source-vs-abby-original-v022.gif",
+          "width": 768,
+          "height": 277,
+          "status": "superseded",
+          "note": "Legacy cropped layout retained with the initial asset-streaming frames."
+        },
+        {
+          "id": "original-sheet-v022",
+          "label": "Archive · original sheet crop v022",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v022/contact-sheet-original-v022.png",
+          "width": 796,
+          "height": 2085,
+          "status": "superseded",
+          "note": "Legacy cropped still layout retained for lineage only."
+        }
+      ],
+      "artifacts": []
+    },
+    {
+      "id": "scared",
+      "label": "Scared",
+      "version": "proof v023",
+      "status": "rejected",
+      "statusLabel": "Needs remap",
+      "interval": "86.9–94.6 s",
+      "sourceFrames": "RGB 5214–5676",
+      "solveOffsets": "Depth 2607–2838",
+      "processedFrames": "231 / 231",
+      "summary": "A high-amplitude negative-expression test focused on the eye, lid, brow and mouth families.",
+      "verdict": "Rejected diagnostic. Concern in the source brows is underrepresented while Abby's lips repeatedly part and expose teeth after the source mouth returns near rest.",
+      "sourcePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/JD/00 Reference/Unreal/_Codex Derived/MySlate_2_iPhone/2026-07-30/Windows_Proof_Archive_v010/Windows_Outputs/outputs/MySlate_2_expression_v023_Scared_86p9_94p6",
+      "sourceFile": "MySlate_2_source_vs_Abby_v023.gif",
+      "depthDiagnostic": "All 231 processed frames warn that face width is under 120 px.",
+      "lineage": [
+        "MHP v023",
+        "official sequence v023",
+        "body/head + face bakes v023",
+        "presentation sequence v023"
+      ],
+      "observations": [
+        "Eye direction changes transfer, but eye/lid balance does not consistently match.",
+        "Repair needs family-specific mouth and brow remapping, not one global multiplier."
+      ],
+      "primaryVersionId": "abby-video-v027",
+      "versions": [
+        {
+          "id": "abby-video-v027",
+          "label": "Abby render · clean video",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v023/abby-clean-v027.mp4",
+          "mediaType": "video",
+          "poster": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v023/abby-clean-v027.jpg",
+          "width": 960,
+          "height": 540,
+          "status": "rejected",
+          "note": "Independent Unreal render with no source-layout crop."
+        },
+        {
+          "id": "source-video-v027",
+          "label": "Source · full portrait video",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v023/source-full-frame-v027.mp4",
+          "mediaType": "video",
+          "poster": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v023/source-full-frame-v027.jpg",
+          "width": 720,
+          "height": 1280,
+          "status": "rejected",
+          "note": "Complete uncropped portrait frame from the exact ingested MOV."
+        },
+        {
+          "id": "clean-v027",
+          "label": "Archive · paired crop v027",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v023/source-vs-abby-clean-v027.gif",
+          "width": 768,
+          "height": 277,
+          "status": "rejected",
+          "note": "Cropped only for the legacy side-by-side presentation."
+        },
+        {
+          "id": "clean-sheet-v027",
+          "label": "Archive · contact-sheet crop v027",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v023/contact-sheet-clean-v027.png",
+          "width": 796,
+          "height": 2085,
+          "status": "rejected",
+          "note": "Cropped presentation evidence; not the media supplied to Unreal."
+        },
+        {
+          "id": "original-v023",
+          "label": "Archive · original paired crop v023",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v023/source-vs-abby-original-v023.gif",
+          "width": 768,
+          "height": 277,
+          "status": "superseded",
+          "note": "Legacy cropped layout retained with the initial asset-streaming frames."
+        },
+        {
+          "id": "original-sheet-v023",
+          "label": "Archive · original sheet crop v023",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v023/contact-sheet-original-v023.png",
+          "width": 796,
+          "height": 2085,
+          "status": "superseded",
+          "note": "Legacy cropped still layout retained for lineage only."
+        }
+      ],
+      "artifacts": []
+    },
+    {
+      "id": "surprise",
+      "label": "Surprise",
+      "version": "proof v024",
+      "status": "rejected",
+      "statusLabel": "Needs remap",
+      "interval": "94.9–101.4 s",
+      "sourceFrames": "RGB 5694–6084",
+      "solveOffsets": "Depth 2847–3042",
+      "processedFrames": "195 / 195",
+      "summary": "A high-amplitude eye, brow and jaw test.",
+      "verdict": "Rejected diagnostic. Abby holds an open tooth-bearing mouth while the source alternates among pursed, closed-lip and closed-eye poses.",
+      "sourcePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/JD/00 Reference/Unreal/_Codex Derived/MySlate_2_iPhone/2026-07-30/Windows_Proof_Archive_v010/Windows_Outputs/outputs/MySlate_2_expression_v024_Surprise_94p9_101p4",
+      "sourceFile": "MySlate_2_source_vs_Abby_v024.gif",
+      "depthDiagnostic": "All 195 processed frames warn that face width is under 120 px.",
+      "lineage": [
+        "MHP v024",
+        "official sequence v024",
+        "body/head + face bakes v024",
+        "presentation sequence v024"
+      ],
+      "observations": [
+        "Head/profile timing remains plausible.",
+        "Mouth damping and surprise-brow remapping must be tuned separately."
+      ],
+      "primaryVersionId": "abby-video-v027",
+      "versions": [
+        {
+          "id": "abby-video-v027",
+          "label": "Abby render · clean video",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v024/abby-clean-v027.mp4",
+          "mediaType": "video",
+          "poster": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v024/abby-clean-v027.jpg",
+          "width": 960,
+          "height": 540,
+          "status": "rejected",
+          "note": "Independent Unreal render with no source-layout crop."
+        },
+        {
+          "id": "source-video-v027",
+          "label": "Source · full portrait video",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v024/source-full-frame-v027.mp4",
+          "mediaType": "video",
+          "poster": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v024/source-full-frame-v027.jpg",
+          "width": 720,
+          "height": 1280,
+          "status": "rejected",
+          "note": "Complete uncropped portrait frame from the exact ingested MOV."
+        },
+        {
+          "id": "clean-v027",
+          "label": "Archive · paired crop v027",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v024/source-vs-abby-clean-v027.gif",
+          "width": 768,
+          "height": 277,
+          "status": "rejected",
+          "note": "Cropped only for the legacy side-by-side presentation."
+        },
+        {
+          "id": "clean-sheet-v027",
+          "label": "Archive · contact-sheet crop v027",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v024/contact-sheet-clean-v027.png",
+          "width": 796,
+          "height": 2085,
+          "status": "rejected",
+          "note": "Cropped presentation evidence; not the media supplied to Unreal."
+        },
+        {
+          "id": "face-safe-v028",
+          "label": "Paired close-up · face-safe crop v028",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v024/source-vs-abby-face-safe-v028.gif",
+          "width": 768,
+          "height": 277,
+          "status": "rejected",
+          "note": "Reframed after the streaming window so Abby's full forehead, eyes, mouth and chin remain visible."
+        },
+        {
+          "id": "original-sheet-v024",
+          "label": "Archive · original sheet crop v024",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v024/contact-sheet-original-v024.png",
+          "width": 796,
+          "height": 2085,
+          "status": "superseded",
+          "note": "Legacy cropped still layout retained for lineage only."
+        },
+        {
+          "id": "original-v024",
+          "label": "Archive · superseded paired crop v024",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v024/source-vs-abby-original-v024.gif",
+          "width": 768,
+          "height": 277,
+          "status": "superseded",
+          "note": "Original streaming-window comparison preserved after the Version 5 reframe."
+        }
+      ],
+      "artifacts": []
+    },
+    {
+      "id": "cross-section",
+      "label": "Expression cross-section",
+      "version": "diagnosis v027",
+      "status": "diagnostic",
+      "statusLabel": "Primary diagnosis",
+      "interval": "Five intervals · 10.5–101.4 s",
+      "summary": "One vertical comparison of the five neutral-to-high-expression intervals.",
+      "verdict": "The solver is not uniformly broken. Neutral, soft smile and delighted side glance are much better; scared and surprise expose family-specific eye, brow, jaw and mouth errors.",
+      "sourcePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/JD/00 Reference/Unreal/_Codex Derived/MySlate_2_iPhone/2026-07-30/Windows_Proof_Archive_v010/Windows_Outputs/outputs/MySlate_2_expression_cross_section_v027",
+      "sourceFile": "MySlate_2_expression_cross_section_v027.png",
+      "depthDiagnostic": "Every interval retains the under-120 px face-width warning.",
+      "lineage": [
+        "proofs v020–v024",
+        "clean comparison collection v027",
+        "cross-interval report v027"
+      ],
+      "observations": [
+        "The 17–26 s proof is a severe outlier.",
+        "Simple global damping would flatten valid gaze and head motion while failing to correct the semantic mouth/brow errors."
+      ],
+      "primaryVersionId": "clean-v027",
+      "versions": [
+        {
+          "id": "clean-v027",
+          "label": "Clean cross-section v027",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v027/cross-section-clean-v027.png",
+          "width": 664,
+          "height": 3845,
+          "status": "diagnostic",
+          "note": "Primary cross-interval evidence, paired after the streaming window."
+        },
+        {
+          "id": "original-v020-v024",
+          "label": "Original cross-section v020–v024",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v027/cross-section-original-v020-v024.png",
+          "width": 664,
+          "height": 3845,
+          "status": "superseded",
+          "note": "Earlier cross-section retained with the initial streaming frames."
+        }
+      ],
+      "artifacts": [
+        {
+          "label": "Expression diagnosis v027",
+          "kind": "Report",
+          "url": "/archive/character-reference/abby/avatar-guide/unreal-myslate/documents/MySlate_2_expression_diagnostic_report_v027.md"
+        }
+      ]
+    },
+    {
+      "id": "wide-body-audit",
+      "label": "Wide body audit",
+      "version": "proof v026",
+      "status": "diagnostic",
+      "statusLabel": "Body is static",
+      "interval": "17.0–26.0 s",
+      "sourceFrames": "270 rendered frames",
+      "processedFrames": "1,009 body channels audited",
+      "summary": "The rejected facial solve is shown in a wider frame to test for an old body take or unintended body-animation blend.",
+      "verdict": "No body contamination. All 1,009 Body Control Rig channels are static at tolerance 1e-6; the apparent gesticulation is facial/head performance.",
+      "sourcePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/JD/00 Reference/Unreal/_Codex Derived/MySlate_2_iPhone/2026-07-30/Windows_Proof_Archive_v010/Windows_Outputs/outputs/MySlate_2_expression_v026_CurrentSolve_WideBodyAudit",
+      "sourceFile": "MySlate_2_current_solve_wide_body_audit_v026.gif",
+      "depthDiagnostic": "This take contains facial TrueDepth plus head/neck motion only; it is not body mocap.",
+      "lineage": [
+        "rejected v007 body/head and face bakes",
+        "sequence-only 320 cm camera pullback",
+        "wide audit v026"
+      ],
+      "observations": [
+        "The current Abby body and wardrobe remain present throughout the proof.",
+        "A separate direct-key rig validation is being archived independently from the facial-performance take."
+      ],
+      "primaryVersionId": "wide-animation-v026",
+      "versions": [
+        {
+          "id": "wide-animation-v026",
+          "label": "Wide audit animation v026",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v026/MySlate_2_current_solve_wide_body_audit_v026.gif",
+          "width": 640,
+          "height": 360,
+          "status": "diagnostic",
+          "note": "Current facial solve only; wider camera, unchanged approved map."
+        },
+        {
+          "id": "wide-sheet-v026",
+          "label": "Wide audit contact sheet v026",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v026/MySlate_2_current_solve_wide_body_contact_sheet_v026.png",
+          "width": 504,
+          "height": 2730,
+          "status": "diagnostic",
+          "note": "Still evidence across the complete 270-frame interval."
+        }
+      ],
+      "artifacts": []
+    },
+    {
+      "id": "body-rig-integrity",
+      "label": "Body-rig integrity",
+      "version": "proof v036",
+      "status": "diagnostic",
+      "statusLabel": "Rig confirmed",
+      "interval": "3.0 s · 90 frames",
+      "sourceFrames": "Derived-only diagnostic",
+      "solveOffsets": "No facial solve",
+      "processedFrames": "35 keys · 5 channels",
+      "summary": "A deliberate left-arm and torso pose test on a separate derived sequence, created only to distinguish a static facial take from a broken body rig.",
+      "verdict": "Passed. Abby's left arm, torso, skinned body and visible sleeve follow the keyed Body Control Rig pose, then return to the unchanged rest pose.",
+      "sourcePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/JD/00 Reference/Unreal/_Codex Derived/MySlate_2_iPhone/2026-07-30/Windows_Proof_Archive_v012_BodyRigDiagnostic/outputs/MySlate_2_body_rig_diagnostic_v036",
+      "sourceFile": "MySlate_2_Abby_body_rig_integrity_v036.gif",
+      "archivePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/JD/00 Reference/Unreal/_Codex Derived/MySlate_2_iPhone/2026-07-30/Windows_Proof_Archive_v012_BodyRigDiagnostic",
+      "depthDiagnostic": "This is not performer mocap and does not use the TrueDepth facial solve. It validates rig response only.",
+      "lineage": [
+        "v033 FK setter attempt · superseded",
+        "v034 explicit IK attempt · superseded",
+        "v035 wide explicit IK attempt · superseded",
+        "v036 direct Control Rig keys · passed"
+      ],
+      "observations": [
+        "The body mesh is skinned to the MetaHuman body skeleton and driven by the 1,009-channel MetaHuman Control Rig.",
+        "The MySlate facial take had static body channels because it supplies no full-body input, not because Abby was unrigged.",
+        "Garments and shoes still need a dedicated runtime copy-pose audit before a future full-body animation pass.",
+        "No previous Unreal performance take was blended and no canonical Abby asset was overwritten."
+      ],
+      "primaryVersionId": "rig-animation-v036",
+      "versions": [
+        {
+          "id": "rig-animation-v036",
+          "label": "Body-rig response animation v036",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v036/MySlate_2_Abby_body_rig_integrity_v036.gif",
+          "width": 720,
+          "height": 440,
+          "status": "diagnostic",
+          "note": "Authoritative direct-key test: pose, return to rest, repeat."
+        },
+        {
+          "id": "rig-sheet-v036",
+          "label": "Body-rig contact sheet v036",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-myslate/v036/MySlate_2_Abby_body_rig_contact_sheet_v036.png",
+          "width": 720,
+          "height": 2245,
+          "status": "diagnostic",
+          "note": "Exact test frames 15, 30, 45, 60 and 75."
+        }
+      ],
+      "artifacts": [
+        {
+          "label": "Body-rig diagnostic v036",
+          "kind": "Report",
+          "url": "/archive/character-reference/abby/avatar-guide/unreal-myslate/documents/MySlate_2_Abby_body_rig_diagnostic_report_v036.md"
+        },
+        {
+          "label": "Version registry v013",
+          "kind": "Registry",
+          "url": "/archive/character-reference/abby/avatar-guide/unreal-myslate/documents/MySlate_2_VERSION_REGISTRY_v013.md"
+        },
+        {
+          "label": "Body-rig archive inventory v012",
+          "kind": "Manifest",
+          "url": "/archive/character-reference/abby/avatar-guide/unreal-myslate/documents/ARCHIVE_INVENTORY_v012.csv"
+        }
+      ]
+    },
+    {
+      "id": "img-0347-loose-sway-combined-v036",
+      "label": "Loose sway · combined face + body",
+      "version": "approved v036",
+      "status": "approved",
+      "statusLabel": "Approved gate",
+      "engine": "Unreal Engine 5.8.1",
+      "interval": "IMG_0347 · 19.0–28.0 s",
+      "sourceFrames": "540 solve samples · 270 proof frames",
+      "processedFrames": "Face 528 / 540 · body 539 / 540",
+      "summary": "The nine-second gate uses one official MetaHuman Performance solve with Facial Tracking and Body Tracking enabled together on the same upright IMG_0347 footage.",
+      "verdict": "Passed. Face continuity reaches 97.778%, body reaches 99.815%, and the synchronized proof preserves the source sway, weight shifts, hands, head turns, mouth shapes and grounded full figure.",
+      "sourcePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/JD/00 Reference/Video/IMG_0347.MOV",
+      "sourceFile": "IMG_0347.MOV",
+      "archivePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/JD/00 Reference/Unreal/_Codex Derived/MySlate_2_iPhone/2026-07-30/IMG_0347_LooseSway/v036_Approved",
+      "identity": "Abby production MetaHuman rig · same-source face + body",
+      "captureNoteLabel": "Capture note",
+      "depthDiagnostic": "Single-camera RGB markerless solve. Official Small Face Detector and Small Face Solver were used; no MySlate curves, neutral hold, previous body motion or another take was blended.",
+      "lineage": [
+        "immutable IMG_0347.MOV · SHA-256 5ed89e…f38e",
+        "upright 2160 × 3840 source handling",
+        "single MHP solve · face + body · 75° head range",
+        "durable derived Abby sequence and ground-QA camera",
+        "approved v036 archive"
+      ],
+      "observations": [
+        "The earlier v021 proof is preserved below and remains rejected because face coverage was only 55.37%.",
+        "The v036 solve recovers the deep head tilts without a material mid-performance gap.",
+        "Hands and wrists retain the source timing; expected silhouette differences come from Abby's proportions.",
+        "Canonical Abby, plugin and source assets remain untouched."
+      ],
+      "primaryVersionId": "loose-sway-approved-video-v036",
+      "versions": [
+        {
+          "id": "loose-sway-approved-video-v036",
+          "label": "Approved synchronized proof v036",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-performance/loose-sway-v036/source-vs-abby-approved-v036-web.mp4",
+          "mediaType": "video",
+          "poster": "/archive/character-reference/abby/avatar-guide/unreal-performance/loose-sway-v036/Source_vs_Abby_IMG0347_LooseSway_19_28_HeadRange75_Ground_v032_contact_sheet.jpg",
+          "width": 960,
+          "height": 540,
+          "status": "approved",
+          "note": "Nine-second source-vs-Abby proof with unified face/body solve and ground-QA framing."
+        },
+        {
+          "id": "loose-sway-approved-sheet-v032",
+          "label": "Approved full-body contact sheet v032",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-performance/loose-sway-v036/Source_vs_Abby_IMG0347_LooseSway_19_28_HeadRange75_Ground_v032_contact_sheet.jpg",
+          "width": 1440,
+          "height": 1080,
+          "status": "approved",
+          "note": "Same-time source and Abby samples across the complete gate."
+        },
+        {
+          "id": "loose-sway-face-sheet-v036",
+          "label": "Approved facial QA v036",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-performance/loose-sway-v036/Source_vs_Abby_IMG0347_LooseSway_19_28_HeadRange75_Ground_v036_face_contact.jpg",
+          "width": 1024,
+          "height": 1536,
+          "status": "approved",
+          "note": "Fixed-framing facial pairs for eyes, lids, brows, mouth and head beats."
+        },
+        {
+          "id": "loose-sway-rejected-video-v021",
+          "label": "Rejected face-gap proof v021",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-performance/loose-sway-v036/source-vs-abby-diagnostic-v021-web.mp4",
+          "mediaType": "video",
+          "poster": "/archive/character-reference/abby/avatar-guide/unreal-performance/loose-sway-v036/Source_vs_Abby_IMG0347_LooseSway_19_28_v021_contact_sheet.jpg",
+          "width": 960,
+          "height": 540,
+          "status": "rejected",
+          "note": "Preserved failure: complete body but only 55.37% valid face coverage."
+        },
+        {
+          "id": "loose-sway-rejected-sheet-v021",
+          "label": "Rejected contact sheet v021",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-performance/loose-sway-v036/Source_vs_Abby_IMG0347_LooseSway_19_28_v021_contact_sheet.jpg",
+          "width": 1440,
+          "height": 540,
+          "status": "rejected",
+          "note": "Visual evidence for the original facial-continuity failure."
+        },
+        {
+          "id": "loose-sway-superseded-video-v020",
+          "label": "Superseded comparison v020",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-performance/loose-sway-v036/source-vs-abby-diagnostic-v020-web.mp4",
+          "mediaType": "video",
+          "poster": "/archive/character-reference/abby/avatar-guide/unreal-performance/loose-sway-v036/Source_vs_Abby_IMG0347_LooseSway_19_28_v020_contact_sheet.jpg",
+          "width": 960,
+          "height": 540,
+          "status": "superseded",
+          "note": "First source-vs-Abby encode; preserved at its original 8.983-second duration."
+        },
+        {
+          "id": "loose-sway-superseded-sheet-v020",
+          "label": "Superseded contact sheet v020",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-performance/loose-sway-v036/Source_vs_Abby_IMG0347_LooseSway_19_28_v020_contact_sheet.jpg",
+          "width": 1440,
+          "height": 540,
+          "status": "superseded",
+          "note": "First comparison sheet retained for version history."
+        }
+      ],
+      "artifacts": [
+        {
+          "label": "Approved validation v036",
+          "kind": "Report",
+          "url": "/archive/character-reference/abby/avatar-guide/unreal-performance/loose-sway-v036/validation_report_v036.md"
+        },
+        {
+          "label": "Complete version registry v036",
+          "kind": "Registry",
+          "url": "/archive/character-reference/abby/avatar-guide/unreal-performance/loose-sway-v036/body_capture_version_registry_v036.md"
+        },
+        {
+          "label": "Approved manifest v036",
+          "kind": "Manifest",
+          "url": "/archive/character-reference/abby/avatar-guide/unreal-performance/loose-sway-v036/manifest_v036.json"
+        },
+        {
+          "label": "Rejected validation v021",
+          "kind": "Report",
+          "url": "/archive/character-reference/abby/avatar-guide/unreal-performance/loose-sway-v036/validation_report_v021.md"
+        }
+      ]
+    },
+    {
+      "id": "img-0346-full-combined-v006",
+      "label": "IMG_0346 · full combined take",
+      "version": "candidate v006",
+      "status": "candidate",
+      "statusLabel": "Coverage-limited candidate",
+      "engine": "Unreal Engine 5.8.1",
+      "interval": "31.03 s · 931 frames",
+      "sourceFrames": "Portrait 2160 × 3840 · 30 fps",
+      "processedFrames": "Face 711 / 931 · body 902 / 931",
+      "summary": "Full-length same-source face and body solve for the vertical IMG_0346 performance, including leans, turns, raised-arm gestures and profile motion.",
+      "verdict": "Candidate with source-coverage limits. Body tracking reaches 96.885%; face reaches 76.369%. Valid ranges are synchronized and coherent, while profile, occlusion and the performer exit remain explicitly unsupported.",
+      "sourcePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/JD/00 Reference/Video/IMG_0346.MOV",
+      "sourceFile": "IMG_0346.MOV",
+      "archivePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/JD/00 Reference/Unreal/_Codex Derived/MySlate_2_iPhone/2026-07-30/IMG_0346/v006_Candidate",
+      "identity": "Abby production MetaHuman rig · same-source face + body",
+      "captureNoteLabel": "Coverage note",
+      "depthDiagnostic": "Single-camera RGB markerless solve using the official Small Face models. Invalid spans can retain the last solved pose and are not labeled as authored performance.",
+      "lineage": ["immutable IMG_0346.MOV", "upright portrait ingest", "single combined MHP solve", "derived Abby ground sequence", "candidate archive v006"],
+      "observations": [
+        "Root path and torso weight changes correspond without accumulating drift.",
+        "Face gaps align with small, occluded or profile face coverage.",
+        "Frames 902–930 occur after the performer exits and are not accepted motion."
+      ],
+      "primaryVersionId": "img-0346-video-v006",
+      "versions": [
+        {
+          "id": "img-0346-video-v006",
+          "label": "Synchronized full-take proof v006",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-performance/img-0346-v006/source-vs-abby-v006-web.mp4",
+          "mediaType": "video",
+          "poster": "/archive/character-reference/abby/avatar-guide/unreal-performance/img-0346-v006/Source_vs_Abby_IMG0346_Full_v005_contact_sheet.jpg",
+          "width": 960,
+          "height": 540,
+          "status": "candidate",
+          "note": "Complete 31-second source-vs-Abby comparison at source timing."
+        },
+        {
+          "id": "img-0346-wide-sheet-v005",
+          "label": "Full-body contact sheet v005",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-performance/img-0346-v006/Source_vs_Abby_IMG0346_Full_v005_contact_sheet.jpg",
+          "width": 1440,
+          "height": 1080,
+          "status": "candidate",
+          "note": "Representative body, limb and framing samples."
+        },
+        {
+          "id": "img-0346-face-sheet-v006",
+          "label": "Facial contact sheet v006",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-performance/img-0346-v006/Source_vs_Abby_IMG0346_Full_v006_face_contact.jpg",
+          "width": 1440,
+          "height": 960,
+          "status": "candidate",
+          "note": "Face-valid samples with gaze, lids, smiles and open-mouth shapes."
+        }
+      ],
+      "artifacts": [
+        {"label": "Validation v006", "kind": "Report", "url": "/archive/character-reference/abby/avatar-guide/unreal-performance/img-0346-v006/IMG_0346_Full_v006_validation.json"},
+        {"label": "Version registry v006", "kind": "Registry", "url": "/archive/character-reference/abby/avatar-guide/unreal-performance/img-0346-v006/IMG_0346_Full_version_registry_v006.md"},
+        {"label": "Manifest v006", "kind": "Manifest", "url": "/archive/character-reference/abby/avatar-guide/unreal-performance/img-0346-v006/manifest_v006.json"}
+      ]
+    },
+    {
+      "id": "img-0343-full-combined-v010",
+      "label": "IMG_0343 · full combined take",
+      "version": "candidate v010",
+      "status": "candidate",
+      "statusLabel": "Coverage-limited candidate",
+      "engine": "Unreal Engine 5.8.1",
+      "interval": "35.23 s · 2,113 frames",
+      "sourceFrames": "Portrait 2160 × 3840 · 59.974 fps",
+      "processedFrames": "Face 1,371 / 2,113 · body 1,670 / 2,113",
+      "summary": "Full-length unified solve covering the walking entry, arms-behind-head gesture, profile turns, wave, hands-on-hips pose and floor crouch.",
+      "verdict": "Candidate with source-coverage limits. Same-time samples pass across supported ranges, but empty, blurred, profile, floor-level and partial-source spans remain explicit gaps rather than invented performance.",
+      "sourcePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/JD/00 Reference/Video/IMG_0343.mp4",
+      "sourceFile": "IMG_0343.mp4",
+      "archivePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/JD/00 Reference/Unreal/_Codex Derived/MySlate_2_iPhone/2026-07-30/IMG_0343/v010_Candidate",
+      "identity": "Abby production MetaHuman rig · same-source face + body",
+      "captureNoteLabel": "Coverage note",
+      "depthDiagnostic": "Single-camera RGB markerless solve. Body coverage is 79.035% and face coverage is 64.884%; unsupported gaps can hold or interpolate a nearby solved pose.",
+      "lineage": ["immutable IMG_0343.mp4", "upright portrait ingest", "single combined MHP solve", "full-camera correction v009", "candidate archive v010"],
+      "observations": [
+        "The full-camera v009 proof supersedes the earlier fixed-center comparison that cropped lateral motion.",
+        "Supported body poses and face beats remain synchronized without sampled root drift.",
+        "The empty opening, approximately 9.6-second source gap and late floor transition are not accepted tracking."
+      ],
+      "primaryVersionId": "img-0343-video-v010",
+      "versions": [
+        {
+          "id": "img-0343-video-v010",
+          "label": "Full-camera synchronized proof v010",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-performance/img-0343-v010/source-vs-abby-v010-web.mp4",
+          "mediaType": "video",
+          "poster": "/archive/character-reference/abby/avatar-guide/unreal-performance/img-0343-v010/Source_vs_Abby_IMG0343_Full_v009_Wide_contact_sheet.jpg",
+          "width": 960,
+          "height": 406,
+          "status": "candidate",
+          "note": "Complete 35.2-second full-camera comparison with no invented terminal hold."
+        },
+        {
+          "id": "img-0343-wide-sheet-v009",
+          "label": "Full-camera contact sheet v009",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-performance/img-0343-v010/Source_vs_Abby_IMG0343_Full_v009_Wide_contact_sheet.jpg",
+          "width": 1920,
+          "height": 1080,
+          "status": "candidate",
+          "note": "Current full-figure framing used for the candidate audit."
+        },
+        {
+          "id": "img-0343-face-sheet-v008",
+          "label": "Facial contact sheet v008",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-performance/img-0343-v010/Source_vs_Abby_IMG0343_Full_v008_face_contact.jpg",
+          "width": 1440,
+          "height": 960,
+          "status": "candidate",
+          "note": "Latest face-valid comparison before the full-camera correction."
+        },
+        {
+          "id": "img-0343-face-sheet-v007",
+          "label": "Facial contact sheet v007",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-performance/img-0343-v010/Source_vs_Abby_IMG0343_Full_v007_face_contact.jpg",
+          "width": 1440,
+          "height": 960,
+          "status": "superseded",
+          "note": "Preserved intermediate facial framing."
+        },
+        {
+          "id": "img-0343-face-sheet-v006",
+          "label": "Facial contact sheet v006",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-performance/img-0343-v010/Source_vs_Abby_IMG0343_Full_v006_face_contact.jpg",
+          "width": 1440,
+          "height": 960,
+          "status": "superseded",
+          "note": "Earlier facial proof retained for version history."
+        },
+        {
+          "id": "img-0343-fixed-sheet-v005",
+          "label": "Fixed-camera contact sheet v005",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-performance/img-0343-v010/Source_vs_Abby_IMG0343_Full_v005_contact_sheet.jpg",
+          "width": 1440,
+          "height": 1080,
+          "status": "superseded",
+          "note": "Rejected presentation crop; Abby leaves the fixed-center frame during lateral travel."
+        }
+      ],
+      "artifacts": [
+        {"label": "Validation v010", "kind": "Report", "url": "/archive/character-reference/abby/avatar-guide/unreal-performance/img-0343-v010/IMG_0343_Full_v010_validation.json"},
+        {"label": "Version registry v010", "kind": "Registry", "url": "/archive/character-reference/abby/avatar-guide/unreal-performance/img-0343-v010/IMG_0343_Full_version_registry_v010.md"},
+        {"label": "Manifest v010", "kind": "Manifest", "url": "/archive/character-reference/abby/avatar-guide/unreal-performance/img-0343-v010/manifest_v010.json"}
+      ]
+    },
+    {
+      "id": "img-0345-full-combined-v009",
+      "label": "IMG_0345 · full combined take",
+      "version": "candidate v009",
+      "status": "candidate",
+      "statusLabel": "Coverage-limited candidate",
+      "engine": "Unreal Engine 5.8.1",
+      "interval": "23.53 s · 1,411 frames",
+      "sourceFrames": "Portrait 2160 × 3840 · 59.974 fps",
+      "processedFrames": "Face 1,190 / 1,411 · body 1,282 / 1,411",
+      "summary": "Full-length unified face/body solve for the table sit, crossed-leg poses, gaze turns, standing transition and exit.",
+      "verdict": "Candidate with source-coverage limits. Supported performance reaches 90.858% body and 84.337% face coverage; empty opening and performer exit remain outside the accepted solve.",
+      "sourcePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/JD/00 Reference/Video/IMG_0345.MOV",
+      "sourceFile": "IMG_0345.MOV",
+      "archivePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/JD/00 Reference/Unreal/_Codex Derived/MySlate_2_iPhone/2026-07-30/IMG_0345/v009_Candidate",
+      "identity": "Abby production MetaHuman rig · same-source face + body",
+      "captureNoteLabel": "Coverage note",
+      "depthDiagnostic": "Single-camera RGB markerless solve. Terminal unsupported frames can retain or interpolate the nearby solved pose and must be trimmed editorially.",
+      "lineage": ["immutable IMG_0345.MOV", "upright portrait ingest", "single combined MHP solve", "full-camera ground sequence", "candidate archive v009"],
+      "observations": [
+        "Seated weight, crossed legs, gaze turns and rise timing correspond over valid ranges.",
+        "No previous take or MySlate curves were used.",
+        "The source-coverage sheet makes the empty opening and exit limits explicit."
+      ],
+      "primaryVersionId": "img-0345-video-v009",
+      "versions": [
+        {
+          "id": "img-0345-video-v009",
+          "label": "Synchronized full-take proof v009",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-performance/img-0345-v009/source-vs-abby-v009-web.mp4",
+          "mediaType": "video",
+          "poster": "/archive/character-reference/abby/avatar-guide/unreal-performance/img-0345-v009/Source_vs_Abby_IMG0345_Full_v007_Wide_contact_sheet.jpg",
+          "width": 960,
+          "height": 406,
+          "status": "candidate",
+          "note": "Full 23.5-second source-vs-Abby comparison."
+        },
+        {
+          "id": "img-0345-wide-sheet-v007",
+          "label": "Full-body contact sheet v007",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-performance/img-0345-v009/Source_vs_Abby_IMG0345_Full_v007_Wide_contact_sheet.jpg",
+          "width": 1920,
+          "height": 1080,
+          "status": "candidate",
+          "note": "Same-time full-body samples through supported performance."
+        },
+        {
+          "id": "img-0345-face-sheet-v008",
+          "label": "Facial contact sheet v008",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-performance/img-0345-v009/Source_vs_Abby_IMG0345_Full_v008_face_contact.jpg",
+          "width": 1440,
+          "height": 960,
+          "status": "candidate",
+          "note": "Face-valid gaze, lids, mouth, smile and head-turn samples."
+        },
+        {
+          "id": "img-0345-source-coverage-v002",
+          "label": "Source-coverage audit v002",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-performance/img-0345-v009/IMG_0345_source_coverage_contact_v002.jpg",
+          "width": 960,
+          "height": 1260,
+          "status": "diagnostic",
+          "note": "Explicit empty-opening and exit coverage evidence."
+        }
+      ],
+      "artifacts": [
+        {"label": "Validation v009", "kind": "Report", "url": "/archive/character-reference/abby/avatar-guide/unreal-performance/img-0345-v009/IMG_0345_Full_v009_validation.json"},
+        {"label": "Version registry v009", "kind": "Registry", "url": "/archive/character-reference/abby/avatar-guide/unreal-performance/img-0345-v009/IMG_0345_Full_version_registry_v009.md"},
+        {"label": "Manifest v009", "kind": "Manifest", "url": "/archive/character-reference/abby/avatar-guide/unreal-performance/img-0345-v009/manifest_v009.json"}
+      ]
+    },
+    {
+      "id": "img-0347-full-combined-v007",
+      "label": "IMG_0347 · full combined take",
+      "version": "candidate v007",
+      "status": "candidate",
+      "statusLabel": "Face-gap candidate",
+      "engine": "Unreal Engine 5.8.1",
+      "interval": "49.04 s · 2,941 frames",
+      "sourceFrames": "Portrait 2160 × 3840 · 59.976 fps",
+      "processedFrames": "Face 2,784 / 2,941 · body 2,940 / 2,941",
+      "summary": "Full-length unified solve covering floor poses, rise, standing gestures, head turns, sways, hand shapes and final neutral.",
+      "verdict": "Candidate with one documented facial occlusion gap. Body reaches 99.966% and face 94.662%; frames 575–684 lose the heavily angled/partly obscured face during the floor-to-stand transition while body remains valid.",
+      "sourcePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/JD/00 Reference/Video/IMG_0347.MOV",
+      "sourceFile": "IMG_0347.MOV",
+      "archivePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/JD/00 Reference/Unreal/_Codex Derived/MySlate_2_iPhone/2026-07-30/IMG_0347_Full/v007_Candidate",
+      "identity": "Abby production MetaHuman rig · same-source face + body",
+      "captureNoteLabel": "Coverage note",
+      "depthDiagnostic": "Single-camera RGB markerless solve. The preserved face-gap sheet isolates the floor-to-stand occlusion instead of disguising it with another facial take.",
+      "lineage": ["immutable IMG_0347.MOV", "upright portrait ingest", "single combined MHP solve", "full-camera ground sequence", "candidate archive v007"],
+      "observations": [
+        "Root height, floor support, rise and standing weight changes correspond without sampled accumulating drift.",
+        "No MySlate face or previous body motion was used.",
+        "The gap is source-driven and remains visible in a dedicated diagnostic sheet."
+      ],
+      "primaryVersionId": "img-0347-video-v007",
+      "versions": [
+        {
+          "id": "img-0347-video-v007",
+          "label": "Synchronized full-take proof v007",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-performance/img-0347-v007/source-vs-abby-v007-web.mp4",
+          "mediaType": "video",
+          "poster": "/archive/character-reference/abby/avatar-guide/unreal-performance/img-0347-v007/Source_vs_Abby_IMG0347_Full_v005_Wide_contact_sheet.jpg",
+          "width": 960,
+          "height": 406,
+          "status": "candidate",
+          "note": "Full 49-second comparison at original timing."
+        },
+        {
+          "id": "img-0347-wide-sheet-v005",
+          "label": "Full-body contact sheet v005",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-performance/img-0347-v007/Source_vs_Abby_IMG0347_Full_v005_Wide_contact_sheet.jpg",
+          "width": 1920,
+          "height": 1080,
+          "status": "candidate",
+          "note": "Floor, rise and standing samples in the audit camera."
+        },
+        {
+          "id": "img-0347-face-sheet-v006",
+          "label": "Facial contact sheet v006",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-performance/img-0347-v007/Source_vs_Abby_IMG0347_Full_v006_face_contact.jpg",
+          "width": 1440,
+          "height": 960,
+          "status": "candidate",
+          "note": "Face-valid gaze, lids, brows, mouth and head samples."
+        },
+        {
+          "id": "img-0347-face-gap-v006b",
+          "label": "Facial gap audit v006b",
+          "image": "/archive/character-reference/abby/avatar-guide/unreal-performance/img-0347-v007/Source_vs_Abby_IMG0347_Full_v006b_face_gap_contact.jpg",
+          "width": 1280,
+          "height": 1080,
+          "status": "diagnostic",
+          "note": "Frames 575–684: heavily angled and partly obscured face during floor-to-stand."
+        }
+      ],
+      "artifacts": [
+        {"label": "Validation v007", "kind": "Report", "url": "/archive/character-reference/abby/avatar-guide/unreal-performance/img-0347-v007/IMG_0347_Full_v007_validation.json"},
+        {"label": "Version registry v007", "kind": "Registry", "url": "/archive/character-reference/abby/avatar-guide/unreal-performance/img-0347-v007/IMG_0347_Full_version_registry_v007.md"},
+        {"label": "Manifest v007", "kind": "Manifest", "url": "/archive/character-reference/abby/avatar-guide/unreal-performance/img-0347-v007/manifest_v007.json"}
+      ]
+    },
+    {
+      "id": "movement-ref-vid-1-combined-v007",
+      "label": "Movement Ref VID_1",
+      "version": "diagnostic v007",
+      "status": "diagnostic",
+      "statusLabel": "Partial-body diagnostic",
+      "engine": "Unreal Engine 5.8.1",
+      "interval": "15.07 s · 452 frames",
+      "sourceFrames": "Landscape 1920 × 1080 · 30 fps",
+      "processedFrames": "Face 442 / 452 · body tracker 451 / 452",
+      "summary": "Unified solve of the visible head, torso, arms and hands. The official tracker emits a complete skeleton, but the source never shows legs or feet.",
+      "verdict": "Diagnostic only. Visible upper-body and facial timing are coherent, but root, pelvis, knees, feet and ground contact cannot be verified and the result cannot pass a head-to-toe combined-performance gate.",
+      "sourcePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/JD/00 Reference/Movement Refs/VID_1.mov",
+      "sourceFile": "VID_1.mov",
+      "archivePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/JD/00 Reference/Unreal/_Codex Derived/MySlate_2_iPhone/2026-07-30/MovementRefs/VID_1/v007_Diagnostic",
+      "identity": "Abby production MetaHuman rig · same-source face + body",
+      "captureNoteLabel": "Coverage note",
+      "depthDiagnostic": "Waist-up single-camera RGB source. Lower-body values are unobserved tracker inference and are not accepted as authored performance.",
+      "lineage": ["immutable VID_1.mov", "single combined MHP solve", "derived Abby sequence", "wide proof and face sheet", "diagnostic archive v007"],
+      "observations": ["Head, torso, elbow, wrist and hand actions align at sampled frames.", "Feet and pelvis are absent throughout the source.", "No hidden lower-body or MySlate driver was introduced."],
+      "primaryVersionId": "vid-1-video-v007",
+      "versions": [
+        {"id": "vid-1-video-v007", "label": "Synchronized diagnostic v007", "image": "/archive/character-reference/abby/avatar-guide/unreal-performance/vid-1-v007/source-vs-abby-v007-web.mp4", "mediaType": "video", "poster": "/archive/character-reference/abby/avatar-guide/unreal-performance/vid-1-v007/Source_vs_Abby_VID1_Full_v005_Wide_contact_sheet.jpg", "width": 960, "height": 406, "status": "diagnostic", "note": "Upper-body and facial comparison; inferred lower body is not a pass."},
+        {"id": "vid-1-wide-sheet-v005", "label": "Wide contact sheet v005", "image": "/archive/character-reference/abby/avatar-guide/unreal-performance/vid-1-v007/Source_vs_Abby_VID1_Full_v005_Wide_contact_sheet.jpg", "width": 1920, "height": 1080, "status": "diagnostic", "note": "Source framing visibly excludes the lower body."},
+        {"id": "vid-1-face-sheet-v006", "label": "Facial contact sheet v006", "image": "/archive/character-reference/abby/avatar-guide/unreal-performance/vid-1-v007/Source_vs_Abby_VID1_Full_v006_face_contact.jpg", "width": 1440, "height": 960, "status": "diagnostic", "note": "Coherent gaze, lids, mouth and head timing over face-valid samples."}
+      ],
+      "artifacts": [
+        {"label": "Validation v007", "kind": "Report", "url": "/archive/character-reference/abby/avatar-guide/unreal-performance/vid-1-v007/VID_1_Full_v007_validation.json"},
+        {"label": "Version registry v007", "kind": "Registry", "url": "/archive/character-reference/abby/avatar-guide/unreal-performance/vid-1-v007/VID_1_Full_version_registry_v007.md"},
+        {"label": "Manifest v007", "kind": "Manifest", "url": "/archive/character-reference/abby/avatar-guide/unreal-performance/vid-1-v007/manifest_v007.json"}
+      ]
+    },
+    {
+      "id": "movement-ref-vid-2-combined-v007",
+      "label": "Movement Ref VID_2",
+      "version": "diagnostic v007",
+      "status": "diagnostic",
+      "statusLabel": "Partial-body diagnostic",
+      "engine": "Unreal Engine 5.8.1",
+      "interval": "13.90 s · 417 frames",
+      "sourceFrames": "Landscape 1920 × 1080 · 30 fps",
+      "processedFrames": "Face 254 / 417 · body tracker 416 / 417",
+      "summary": "Unified solve of a waist-up movement reference with visible head, torso, arms and hands but no pelvis, legs or feet.",
+      "verdict": "Diagnostic only. Upper-body timing reads, but face falls out over profile/out-of-frame spans and the unseen lower body cannot be source-verified.",
+      "sourcePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/JD/00 Reference/Movement Refs/VID_2.mov",
+      "sourceFile": "VID_2.mov",
+      "archivePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/JD/00 Reference/Unreal/_Codex Derived/MySlate_2_iPhone/2026-07-30/MovementRefs/VID_2/v007_Diagnostic",
+      "identity": "Abby production MetaHuman rig · same-source face + body",
+      "captureNoteLabel": "Coverage note",
+      "depthDiagnostic": "Waist-up single-camera RGB source. Frames 113–253 and 277–297 lack valid face tracking; lower-body solve values remain inference.",
+      "lineage": ["immutable VID_2.mov", "single combined MHP solve", "derived Abby sequence", "wide proof and repaired face sheet", "diagnostic archive v007"],
+      "observations": ["Visible crossed-arm and open-hand gestures align.", "Pelvis, knees and feet are never present in source.", "The repaired sheet is presentation framing only; it does not invent facial curves."],
+      "primaryVersionId": "vid-2-video-v007",
+      "versions": [
+        {"id": "vid-2-video-v007", "label": "Synchronized diagnostic v007", "image": "/archive/character-reference/abby/avatar-guide/unreal-performance/vid-2-v007/source-vs-abby-v007-web.mp4", "mediaType": "video", "poster": "/archive/character-reference/abby/avatar-guide/unreal-performance/vid-2-v007/Source_vs_Abby_VID2_Full_v005_Wide_contact_sheet.jpg", "width": 960, "height": 406, "status": "diagnostic", "note": "Visible upper-body performance only; full-body pass is not supported."},
+        {"id": "vid-2-wide-sheet-v005", "label": "Wide contact sheet v005", "image": "/archive/character-reference/abby/avatar-guide/unreal-performance/vid-2-v007/Source_vs_Abby_VID2_Full_v005_Wide_contact_sheet.jpg", "width": 1920, "height": 1080, "status": "diagnostic", "note": "Source-coverage proof for the missing lower body."},
+        {"id": "vid-2-face-sheet-v006b", "label": "Facial contact sheet v006b", "image": "/archive/character-reference/abby/avatar-guide/unreal-performance/vid-2-v007/Source_vs_Abby_VID2_Full_v006b_face_contact_repaired.jpg", "width": 1440, "height": 960, "status": "diagnostic", "note": "Corrected facial-presentation sheet for valid intervals."},
+        {"id": "vid-2-face-sheet-v006", "label": "Earlier facial sheet v006", "image": "/archive/character-reference/abby/avatar-guide/unreal-performance/vid-2-v007/Source_vs_Abby_VID2_Full_v006_face_contact.jpg", "width": 1440, "height": 960, "status": "superseded", "note": "Preserved earlier face framing."}
+      ],
+      "artifacts": [
+        {"label": "Validation v007", "kind": "Report", "url": "/archive/character-reference/abby/avatar-guide/unreal-performance/vid-2-v007/VID_2_Full_v007_validation.json"},
+        {"label": "Version registry v007", "kind": "Registry", "url": "/archive/character-reference/abby/avatar-guide/unreal-performance/vid-2-v007/VID_2_Full_version_registry_v007.md"},
+        {"label": "Manifest v007", "kind": "Manifest", "url": "/archive/character-reference/abby/avatar-guide/unreal-performance/vid-2-v007/manifest_v007.json"}
+      ]
+    },
+    {
+      "id": "movement-ref-vid-3-combined-v007",
+      "label": "Movement Ref VID_3",
+      "version": "diagnostic v007",
+      "status": "diagnostic",
+      "statusLabel": "Partial-body diagnostic",
+      "engine": "Unreal Engine 5.8.1",
+      "interval": "16.91 s · 507 frames",
+      "sourceFrames": "Landscape 1920 × 1080 · 29.988 fps",
+      "processedFrames": "Face 265 / 507 · body tracker 506 / 507",
+      "summary": "Unified solve of a variable head-and-torso reference; pelvis, legs and feet are absent throughout and the performer turns profile/back-of-head through the middle.",
+      "verdict": "Diagnostic only. Visible timing is useful, but the source cannot support full-body ground, pelvis or foot claims and face is invalid from frames 133–373.",
+      "sourcePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/JD/00 Reference/Movement Refs/VID_3.mov",
+      "sourceFile": "VID_3.mov",
+      "archivePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/JD/00 Reference/Unreal/_Codex Derived/MySlate_2_iPhone/2026-07-30/MovementRefs/VID_3/v007_Diagnostic",
+      "identity": "Abby production MetaHuman rig · same-source face + body",
+      "captureNoteLabel": "Coverage note",
+      "depthDiagnostic": "Single-camera RGB source with no visible lower body. The long profile/back-of-head interval produces an honest facial gap.",
+      "lineage": ["immutable VID_3.mov", "single combined MHP solve", "derived Abby sequence", "wide proof and face sheet", "diagnostic archive v007"],
+      "observations": ["Visible upper-body actions remain synchronized.", "The solver's lower-body channels are unsupported inference.", "No alternate face or body take fills the source gap."],
+      "primaryVersionId": "vid-3-video-v007",
+      "versions": [
+        {"id": "vid-3-video-v007", "label": "Synchronized diagnostic v007", "image": "/archive/character-reference/abby/avatar-guide/unreal-performance/vid-3-v007/source-vs-abby-v007-web.mp4", "mediaType": "video", "poster": "/archive/character-reference/abby/avatar-guide/unreal-performance/vid-3-v007/Source_vs_Abby_VID3_Full_v005_Wide_contact_sheet.jpg", "width": 960, "height": 406, "status": "diagnostic", "note": "Visible head/torso performance; full-body claims remain unsupported."},
+        {"id": "vid-3-wide-sheet-v005", "label": "Wide contact sheet v005", "image": "/archive/character-reference/abby/avatar-guide/unreal-performance/vid-3-v007/Source_vs_Abby_VID3_Full_v005_Wide_contact_sheet.jpg", "width": 1920, "height": 1080, "status": "diagnostic", "note": "Source-coverage evidence across the clip."},
+        {"id": "vid-3-face-sheet-v006b", "label": "Facial contact sheet v006b", "image": "/archive/character-reference/abby/avatar-guide/unreal-performance/vid-3-v007/Source_vs_Abby_VID3_Full_v006b_face_contact_repaired.jpg", "width": 1440, "height": 960, "status": "diagnostic", "note": "Valid-face intervals before and after the profile/back-of-head gap."}
+      ],
+      "artifacts": [
+        {"label": "Validation v007", "kind": "Report", "url": "/archive/character-reference/abby/avatar-guide/unreal-performance/vid-3-v007/VID_3_Full_v007_validation.json"},
+        {"label": "Version registry v007", "kind": "Registry", "url": "/archive/character-reference/abby/avatar-guide/unreal-performance/vid-3-v007/VID_3_Full_version_registry_v007.md"},
+        {"label": "Manifest v007", "kind": "Manifest", "url": "/archive/character-reference/abby/avatar-guide/unreal-performance/vid-3-v007/manifest_v007.json"}
+      ]
+    },
+    {
+      "id": "movement-ref-vid-4-combined-v007",
+      "label": "Movement Ref VID_4",
+      "version": "diagnostic v007",
+      "status": "diagnostic",
+      "statusLabel": "Sparse combined diagnostic",
+      "engine": "Unreal Engine 5.8.1",
+      "interval": "19.11 s · 573 frames",
+      "sourceFrames": "Landscape 1920 × 1080 · 29.987 fps",
+      "processedFrames": "Face 61 / 573 · body tracker 447 / 573",
+      "summary": "Mixed back-of-head, partial/full-body and close-face coverage. Hands and feet are not continuously visible and the face is valid for only a short interval.",
+      "verdict": "Diagnostic only. The official combined tracker runs, but 10.646% facial coverage and discontinuous body visibility are insufficient for an accepted combined performance.",
+      "sourcePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/JD/00 Reference/Movement Refs/VID_4.mov",
+      "sourceFile": "VID_4.mov",
+      "archivePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/JD/00 Reference/Unreal/_Codex Derived/MySlate_2_iPhone/2026-07-30/MovementRefs/VID_4/v007_Diagnostic",
+      "identity": "Abby production MetaHuman rig · same-source face + body",
+      "captureNoteLabel": "Coverage note",
+      "depthDiagnostic": "Single-camera RGB source with highly variable subject coverage. Most face samples are absent, too small or turned away.",
+      "lineage": ["immutable VID_4.mov", "single combined MHP solve", "derived Abby sequence", "wide proof and face sheet", "diagnostic archive v007"],
+      "observations": ["The source itself moves between back-of-head, partial/full-body and close face.", "Face is invalid over frames 0–454 and 516–572.", "Unsupported channels are not promoted to accepted motion."],
+      "primaryVersionId": "vid-4-video-v007",
+      "versions": [
+        {"id": "vid-4-video-v007", "label": "Synchronized diagnostic v007", "image": "/archive/character-reference/abby/avatar-guide/unreal-performance/vid-4-v007/source-vs-abby-v007-web.mp4", "mediaType": "video", "poster": "/archive/character-reference/abby/avatar-guide/unreal-performance/vid-4-v007/Source_vs_Abby_VID4_Full_v005_Wide_contact_sheet.jpg", "width": 960, "height": 406, "status": "diagnostic", "note": "Complete comparison with visibly changing source coverage."},
+        {"id": "vid-4-wide-sheet-v005", "label": "Wide contact sheet v005", "image": "/archive/character-reference/abby/avatar-guide/unreal-performance/vid-4-v007/Source_vs_Abby_VID4_Full_v005_Wide_contact_sheet.jpg", "width": 1920, "height": 1080, "status": "diagnostic", "note": "Coverage and body-tracking audit samples."},
+        {"id": "vid-4-face-sheet-v006b", "label": "Facial contact sheet v006b", "image": "/archive/character-reference/abby/avatar-guide/unreal-performance/vid-4-v007/Source_vs_Abby_VID4_Full_v006b_face_contact_repaired.jpg", "width": 1440, "height": 960, "status": "diagnostic", "note": "Sparse valid-face evidence only."}
+      ],
+      "artifacts": [
+        {"label": "Validation v007", "kind": "Report", "url": "/archive/character-reference/abby/avatar-guide/unreal-performance/vid-4-v007/VID_4_Full_v007_validation.json"},
+        {"label": "Version registry v007", "kind": "Registry", "url": "/archive/character-reference/abby/avatar-guide/unreal-performance/vid-4-v007/VID_4_Full_version_registry_v007.md"},
+        {"label": "Manifest v007", "kind": "Manifest", "url": "/archive/character-reference/abby/avatar-guide/unreal-performance/vid-4-v007/manifest_v007.json"}
+      ]
+    },
+    {
+      "id": "movement-ref-vid-5-combined-v008",
+      "label": "Movement Ref VID_5 · piano hands",
+      "version": "corrected rejection v008",
+      "status": "rejected",
+      "statusLabel": "Rejected source coverage",
+      "engine": "Unreal Engine 5.8.1",
+      "interval": "19.30 s · 579 frames",
+      "sourceFrames": "Portrait 720 × 1280 · 30 fps",
+      "processedFrames": "Face 0 / 579 · body tracker output 578 / 579",
+      "summary": "VID_5 is a hand-focused piano close-up. The performer face, head, torso, pelvis, legs and feet are absent throughout, despite the body tracker emitting a complete inferred skeleton.",
+      "verdict": "Rejected as mocap. The source can inform hand-reference work, but it cannot support a face/body performance solve; the emitted full-body motion is unconstrained inference and is not accepted.",
+      "sourcePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/JD/00 Reference/Movement Refs/VID_5.mov",
+      "sourceFile": "VID_5.mov",
+      "archivePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/JD/00 Reference/Unreal/_Codex Derived/MySlate_2_iPhone/2026-07-30/MovementRefs/VID_5/v007_Diagnostic",
+      "identity": "No visible performer identity · hand-only source",
+      "captureNoteLabel": "Coverage note",
+      "depthDiagnostic": "Single-camera RGB hand close-up. Facial tracking fails on every frame; full-body output is rejected rather than treated as motion authority.",
+      "lineage": ["immutable VID_5.mov", "official combined tracker diagnostic", "derived comparison render", "corrected source-coverage audit v008", "rejected archive"],
+      "observations": ["The source preserves useful finger and chord timing only.", "Face, torso, pelvis, legs and feet are absent throughout.", "The corrected v008 report supersedes the inaccurate mixed-coverage wording in v007.", "No invented body performance is promoted to a candidate."],
+      "primaryVersionId": "vid-5-video-v008",
+      "versions": [
+        {"id": "vid-5-video-v008", "label": "Rejected synchronized diagnostic v008", "image": "/archive/character-reference/abby/avatar-guide/unreal-performance/vid-5-v008/source-vs-abby-v008-web.mp4", "mediaType": "video", "poster": "/archive/character-reference/abby/avatar-guide/unreal-performance/vid-5-v008/Source_vs_Abby_VID5_Full_v005_Wide_contact_sheet.jpg", "width": 960, "height": 406, "status": "rejected", "note": "Shows why a hand-only source cannot constrain the generated full-body motion."},
+        {"id": "vid-5-wide-sheet-v005", "label": "Source-coverage contact sheet v005", "image": "/archive/character-reference/abby/avatar-guide/unreal-performance/vid-5-v008/Source_vs_Abby_VID5_Full_v005_Wide_contact_sheet.jpg", "width": 1920, "height": 1080, "status": "rejected", "note": "The source pane contains hands and keyboard only."},
+        {"id": "vid-5-face-sheet-v006b", "label": "Zero-face audit v006b", "image": "/archive/character-reference/abby/avatar-guide/unreal-performance/vid-5-v008/Source_vs_Abby_VID5_Full_v006b_face_contact_repaired.jpg", "width": 1440, "height": 960, "status": "rejected", "note": "Confirms 0 / 579 valid face frames; retained as failure evidence."}
+      ],
+      "artifacts": [
+        {"label": "Corrected validation v008", "kind": "Report", "url": "/archive/character-reference/abby/avatar-guide/unreal-performance/vid-5-v008/VID_5_Full_v008_corrected_validation.json"},
+        {"label": "Phase 3 queue summary v008", "kind": "Report", "url": "/archive/character-reference/abby/avatar-guide/unreal-performance/vid-5-v008/Phase_3_Ordered_Queue_Summary_v008.md"},
+        {"label": "Version registry v007", "kind": "Registry", "url": "/archive/character-reference/abby/avatar-guide/unreal-performance/vid-5-v008/VID_5_Full_version_registry_v007.md"},
+        {"label": "Corrected manifest v008", "kind": "Manifest", "url": "/archive/character-reference/abby/avatar-guide/unreal-performance/vid-5-v008/manifest_v008.json"}
+      ]
+    }
+  ]
+}

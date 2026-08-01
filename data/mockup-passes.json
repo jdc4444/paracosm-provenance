@@ -1,0 +1,1542 @@
+{
+  "schemaVersion": 2,
+  "passes": [
+    {
+      "id": "blue-steel-th-pass-01",
+      "styleId": "blue-steel",
+      "title": "Blue Steel",
+      "passNumber": 1,
+      "chapter": "TH",
+      "createdAt": "2026-07-27",
+      "description": "A first-look miniature claymation pass: the TH world, architecture, snow, props, and horses are sculpted in monochrome steel blue while the heroine remains the color accent.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-032",
+          "image": "/archive/blue-steel/th/CUT-032.jpg",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-033",
+          "image": "/archive/blue-steel/th/CUT-033.jpg",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-034",
+          "image": "/archive/blue-steel/th/CUT-034.jpg",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-035",
+          "image": "/archive/blue-steel/th/CUT-035.jpg",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-036",
+          "image": "/archive/blue-steel/th/CUT-036.jpg",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-037",
+          "image": "/archive/blue-steel/th/CUT-037.jpg",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-038",
+          "image": "/archive/blue-steel/th/CUT-038.jpg",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-039",
+          "image": "/archive/blue-steel/th/CUT-039.jpg",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-040",
+          "image": "/archive/blue-steel/th/CUT-040.jpg",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-041",
+          "image": "/archive/blue-steel/th/CUT-041.jpg",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-042",
+          "image": "/archive/blue-steel/th/CUT-042.jpg",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-043",
+          "image": "/archive/blue-steel/th/CUT-043.jpg",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-044",
+          "image": "/archive/blue-steel/th/CUT-044.jpg",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-045",
+          "image": "/archive/blue-steel/th/CUT-045.jpg",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-046",
+          "image": "/archive/blue-steel/th/CUT-046.jpg",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "blue-steel-th-pass-02",
+      "styleId": "blue-steel",
+      "title": "Blue Steel r2",
+      "passNumber": 2,
+      "chapter": "TH",
+      "createdAt": "2026-07-27",
+      "description": "Successful Freezer Carnival test for CUT-033: a restrained ice-cream-carton landmark integrated into the snowy, rounded Blue Steel world.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-033",
+          "image": "/archive/blue-steel/freezer-carnival/CUT-033.png",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "blue-steel-th-pass-03",
+      "styleId": "blue-steel",
+      "title": "Blue Steel r3",
+      "passNumber": 3,
+      "chapter": "TH",
+      "createdAt": "2026-07-27",
+      "description": "Subtle Freezer Carnival pass for CUT-032, CUT-034, CUT-035, and CUT-036: the original snowy Blue Steel world remains dominant while snow-softened cartons, tray cells, and a few cubes quietly reveal how it was built.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-032",
+          "image": "/archive/blue-steel/freezer-carnival-subtle/CUT-032.png",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-034",
+          "image": "/archive/blue-steel/freezer-carnival-subtle/CUT-034.png",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-035",
+          "image": "/archive/blue-steel/freezer-carnival-subtle/CUT-035.png",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-036",
+          "image": "/archive/blue-steel/freezer-carnival-subtle/CUT-036.png",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "blue-steel-th-pass-04",
+      "styleId": "blue-steel",
+      "title": "Blue Steel r4",
+      "passNumber": 4,
+      "chapter": "TH",
+      "createdAt": "2026-07-27",
+      "description": "CUT-036 differentiation revision: an elevated horizontal park-wide reveal that separates the Ferris wheel, carousel, and bumper cars from CUT-035's intimate gate composition.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-036",
+          "image": "/archive/blue-steel/freezer-carnival-subtle/CUT-036-v2.png",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "blue-steel-th-pass-05",
+      "styleId": "blue-steel",
+      "title": "Blue Steel r5",
+      "passNumber": 5,
+      "chapter": "TH",
+      "createdAt": "2026-07-27",
+      "description": "CUT-035 differentiation revision: a closer character-led entrance shot with Abby prominent on the ice-tray bridge and the snowy park only glimpsed beyond the cropped gate.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-035",
+          "image": "/archive/blue-steel/freezer-carnival-subtle/CUT-035-v2.png",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "blue-steel-th-pass-06",
+      "styleId": "blue-steel",
+      "title": "Blue Steel r6",
+      "passNumber": 6,
+      "chapter": "TH",
+      "createdAt": "2026-07-27",
+      "description": "Corrected CUT-036 composition: original foreground elements preserved, carousel centered directly at the foot of the Ferris wheel, and bumper cars removed.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-036",
+          "image": "/archive/blue-steel/freezer-carnival-subtle/CUT-036-v3.png",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "drab-pass-01",
+      "styleId": "drab",
+      "title": "Drab r1",
+      "passNumber": 1,
+      "chapter": "ND / NA",
+      "createdAt": "2026-07-27",
+      "description": "Dusty green-grey direction. Environment color and design change while Abby's character color remains intact.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-002",
+          "image": "/archive/drab/dusty-green-grey/CUT-002.jpg",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-053",
+          "image": "/archive/drab/dusty-green-grey/CUT-053.jpg",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "drab-pass-02",
+      "styleId": "drab",
+      "title": "Drab r2",
+      "passNumber": 2,
+      "chapter": "ND / NA",
+      "createdAt": "2026-07-27",
+      "description": "Faded-wallpaper direction. Environment color and design change while Abby's character color remains intact.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-002",
+          "image": "/archive/drab/faded-wallpaper/CUT-002.jpg",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-053",
+          "image": "/archive/drab/faded-wallpaper/CUT-053.jpg",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "drab-pass-03",
+      "styleId": "drab",
+      "title": "Drab r3",
+      "passNumber": 3,
+      "chapter": "ND / NA",
+      "createdAt": "2026-07-27",
+      "description": "Institutional-parchment direction on the canonical thumbnail frames.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-002",
+          "image": "/archive/drab/institutional-parchment/CUT-002.jpg",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-053",
+          "image": "/archive/drab/institutional-parchment/CUT-053.jpg",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "drab-pass-04",
+      "styleId": "drab",
+      "title": "Drab r4",
+      "passNumber": 4,
+      "chapter": "ND / NA / IJDKYY",
+      "createdAt": "2026-07-27",
+      "description": "Institutional-parchment boundary-frame tests: last frame of CUT-001 and CUT-049; first frame of CUT-053 and CUT-082.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-001",
+          "image": "/archive/drab/institutional-parchment/CUT-001-last-f0352.jpg",
+          "sourceFrame": "last"
+        },
+        {
+          "cutId": "CUT-049",
+          "image": "/archive/drab/institutional-parchment/CUT-049-last-f0555.jpg",
+          "sourceFrame": "last"
+        },
+        {
+          "cutId": "CUT-053",
+          "image": "/archive/drab/institutional-parchment/CUT-053-first-f0898.jpg",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-082",
+          "image": "/archive/drab/institutional-parchment/CUT-082-first-f0151.jpg",
+          "sourceFrame": "first"
+        }
+      ]
+    },
+    {
+      "id": "drab-pass-05",
+      "styleId": "drab",
+      "title": "Drab r5",
+      "passNumber": 5,
+      "chapter": "NA / IJDKYY",
+      "createdAt": "2026-07-27",
+      "description": "Refined institutional-parchment boundary-frame tests for CUT-053 and CUT-082.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-053",
+          "image": "/archive/drab/institutional-parchment/CUT-053-first-f0898-v2.jpg",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-082",
+          "image": "/archive/drab/institutional-parchment/CUT-082-first-f0151-v2.jpg",
+          "sourceFrame": "first"
+        }
+      ]
+    },
+    {
+      "id": "drab-pass-06",
+      "styleId": "drab",
+      "title": "Drab r6",
+      "passNumber": 6,
+      "chapter": "ND / TH / NA",
+      "createdAt": "2026-07-27",
+      "description": "Drab r3 institutional-parchment treatment applied to every shot assigned to Undecorate House or Keep the room pre-transformation.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-001",
+          "image": "/archive/drab/r3-noted-shots/CUT-001.png",
+          "sourceFrame": "last"
+        },
+        {
+          "cutId": "CUT-002",
+          "image": "/archive/drab/r3-noted-shots/CUT-002.png",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-003",
+          "image": "/archive/drab/r3-noted-shots/CUT-003.png",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-047",
+          "image": "/archive/drab/r3-noted-shots/CUT-047.png",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-048",
+          "image": "/archive/drab/r3-noted-shots/CUT-048.png",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-049",
+          "image": "/archive/drab/r3-noted-shots/CUT-049.png",
+          "sourceFrame": "last"
+        },
+        {
+          "cutId": "CUT-050",
+          "image": "/archive/drab/r3-noted-shots/CUT-050.png",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-051",
+          "image": "/archive/drab/r3-noted-shots/CUT-051.png",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-053",
+          "image": "/archive/drab/r3-noted-shots/CUT-053.png",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-055",
+          "image": "/archive/drab/r3-noted-shots/CUT-055.png",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-056",
+          "image": "/archive/drab/r3-noted-shots/CUT-056.png",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "drab-pass-07",
+      "styleId": "drab",
+      "title": "Drab r7",
+      "passNumber": 7,
+      "chapter": "ND",
+      "createdAt": "2026-07-27",
+      "description": "Replacement Drab r3 institutional-parchment treatment rebuilt from CUT-016 Frame Thread 2 at frame 1646, the selected thumbnail at approximately +6.34s. The prior incorrect Frame Thread 1 mockup was removed.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-016",
+          "image": "/archive/drab/r3-noted-shots/CUT-016.png",
+          "sourceImage": "/archive/mockup-sources/CUT-016-selected-f1646.jpg",
+          "sourceTime": 68.67277083333333
+        }
+      ]
+    },
+    {
+      "id": "house-bloom-pass-01",
+      "styleId": "house-bloom",
+      "title": "House Bloom",
+      "passNumber": 1,
+      "chapter": "IJDKYY",
+      "createdAt": "2026-07-28",
+      "description": "Cuts 75–87 rebuilt as a daylight transformation anchored to the original CUT-082 exposure: Abby moves purposefully through a sunlit pale-greige house while all 89 current non-wardrobe Objects are introduced once across Cuts 75–86, then CUT-087 reveals their color blooming through the finished house and garden.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-075",
+          "image": "/archive/house-bloom/versions/CUT-075-r1-early-color.png",
+          "mockupName": "Daylight Begins",
+          "mockupDescription": "The house starts sparse and pale greige but unmistakably daytime; the window, wall panel, and light switch introduce the first small islands of color.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-076",
+          "image": "/archive/house-bloom/versions/CUT-076-r1-color-outside-cabinet.png",
+          "mockupName": "Open The Wardrobe",
+          "mockupDescription": "In bright window light, Abby opens a sparse cupboard holding five distinct Objects while color has already begun appearing elsewhere in the room.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-077",
+          "image": "/archive/house-bloom/versions/CUT-077-r1-glass-shelf.png",
+          "mockupName": "Glass Finds The Shelf",
+          "mockupDescription": "In bright window light, six distinct colored glass Objects settle across a pale shelf as the room begins to bloom.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-078",
+          "image": "/archive/house-bloom/CUT-078.png",
+          "mockupName": "Choose The Amber Bottle",
+          "mockupDescription": "Abby carefully reaches among six new glass Objects as their color begins to bloom into the sunlit shelf.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-079",
+          "image": "/archive/house-bloom/versions/CUT-079-r1-table-arrangement.png",
+          "mockupName": "Arrange The Table",
+          "mockupDescription": "Seven additional vessels are placed upright and stable in bright daylight; their color pools across the table while the room remains airy and pale.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-080",
+          "image": "/archive/house-bloom/CUT-080.png",
+          "mockupName": "Fill The Shelf",
+          "mockupDescription": "Abby reaches toward the blue speckled vase within a completely new seven-object group, all visible in daylight.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-081",
+          "image": "/archive/house-bloom/CUT-081.png",
+          "mockupName": "Join The Blue Glass",
+          "mockupDescription": "In bright window light, eight unique blue, cobalt, turquoise, and clear Objects settle upright as their reflected color begins to join.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-082",
+          "image": "/archive/house-bloom/versions/CUT-082-r1-medium-room.png",
+          "mockupName": "Daylight Color Anchor",
+          "mockupDescription": "The favorite original medium-room mockup sets the bright daylight exposure and pale-blue, natural-wood color balance while the living room feels fully inhabited.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-083",
+          "image": "/archive/house-bloom/CUT-083.png",
+          "mockupName": "Carry Color Upstairs",
+          "mockupDescription": "Moving purposefully through the sunlit hall, Abby passes eight newly installed wall and lighting Objects.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-084",
+          "image": "/archive/house-bloom/CUT-084.png",
+          "mockupName": "Fill The Hallway",
+          "mockupDescription": "Nine more architecture, decor, and lighting Objects fill the airy corridor without repeating the earlier groups.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-085",
+          "image": "/archive/house-bloom/CUT-085.png",
+          "mockupName": "Set The Last Details",
+          "mockupDescription": "Abby adjusts a lamp in the bright daytime house as ten distinct furnishings, instruments, and lights occupy adjoining rooms.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-086",
+          "image": "/archive/house-bloom/CUT-086.png",
+          "mockupName": "The House In Full Bloom",
+          "mockupDescription": "The bright daytime exterior completes the Storybook palette with the final architecture, garden, lighting, and glass-window-display Objects; the miniature buildings reappear as continuity.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-087",
+          "image": "/archive/house-bloom/CUT-087.png",
+          "mockupName": "The Garden In Full Bloom",
+          "mockupDescription": "The wide exterior payoff carries the finished house into bright late-morning daylight, with varied settled Objects visible through its windows and the full palette blooming into the garden.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "house-bloom-pass-02",
+      "styleId": "house-bloom",
+      "passNumber": 2,
+      "title": "House Bloom r2",
+      "description": "The first piano closeup revision keeps the earlier glass continuity while the instrument begins playing by itself.",
+      "createdAt": "2026-07-28",
+      "items": [
+        {
+          "cutId": "CUT-077",
+          "image": "/archive/house-bloom/versions/CUT-077-r2-piano-with-glass.png",
+          "mockupName": "The Piano Wakes — Glass Continuity",
+          "mockupDescription": "In a tight sunlit closeup, the upright piano begins playing by itself while six distinct glass Objects remain on its upper ledge.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "house-bloom-pass-03",
+      "styleId": "house-bloom",
+      "passNumber": 3,
+      "title": "House Bloom r3",
+      "description": "The chronology resets to a genuinely Drab house: color stays inside the cabinet, the piano starts empty, and the first Object group later reaches it.",
+      "createdAt": "2026-07-28",
+      "items": [
+        {
+          "cutId": "CUT-075",
+          "image": "/archive/house-bloom/versions/CUT-075-r2-drab-baseline.png",
+          "mockupName": "Before The Color",
+          "mockupDescription": "In bright daylight the house remains completely Drab and greige before Abby places anything, with no colorful Objects visible in the room.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-076",
+          "image": "/archive/house-bloom/versions/CUT-076-r2-cabinet-only.png",
+          "mockupName": "Color Stays In The Cabinet",
+          "mockupDescription": "The sunlit room stays greige while the only color is contained among the Objects inside the open cabinet.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-077",
+          "image": "/archive/house-bloom/versions/CUT-077-r3-empty-piano.png",
+          "mockupName": "The Piano Wakes",
+          "mockupDescription": "In a tight daylight closeup, the upright piano begins playing by itself while its top remains empty before Abby decorates it.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-079",
+          "image": "/archive/house-bloom/versions/CUT-079-r2-glass-piano.png",
+          "mockupName": "Bring Color To The Piano",
+          "mockupDescription": "Abby brings the first bright collection to the piano, arranging distinct glass Objects across its top in clear daylight.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-082",
+          "image": "/archive/house-bloom/versions/CUT-082-r2-wide-saturated.png",
+          "mockupName": "The Room Transforms — Saturated Wide",
+          "mockupDescription": "An early wide reveal shows the daylight living room fully transformed by saturated color and layered Object groupings.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "house-bloom-pass-04",
+      "styleId": "house-bloom",
+      "passNumber": 4,
+      "title": "House Bloom r4",
+      "description": "The piano becomes a non-glass miniature world, and the wide room reveal returns to the pale-blue and natural-wood daylight balance of the original frame.",
+      "createdAt": "2026-07-28",
+      "items": [
+        {
+          "cutId": "CUT-079",
+          "image": "/archive/house-bloom/versions/CUT-079-r3-piano-world.png",
+          "mockupName": "Build A World On The Piano",
+          "mockupDescription": "With a more natural working pose, Abby places the white ceramic house beside blue-and-gold books, two distinct shop miniatures, a doll, and a black mug on the piano; no glassware is used.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-082",
+          "image": "/archive/house-bloom/versions/CUT-082-r3-wide-original-color-books.png",
+          "mockupName": "The Room Transforms — Original-Color Wide",
+          "mockupDescription": "A wider room reveal follows the original frame's pale-blue walls, natural wood, and bright daylight while Abby carries books through the transformed space.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "house-bloom-pass-05",
+      "styleId": "house-bloom",
+      "passNumber": 5,
+      "title": "House Bloom r5",
+      "description": "The room-first doorway revision makes Abby a small passing presence and lets the transformed house carry the frame.",
+      "createdAt": "2026-07-28",
+      "items": [
+        {
+          "cutId": "CUT-082",
+          "image": "/archive/house-bloom/versions/CUT-082-r4-doorway-room-first.png",
+          "mockupName": "The Room Transforms — Doorway Wide",
+          "mockupDescription": "Seen from just inside the doorway, the layered daylight room leads while Abby is only a small, partly occluded edge presence moving onward.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "house-bloom-pass-06",
+      "styleId": "house-bloom",
+      "passNumber": 6,
+      "title": "House Bloom r6",
+      "description": "The favorite original medium-room mockup is restored and matched precisely to CUT-079's non-glass piano-top Object world.",
+      "createdAt": "2026-07-28",
+      "items": [
+        {
+          "cutId": "CUT-082",
+          "image": "/archive/house-bloom/versions/CUT-082-r5-medium-room-matched-to-079.png",
+          "mockupName": "The Room Transforms — Matched To 079",
+          "mockupDescription": "The favorite medium-room composition, daylight color, and quiet piano pose are preserved while the piano top now matches CUT-079's books, white house, two shop miniatures, doll, and black mug; the stained-glass lamp and amber vase move elsewhere in the room.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "house-bloom-pass-07",
+      "styleId": "house-bloom",
+      "passNumber": 7,
+      "title": "House Bloom r7",
+      "description": "The selected Drab r4 fireplace-room frame becomes the daylight transformation wide while retaining CUT-079's exact non-glass piano-top continuity.",
+      "createdAt": "2026-07-28",
+      "items": [
+        {
+          "cutId": "CUT-082",
+          "image": "/archive/house-bloom/versions/CUT-082-r6-drab-r4-matched-to-079.png",
+          "mockupName": "The Room Transforms — Drab r4 To 079",
+          "mockupDescription": "The selected Drab r4 wide camera and double-fireplace room are preserved, now transformed in CUT-079's bright daylight palette with its books, white house, two shop miniatures, doll, and black mug on the piano; Abby crosses the room naturally with a book.",
+          "sourceFrame": "first"
+        }
+      ]
+    },
+    {
+      "id": "house-bloom-pass-08",
+      "styleId": "house-bloom",
+      "passNumber": 8,
+      "title": "House Bloom r8",
+      "description": "The approved Drab-r4-based transformation wide is retained exactly, with its wall surfaces shifted to a clearer pale storybook blue.",
+      "createdAt": "2026-07-28",
+      "items": [
+        {
+          "cutId": "CUT-082",
+          "image": "/archive/house-bloom/versions/CUT-082-r7-blue-walls.png",
+          "mockupName": "The Room Transforms — Blue Walls",
+          "mockupDescription": "The approved Drab r4 wide composition, daylight, Abby action, every Object, and CUT-079's piano-top books, white house, two shops, doll, and black mug remain intact while the room walls become a distinct pale dusty blue.",
+          "sourceFrame": "first"
+        }
+      ]
+    },
+    {
+      "id": "house-bloom-pass-09",
+      "styleId": "house-bloom",
+      "passNumber": 9,
+      "title": "House Bloom r9",
+      "description": "CUT-085 retains its approved daylight room and lamp-placement beat while Abby receives the refined facial sculpt, anatomy, tactile materials, and render quality of the stronger neighboring frames.",
+      "createdAt": "2026-07-29",
+      "items": [
+        {
+          "cutId": "CUT-085",
+          "image": "/archive/house-bloom/versions/CUT-085-r2-character-refine.png",
+          "mockupName": "Set The Last Details — Refined Abby",
+          "mockupDescription": "The bright striped hallway, ten assigned Objects, and green-lamp placement remain unchanged while Abby gains a dimensional face, tactile red hair, refined cloth, and clean arm and hand anatomy consistent with CUT-083 and CUT-082.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "nth-wardrobe-pass-01",
+      "styleId": "nth-wardrobe",
+      "title": "NTH Wardrobe",
+      "passNumber": 1,
+      "chapter": "NTH",
+      "createdAt": "2026-07-29",
+      "description": "Cuts 24–31 retain their original NTH cameras, sunset clothing-world language, and Little Abby costume while the generic cloth terrain becomes recognizable oversized components of the wardrobe already present in the thumbnails. Big Abby remains in her gray Drab top and pale wrap skirt in the final two-Abby shot; no IJDKYY Objects Wardrobe is used.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-024",
+          "image": "/archive/nth-wardrobe/versions/CUT-024-r1-nth-wardrobe.png",
+          "mockupName": "Cautious Through Her Clothes",
+          "mockupDescription": "Little Abby explores instead of urgently running through a vast sunset valley formed from the gray Drab top, pale wrap skirt, burgundy puff-sleeve top, patchwork tiers, striped leggings, and red boots already present in NTH.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-025",
+          "image": "/archive/nth-wardrobe/versions/CUT-025-r1-nth-wardrobe.png",
+          "mockupName": "Buttons Underfoot",
+          "mockupDescription": "Her existing striped leggings and red boots land with believable compression on the warm wooden buttons of Big Abby's heather-gray Drab knit top, with NTH patchwork folds in the sunset background.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-026",
+          "image": "/archive/nth-wardrobe/versions/CUT-026-r1-nth-wardrobe.png",
+          "mockupName": "Across The Gray Top",
+          "mockupDescription": "Little Abby crosses the neckline, button placket, seams, and cuffs of the enormous gray Drab top while the burgundy buttoned top and patchwork skirt become the foreground terrain.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-027",
+          "image": "/archive/nth-wardrobe/versions/CUT-027-r1-nth-wardrobe.png",
+          "mockupName": "Climb Through NTH",
+          "mockupDescription": "The original close climbing beat keeps Little Abby in her burgundy patchwork outfit while the surrounding folds resolve into Big Abby's gray top, pale wrap skirt, burgundy sleeves, and tiered NTH patchwork.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-028",
+          "image": "/archive/nth-wardrobe/versions/CUT-028-r1-nth-wardrobe.png",
+          "mockupName": "Her Top Takes Flight",
+          "mockupDescription": "The generic flying vest becomes Little Abby's actual burgundy puff-sleeve patchwork top, complete with its colored panels, orange cuffs, and buttons, deforming and billowing like soft cloth.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-029",
+          "image": "/archive/nth-wardrobe/versions/CUT-029-r1-nth-wardrobe.png",
+          "mockupName": "Land In The Emerald Tier",
+          "mockupDescription": "Little Abby lands into the gathered emerald tier of the NTH patchwork skirt, which compresses beneath her among grounded folds of the gray Drab top, pale skirt, and burgundy buttoned top.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-030",
+          "image": "/archive/nth-wardrobe/versions/CUT-030-r1-nth-wardrobe.png",
+          "mockupName": "On The Burgundy Sleeve",
+          "mockupDescription": "The original full-body pose remains on a monumental burgundy puff sleeve whose orange cuff band, button placket, and adjoining navy and emerald patchwork tiers identify the exact NTH outfit.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-031",
+          "image": "/archive/nth-wardrobe/versions/CUT-031-r1-nth-wardrobe.png",
+          "mockupName": "Big Abby Throws From Home",
+          "mockupDescription": "The two-Abby composition is preserved: colorful Little Abby watches from the burgundy sleeve while frustrated Big Abby, inside the house in her gray Drab top and pale wrap skirt, throws the soft burgundy NTH garment with authentic follow-through.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "nth-wardrobe-pass-02",
+      "styleId": "nth-wardrobe",
+      "title": "NTH Wardrobe r2",
+      "passNumber": 2,
+      "chapter": "NTH",
+      "createdAt": "2026-07-29",
+      "description": "The selected wardrobe is now represented literally across the NTH landscape: the blue fuzzy and pink shag sweaters emerge in Cuts 22–24, Cuts 24 and 26 show every chosen garment and accessory as identifiable clothing terrain, Cut 26 carries clothes to the horizon in the existing Houdini mountain shapes, and Cut 31 throws the blue polka-dot blouse into the TH transition.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-022",
+          "image": "/archive/nth-wardrobe/versions/CUT-022-r1-sweater-mountain-seed.png",
+          "mockupName": "Sweaters Enter The Mountains",
+          "mockupDescription": "The original sunset valley remains dominant while the exact pink striped shag sweater appears at the nearest base and the exact blue striped fuzzy sweater quietly resolves inside the distant Houdini ridges.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-023",
+          "image": "/archive/nth-wardrobe/versions/CUT-023-r1-sweater-mountain-reveal.png",
+          "mockupName": "The Knit Terrain Reveals Itself",
+          "mockupDescription": "Little Abby's existing pose and costume remain inside the original mountain silhouettes as the blue fuzzy and pink shag sweater stripes become more legible along the bases.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-024",
+          "image": "/archive/nth-wardrobe/versions/CUT-024-r2-selected-wardrobe.png",
+          "mockupName": "Walk Into The Selected Wardrobe",
+          "mockupDescription": "The fuzzy blue and shaggy pink sweaters form the valley floor beneath directly recognizable versions of the burgundy-orange circle dress, striped short-sleeve top, pink ruffle trousers, olive crochet bag, multicolor ribbed top, lime scarf, and red beret.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-026",
+          "image": "/archive/nth-wardrobe/versions/CUT-026-r2-clothes-to-horizon.png",
+          "mockupName": "Clothes To The Horizon",
+          "mockupDescription": "Every existing Houdini mountain silhouette becomes clothing all the way to the horizon, with the red corset top, burgundy button corset, silver headphones, gray opera gloves, crystal tiara, red knee boots, and the striped sweaters directly represented.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-031",
+          "image": "/archive/nth-wardrobe/versions/CUT-031-r2-blue-polka-transition.png",
+          "mockupName": "Throw Into Blue Steel",
+          "mockupDescription": "Big Abby remains inside in her gray Drab top and pale wrap skirt while the exact pale-blue polka-dot blouse billows toward camera, carrying the warm NTH frame into TH's cool Blue Steel edge.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "nth-wardrobe-pass-03",
+      "styleId": "nth-wardrobe",
+      "title": "NTH Wardrobe r3",
+      "passNumber": 3,
+      "chapter": "NTH",
+      "createdAt": "2026-07-29",
+      "description": "CUT-028 now uses the exact red striped corset top as its isolated falling garment, and CUT-031 turns the exact blue polka-dot blouse into a true lens-covering cloth wipe toward Blue Steel.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-028",
+          "image": "/archive/nth-wardrobe/versions/CUT-028-r2-red-corset-fall.png",
+          "mockupName": "The Red Corset Falls",
+          "mockupDescription": "The exact striped red corset top tumbles alone through the warm NTH air, preserving its high collar, puff sleeves, chest opening, pointed waist, and black buttons as soft billowing cloth.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-031",
+          "image": "/archive/nth-wardrobe/versions/CUT-031-r3-blue-polka-lens-wipe.png",
+          "mockupName": "Blouse Covers Camera",
+          "mockupDescription": "The exact pale-blue polka-dot blouse flies face-first into the lens; its broad front panel, buttons, dots, and blurred ruffles fill almost the entire frame while Big Abby's throw remains only at the warm edge.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "nth-wardrobe-pass-04",
+      "styleId": "nth-wardrobe",
+      "title": "NTH Wardrobe r4",
+      "passNumber": 4,
+      "chapter": "NTH",
+      "createdAt": "2026-07-29",
+      "description": "CUT-028 adds a broadside, face-up tumble of the exact red corset while CUT-031 restores the canonical low heap composition: Little Abby remains readable on the burgundy mound, Big Abby completes the throw at left, and the exact blue polka-dot blouse advances into only part of the lens.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-028",
+          "image": "/archive/nth-wardrobe/versions/CUT-028-r3-red-corset-side-up.png",
+          "mockupName": "The Red Corset Falls Sideways",
+          "mockupDescription": "The exact striped red corset tumbles broadside through the warm NTH sky with its front facing upward, keeping the ruffled collar, chest opening, black buttons, puff sleeves, and pointed waist clearly readable.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-031",
+          "image": "/archive/nth-wardrobe/versions/CUT-031-r4-blue-polka-canonical-wipe.png",
+          "mockupName": "Blouse Enters The Canonical Frame",
+          "mockupDescription": "The canonical low composition returns: Little Abby stands clearly on the burgundy heap, Big Abby completes the throw at left, and the exact blue polka-dot blouse enlarges into the upper-right lens edge without obscuring the little figure.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "nth-wardrobe-pass-05",
+      "styleId": "nth-wardrobe",
+      "title": "NTH Wardrobe r5",
+      "passNumber": 5,
+      "chapter": "NTH",
+      "createdAt": "2026-07-29",
+      "description": "Cuts 23, 24, 26, 27, 29, and 30 keep their canonical cameras, character staging, sunset depth, and mountain silhouettes while every terrain mass becomes a colossal recognizable wardrobe item. Pink shag is a background mountain, the green-maroon sweater becomes the main summit, additional garments work at landscape scale, and the red corset remains exclusive to CUT-028.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-023",
+          "image": "/archive/nth-wardrobe/versions/CUT-023-r2-source-matched-clothing-mountains.png",
+          "mockupName": "Enter The Giant Wardrobe",
+          "mockupDescription": "The canonical valley becomes an all-clothing landscape: the pink striped shag sweater rises as the background mountain while the green mini knit, star knee socks, and black Mary Jane wedges form monumental nearer ridges and outcrops.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-024",
+          "image": "/archive/nth-wardrobe/versions/CUT-024-r3-source-matched-main-mountain.png",
+          "mockupName": "Cross The Main Sweater Mountain",
+          "mockupDescription": "The green-maroon fuzzy sweater truly becomes the dominant mountain and crest, with the pink shag sweater behind it and the bronze gown, olive crochet bag, and green platform sneakers enlarged into the canonical valley's existing slopes.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-026",
+          "image": "/archive/nth-wardrobe/versions/CUT-026-r3-source-matched-clothing-mountains.png",
+          "mockupName": "Circle Ridge, Blue Horizon",
+          "mockupDescription": "The burgundy-orange circle dress forms the long foreground ridge, the blue striped fuzzy sweater becomes the multi-peak horizon, and the teal sculpted corset plus navy velvet skirt resolve as giant midground wardrobe landforms.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-027",
+          "image": "/archive/nth-wardrobe/versions/CUT-027-r2-source-matched-climb.png",
+          "mockupName": "Climb The Champagne Ruffles",
+          "mockupDescription": "The close climbing surface becomes the colossal champagne ruffle corset dress beneath Abby's hands while the burgundy cape, pink striped corset, and circle-dress folds continue as enormous softly blurred terrain behind her.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-029",
+          "image": "/archive/nth-wardrobe/versions/CUT-029-r2-source-matched-pile4-saddle.png",
+          "mockupName": "Rest In Pile Four's Saddle",
+          "mockupDescription": "Abby remains seated in the canonical saddle as the navy pinstripe ruffle dress forms the left lobe, the teal pleated skirt builds the right crest, and the olive military jacket creates the approach and resting hollow.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-030",
+          "image": "/archive/nth-wardrobe/versions/CUT-030-r2-source-matched-pile4-summit.png",
+          "mockupName": "Reach Pile Four's Summit",
+          "mockupDescription": "The clean canonical summit becomes a giant teal pleated-skirt dome beneath Abby's exact pose, with navy pinstripe ruffles and the olive military jacket emerging only along the lower flanks.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "nth-wardrobe-pass-06",
+      "styleId": "nth-wardrobe",
+      "title": "NTH Wardrobe r6",
+      "passNumber": 6,
+      "chapter": "NTH",
+      "createdAt": "2026-07-29",
+      "description": "CUT-024 returns to Mockup 2's full-valley density and immediate wardrobe readability while making soft sweater textures the dominant terrain language. The giant gray-green-maroon sweater now crowns the mountain with its circular ribbed neckline clearly visible at the summit.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-024",
+          "image": "/archive/nth-wardrobe/versions/CUT-024-r4-whole-valley-clothes-neckline-summit.png",
+          "mockupName": "The Whole Valley Is Clothes",
+          "mockupDescription": "The selected wardrobe once again fills the entire valley at monumental scale, with readable collars, cuffs, sleeves, stripes, ruffles, bag opening, scarf, and beret; above them, the giant gray-green-maroon sweater becomes the main mountain and its ribbed neck opening forms the summit.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "nth-wardrobe-pass-07",
+      "styleId": "nth-wardrobe",
+      "title": "NTH Wardrobe r7",
+      "passNumber": 7,
+      "chapter": "NTH",
+      "createdAt": "2026-07-29",
+      "description": "CUT-024 removes the last ordinary upper-right mountain surfaces and gives every wardrobe design one connected appearance at a deliberate scale. The hero sweater remains the main summit, a single blue fuzzy sweater forms the distant ridge, and supporting garments step down from slopes to low ridges and accessories without cloning.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-024",
+          "image": "/archive/nth-wardrobe/versions/CUT-024-r5-unique-items-scaled-valley.png",
+          "mockupName": "One Garment, One Landform",
+          "mockupDescription": "The gray-green-maroon sweater crowns the valley once, the blue striped fuzzy sweater replaces the upper-right rock mountain once, and every supporting item appears once at an intentional relative scale; the repeated pink foreground pile is replaced by one navy velvet-skirt slope.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "nth-wardrobe-pass-08",
+      "styleId": "nth-wardrobe",
+      "title": "NTH Wardrobe r8",
+      "passNumber": 8,
+      "chapter": "NTH",
+      "createdAt": "2026-07-29",
+      "description": "CUT-024 removes the blue sweater from the upper-right and opens that background to sunset sky. The gray-green-maroon hero mountain is rebuilt as one coherent connected sweater with a single turtleneck summit, continuous torso, shoulder seams, and two attached sleeves.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-024",
+          "image": "/archive/nth-wardrobe/versions/CUT-024-r6-coherent-hero-sweater-open-sky.png",
+          "mockupName": "One Coherent Sweater Mountain",
+          "mockupDescription": "The blue upper-right sweater is gone; warm sky now isolates one physically legible gray-green-maroon sweater whose neck, body, shoulders, and two sleeves form the main mountain as a single connected garment.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "nth-wardrobe-pass-09",
+      "styleId": "nth-wardrobe",
+      "title": "NTH Wardrobe r9",
+      "passNumber": 9,
+      "chapter": "NTH",
+      "createdAt": "2026-07-29",
+      "description": "CUT-024 returns the gray-green-maroon hero sweater to Mockup 5's casually crumpled mountain shape while clarifying its viewer-right mass as one attached bunched sleeve with a traceable shoulder, taper, and collapsed ribbed cuff. The blue upper-right sweater remains removed.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-024",
+          "image": "/archive/nth-wardrobe/versions/CUT-024-r7-crumpled-right-sleeve.png",
+          "mockupName": "Crumpled Sweater, Clear Right Sleeve",
+          "mockupDescription": "The hero sweater keeps the irregular heap-like folds that worked in Mockup 5, while its right-hand terrain now follows one connected shoulder-to-cuff sleeve construction against open sunset sky.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "nth-wardrobe-pass-10",
+      "styleId": "nth-wardrobe",
+      "title": "NTH Wardrobe r10",
+      "passNumber": 10,
+      "chapter": "NTH",
+      "createdAt": "2026-07-29",
+      "description": "CUT-024 receives a full relative-scale pass. The foreground pink sweater, blue-striped sweater, scarf, navy skirt, beret, bag, and Abby remain scale anchors; the orange striped dress, striped T-shirt, and pink ruffle shorts become substantial midground terrain, while the crumpled gray-green-maroon sweater is reduced modestly as a coherent background summit.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-024",
+          "image": "/archive/nth-wardrobe/versions/CUT-024-r8-proportional-scale-pass.png",
+          "mockupName": "Balance The Wardrobe Valley",
+          "mockupDescription": "The orange dress, striped T-shirt, and pink shorts now carry real midground mass; the established foreground anchors hold their scale, and the crumpled sweater summit steps down enough to unify the valley without losing its neckline or sleeve construction.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "nth-wardrobe-pass-11",
+      "styleId": "nth-wardrobe",
+      "title": "NTH Wardrobe r11",
+      "passNumber": 11,
+      "chapter": "NTH",
+      "createdAt": "2026-07-29",
+      "description": "CUT-026 keeps the strong circle-dress ridge and blue fuzzy-sweater horizon from the previous clothing-landscape direction, but lifts the exposure and restores Mockup 2's composed wardrobe still life with exact red knee boots, teal sculpted corset, silver headphones, and gray opera gloves.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-026",
+          "image": "/archive/nth-wardrobe/versions/CUT-026-r4-bright-still-life-clothing-horizon.png",
+          "mockupName": "Bring Back The Wardrobe Still Life",
+          "mockupDescription": "A luminous apricot sunset opens the shadows while the circle-dress ridge and blue fuzzy-sweater mountains hold the clothing-horizon composition; the teal corset, silver headphones, red buttoned boots, and gray opera gloves return as one restrained monumental tableau around Abby.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "nth-wardrobe-pass-12",
+      "styleId": "nth-wardrobe",
+      "title": "NTH Wardrobe r12",
+      "passNumber": 12,
+      "chapter": "NTH",
+      "createdAt": "2026-07-29",
+      "description": "CUT-027 replaces the champagne ruffle corset dress with the exact blue striped fuzzy sweater already established as the mountain horizon in CUT-026. A tighter canonical close-up turns its bunched torso, striped knit, cuff, and two-button placket into one coherent climbable garment.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-027",
+          "image": "/archive/nth-wardrobe/versions/CUT-027-r3-blue-striped-fuzzy-sweater-climb.png",
+          "mockupName": "Climb The Blue Fuzzy Sweater",
+          "mockupDescription": "Abby climbs across a single colossal blue striped fuzzy sweater whose thick knit rows and compressed folds become handholds, while a rolled cuff and the burgundy two-button placket keep the garment readable and continue directly from CUT-026's sweater mountains.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "nth-wardrobe-pass-13",
+      "styleId": "nth-wardrobe",
+      "title": "NTH Wardrobe r13",
+      "passNumber": 13,
+      "chapter": "NTH",
+      "createdAt": "2026-07-29",
+      "description": "CUT-029 and CUT-030 receive a matched Pile Four continuity correction: the saddle shot keeps its exact navy dress, teal skirt, olive jacket, and Abby blocking while opening the dark midtones; the summit shot buries the teal skirt waistband so Abby stands on a continuous crown of soft pleated cloth.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-029",
+          "image": "/archive/nth-wardrobe/versions/CUT-029-r3-brighter-pile4-saddle.png",
+          "mockupName": "Open The Pile Four Shadows",
+          "mockupDescription": "The approved navy pinstripe dress, teal pleated skirt, olive military-jacket saddle, and seated Abby remain geometrically unchanged while lifted midtones, warmer edge light, and clearer material separation restore the luminous NTH sunset.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-030",
+          "image": "/archive/nth-wardrobe/versions/CUT-030-r3-soft-pleated-summit.png",
+          "mockupName": "Soften The Teal Summit",
+          "mockupDescription": "The teal skirt's waistband is tucked beneath the pile instead of forming a hard hilltop rim; continuous compressed pleats now crest naturally under Abby's boots and flow down into the navy dress and olive jacket flanks.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "nth-wardrobe-pass-14",
+      "styleId": "nth-wardrobe",
+      "title": "NTH Wardrobe r14",
+      "passNumber": 14,
+      "chapter": "NTH",
+      "createdAt": "2026-07-29",
+      "description": "CUT-029 keeps the established Pile Four saddle but replaces the heavy tactical feeling with a warmer, rounded garment nest. The same navy pinstripe dress, teal pleated skirt, olive military jacket, and seated Abby remain readable at monumental scale.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-029",
+          "image": "/archive/nth-wardrobe/versions/CUT-029-r4-cozy-pile4-saddle.png",
+          "mockupName": "Make Pile Four Cozy",
+          "mockupDescription": "Warm apricot light, playful navy ruffles, plush teal pleats, and softly crumpled olive jacket folds turn the central saddle into a cozy cloth nest around Abby while preserving the original frame, wardrobe identities, and path geometry.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "nth-wardrobe-pass-15",
+      "styleId": "nth-wardrobe",
+      "title": "NTH Wardrobe r15",
+      "passNumber": 15,
+      "chapter": "NTH",
+      "createdAt": "2026-07-29",
+      "description": "CUT-023 keeps the source-matched clothing valley, canonical camera, crouched Abby, and warm sunset depth while correcting every garment-to-ground boundary: sweater cuffs and waistbands, knit hems, sock openings and toes, and shoe soles now end physically instead of dissolving into the floor.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-023",
+          "image": "/archive/nth-wardrobe/versions/CUT-023-r3-realistic-garment-ends.png",
+          "mockupName": "Give Every Garment A Real Edge",
+          "mockupDescription": "The pink shag sweater, green knit mini skirt, star socks, and black Mary Jane wedges keep their monumental valley positions while ribbed cuffs, finished hems, dark openings, stitched toes, distinct soles, folded cloth thickness, and narrow contact shadows separate every garment cleanly from the pink textile floor.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "nth-wardrobe-pass-16",
+      "styleId": "nth-wardrobe",
+      "title": "NTH Wardrobe r16",
+      "passNumber": 16,
+      "chapter": "NTH",
+      "createdAt": "2026-07-29",
+      "description": "CUT-023 keeps r15's physically finished garment edges while shifting the monumental shag sweater from pink to orange and clearing the foreground shoe. One black Mary Jane wedge now rests on its side in the background as a secondary-scale object.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-023",
+          "image": "/archive/nth-wardrobe/versions/CUT-023-r4-orange-sweater-background-shoe.png",
+          "mockupName": "Orange Sweater, Distant Shoe",
+          "mockupDescription": "The shag sweater keeps its monumental striped folds, ribbed cuff, and realistic opening in pumpkin and burnt orange, while the foreground is cleared and one black Mary Jane wedge lies naturally on its side farther back in the textile valley.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "nth-wardrobe-pass-17",
+      "styleId": "nth-wardrobe",
+      "title": "NTH Wardrobe r17",
+      "passNumber": 17,
+      "chapter": "NTH",
+      "createdAt": "2026-07-29",
+      "description": "CUT-023 keeps the orange garment palette and finished fabric construction while returning to the canonical shot's centered Abby, open textile lane, low camera, and broad layered mountain composition. The single sideways Mary Jane wedge regains monumental scale in the left mid-background.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-023",
+          "image": "/archive/nth-wardrobe/versions/CUT-023-r5-canonical-scale-sideways-shoe.png",
+          "mockupName": "Restore The Monumental Sideways Shoe",
+          "mockupDescription": "A single large black Mary Jane wedge lies on its outer side behind the navy star fabric at frame left, matching the original mockup's environmental scale while the centered Abby and broad open salmon lane return the composition to the canonical CUT-023 framing.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "nth-wardrobe-pass-18",
+      "styleId": "nth-wardrobe",
+      "title": "NTH Wardrobe r18",
+      "passNumber": 18,
+      "chapter": "NTH",
+      "createdAt": "2026-07-29",
+      "description": "CUT-026 returns to Mockup 1's sparse canonical composition, gray-top hero ridge, burgundy foreground, small walking Abby, and amber dusk. Only the distant mountain range changes, quietly resolving into the selected blue striped fuzzy sweater without adding a wardrobe-object tableau.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-026",
+          "image": "/archive/nth-wardrobe/versions/CUT-026-r5-subtle-sweater-horizon.png",
+          "mockupName": "Let The Horizon Become The Sweater",
+          "mockupDescription": "Mockup 1 remains intact from the foreground through Abby's gray-top path; far behind her, the original mountain silhouettes take on dusty low-contrast fuzzy stripes and one partially obscured two-button collar cue, keeping the wardrobe discovery atmospheric rather than turning it into a still life.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "nth-wardrobe-pass-19",
+      "styleId": "nth-wardrobe",
+      "title": "NTH Wardrobe r19",
+      "passNumber": 19,
+      "chapter": "NTH",
+      "createdAt": "2026-07-29",
+      "description": "CUT-026 makes the wardrobe-horizon idea almost subliminal. Mockup 1 remains the picture, while only one distant mountain face carries dusk-muted traces of the selected blue fuzzy sweater's knit bands—without a collar, placket, accessory, or freestanding garment silhouette.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-026",
+          "image": "/archive/nth-wardrobe/versions/CUT-026-r6-whispered-knit-horizon.png",
+          "mockupName": "Whisper The Knit Into The Horizon",
+          "mockupDescription": "The gray-top path, burgundy foreground, Abby, light, depth, and original mountain silhouettes remain intact; a few very soft dusty blue and muted plum fuzzy-knit bands sit inside one far ridge and disappear naturally into the amber atmospheric blur.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "nth-wardrobe-pass-20",
+      "styleId": "nth-wardrobe",
+      "title": "NTH Wardrobe r20",
+      "passNumber": 20,
+      "chapter": "NTH",
+      "createdAt": "2026-07-29",
+      "description": "CUT-026 stays in Mockup 4's luminous apricot, blue-sweater, orange-circle-dress world while collapsing the display into one compressed saddle of clothes. Every accessory now leans, sinks, overlaps, or is trapped by another garment as Abby steps across the unstable pile.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-026",
+          "image": "/archive/nth-wardrobe/versions/CUT-026-r7-collapsed-saddle-pile.png",
+          "mockupName": "Collapse The Wardrobe Into A Saddle",
+          "mockupDescription": "The circle dress buckles into a deep uneven foreground ridge, the teal corset slumps sideways, one headphone earcup is buried, the boots lean into the heap, and the gloves are caught between folds; Abby walks over a compressed saddle instead of through a product display.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "nth-wardrobe-pass-21",
+      "styleId": "nth-wardrobe",
+      "title": "NTH Wardrobe r21",
+      "passNumber": 21,
+      "chapter": "NTH",
+      "createdAt": "2026-07-29",
+      "description": "CUT-026 keeps Mockup 4's wardrobe, palette, miniature finish, and fuzzy blue horizon but sends the garments down a diagonal avalanche. The path becomes an asymmetrical climb across twisted circle-dress panels and accessories pinned at different depths.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-026",
+          "image": "/archive/nth-wardrobe/versions/CUT-026-r8-diagonal-clothes-avalanche.png",
+          "mockupName": "Send The Clothes Downhill",
+          "mockupDescription": "A gravity-driven heap spills from upper right to lower left: Abby climbs the rumpled orange-and-burgundy dress while the teal corset, sideways headphones, separated boots, and slipping gloves are wedged and partly buried through the same connected pile.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "nth-wardrobe-pass-22",
+      "styleId": "nth-wardrobe",
+      "title": "NTH Wardrobe r22",
+      "passNumber": 22,
+      "chapter": "NTH",
+      "createdAt": "2026-07-29",
+      "description": "CUT-026 turns Mockup 4's same oversized wardrobe into two tangled ridges and a narrow walkable canyon. The apricot sky and blue fuzzy landscape remain, while Abby passes between crushed, folded, and partially buried garments rather than isolated hero objects.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-026",
+          "image": "/archive/nth-wardrobe/versions/CUT-026-r9-walkable-clothing-canyon.png",
+          "mockupName": "Walk The Clothing Canyon",
+          "mockupDescription": "The circle dress and toppled teal corset collapse into the left wall, while sweater folds, gray cloth, sideways boots, half-buried headphones, and trapped gloves build the right; Abby walks through the irregular trough inside one continuous messy pile.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "nth-wardrobe-pass-23",
+      "styleId": "nth-wardrobe",
+      "title": "NTH Wardrobe r23",
+      "passNumber": 23,
+      "chapter": "NTH",
+      "createdAt": "2026-07-29",
+      "description": "CUT-026 keeps Mockup 8's connected clothes avalanche while restoring the canonical source hierarchy: a low wide camera, open amber sky, small centered walking Abby, one continuous midground ridge, and a soft receding mountain range. Accessories remain present but buried below the walking silhouette.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-026",
+          "image": "/archive/nth-wardrobe/versions/CUT-026-r10-source-matched-clothes-avalanche.png",
+          "mockupName": "Match The Avalanche To The Source",
+          "mockupDescription": "Abby crosses a long compressed gray, orange, and burgundy clothing ridge at the source frame's scale and position; the teal corset, sideways headphones, trapped gloves, and fallen boots recede into the folds while the fuzzy blue sweater follows the original distant mountain silhouettes.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "nth-wardrobe-pass-24",
+      "styleId": "nth-wardrobe",
+      "title": "NTH Wardrobe r24",
+      "passNumber": 24,
+      "chapter": "NTH",
+      "createdAt": "2026-07-29",
+      "description": "CUT-026 preserves r23's source-matched camera, small centered Abby, long walking ridge, open sky, and soft mountain depth while lifting the muddy midtones. Controlled apricot key light and cool ambient fill restore clean wardrobe-object separation without turning the embedded pile back into a display.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-026",
+          "image": "/archive/nth-wardrobe/versions/CUT-026-r11-bright-readable-source-match.png",
+          "mockupName": "Open The Pile Without Losing The Source",
+          "mockupDescription": "Brighter midtones and narrow edge highlights clarify Abby, the teal corset panel, silver headphone grille, gray glove fingers, and red boot buttons while every accessory stays below the walking line, partially buried, and physically connected to the messy ridge.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "blue-steel-th-pass-07",
+      "styleId": "blue-steel",
+      "title": "Blue Steel r7",
+      "passNumber": 7,
+      "chapter": "TH",
+      "createdAt": "2026-07-29",
+      "description": "CUT-035 leaves the bridge and moves close behind Abby at a frost-packed window: the exterior retains the cold monochrome Blue Steel material language while a concentrated amber bread-built house interior glows through the glass.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-035",
+          "image": "/archive/blue-steel/versions/CUT-035-r4-ots-bread-house.png",
+          "mockupName": "Discover The Bread House",
+          "mockupDescription": "Over Abby's snow-dusted shoulder, a divided Blue Steel window fills the frame; through cleared frost she discovers a warm room built from bread slices, loaves, waffles, biscuits, and baked trim, with no bridge or walking action.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "blue-steel-th-pass-08",
+      "styleId": "blue-steel",
+      "title": "Blue Steel r8",
+      "passNumber": 8,
+      "chapter": "TH",
+      "createdAt": "2026-07-29",
+      "description": "CUT-035 keeps the frost-window bread-house discovery from r7 while moving the camera more directly behind Abby for a cleaner, less three-quarter over-the-shoulder composition.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-035",
+          "image": "/archive/blue-steel/versions/CUT-035-r5-rear-ots-bread-house.png",
+          "mockupName": "Discover The Bread House — Rear OTS",
+          "mockupDescription": "The camera sits almost directly behind Abby's snow-dusted hair and shoulder, minimizing her profile while the divided Blue Steel window and warm bread-built interior remain dominant.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "blue-steel-th-pass-09",
+      "styleId": "blue-steel",
+      "title": "Blue Steel r9",
+      "passNumber": 9,
+      "chapter": "TH",
+      "createdAt": "2026-07-29",
+      "description": "Object-specific village continuity pass: CUT-033 retains its close walking subject while adopting the luminous frost, tactile snow, cobalt depth, and miniature finish of the surrounding Blue Steel frames; CUT-034 gains the exact ice-cream-shop model in its snowy background; and CUT-038 replaces one gingerbread building with the exact asymmetrical White House design.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-033",
+          "image": "/archive/blue-steel/versions/CUT-033-r3-finish-match.png",
+          "mockupName": "Walk Through One Blue Steel World",
+          "mockupDescription": "Abby's side-profile walk, folded-arm pose, close camera, curved frozen structure, foreground boulder, and distant village remain intact while the frame gains the brighter periwinkle frost, deep cobalt separation, dense snow, sculpted microtexture, and dimensional miniature finish shared by CUT-034, CUT-036, and CUT-038.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-034",
+          "image": "/archive/blue-steel/versions/CUT-034-r3-ice-cream-shop.png",
+          "mockupName": "Discover The Ice Cream Shop",
+          "mockupDescription": "The exact stepped ice-cream-shop model appears behind Abby as a distant village building, with its tiered sign, broad awning, display windows, center door, and porch rebuilt in monochrome blue clay under the same deep snow and freezer frost as the surrounding world.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-038",
+          "image": "/archive/blue-steel/versions/CUT-038-r2-white-house-village.png",
+          "mockupName": "The White House Joins The Village",
+          "mockupDescription": "One middle-background gingerbread house becomes the exact asymmetrical White House design—tall irregular tower, smaller gable, round and arched windows, bay, handmade ceramic relief—fully converted to snowy monochrome Blue Steel while Abby, the paths, bridge, lamps, trees, and remaining houses stay in place.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "blue-steel-th-pass-10",
+      "styleId": "blue-steel",
+      "title": "Blue Steel r10",
+      "passNumber": 10,
+      "chapter": "TH",
+      "createdAt": "2026-07-29",
+      "description": "CUT-033 combines the successful Freezer Carnival subject design from r2 with r9's finished Blue Steel treatment: the monumental open ice-cream carton and scattered ice cubes return, rebuilt in luminous cobalt and periwinkle frost while Abby's close side-profile walking beat remains intact.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-033",
+          "image": "/archive/blue-steel/versions/CUT-033-r4-carton-cubes-finish-match.png",
+          "mockupName": "Walk Past The Frozen Carton",
+          "mockupDescription": "Mockup 2's open freezer-burned ice-cream carton and loose translucent ice cubes return around Abby's folded-arm side-profile walk, now rendered with r9's dense snow, pale periwinkle frost, deep cobalt separation, tactile miniature construction, and dimensional finish.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "blue-steel-th-pass-11",
+      "styleId": "blue-steel",
+      "title": "Blue Steel r11",
+      "passNumber": 11,
+      "chapter": "TH",
+      "createdAt": "2026-07-29",
+      "description": "CUT-033 keeps r10's side-profile walk, translucent ice cubes, snowfall, and finished Blue Steel treatment while simplifying the landmark into an unmistakable oversized ice-cream tub with a low flat lid and no roof-like folded top.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-033",
+          "image": "/archive/blue-steel/versions/CUT-033-r5-clean-ice-cream-tub.png",
+          "mockupName": "Walk Past The Ice Cream Tub",
+          "mockupDescription": "The monumental freezer package now has a clean low rectangular lid, clear rim and package band, and subtle scoop-and-cone relief beneath the frost; the tall folded flaps are gone while Abby, the six ice cubes, and the luminous cobalt miniature finish remain intact.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "blue-steel-th-pass-12",
+      "styleId": "blue-steel",
+      "title": "Blue Steel r12",
+      "passNumber": 12,
+      "chapter": "TH",
+      "createdAt": "2026-07-29",
+      "description": "CUT-046 replaces the generic giant with the approved Abby character guide, restores her focused food-search performance, and separates the magical Blue Steel freezer world from the muted pre-transformation kitchen behind her.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-046",
+          "image": "/archive/blue-steel/versions/CUT-046-r2-searching-fridge-character-drab-kitchen.png",
+          "mockupName": "Searching The Freezer",
+          "mockupDescription": "From inside the freezer, canonical Abby leans in at giant scale and scans downward for ordinary food with a focused neutral expression—not surprise yet. Her skin, orange rope curls, forehead spiral, eyes, lashes, and layered burgundy/teal wardrobe follow the approved avatar guide; the miniature world stays tactile Blue Steel while the real kitchen beyond is cool, plain, and drab.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "blue-steel-th-pass-13",
+      "styleId": "blue-steel",
+      "title": "Blue Steel r13",
+      "passNumber": 13,
+      "chapter": "TH",
+      "createdAt": "2026-07-29",
+      "description": "CUT-046 restores the source freezer-frame silhouette, right arch and rail, village layout, horses, and giant-character scale while retaining canonical Abby's focused food-search performance and the drab kitchen beyond.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-046",
+          "image": "/archive/blue-steel/versions/CUT-046-r3-source-framing-searching-drab-kitchen.png",
+          "mockupName": "Search Through The Source Framing",
+          "mockupDescription": "The approved giant Abby and muted pre-transformation kitchen now sit behind the source-shaped freezer opening; the right arch, rail, icy edges, snowbanks, buildings, horses, tiny figure, and inside-the-freezer camera remain visible.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "blue-steel-th-pass-14",
+      "styleId": "blue-steel",
+      "title": "Blue Steel r14",
+      "passNumber": 14,
+      "chapter": "TH",
+      "createdAt": "2026-07-29",
+      "description": "CUT-046 adds the missing story geography without changing the source freezer-door proportions: little Abby is closest to camera, the carousel occupies the middle ground and blocks Big Abby's view of her, and Big Abby searches from the drab kitchen beyond.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-046",
+          "image": "/archive/blue-steel/versions/CUT-046-r4-carousel-blocking-little-abby-source-door.png",
+          "mockupName": "Carousel Blocks Little Abby",
+          "mockupDescription": "Little Abby stands nearest the lens with her back to camera; the Blue Steel carousel sits directly between her and Big Abby, hiding her from Big Abby while preserving the source freezer-frame proportions, right arch, rail, village, horses, and drab kitchen.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "blue-steel-th-pass-15",
+      "styleId": "blue-steel",
+      "title": "Blue Steel r15",
+      "passNumber": 15,
+      "chapter": "TH",
+      "createdAt": "2026-07-29",
+      "description": "CUT-046 keeps r14's approved fridge, carousel, and character blocking while correcting Big Abby's face and hairline back to the canonical avatar guide.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-046",
+          "image": "/archive/blue-steel/versions/CUT-046-r5-approved-face-carousel-blocking.png",
+          "mockupName": "Search Beyond The Carousel",
+          "mockupDescription": "Canonical Big Abby searches the freezer from the drab kitchen with her approved large brown eyes, dramatic lashes, warm clay face, orange rope curls, and forehead spiral. Little Abby remains closest to camera, concealed from Big Abby by the carousel between them.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "blue-steel-th-pass-16",
+      "styleId": "blue-steel",
+      "title": "Blue Steel r16",
+      "passNumber": 16,
+      "chapter": "TH",
+      "createdAt": "2026-07-29",
+      "description": "First CUT-047 and CUT-048 Blue Steel fridge-continuity pass. The drab kitchen and source action remain, but the carousel scale is intentionally retained only as an archived comparison before the source-scale correction.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-047",
+          "image": "/archive/blue-steel/versions/CUT-047-r1-centered-carousel-oversize.png",
+          "mockupName": "Centered Carousel — Oversized Archive",
+          "mockupDescription": "Archived first pass: the fridge interior becomes Blue Steel and the carousel is centered, but the carousel fills too much of the cavity.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-048",
+          "image": "/archive/blue-steel/versions/CUT-048-r1-blue-steel-carousel-oversize.png",
+          "mockupName": "Lift Carousel — Oversized Archive",
+          "mockupDescription": "Archived first pass: the Blue Steel carousel and fridge world continue into the lift, but the object is too large for Abby's hands and the source scale.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "blue-steel-th-pass-17",
+      "styleId": "blue-steel",
+      "title": "Blue Steel r17",
+      "passNumber": 17,
+      "chapter": "TH",
+      "createdAt": "2026-07-29",
+      "description": "CUT-047 and CUT-048 match the drab kitchen/Blue Steel fridge boundary established in CUT-046 while restoring the carousel to its compact source scale: centered on the freezer floor, then centered in Abby's cupped hands.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-047",
+          "image": "/archive/blue-steel/versions/CUT-047-r2-compact-centered-carousel-blue-steel.png",
+          "mockupName": "Find The Compact Carousel",
+          "mockupDescription": "The drab kitchen and source fridge proportions remain unchanged. Inside the cavity, the compact carousel sits centered on a snowy Blue Steel floor with enough surrounding miniature world to establish its palm-sized scale; little Abby remains hidden.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-048",
+          "image": "/archive/blue-steel/versions/CUT-048-r2-compact-carousel-blue-steel-fridge.png",
+          "mockupName": "Lift The Compact Carousel",
+          "mockupDescription": "The same compact Blue Steel carousel is centered naturally in Abby's cupped hands while the snowy miniature fridge world remains visible behind her and the real kitchen stays muted and drab.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "blue-steel-th-pass-18",
+      "styleId": "blue-steel",
+      "title": "Blue Steel r18",
+      "passNumber": 18,
+      "chapter": "TH",
+      "createdAt": "2026-07-29",
+      "description": "CUT-047 moves the snow off the freezer floor and into deep banks along the cavity sides while preserving the compact centered carousel. CUT-048 removes the miniature architecture entirely, leaving a plain Blue Steel freezer interior with only snow and frost behind Abby.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-047",
+          "image": "/archive/blue-steel/versions/CUT-047-r3-snow-banked-at-fridge-sides.png",
+          "mockupName": "Carousel Between Snowbanks",
+          "mockupDescription": "The compact carousel remains centered at the approved scale while the central Blue Steel freezer floor is exposed and the snow accumulates as deep banks along the sides and back edges of the cavity.",
+          "sourceFrame": "canonical"
+        },
+        {
+          "cutId": "CUT-048",
+          "image": "/archive/blue-steel/versions/CUT-048-r3-snow-only-fridge-interior.png",
+          "mockupName": "Lift From A Snow-Only Freezer",
+          "mockupDescription": "Abby and the compact carousel remain unchanged. Behind them, every tower, building, tree, railing, and miniature structure is gone; the Blue Steel fridge contains only soft snowbanks and frost.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    },
+    {
+      "id": "blue-steel-th-pass-19",
+      "styleId": "blue-steel",
+      "title": "Blue Steel r19",
+      "passNumber": 19,
+      "chapter": "TH",
+      "createdAt": "2026-07-29",
+      "description": "CUT-046 combines mockup 3's preferred Big Abby and focused food-search performance with every established story and composition element from mockup 5.",
+      "scrubMode": "original-shot",
+      "items": [
+        {
+          "cutId": "CUT-046",
+          "image": "/archive/blue-steel/versions/CUT-046-r6-mockup3-big-abby-mockup5-world.png",
+          "mockupName": "Mockup 3 Abby In Mockup 5 World",
+          "mockupDescription": "Big Abby now uses mockup 3's stronger face, orange rope curls, layered wardrobe, giant scale, forward lean, and intent food-search gaze. Mockup 5's freezer framing, centered carousel barrier, little Abby, horses, town, snow, right arch, drab kitchen, and camera remain intact.",
+          "sourceFrame": "canonical"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1460 @@
+{
+  "schemaVersion": 5,
+  "updatedAt": "2026-07-29T07:27:10.000Z",
+  "sourceWorkbook": "Copy of Paracosm May Notes - INT Copy 060326.xlsx",
+  "sourceSheet": "Working sheet",
+  "sourceColumns": [
+    "Source ID",
+    "Timestamp",
+    "Song",
+    "Issue",
+    "Ask",
+    "Acceptance Criterion",
+    "Dependencies",
+    "Abby's Notes",
+    "Beez / Maddy notes",
+    "Scope",
+    "Priority Tier",
+    "Episodes affected",
+    "Headline",
+    "Solution",
+    "Downstream"
+  ],
+  "generalNotes": [
+    {
+      "id": "general-facial-expression",
+      "title": "More Facial Expression",
+      "parentIds": [
+        "facial-expression"
+      ],
+      "tier": "B",
+      "noteDescription": "Big Abby and Little Abby each maintain a single facial expression across the entire film, despite the narrative moving through fear, sweetness, discovery, frustration, wonder, and recognition. The character's face doesn't yet register the emotional arc the score and choreography are delivering.\n\nAcross the film, the character's eyes do not move. There is minimal blinking, no shifts in eye shape, no subtle motion in the eye area at all. The eyes are static in a way that makes the character read as inanimate during any held shot. Note: a previously-approved eye mockup exists from earlier in the project and may not have been implemented yet; some of this may resolve in final passes.",
+      "dependency": "Abby to provide expression reference for each emotional beat (format TBD pending studio input on preferred method, see Meeting Agenda).\n\nConfirm whether the previously-approved eye design has been implemented and whether the absence of eye motion is a rig limitation or an animation choice.",
+      "sourceIds": [
+        "2",
+        "1"
+      ],
+      "shotIds": [
+        "SHOT-B04F6091ECDA",
+        "SHOT-F83DA3BB4EBD",
+        "SHOT-D600D17D7348",
+        "SHOT-E05FA211C519",
+        "SHOT-E4E099BB0EDF"
+      ],
+      "retiredShotIds": []
+    },
+    {
+      "id": "general-character-motion",
+      "title": "New Motion",
+      "parentIds": [
+        "character-motion"
+      ],
+      "tier": "A",
+      "noteDescription": "The character's full-body movement throughout the film doesn't match how Abby moves. The current performance comes from a different performer (a dancer) in the mocap suit, and that performer's physical vocabulary is present in every scene. This affects how Abby feels about the characters embodying her story across the film",
+      "dependency": "Abby to attend re-mocap session in studio.",
+      "sourceIds": [
+        "3"
+      ],
+      "shotIds": [
+        "SHOT-41B9F1E16EEB",
+        "SHOT-44CD5679B185",
+        "SHOT-9085C1C7C2C9",
+        "SHOT-DCFC0A9CB615",
+        "SHOT-ABE5DCD3DA6A",
+        "SHOT-08C2B3387DC3"
+      ],
+      "retiredShotIds": []
+    }
+  ],
+  "parents": [
+    {
+      "id": "facial-expression",
+      "name": "Facial Expression",
+      "tier": "B",
+      "noteDescription": "Make Big and Little Abby feel alive and emotionally legible through eye motion, blinking, changing eye shape, eyelids, and distinct expressions.",
+      "dependency": "Confirm the approved eye design and rig capability; use Abby expression references for specific emotional beats.",
+      "sourceIds": [
+        "1",
+        "2"
+      ],
+      "shotIds": [],
+      "retiredShotIds": []
+    },
+    {
+      "id": "character-motion",
+      "name": "Character Motion",
+      "tier": "A",
+      "noteDescription": "Keep Abby's movement authentic, grounded, and physically believable rather than generic or weightless.",
+      "dependency": "Abby performance reference or mocap session; downstream cloth, hair, and final renders follow approved motion.",
+      "sourceIds": [
+        "3"
+      ],
+      "shotIds": [],
+      "retiredShotIds": []
+    },
+    {
+      "id": "hair",
+      "name": "Hair",
+      "tier": "A",
+      "noteDescription": "Keep Abby's hair long, flowing, vibrant, voluminous, root-driven, and visually consistent across the film.",
+      "dependency": "Approve the intended hair design, then create new hair simulations and rerender affected shots.",
+      "sourceIds": [
+        "4",
+        "7",
+        "12"
+      ],
+      "shotIds": [
+        "SHOT-D398125B8881",
+        "SHOT-0281778FBD5F",
+        "SHOT-5DEFD7DBD0D3",
+        "SHOT-9053CE6A2547"
+      ],
+      "retiredShotIds": []
+    },
+    {
+      "id": "environment",
+      "name": "Environment",
+      "tier": "A",
+      "noteDescription": "Make each environment communicate the story state. The house stays muted, adult, and pre-imagination until the transformation.",
+      "dependency": "Coraline references, Abby's prop and wardrobe archive, and confirmation of transformation timing.",
+      "sourceIds": [
+        "6",
+        "23",
+        "36"
+      ],
+      "shotIds": [],
+      "retiredShotIds": []
+    },
+    {
+      "id": "camera",
+      "name": "Camera",
+      "tier": "C",
+      "noteDescription": "Use framing, composition, and camera movement to direct attention and reveal each world with intention.",
+      "dependency": "Approved framing references or storyboards for shots whose camera direction changes.",
+      "sourceIds": [
+        "17",
+        "18",
+        "30"
+      ],
+      "shotIds": [],
+      "retiredShotIds": []
+    }
+  ],
+  "notes": [
+    {
+      "id": "note-005",
+      "title": "Refine swollen eyelids",
+      "parentIds": [
+        "facial-expression"
+      ],
+      "tier": "C",
+      "noteDescription": "Smooth the eyelids into the eye and remove the puffy, swollen appearance.",
+      "dependency": "Eye design and rig check.",
+      "sourceIds": [
+        "5"
+      ],
+      "shotIds": [
+        "SHOT-D5E125ED41A0"
+      ],
+      "retiredShotIds": []
+    },
+    {
+      "id": "note-006",
+      "title": "Undecorate House",
+      "parentIds": [
+        "environment"
+      ],
+      "tier": "B",
+      "noteDescription": "Remove the glowing teacup and keep the opening house muted, rational, and non-magical.",
+      "dependency": "Shared pre-transformation house references.",
+      "sourceIds": [
+        "6"
+      ],
+      "shotIds": [
+        "SHOT-066829309B70",
+        "SHOT-D5E125ED41A0",
+        "SHOT-D398125B8881",
+        "SHOT-0BD7D551A7BC",
+        "SHOT-E4E099BB0EDF",
+        "SHOT-0659E177DFD1"
+      ],
+      "retiredShotIds": []
+    },
+    {
+      "id": "note-008",
+      "title": "Hold the teacup",
+      "parentIds": [
+        "character-motion"
+      ],
+      "tier": "C",
+      "noteDescription": "Have Abby grip the rim and peek over it instead of waving wildly or appearing to drown.",
+      "dependency": "Abby motion reference or mocap.",
+      "sourceIds": [
+        "8"
+      ],
+      "shotIds": [
+        "SHOT-E579157079F6"
+      ],
+      "retiredShotIds": []
+    },
+    {
+      "id": "note-009",
+      "title": "Explore instead of run",
+      "parentIds": [
+        "character-motion"
+      ],
+      "tier": "B",
+      "noteDescription": "Replace the urgent mechanical run with cautious walking and active observation of the world.",
+      "dependency": "Abby motion reference or mocap.",
+      "sourceIds": [
+        "9"
+      ],
+      "shotIds": [
+        "SHOT-4303D09EF0D9",
+        "SHOT-066FAAB75E9C",
+        "SHOT-523DC942CA0E",
+        "SHOT-1F0BD4F9ADAC",
+        "SHOT-0281778FBD5F"
+      ],
+      "retiredShotIds": []
+    },
+    {
+      "id": "note-010",
+      "title": "Make the mountains feel like Abby's clothes",
+      "parentIds": [
+        "environment"
+      ],
+      "tier": "C",
+      "noteDescription": "Give the laundry mountains believable cloth weight and use garments that plausibly belong to Big Abby.",
+      "dependency": "Big Abby wardrobe references and new cloth simulations.",
+      "sourceIds": [
+        "10"
+      ],
+      "shotIds": [
+        "SHOT-0281778FBD5F",
+        "SHOT-BCD1F12294CC",
+        "SHOT-DA1D04185830",
+        "SHOT-943FBF890F94",
+        "SHOT-A6D340C51FD7",
+        "SHOT-A5A5096D6788",
+        "SHOT-8CF532DFEA9F"
+      ],
+      "retiredShotIds": []
+    },
+    {
+      "id": "note-011",
+      "title": "Ground the laundry mountains",
+      "parentIds": [
+        "environment"
+      ],
+      "tier": "C",
+      "noteDescription": "Resolve the mountain-to-ground contact so the piles neither float nor clip.",
+      "dependency": "Confirm whether the current contact is final or in progress.",
+      "sourceIds": [
+        "11"
+      ],
+      "shotIds": [
+        "SHOT-25A3D2C30AF0",
+        "SHOT-1F0BD4F9ADAC"
+      ],
+      "retiredShotIds": []
+    },
+    {
+      "id": "note-013",
+      "title": "Give the jump believable weight",
+      "parentIds": [
+        "character-motion"
+      ],
+      "tier": "B",
+      "noteDescription": "Adjust the rise, fall, landing, and gravity so the jump has convincing physical weight.",
+      "dependency": "Mocap or focused hand animation.",
+      "sourceIds": [
+        "13"
+      ],
+      "shotIds": [
+        "SHOT-DEC542FBBE49",
+        "SHOT-943FBF890F94"
+      ],
+      "retiredShotIds": []
+    },
+    {
+      "id": "note-014a",
+      "title": "Big Abby is frustrated",
+      "parentIds": [
+        "facial-expression"
+      ],
+      "tier": "B",
+      "noteDescription": "Build a clear frustrated, fed-up, and disappointed expression for Big Abby.",
+      "dependency": "Abby expression reference.",
+      "sourceIds": [
+        "14"
+      ],
+      "shotIds": [
+        "SHOT-A5A5096D6788"
+      ],
+      "retiredShotIds": []
+    },
+    {
+      "id": "note-014b",
+      "title": "Make the throw feel like Abby",
+      "parentIds": [
+        "character-motion"
+      ],
+      "tier": "B",
+      "noteDescription": "Replace the generic throw with a specific performance that feels like Abby.",
+      "dependency": "Abby throw reference or mocap.",
+      "sourceIds": [
+        "14"
+      ],
+      "shotIds": [
+        "SHOT-A5A5096D6788"
+      ],
+      "retiredShotIds": []
+    },
+    {
+      "id": "note-014c",
+      "title": "Make the dress behave like cloth",
+      "parentIds": [
+        "environment"
+      ],
+      "tier": "B",
+      "noteDescription": "Remove the rigid bust shape and let the dress deform like real cloth during the throw.",
+      "dependency": "New cloth simulation after motion is approved.",
+      "sourceIds": [
+        "14"
+      ],
+      "shotIds": [
+        "SHOT-A5A5096D6788"
+      ],
+      "retiredShotIds": []
+    },
+    {
+      "id": "note-015",
+      "title": "Put Big Abby inside the house",
+      "parentIds": [
+        "environment"
+      ],
+      "tier": "C",
+      "noteDescription": "Add an interior wall and indoor lighting so Big Abby reads as being inside the house.",
+      "dependency": "",
+      "sourceIds": [
+        "15"
+      ],
+      "shotIds": [
+        "SHOT-A5A5096D6788"
+      ],
+      "retiredShotIds": []
+    },
+    {
+      "id": "note-016",
+      "title": "Redesign the freezer world",
+      "parentIds": [
+        "environment"
+      ],
+      "tier": "B",
+      "noteDescription": "Use freezer-burned food, boxes, and frosty puffs instead of a knitted or generic snow world.",
+      "dependency": "Abby's freezer images and approved storyboards.",
+      "sourceIds": [
+        "16"
+      ],
+      "shotIds": [
+        "SHOT-5DEFD7DBD0D3",
+        "SHOT-9053CE6A2547",
+        "SHOT-A65570260CB4"
+      ],
+      "retiredShotIds": []
+    },
+    {
+      "id": "note-017",
+      "title": "Start close, then reveal the world",
+      "parentIds": [
+        "camera"
+      ],
+      "tier": "C",
+      "noteDescription": "Begin tighter on Abby, then reveal the larger freezer world after her point of view is established.",
+      "dependency": "Abby storyboard; source note 18 is treated as supporting framing context.",
+      "sourceIds": [
+        "17",
+        "18"
+      ],
+      "shotIds": [
+        "SHOT-5DEFD7DBD0D3"
+      ],
+      "retiredShotIds": []
+    },
+    {
+      "id": "note-019",
+      "title": "Focus the gingerbread sequence on windows",
+      "parentIds": [
+        "environment"
+      ],
+      "tier": "B",
+      "noteDescription": "Shorten the bridge and snow traversal, emphasize the windows, and clarify what the village means to Abby.",
+      "dependency": "Decide the window interiors and their story purpose.",
+      "sourceIds": [
+        "19",
+        "20"
+      ],
+      "shotIds": [
+        "SHOT-08C2B3387DC3",
+        "SHOT-A372FAEED07F"
+      ],
+      "retiredShotIds": []
+    },
+    {
+      "id": "note-021",
+      "title": "Make the horse encounter gentle and continuous",
+      "parentIds": [
+        "character-motion"
+      ],
+      "tier": "B",
+      "noteDescription": "Slow the horses, let them notice Abby, and resolve the carousel encounter as one continuous emotional beat.",
+      "dependency": "Narrative decision on horse and carousel continuity.",
+      "sourceIds": [
+        "21"
+      ],
+      "shotIds": [
+        "SHOT-B61B41783D14",
+        "SHOT-8B3CE24C7DB2",
+        "SHOT-6C1737A47F55",
+        "SHOT-47D35038298C",
+        "SHOT-BFA91CABDB58"
+      ],
+      "retiredShotIds": []
+    },
+    {
+      "id": "note-022",
+      "title": "Big Abby discovers the carousel",
+      "parentIds": [
+        "facial-expression",
+        "character-motion"
+      ],
+      "tier": "B",
+      "noteDescription": "Start with an ordinary search, then make the carousel discovery land through surprise and curiosity.",
+      "dependency": "Expression and performance reference.",
+      "sourceIds": [
+        "22"
+      ],
+      "shotIds": [
+        "SHOT-F5F7D4C21B2B"
+      ],
+      "retiredShotIds": []
+    },
+    {
+      "id": "note-023",
+      "title": "Keep the room pre-transformation",
+      "parentIds": [
+        "environment"
+      ],
+      "tier": "A",
+      "noteDescription": "Desaturate the room and remove books, pictures, and lively decor before the transformation.",
+      "dependency": "Confirm which props and pictures belong after the transformation.",
+      "sourceIds": [
+        "23"
+      ],
+      "shotIds": [
+        "SHOT-C64F982ECC2A",
+        "SHOT-7EF1FAB45AF3",
+        "SHOT-C71C3F034E3E",
+        "SHOT-8F86AEA12856",
+        "SHOT-7CB6F6C0EBD4"
+      ],
+      "retiredShotIds": []
+    },
+    {
+      "id": "note-024",
+      "title": "Float ceiling pieces outward",
+      "parentIds": [
+        "environment"
+      ],
+      "tier": "B",
+      "noteDescription": "Use smaller ceiling debris and move it outward, away from Abby.",
+      "dependency": "New destruction simulation.",
+      "sourceIds": [
+        "24"
+      ],
+      "shotIds": [
+        "SHOT-457ED4607779"
+      ],
+      "retiredShotIds": []
+    },
+    {
+      "id": "note-025",
+      "title": "Make the beat drop visible",
+      "parentIds": [
+        "environment"
+      ],
+      "tier": "B",
+      "noteDescription": "Synchronize the house breakup to the musical beat drop so the transformation is unmistakable.",
+      "dependency": "New shot timing and destruction simulation.",
+      "sourceIds": [
+        "25"
+      ],
+      "shotIds": [
+        "SHOT-F83DA3BB4EBD",
+        "SHOT-D600D17D7348"
+      ],
+      "retiredShotIds": []
+    },
+    {
+      "id": "note-026",
+      "title": "Positive wonder during levitation",
+      "parentIds": [
+        "facial-expression"
+      ],
+      "tier": "C",
+      "noteDescription": "Give Abby a joyful sense of discovery during levitation rather than a neutral floating expression.",
+      "dependency": "Abby expression reference.",
+      "sourceIds": [
+        "26"
+      ],
+      "shotIds": [
+        "SHOT-20DAC97C2F4D"
+      ],
+      "retiredShotIds": []
+    },
+    {
+      "id": "note-027",
+      "title": "Remove mouth artifacts",
+      "parentIds": [
+        "facial-expression"
+      ],
+      "tier": "A",
+      "noteDescription": "Diagnose and remove the bright spherical or bubble-like artifacts near the mouth.",
+      "dependency": "Confirm whether the current texture is final or a placeholder.",
+      "sourceIds": [
+        "27"
+      ],
+      "shotIds": [
+        "SHOT-46A44A9D3B90"
+      ],
+      "retiredShotIds": []
+    },
+    {
+      "id": "note-028",
+      "title": "Fix awkward floating",
+      "parentIds": [
+        "character-motion"
+      ],
+      "tier": "B",
+      "noteDescription": "Correct the spine, weight, and articulation so the floating pose feels natural.",
+      "dependency": "Studio diagnosis followed by clothing and hair resimulation.",
+      "sourceIds": [
+        "28"
+      ],
+      "shotIds": [
+        "SHOT-BBE2C64560CA"
+      ],
+      "retiredShotIds": []
+    },
+    {
+      "id": "note-029",
+      "title": "Preserve the line-of-light transition",
+      "parentIds": [
+        "environment"
+      ],
+      "tier": "B",
+      "noteDescription": "Match the glowing line in the grey world to the backlit wardrobe opening across the transition.",
+      "dependency": "Review and align both boundary cuts together.",
+      "sourceIds": [
+        "29"
+      ],
+      "shotIds": [
+        "SHOT-AACD0C7A55B7",
+        "GAP-016E79CBF3CC",
+        "SHOT-410D369076A7",
+        "SHOT-B0EAF0D71661"
+      ],
+      "retiredShotIds": []
+    },
+    {
+      "id": "note-030",
+      "title": "Keep the yarn ball incidental",
+      "parentIds": [
+        "camera"
+      ],
+      "tier": "C",
+      "noteDescription": "Remove the close-up and keep the yarn ball as a quiet detail in a wider composition.",
+      "dependency": "Reframe or recut the sequence.",
+      "sourceIds": [
+        "30"
+      ],
+      "shotIds": [
+        "SHOT-56840EBE6C40"
+      ],
+      "retiredShotIds": []
+    },
+    {
+      "id": "note-031",
+      "title": "Fill the wardrobe with Abby's real history",
+      "parentIds": [
+        "environment"
+      ],
+      "tier": "B",
+      "noteDescription": "Use Abby's real belongings and avoid generic or duplicated wardrobe objects.",
+      "dependency": "Personal-object photo archive.",
+      "sourceIds": [
+        "31"
+      ],
+      "shotIds": [
+        "SHOT-AB100CB59492",
+        "SHOT-6A165F3F7488",
+        "SHOT-454BD2868273"
+      ],
+      "retiredShotIds": []
+    },
+    {
+      "id": "note-032",
+      "title": "Let color originate from objects",
+      "parentIds": [
+        "environment"
+      ],
+      "tier": "B",
+      "noteDescription": "Let saturated objects emit color that pools and blooms into the transformed room.",
+      "dependency": "Object archive and color references.",
+      "sourceIds": [
+        "32"
+      ],
+      "shotIds": [
+        "SHOT-41B9F1E16EEB",
+        "SHOT-9085C1C7C2C9",
+        "SHOT-DCFC0A9CB615"
+      ],
+      "retiredShotIds": []
+    },
+    {
+      "id": "note-033",
+      "title": "Place belongings with care",
+      "parentIds": [
+        "character-motion",
+        "environment"
+      ],
+      "tier": "A",
+      "noteDescription": "Make Abby explore and place belongings deliberately and with grounded care rather than dancing.",
+      "dependency": "Personal-object archive and Abby performance reference.",
+      "sourceIds": [
+        "33"
+      ],
+      "shotIds": [
+        "SHOT-41B9F1E16EEB",
+        "SHOT-44CD5679B185",
+        "SHOT-9085C1C7C2C9",
+        "SHOT-DCFC0A9CB615"
+      ],
+      "retiredShotIds": []
+    },
+    {
+      "id": "note-034",
+      "title": "Begin with a sparse room",
+      "parentIds": [
+        "environment"
+      ],
+      "tier": "B",
+      "noteDescription": "Remove existing trinkets and decor so the room begins sparse before Abby fills it.",
+      "dependency": "",
+      "sourceIds": [
+        "34"
+      ],
+      "shotIds": [
+        "SHOT-AB100CB59492",
+        "SHOT-9321BB9398CC",
+        "SHOT-400191C77357"
+      ],
+      "retiredShotIds": []
+    },
+    {
+      "id": "note-035",
+      "title": "Settle objects after transformation",
+      "parentIds": [
+        "environment"
+      ],
+      "tier": "B",
+      "noteDescription": "Stop objects from floating or bobbing once the transformation is complete.",
+      "dependency": "",
+      "sourceIds": [
+        "35"
+      ],
+      "shotIds": [
+        "SHOT-41B9F1E16EEB",
+        "SHOT-DCFC0A9CB615"
+      ],
+      "retiredShotIds": []
+    },
+    {
+      "id": "note-036",
+      "title": "Match the house's pre-transformation tone",
+      "parentIds": [
+        "environment"
+      ],
+      "tier": "A",
+      "noteDescription": "Match this house view to the earlier muted, pre-transformation environment.",
+      "dependency": "Earlier-house comparison frames.",
+      "sourceIds": [
+        "36"
+      ],
+      "shotIds": [
+        "SHOT-41B9F1E16EEB",
+        "SHOT-9085C1C7C2C9",
+        "SHOT-DCFC0A9CB615"
+      ],
+      "retiredShotIds": []
+    }
+  ],
+  "editNotes": [
+    {
+      "id": "edit-001",
+      "title": "Swap CUT-035 and CUT-037",
+      "parentIds": [],
+      "tier": "Edit",
+      "status": "to-incorporate",
+      "operation": "swap",
+      "noteDescription": "In the working edit, exchange the positions of CUT-035 and CUT-037. The preview order becomes CUT-037, CUT-036, CUT-035 while every shot keeps its canonical identity and source metadata.",
+      "dependency": "Incorporate this order change in the editorial timeline. This feedback preview must not rewrite canonical cut IDs, timecodes, thumbnails, or provenance.",
+      "sourceIds": [],
+      "shotIds": [
+        "SHOT-ABE5DCD3DA6A",
+        "SHOT-08C2B3387DC3"
+      ],
+      "retiredShotIds": []
+    },
+    {
+      "id": "edit-002",
+      "title": "Flip CUT-037 and CUT-035 back",
+      "parentIds": [],
+      "tier": "Edit",
+      "status": "to-incorporate",
+      "operation": "swap",
+      "noteDescription": "In the working edit, exchange the current positions of CUT-037 and CUT-035 again. Applied after edit-001, this returns the feedback preview to CUT-035, CUT-036, CUT-037 while preserving both editorial decisions in the note history.",
+      "dependency": "Incorporate this latest order change after edit-001. This additive feedback note must not rewrite canonical cut IDs, timecodes, thumbnails, provenance, or the earlier edit note.",
+      "sourceIds": [],
+      "shotIds": [
+        "SHOT-08C2B3387DC3",
+        "SHOT-ABE5DCD3DA6A"
+      ],
+      "retiredShotIds": []
+    }
+  ],
+  "sourceRows": [
+    {
+      "id": "1",
+      "values": {
+        "Source ID": "1",
+        "Timestamp": "General",
+        "Song": null,
+        "Issue": "Across the film, the character's eyes do not move. There is minimal blinking, no shifts in eye shape, no subtle motion in the eye area at all. The eyes are static in a way that makes the character read as inanimate during any held shot. Note: a previously-approved eye mockup exists from earlier in the project and may not have been implemented yet; some of this may resolve in final passes",
+        "Ask": "Confirm whether the previously-approved eye design has been implemented in this build. Then deliver eye animation that includes blinks, micro-saccades during holds, and subtle shape variation tied to emotional beats. Diagnostic question for the studio: is the absence of eye motion a rig limitation or an animation choice? (This question's answer affects difficulty estimates for rows 2, 5, 14, and 26)",
+        "Acceptance Criterion": "During any held shot longer than two seconds, the eyes are doing something, even if subtle.",
+        "Dependencies": null,
+        "Abby's Notes": null,
+        "Beez / Maddy notes": null,
+        "Scope": "Global",
+        "Priority Tier": "C",
+        "Episodes affected": null,
+        "Headline": null,
+        "Solution": null,
+        "Downstream": null
+      }
+    },
+    {
+      "id": "10",
+      "values": {
+        "Source ID": "10",
+        "Timestamp": "—",
+        "Song": null,
+        "Issue": "The clothes that cover the mountains read as rubbery in motion, and the garments themselves don't yet read as clothes Big Abby would actually own. Both the simulation behavior and the wardrobe choices feel disconnected from the character's everyday rational/adult life.",
+        "Ask": "Re-sim the cloth so it has believable weight and drape rather than a rubbery bounce. If not placeholders, reselect the garment assets so the clothes in the mountains feel like things Big Abby would plausibly own and wear (drab, grey)",
+        "Acceptance Criterion": "A viewer would believe these are clothing-like within the physics of this world, falling under realish fabric weight",
+        "Dependencies": "Abby to send reference images of clothes that match Big Abby's wardrobe.",
+        "Abby's Notes": null,
+        "Beez / Maddy notes": "Need to confirm the wardrobe for Big Abby. Sholud the mountains be made of clothes in general?",
+        "Scope": "Shot",
+        "Priority Tier": "C",
+        "Episodes affected": "NTH",
+        "Headline": "Change wardobe set design",
+        "Solution": "New clothing sims",
+        "Downstream": "Rerender"
+      }
+    },
+    {
+      "id": "11",
+      "values": {
+        "Source ID": "11",
+        "Timestamp": "—",
+        "Song": null,
+        "Issue": "Where the laundry-pile mountains meet the ground, the contact reads as unresolved",
+        "Ask": "Is the ground-meeting line a Final or In Progress stage? ",
+        "Acceptance Criterion": "The base of each mountain reads as touching the ground, not floating above it or clipping into it.",
+        "Dependencies": null,
+        "Abby's Notes": null,
+        "Beez / Maddy notes": null,
+        "Scope": "Shot",
+        "Priority Tier": "C",
+        "Episodes affected": null,
+        "Headline": null,
+        "Solution": null,
+        "Downstream": null
+      }
+    },
+    {
+      "id": "12",
+      "values": {
+        "Source ID": "12",
+        "Timestamp": 0.08333333333333333,
+        "Song": "NTH",
+        "Issue": "Same hair inconsistency as row 4",
+        "Ask": "Confirm the fix per row 4 will resolve this timestamp. (Bundled with rows 4 and 7; one fix, three reference timestamps.)",
+        "Acceptance Criterion": null,
+        "Dependencies": null,
+        "Abby's Notes": "not so much the movement in the hair that’s the issue, it’s getting the same hair design as we had two versions of it. Longer flowing vibrant, and shorter pale curly locs. But all of them should be matching the longer flowing vibrant hair",
+        "Beez / Maddy notes": null,
+        "Scope": "Global",
+        "Priority Tier": "A",
+        "Episodes affected": "-",
+        "Headline": "-",
+        "Solution": "-",
+        "Downstream": "-"
+      }
+    },
+    {
+      "id": "13",
+      "values": {
+        "Source ID": "13",
+        "Timestamp": "2:17",
+        "Song": "NTH",
+        "Issue": "Jumping looks unnatural. The character is falling at the same rate she's jumping, which doesn't square with the visual logic of gravity. The motion does not read as natural human motion",
+        "Ask": "Please make the jumping feel believable (maybe faster fall than rise, weight on landing, capture abby's actual jumps). May resolve as part of the Abby re-mocap session per row 3, or may need separate animation cleanup?",
+        "Acceptance Criterion": "The run reads as physically possible.",
+        "Dependencies": "Captured during row 3 mocap session, or flagged for separate animation cleanup.",
+        "Abby's Notes": null,
+        "Beez / Maddy notes": null,
+        "Scope": "Episode",
+        "Priority Tier": "B",
+        "Episodes affected": "NTH",
+        "Headline": "Jumping looks wonky",
+        "Solution": "Hand-animate new jump",
+        "Downstream": "Hair, wardobe sim"
+      }
+    },
+    {
+      "id": "14",
+      "values": {
+        "Source ID": "14",
+        "Timestamp": "—",
+        "Song": "NTH",
+        "Issue": "Big Abby's face is blank when she should be reading as frustrated, fed up, and a bit disappointed. Her throwing motion doesn't read as how Abby would throw something. And the dress she's holding before throwing has rigid \"boob cup\" shapes that don't move with the fabric, which breaks the illusion that it's real cloth",
+        "Ask": "1. Build a frustrated/fed-up/disappointed expression for Big Abby per row \n\n2. Re-record the throwing motion during the Abby re-mocap session per row \n\n3. Simulate the dress fabric so the bust area deforms with the rest of the garment rather than holding rigid molded shapes.",
+        "Acceptance Criterion": "The shot reads as a frustrated woman throwing a piece of soft fabric.",
+        "Dependencies": "Expression per row 2; throw motion captured during row 3 mocap session.",
+        "Abby's Notes": null,
+        "Beez / Maddy notes": null,
+        "Scope": "Global",
+        "Priority Tier": "B",
+        "Episodes affected": "-",
+        "Headline": "-",
+        "Solution": "-",
+        "Downstream": "-"
+      }
+    },
+    {
+      "id": "15",
+      "values": {
+        "Source ID": "15",
+        "Timestamp": "2:11-2:18",
+        "Song": "NTH",
+        "Issue": "We should set the sky as the background of the house. During this shot Big Abby reads as floating against the sky, when narratively she should be inside a room of the house. We're missing the visual cue that she's indoors",
+        "Ask": "Place an interior wall as the background for this shot, and adjust the lighting so it reads as an indoor environment rather than open sky",
+        "Acceptance Criterion": "The viewer reads the location as \"inside the house\" without needing context from surrounding shots.",
+        "Dependencies": null,
+        "Abby's Notes": null,
+        "Beez / Maddy notes": null,
+        "Scope": "Shot",
+        "Priority Tier": "C",
+        "Episodes affected": null,
+        "Headline": null,
+        "Solution": null,
+        "Downstream": null
+      }
+    },
+    {
+      "id": "16",
+      "values": {
+        "Source ID": "16",
+        "Timestamp": "2:24",
+        "Song": "TH",
+        "Issue": "The freezer scene currently contains knitted objects, which doesn't match the world logic of being inside a freezer. We're missing the visual vocabulary of cold storage. There's also currently snow falling in this scene, which doesn't match how cold rooms actually feel; what's wanted instead is the cold-air equivalent of steam (frosty puffs), clearing like fog within a couple seconds, after which Abby starts to sing",
+        "Ask": "Replace the knitted objects with freezer-burned items (boxes and food items with ice crystals, nothing too distinct or character-having) so the space reads as a freezer. Replace the falling snow with frosty puffs of cold air that clear like fog within a couple seconds, timed to land right before Abby starts singing.",
+        "Acceptance Criterion": "The viewer reads the room as a freezer interior, not a snowy outdoor scene.",
+        "Dependencies": "Abby to send images and storyboards reshaping the freezer scene.",
+        "Abby's Notes": null,
+        "Beez / Maddy notes": null,
+        "Scope": "Episode",
+        "Priority Tier": "B",
+        "Episodes affected": "TH",
+        "Headline": "Change Fridge World Design",
+        "Solution": "Redesign and Remodel Fridge World",
+        "Downstream": "Rerender all shots"
+      }
+    },
+    {
+      "id": "17",
+      "values": {
+        "Source ID": "17",
+        "Timestamp": "2:34",
+        "Song": "TH",
+        "Issue": "At 2:34, the framing is too wide for the moment. The shot should be tighter and closer on Abby to slowly pan out and reveal the setting",
+        "Ask": "Recompose the shot with a tighter, closer framing on Abby. Abby will provide storyboarding directly showing the framing she has in mind.",
+        "Acceptance Criterion": "The shot reads as close and intimate, matching the storyboard reference Abby will send.",
+        "Dependencies": "Abby to send storyboarding for the tighter framing (formerly logged as row 18).",
+        "Abby's Notes": null,
+        "Beez / Maddy notes": null,
+        "Scope": "Shot",
+        "Priority Tier": "C",
+        "Episodes affected": null,
+        "Headline": null,
+        "Solution": null,
+        "Downstream": null
+      }
+    },
+    {
+      "id": "18",
+      "values": {
+        "Source ID": "18",
+        "Timestamp": "2:48-3:00",
+        "Song": null,
+        "Issue": "Originally a separate note about wanting storyboarding from Abby; now logged as the Dependency on row 17.",
+        "Ask": null,
+        "Acceptance Criterion": null,
+        "Dependencies": null,
+        "Abby's Notes": null,
+        "Beez / Maddy notes": null,
+        "Scope": "Shot",
+        "Priority Tier": null,
+        "Episodes affected": null,
+        "Headline": null,
+        "Solution": null,
+        "Downstream": null
+      }
+    },
+    {
+      "id": "19",
+      "values": {
+        "Source ID": "19",
+        "Timestamp": "—",
+        "Song": "TH",
+        "Issue": "This sequence spends too long on little Abby walking through the gingerbread",
+        "Ask": "Significantly reduce the amount of time the character spends looking at the houses or crossing the bridge. Instead, have her look through the windows. Open question for the studio: what was the original intent of the gingerbread? If there's a story reason we should know we'd love to hear it; otherwise we'd like to thin it out",
+        "Acceptance Criterion": "The scene's visual density feels purposeful rather than busy.",
+        "Dependencies": "We need to think about what's inside the window ",
+        "Abby's Notes": null,
+        "Beez / Maddy notes": "Discuss with Abby — what does the gingerbread village mean? I think there are roots here for Little Abby's imagination, but want to feel good about this bit ",
+        "Scope": "Shot",
+        "Priority Tier": "C",
+        "Episodes affected": null,
+        "Headline": null,
+        "Solution": null,
+        "Downstream": null
+      }
+    },
+    {
+      "id": "2",
+      "values": {
+        "Source ID": "2",
+        "Timestamp": "General",
+        "Song": null,
+        "Issue": "Big Abby and Little Abby each maintain a single facial expression across the entire film, despite the narrative moving through fear, sweetness, discovery, frustration, wonder, and recognition. The character's face doesn't yet register the emotional arc the score and choreography are delivering",
+        "Ask": "Build a set of distinct facial expressions for both Big Abby and Little Abby keyed to the specific emotional beats in each episode. Abby (the artist) wants to approve the expressions for the characters' major reactions before it's locked",
+        "Acceptance Criterion": "A viewer watching with the audio off can identify these distinct emotional states across the film from face alone: sadness, fear, surprise, curiosity, discovery, peace ",
+        "Dependencies": "Abby to provide expression reference for each emotional beat (format TBD pending studio input on preferred method, see Meeting Agenda).",
+        "Abby's Notes": null,
+        "Beez / Maddy notes": null,
+        "Scope": "Global",
+        "Priority Tier": "B",
+        "Episodes affected": "ND, NTH, TH, NA, GG, IJDKYY",
+        "Headline": "More facial expression and emotional range",
+        "Solution": "New face mocap - Abby to Provide Reference Video prior to launch for relevant scenes",
+        "Downstream": "Rerender all relevant shots"
+      }
+    },
+    {
+      "id": "20",
+      "values": {
+        "Source ID": "20",
+        "Timestamp": "—",
+        "Song": "TH",
+        "Issue": "We're spending too much screen time watching the character cross the bridge and look at the snow, when the narrative beat Abby imagines is for her to be looking through windows and into the houses. Under the current pacing, it's hard to identify the intention of the scene",
+        "Ask": "Recut and re-block this sequence to spend less time on the bridge crossing and more time on her looking through the windows of the houses -- this is a scene that embodies little Abby's imagination?",
+        "Acceptance Criterion": "A viewer's attention is drawn to the windows and house interiors, not to the bridge or the snow.",
+        "Dependencies": null,
+        "Abby's Notes": null,
+        "Beez / Maddy notes": "This is the portion that feels narratively most thin for me ",
+        "Scope": "Shot",
+        "Priority Tier": "B",
+        "Episodes affected": "TH",
+        "Headline": "New scene looking into window",
+        "Solution": "New scene",
+        "Downstream": "Mocap, hair, wardrobe, render"
+      }
+    },
+    {
+      "id": "21",
+      "values": {
+        "Source ID": "21",
+        "Timestamp": "3:10 - 3:30",
+        "Song": "TH",
+        "Issue": "When the horses come off the carousel they're moving at full speed, when the narrative beat calls for them to slow down once they're around her and to see her, interacting gently the way a horse might interact with a person it's curious about. There's also a plot inconsistency? The horses leave the carousel and gather around Abby, then run off to the left of screen, then Big Abby grabs the carousel which still has horses on it",
+        "Ask": "Slow the horses' motion as they come off the carousel and approach her. Animate them noticing her and interacting gently, with the body language of curious animals. Reconcile the plot inconsistency between the horses leaving the carousel and Big Abby later grabbing the carousel with horses still on it",
+        "Acceptance Criterion": "The moment reads as a tender encounter between Abby and the carousel horses, and the timeline of which horses are where holds together across the sequence.",
+        "Dependencies": null,
+        "Abby's Notes": null,
+        "Beez / Maddy notes": "Maybe a narrative goal here is for the environment to respond to and reward Imagination's imagination ",
+        "Scope": "Episode",
+        "Priority Tier": "B",
+        "Episodes affected": "TH",
+        "Headline": "Rethink horse scene",
+        "Solution": "New horse animation and shots",
+        "Downstream": "New shot renders"
+      }
+    },
+    {
+      "id": "22",
+      "values": {
+        "Source ID": "22",
+        "Timestamp": "3:29",
+        "Song": "TH",
+        "Issue": "Big Abby should be surprised to see the carousel. Currently this moment doesn't fully read as Big Abby looking for food in the freezer and being surprised when she finds a tiny world inside. We're missing the visible beat of her expectation (looking for something normal) being interrupted by the unexpected (a whole world).",
+        "Ask": "Re-block the moment so Big Abby's intent reads as searching for food, then her expression and posture shift into surprise and curiosity when she sees the merry-go-round inside. The tone should come from her face, body language, and interaction with the freezer",
+        "Acceptance Criterion": "A viewer with no other context can read the beat as \"she opened it expecting something ordinary and found something extraordinary.\"",
+        "Dependencies": " ",
+        "Abby's Notes": null,
+        "Beez / Maddy notes": "Is the carousel the thing that reminds Abby of her imagination, or is it seeing little Abby (the embodiment of her imagination)? ",
+        "Scope": "Episode",
+        "Priority Tier": "B",
+        "Episodes affected": "TH",
+        "Headline": "Surprise when seeing carousel",
+        "Solution": "New mocap",
+        "Downstream": "-"
+      }
+    },
+    {
+      "id": "23",
+      "values": {
+        "Source ID": "23",
+        "Timestamp": "3:59",
+        "Song": "NA",
+        "Issue": "At 3:59, the house environment is reading as already-warm (saturated, decorated, full of color and life) when narratively it should still be in its pre-imagination state: muted, drab, slightly oppressive, the before of the transformation arc. There also shouldn't be books, pictures, or other personal items around her at this point; she hasn't placed those yet. (Who are the people in the pictures currently in this scene?)",
+        "Ask": "Bring this environment back to a pre-transformation tonal state. Desaturate the palette toward dusty neutrals (aged wallpaper, cool grays, washed-out wood). Remove decorative elements that read as alive or characterful, including books and pictures. Lighting should be flat and slightly cool. The Coraline pre-Other-World house is the lodestar.",
+        "Acceptance Criterion": "A viewer pauses at 3:59 and reads the room as clearly before the transformation",
+        "Dependencies": "Abby/Beez to confirm the books/pictures should be removed at 3:59 and clarify who the people in the current pictures are.",
+        "Abby's Notes": "I’m not sure if I would pull the  project for this but it’s a vital part to get the story across clearly. ",
+        "Beez / Maddy notes": null,
+        "Scope": "Episode",
+        "Priority Tier": "A",
+        "Episodes affected": "ND, NA, IJDKYY",
+        "Headline": "Desaturate house until final transition, remove decorative elements",
+        "Solution": "Remove furniture in 3D, desaturate in AE",
+        "Downstream": "Rerender relevant shots"
+      }
+    },
+    {
+      "id": "24",
+      "values": {
+        "Source ID": "24",
+        "Timestamp": "4:01",
+        "Song": "NA",
+        "Issue": "The pieces of ceiling that fall during this beat are too large, and they're falling inward toward Abby. The intended motion is for them to be smaller and to float outward, away from her, as the room comes apart.",
+        "Ask": "Reduce the size of the falling ceiling chunks and reverse their motion direction so they float outward rather than fall inward. The behavior should read more as ceiling pieces drifting away than as debris falling onto the character.",
+        "Acceptance Criterion": "The chunks feel like they're releasing the room rather than threatening to fall on big Abby",
+        "Dependencies": null,
+        "Abby's Notes": null,
+        "Beez / Maddy notes": null,
+        "Scope": "Episode",
+        "Priority Tier": "B",
+        "Episodes affected": "NA",
+        "Headline": "Change ceiling crumbling",
+        "Solution": "New sim and shots",
+        "Downstream": "Renders"
+      }
+    },
+    {
+      "id": "25",
+      "values": {
+        "Source ID": "25",
+        "Timestamp": "4:10",
+        "Song": "NA",
+        "Issue": "The beat drop doesn't feel as impactful as it should",
+        "Ask": "Sync a visible coming-apart of the house to the beat drop, with the walls themselves separating or falling away. The visual energy should match the audio energy of the drop.",
+        "Acceptance Criterion": "A viewer feels the beat drop in the picture, not just the sound",
+        "Dependencies": null,
+        "Abby's Notes": null,
+        "Beez / Maddy notes": null,
+        "Scope": "Episode",
+        "Priority Tier": "B",
+        "Episodes affected": "NA",
+        "Headline": "Change timing",
+        "Solution": "New shot ripping wallpaper with lifting furniture in wide",
+        "Downstream": "Also change clothing change moment"
+      }
+    },
+    {
+      "id": "26",
+      "values": {
+        "Source ID": "26",
+        "Timestamp": "4:40",
+        "Song": "NA",
+        "Issue": "During the levitation moment, the character's face isn't yet registering the intended emotional state. Abby has identified this beat as positive wonder",
+        "Ask": "Build a positive-wonder expression for this beat per the emotion library being developed in row 2. Abby will record reference footage of the expression for the animator.",
+        "Acceptance Criterion": "The levitation reads as joyful discovery, ascension, not as neutral floating",
+        "Dependencies": "Abby to provide expression reference for positive wonder per row 2.",
+        "Abby's Notes": null,
+        "Beez / Maddy notes": null,
+        "Scope": "Global",
+        "Priority Tier": "C",
+        "Episodes affected": null,
+        "Headline": null,
+        "Solution": null,
+        "Downstream": null
+      }
+    },
+    {
+      "id": "27",
+      "values": {
+        "Source ID": "27",
+        "Timestamp": "5:26",
+        "Song": "GG",
+        "Issue": "At 5:26, the open mouth contains visible artifacts that read as bubbles",
+        "Ask": "Diagnostic first: is this a final-render issue or a placeholder artifact? If final, resolve the bubbles (likely paths: tongue/inner-mouth geometry, teeth shader specularity, saliva VFX).",
+        "Acceptance Criterion": "At 5:26, the mouth reads as a mouth, no spherical bright shapes visible",
+        "Dependencies": null,
+        "Abby's Notes": "I think they are also aware of this issue but we can reiterate it",
+        "Beez / Maddy notes": null,
+        "Scope": "Global",
+        "Priority Tier": "A",
+        "Episodes affected": "GG",
+        "Headline": "Texture issue near mouth\n",
+        "Solution": "Retouch or rerender",
+        "Downstream": "-"
+      }
+    },
+    {
+      "id": "28",
+      "values": {
+        "Source ID": "28",
+        "Timestamp": "5:40 ish",
+        "Song": "GG",
+        "Issue": "Around 5:40 the character's movement reads as a little creepy, with something in the physics or body mechanics not landing as intended. Hard to be more specific than that without more time on the shot; flagging as a diagnostic.",
+        "Ask": "Diagnostic for the studio: identify what specifically is off about the body physics in this stretch (could be spine motion, weight transfer, joint articulation) and propose a fix.",
+        "Acceptance Criterion": "The movement reads as intentional and emotionally legible rather than as uncanny",
+        "Dependencies": null,
+        "Abby's Notes": null,
+        "Beez / Maddy notes": null,
+        "Scope": "Episode",
+        "Priority Tier": "B",
+        "Episodes affected": "GG",
+        "Headline": "Floating is awkward",
+        "Solution": "Hand-animate",
+        "Downstream": "New clothing, hair sims"
+      }
+    },
+    {
+      "id": "29",
+      "values": {
+        "Source ID": "29",
+        "Timestamp": "5:56",
+        "Song": "IJDKYY",
+        "Issue": "The transition between the two episodes loses us. The previous episode ended with the character heading toward a strip of light, and the next episode should open inside the wardrobe, with the camera positioned at the back looking out toward the doors. The light should be filtering in through the cracks between the wardrobe doors, silhouetting the objects between the camera and the doors. Currently we're seeing the inside of the wardrobe lit from a different source, which breaks the visual continuity of the strip-of-light beat.",
+        "Ask": "Re-stage the opening shot of the next episode so the camera is at the back of the wardrobe, facing the doors. The only light source in the shot should be light coming in through the cracks between the doors. Objects inside the wardrobe should read as silhouettes against that light, not as fully-lit interior. The strip-of-light moment from the previous episode should match into this opening.",
+        "Acceptance Criterion": "The cut between episodes reads as one continuous beat of light moving from one space to another",
+        "Dependencies": null,
+        "Abby's Notes": null,
+        "Beez / Maddy notes": null,
+        "Scope": "Episode",
+        "Priority Tier": "B",
+        "Episodes affected": "GG, IJDKYY",
+        "Headline": "Seamless transition",
+        "Solution": "Change opening IJDKYY shot, and probably final GG shot",
+        "Downstream": "-"
+      }
+    },
+    {
+      "id": "3",
+      "values": {
+        "Source ID": "3",
+        "Timestamp": "General",
+        "Song": null,
+        "Issue": "The character's full-body movement throughout the film doesn't match how Abby moves. The current performance comes from a different performer (a dancer) in the mocap suit, and that performer's physical vocabulary is present in every scene. This affects how Abby feels about the characters embodying her story across the film",
+        "Ask": "Re-record motion capture with Abby herself as the performer. Abby in studio, in suit, modeling the body language for each scene. The deliverable is replacement mocap data for the affected scenes (which the studio will help us scope), retargeted onto the existing character rig.",
+        "Acceptance Criterion": "Even on mute, the playback should read authentically as Abby moving",
+        "Dependencies": "Abby to attend re-mocap session in studio.",
+        "Abby's Notes": "i think the dancey movement only really applies to two episodes, although the moment in majority of episodes I would want to be changed, like the running scene, the snow catching and so on. So maybe we change dancey movement for this note to, overall movement or something adjacent.",
+        "Beez / Maddy notes": null,
+        "Scope": "Episode",
+        "Priority Tier": "A",
+        "Episodes affected": "NTH, TH, IJDKYY, GG",
+        "Headline": "New Motion",
+        "Solution": "Mocap Abby or Use Video Reference to reanimate performance",
+        "Downstream": "Resim clothes and hair, Rerender all shots"
+      }
+    },
+    {
+      "id": "30",
+      "values": {
+        "Source ID": "30",
+        "Timestamp": "6:00",
+        "Song": "IJDKYY",
+        "Issue": "The moment we want to focus on is the cabinet full of Abby's imaginative playthings, rather than specifically on the yarn ball. At the six-minute mark, the camera focuses on a yarn ball falling. We'd prefer the yarn ball to be a small detail in a wider shot",
+        "Ask": "Cut the close-up of the yarn ball falling. Replace it with the yarn ball appearing in a wider, zoomed-out angle as a small background detail",
+        "Acceptance Criterion": "A viewer notices the yarn ball only as a quiet detail in the corner of a wider shot, not as a moment the camera asks them to watch",
+        "Dependencies": null,
+        "Abby's Notes": null,
+        "Beez / Maddy notes": null,
+        "Scope": "Shot",
+        "Priority Tier": "C",
+        "Episodes affected": null,
+        "Headline": null,
+        "Solution": null,
+        "Downstream": null
+      }
+    },
+    {
+      "id": "31",
+      "values": {
+        "Source ID": "31",
+        "Timestamp": "—",
+        "Song": null,
+        "Issue": "The objects currently inside the wardrobe don't represent Abby's actual past or things meaningful to her. There's a gramophone in the cabinet and outside of it, so they read as generic stand-in objects rather than as the personal-archive set the wardrobe is supposed to be holding. The objects also look like the grey objects in the housel. The wardrobe items should communicate that \"her past selves are stored here, waiting to come back,\" and the current objects don't carry that meaning.",
+        "Ask": "Replace the wardrobe objects with items based on photos of Abby's actual things. The objects should read as personal, specific, and emotionally loaded with her history rather than as generic decorative items",
+        "Acceptance Criterion": "A viewer (or Abby) reading the wardrobe contents would believe these are objects from a real specific person's past, not generic props",
+        "Dependencies": "Abby to send photos of her personal items as references for the wardrobe objects. (Same archive feeds rows 32 and 33; treat as a single deliverable bundle.)",
+        "Abby's Notes": null,
+        "Beez / Maddy notes": null,
+        "Scope": "Episode",
+        "Priority Tier": "B",
+        "Episodes affected": "-",
+        "Headline": "-",
+        "Solution": "-",
+        "Downstream": "-"
+      }
+    },
+    {
+      "id": "32",
+      "values": {
+        "Source ID": "32",
+        "Timestamp": "6:21",
+        "Song": "IJDKYY",
+        "Issue": "Currently at 6:21, color comes into the scene quickly and spreads in a way that doesn't have an emotional or narrative source. The intended behavior is for each object from her past to be overly saturated in itself, with the color of the room emanating from those objects as she places them and moves past them. The objects are the source of the color returning, not an ambient effect.",
+        "Ask": "Re-treat the color logic of this sequence so that each object from her past is rendered as overly saturated, and the color in the room reads as coming from those objects rather than spreading ambiently",
+        "Acceptance Criterion": "A viewer reads each object as a source of color, with the room becoming colorful because of the objects, not in parallel with them",
+        "Dependencies": "Abby's personal-objects archive (same as rows 31 and 33) is the source for which objects should be the saturated color sources.",
+        "Abby's Notes": null,
+        "Beez / Maddy notes": "The color should pool around the objects she's placed, then bloom outward from them, maybe? We need to find references for this kind of coloring ",
+        "Scope": "Episode",
+        "Priority Tier": "B",
+        "Episodes affected": "IJDKYY",
+        "Headline": "Color spreads from objects, settle after transforming",
+        "Solution": "AE",
+        "Downstream": "-"
+      }
+    },
+    {
+      "id": "33",
+      "values": {
+        "Source ID": "33",
+        "Timestamp": "6:35",
+        "Song": "IJDKYY",
+        "Issue": "Movement too dancey and celebratory. The character should be exploring her re-inhabited home and physically carrying belongings from her past and placing them around the house. The placement actions are the visual mechanism for \"imagination returning,\" and right now we're not yet getting that, either because the action isn't there or because it isn't reading.",
+        "Ask": "Re-block the sequence around two through-lines: movement is exploratory, grounded, taking-in; and the character is carrying specific personal objects (references to be supplied by Abby) and placing them deliberately, with attention and care for each object as a reflection of her past self.",
+        "Acceptance Criterion": "Muted playback reads as \"she's coming home and putting her things back.\"",
+        "Dependencies": "Abby to supply references for the specific personal objects to be placed; mocap captured during row 3 session. (Same archive as row 31.)",
+        "Abby's Notes": "I wouldn’t pull the project but it’s super important for the story. ",
+        "Beez / Maddy notes": null,
+        "Scope": "Episode",
+        "Priority Tier": "A",
+        "Episodes affected": "-",
+        "Headline": "Movement was based on provided reference.\n\nEstimate included in Line 3.",
+        "Solution": "Will need approved video reference prior to launch so we can animate the new performance.",
+        "Downstream": "-"
+      }
+    },
+    {
+      "id": "34",
+      "values": {
+        "Source ID": "34",
+        "Timestamp": "—",
+        "Song": null,
+        "Issue": "In the final episode, before the character starts placing her belongings, the space currently has too many existing objects, trinkets, and decor in it. This undercuts the narrative that she's bringing her past selves back into the space by physically placing things. We're missing the empty state that lets her placements read as the room filling with meaning.",
+        "Ask": "Strip the final-episode space down to furniture only, removing pre-existing trinkets, decor, and other small objects. The room should read as sparse and waiting before she begins placing her belongings",
+        "Acceptance Criterion": "When she places her first object, the viewer registers it as the first thing in the room, not one more object among many.",
+        "Dependencies": null,
+        "Abby's Notes": null,
+        "Beez / Maddy notes": null,
+        "Scope": "Episode",
+        "Priority Tier": "B",
+        "Episodes affected": "-",
+        "Headline": "-",
+        "Solution": "-",
+        "Downstream": "-"
+      }
+    },
+    {
+      "id": "35",
+      "values": {
+        "Source ID": "35",
+        "Timestamp": "—",
+        "Song": null,
+        "Issue": "In the final episode, after the objects have transformed, they're still moving (floating, bobbing) when the narrative beat is for them to be settled in their new state",
+        "Ask": "Let's cut the post-transformation bobbing up/down on the objects in the final episode",
+        "Acceptance Criterion": "The room after the transformations reads as settled and inhabited, not as a still-active dream space.",
+        "Dependencies": null,
+        "Abby's Notes": null,
+        "Beez / Maddy notes": null,
+        "Scope": "Episode",
+        "Priority Tier": "B",
+        "Episodes affected": "-",
+        "Headline": "-",
+        "Solution": "-",
+        "Downstream": "-"
+      }
+    },
+    {
+      "id": "36",
+      "values": {
+        "Source ID": "36",
+        "Timestamp": "6:38",
+        "Song": "IJDKYY",
+        "Issue": "The final episode's drab tones don't match the tonal language of the earlier house scenes, which breaks the visual continuity at the most narratively important moment. Overall, the earlier house scenes themselves should be even more drab than they currently are",
+        "Ask": "Overall make the pre-transformation house more drab and match the pre-transformation house in the final episode to the earlier house scenes (specific reference timestamps to be flagged on the call). \n\nOur goal is for the contrast between pre- and post-transformation to read more strongly across the film",
+        "Acceptance Criterion": "Cutting from any earlier house scene directly to 6:38 produces no tonal jolt: same house, same world. And the earlier house scenes feel more visually muted than they do today, so the transformation lands harder.",
+        "Dependencies": "Beez/Abby to flag specific reference timestamps from earlier house scenes; flag whether earlier house scenes also need a re-grade pass to push drabber.",
+        "Abby's Notes": null,
+        "Beez / Maddy notes": null,
+        "Scope": "Episode",
+        "Priority Tier": "A",
+        "Episodes affected": "-",
+        "Headline": "Same note as 3:59",
+        "Solution": "-",
+        "Downstream": "-"
+      }
+    },
+    {
+      "id": "4",
+      "values": {
+        "Source ID": "4",
+        "Timestamp": "—",
+        "Song": null,
+        "Issue": "The character's hair design differs across episodes. Two distinct versions exist in the current cut: a longer, voluminous, vibrant version (the intended design) and a shorter, paler, curly version (to be retired). Beyond design continuity, the hair simulation also reads as moving from mid-strand rather than from the root.",
+        "Ask": "Confirm that the previously-given note about standardizing on the longer, voluminous, vibrant hair design is being implemented across all seven episodes. Within that single design: increase volume, ensure motion originates from the root (scalp-driven), and confirm color is consistent across episodes.",
+        "Acceptance Criterion": "Stills from any two episodes, side by side, read as the same character with the same hair.",
+        "Dependencies": null,
+        "Abby's Notes": "Longer, more volume, movement from the root, color is good. wherever the hair doesn’t look right I would likely avoid promoting that particular scene. ",
+        "Beez / Maddy notes": null,
+        "Scope": "Global",
+        "Priority Tier": "A",
+        "Episodes affected": "ND, NTH, TH, GG, IJDKYY",
+        "Headline": "Hair inconsistency",
+        "Solution": "New Hair Sim",
+        "Downstream": "Rerender all shots in video"
+      }
+    },
+    {
+      "id": "5",
+      "values": {
+        "Source ID": "5",
+        "Timestamp": "0:14",
+        "Song": "ND",
+        "Issue": "The character's eyelids read as swollen, with a heavy, puffy quality that's reminiscent of a Bratz doll in an unintended way. The intended Bratz reference is for the attachment quality of the lid to the eye (smooth, prettily integrated), not for the puffiness.",
+        "Ask": "Re-sculpt or re-rig the eyelids so they attach more smoothly and prettily to the eye, in the style of a Bratz doll's lid integration but without the swollen quality",
+        "Acceptance Criterion": "The eyelid reads as part of the face, not as a separate puffy element resting on top of the eye",
+        "Dependencies": null,
+        "Abby's Notes": null,
+        "Beez / Maddy notes": null,
+        "Scope": "Global",
+        "Priority Tier": "C",
+        "Episodes affected": null,
+        "Headline": null,
+        "Solution": null,
+        "Downstream": null
+      }
+    },
+    {
+      "id": "6",
+      "values": {
+        "Source ID": "6",
+        "Timestamp": "0:13",
+        "Song": "ND",
+        "Issue": "In this shot, the teacup in the top-left corner is glowing, which doesn't match the world logic of the pre-imagination house. Nothing in the house should glow at this stage. More broadly, the colors and shapes of objects in the house should read as muted, adult, and rational: default-setting versions of things, with very boring patterns (the kind of wallpaper you'd see in the Coraline house), no warmth, possibly little character in the object forms themselves. (Reference Abby's original creative deck for the animation.)",
+        "Ask": "Remove the glow on the teacup. Across the house in pre-transformation scenes: shift the palette toward muted, drab, adult tones; remove warmth from object shapes; reduce or replace patterns with very plain, boring ones in the spirit of the Coraline house. The objects themselves should read as default and uncharacterful.",
+        "Acceptance Criterion": "A viewer would describe the house as boring, rational, and a little adult, not as warm or magical",
+        "Dependencies": "Abby/Beez to flag specific Coraline reference frames for the muted/drab pre-transformation tonal lookbook (shared across rows 6, 23, 36).",
+        "Abby's Notes": null,
+        "Beez / Maddy notes": null,
+        "Scope": "Episode",
+        "Priority Tier": "B",
+        "Episodes affected": "ND",
+        "Headline": "Tone Down Glow in opening shot",
+        "Solution": "Remove post effect",
+        "Downstream": "-"
+      }
+    },
+    {
+      "id": "7",
+      "values": {
+        "Source ID": "7",
+        "Timestamp": "0:18",
+        "Song": "ND",
+        "Issue": "Same hair inconsistency as row 4",
+        "Ask": "Confirm the fix per row 4 will resolve this timestamp. (Bundled with rows 4 and 12)",
+        "Acceptance Criterion": null,
+        "Dependencies": null,
+        "Abby's Notes": null,
+        "Beez / Maddy notes": null,
+        "Scope": "Global",
+        "Priority Tier": "A",
+        "Episodes affected": "-",
+        "Headline": "-",
+        "Solution": "-",
+        "Downstream": "-"
+      }
+    },
+    {
+      "id": "8",
+      "values": {
+        "Source ID": "8",
+        "Timestamp": "0:52",
+        "Song": "ND",
+        "Issue": "During the teacup whirlpool sequence, the character's arms are waving wildly above her head for an extended duration, which reads as drowning rather than as a person riding out a whirlpool inside a teacup. The intended action is for her to be gripping the edge of the teacup in front of her and peeking over the edge.",
+        "Ask": "Replace the current arm and body animation in this sequence with a posture of gripping the teacup edge and peeking over. ",
+        "Acceptance Criterion": "The character reads as a person riding out a whirlpool from inside a teacup, not as someone drowning",
+        "Dependencies": "Captured during row 3 mocap session.",
+        "Abby's Notes": null,
+        "Beez / Maddy notes": null,
+        "Scope": "Episode",
+        "Priority Tier": "C",
+        "Episodes affected": null,
+        "Headline": null,
+        "Solution": null,
+        "Downstream": null
+      }
+    },
+    {
+      "id": "9",
+      "values": {
+        "Source ID": "9",
+        "Timestamp": "1:29",
+        "Song": "NTH",
+        "Issue": "Running is probably not the right choice here. The running animation in this scene has every part of the body seemingly accelerating at the same rate, the torso isn't rotating, and the gait reads as mechanical rather than as locomotion. Beyond the technical issue, the narrative call for running itself is being questioned: Abby thinks the character should be walking and taking in the environment in this scene, not running with urgency. The narrative beat is being-noticed and exploring, not arriving somewhere.",
+        "Ask": "Replace the run with a walk, since the story is that Little Abby is exploring",
+        "Acceptance Criterion": "The character reads as someone walking through and noticing the laundry-pile mountains, with body language of taking-in rather than getting-somewhere",
+        "Dependencies": "Captured during row 3 mocap session.",
+        "Abby's Notes": null,
+        "Beez / Maddy notes": null,
+        "Scope": "Episode",
+        "Priority Tier": "B",
+        "Episodes affected": "-",
+        "Headline": "-",
+        "Solution": "-",
+        "Downstream": "-"
+      }
+    }
+  ],
+  "assignmentIdentity": "shotId"
+}

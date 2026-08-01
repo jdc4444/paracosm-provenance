@@ -1,0 +1,601 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-07-28T15:16:28.000Z",
+  "objects": [
+    {
+      "objectId": "bed",
+      "notes": [
+        {
+          "id": "ignore-mirror-reflection",
+          "kind": "generation-caution",
+          "status": "tracked",
+          "title": "Ignore the mirror reflection",
+          "detail": "The source photo contains a large mirror on the left that repeats the bed and wall panel. Generate and model only the real bed on the right; do not treat the reflected copy as geometry.",
+          "relatedObjectIds": [
+            "wall-panel"
+          ],
+          "proposedParts": []
+        }
+      ]
+    },
+    {
+      "objectId": "black-knee-boots",
+      "notes": [
+        {
+          "id": "split-shoe-pair",
+          "kind": "split-review",
+          "status": "complete",
+          "title": "Individual shoe models complete",
+          "detail": "The archived pair mesh is preserved. Separate centered and grounded left and right GLBs are now available as independent 3D versions.",
+          "relatedObjectIds": [],
+          "proposedParts": [
+            "Left shoe model",
+            "Right shoe model"
+          ]
+        },
+        {
+          "id": "rebuild-boot-laces",
+          "kind": "generation-caution",
+          "status": "complete",
+          "title": "Malformed midline lace artifacts removed",
+          "detail": "The accidental geometry connecting the pair was discarded during the spatial split. The intended boot straps remain on each independent model.",
+          "relatedObjectIds": [],
+          "proposedParts": [
+            "Clean left boot",
+            "Clean right boot",
+            "Intended straps"
+          ]
+        }
+      ]
+    },
+    {
+      "objectId": "black-lace-up-platform-boots",
+      "notes": [
+        {
+          "id": "split-shoe-pair",
+          "kind": "split-review",
+          "status": "complete",
+          "title": "Individual shoe models complete",
+          "detail": "The archived pair mesh is preserved. Separate centered and grounded left and right GLBs are now available as independent 3D versions.",
+          "relatedObjectIds": [],
+          "proposedParts": [
+            "Left shoe model",
+            "Right shoe model"
+          ]
+        }
+      ]
+    },
+    {
+      "objectId": "black-mary-jane-flats",
+      "notes": [
+        {
+          "id": "split-shoe-pair",
+          "kind": "split-review",
+          "status": "complete",
+          "title": "Individual shoe models complete",
+          "detail": "The archived pair mesh is preserved. Separate centered and grounded left and right GLBs are now available as independent 3D versions.",
+          "relatedObjectIds": [],
+          "proposedParts": [
+            "Left shoe model",
+            "Right shoe model"
+          ]
+        }
+      ]
+    },
+    {
+      "objectId": "black-mary-jane-wedges",
+      "notes": [
+        {
+          "id": "split-shoe-pair",
+          "kind": "split-review",
+          "status": "complete",
+          "title": "Individual shoe models complete",
+          "detail": "The archived pair mesh is preserved. Separate centered and grounded left and right GLBs are now available as independent 3D versions.",
+          "relatedObjectIds": [],
+          "proposedParts": [
+            "Left shoe model",
+            "Right shoe model"
+          ]
+        }
+      ]
+    },
+    {
+      "objectId": "books",
+      "notes": [
+        {
+          "id": "books-multi-angle-candidate",
+          "kind": "relationship",
+          "status": "tracked",
+          "title": "Use both book-stack views",
+          "detail": "The close reference carries the stained-glass construction and spine proportions; the wider piano view confirms the stack order and pairing with the bubble bottle. Keep individual book volumes editable inside one placed stack.",
+          "relatedObjectIds": [
+            "bubble-bottle"
+          ],
+          "proposedParts": [
+            "Top teal book stack",
+            "Blue middle book",
+            "Amber middle book",
+            "Two pale lower books"
+          ]
+        }
+      ]
+    },
+    {
+      "objectId": "brown-lace-up-boots",
+      "notes": [
+        {
+          "id": "split-shoe-pair",
+          "kind": "split-review",
+          "status": "complete",
+          "title": "Individual shoe models complete",
+          "detail": "The archived pair mesh is preserved. Separate centered and grounded left and right GLBs are now available as independent 3D versions.",
+          "relatedObjectIds": [],
+          "proposedParts": [
+            "Left shoe model",
+            "Right shoe model"
+          ]
+        }
+      ]
+    },
+    {
+      "objectId": "burgundy-button-corset",
+      "notes": [
+        {
+          "id": "open-corset-shell",
+          "title": "Hollow corset shell verified",
+          "detail": "The four-view Meshy rerun was rejected because it capped the openings. Its clean exterior was repaired into a continuous fitted cavity in Blender, with a tapered lower cutter preserving the pointed front hem; six-angle GLB renders verify an open top and open lower hem.",
+          "kind": "generation-caution",
+          "status": "complete",
+          "relatedObjectIds": [
+            "ivory-striped-corset",
+            "pink-striped-corset"
+          ],
+          "proposedParts": [
+            "Thin outer shell",
+            "Empty wearable cavity",
+            "Open top rim",
+            "Open lower hem",
+            "Separate shoulder ties"
+          ]
+        }
+      ]
+    },
+    {
+      "objectId": "cafe-model",
+      "notes": [
+        {
+          "id": "replace-generated-lettering",
+          "kind": "generation-caution",
+          "status": "complete",
+          "title": "Source artwork restored",
+          "detail": "The typed repair was replaced with artwork cropped directly from the catalog object: main fascia, door plaque, and sidewalk board.",
+          "relatedObjectIds": [],
+          "proposedParts": [
+            "Main fascia lettering",
+            "Door sign",
+            "Sidewalk sign"
+          ]
+        }
+      ]
+    },
+    {
+      "objectId": "roof",
+      "notes": [
+        {
+          "id": "roof-multi-angle-set",
+          "kind": "relationship",
+          "status": "tracked",
+          "title": "Roof isolated from six exterior references",
+          "detail": "The primary and two alternate white-background studies combine the roof evidence into a modeling guide. Preserve the handmade curving shingle courses, colored appliques, ridges, valleys, and plum eaves; keep the chimney and facade modules separate.",
+          "relatedObjectIds": [
+            "chimney",
+            "window",
+            "front-canopy"
+          ],
+          "proposedParts": [
+            "Broad front roof plane",
+            "Intersecting gables",
+            "Ridges and valleys",
+            "Eaves and fascia",
+            "Curving shingle courses",
+            "Colored roof appliques"
+          ]
+        }
+      ]
+    },
+    {
+      "objectId": "outdoor-plants",
+      "notes": [
+        {
+          "id": "split-courtyard-plant-group",
+          "kind": "relationship",
+          "status": "tracked",
+          "title": "Complete courtyard plant-and-vessel arrangement",
+          "detail": "The white-background image preserves the full foreground grouping from the house facade source, including the empty vessels and sphere-topped urn. Use it as a placement guide while keeping every plant, container, branch mass, and decorative vessel independently placeable for 3D recreation.",
+          "relatedObjectIds": [
+            "front-canopy"
+          ],
+          "proposedParts": [
+            "Clustered cactus and tan pot",
+            "White pedestal urn",
+            "Large blue-green agave",
+            "Black ribbed vessel",
+            "Twisted woody plant and weathered blue-green pot",
+            "Small succulent and cobalt-blue pot",
+            "Speckled urn and glossy dark sphere",
+            "Sparse conifer with trailing succulent and dark fluted pot"
+          ]
+        }
+      ]
+    },
+    {
+      "objectId": "chimney",
+      "notes": [
+        {
+          "id": "chimney-four-angle-set",
+          "kind": "relationship",
+          "status": "tracked",
+          "title": "Four exterior references",
+          "detail": "Use all four roof photos as complementary views of the painted chimney and its relationship to the shingle planes. Match the colored face inserts before placing it into the House Exterior assembly.",
+          "relatedObjectIds": [
+            "window",
+            "front-canopy"
+          ],
+          "proposedParts": []
+        }
+      ]
+    },
+    {
+      "objectId": "glass-window-display",
+      "notes": [
+        {
+          "id": "assembly-guide-not-fused",
+          "kind": "relationship",
+          "status": "tracked",
+          "title": "Use as a placement guide",
+          "detail": "The original source and 34-entry placement map are authoritative; the white-background thumbnail is only a clean overview. Keep every vessel, wood frame, and glass shelf as separate geometry, then rebuild the display instead of generating one fused mesh.",
+          "relatedObjectIds": [],
+          "proposedParts": [
+            "Three wood window frames",
+            "Glass shelf tiers",
+            "34 individual glass vessels"
+          ]
+        }
+      ]
+    },
+    {
+      "objectId": "green-lamp",
+      "notes": [
+        {
+          "id": "ignore-green-lamp-reflection",
+          "kind": "generation-caution",
+          "status": "tracked",
+          "title": "Ignore the mirror copy",
+          "detail": "The source contains one real green lamp and a mirror reflection. Generate a single lamp; do not treat the reflected shade and base as a second asset or backside geometry.",
+          "relatedObjectIds": [],
+          "proposedParts": []
+        }
+      ]
+    },
+    {
+      "objectId": "green-platform-sneakers",
+      "notes": [
+        {
+          "id": "split-shoe-pair",
+          "kind": "split-review",
+          "status": "complete",
+          "title": "Individual shoe models complete",
+          "detail": "The archived pair mesh is preserved. Separate centered and grounded left and right GLBs are now available as independent 3D versions.",
+          "relatedObjectIds": [],
+          "proposedParts": [
+            "Left shoe model",
+            "Right shoe model"
+          ]
+        }
+      ]
+    },
+    {
+      "objectId": "green-wall-plate",
+      "notes": [
+        {
+          "id": "rebuild-as-wall-plate",
+          "kind": "generation-caution",
+          "status": "complete",
+          "title": "Clean plate geometry complete",
+          "detail": "A consistent shallow plate body and rim were rebuilt in Blender and textured from this plate's original clean artwork.",
+          "relatedObjectIds": [
+            "lavender-wall-plate",
+            "orange-wall-plate",
+            "purple-wall-plate"
+          ],
+          "proposedParts": [
+            "Plate body",
+            "Shallow rim",
+            "Artwork texture"
+          ]
+        }
+      ]
+    },
+    {
+      "objectId": "ice-cream-shop",
+      "notes": [
+        {
+          "id": "replace-generated-lettering",
+          "kind": "generation-caution",
+          "status": "complete",
+          "title": "Source artwork restored",
+          "detail": "The typed repair was replaced with artwork cropped directly from the catalog object: fascia illustration, date plaque, door plaque, and both window signs.",
+          "relatedObjectIds": [],
+          "proposedParts": [
+            "Main fascia",
+            "Date plaque",
+            "Window signs",
+            "Door sign"
+          ]
+        }
+      ]
+    },
+    {
+      "objectId": "lavender-check-fuzzy-shoes",
+      "notes": [
+        {
+          "id": "split-shoe-pair",
+          "kind": "split-review",
+          "status": "complete",
+          "title": "Individual shoe models complete",
+          "detail": "The archived pair mesh is preserved. Separate centered and grounded left and right GLBs are now available as independent 3D versions.",
+          "relatedObjectIds": [],
+          "proposedParts": [
+            "Left shoe model",
+            "Right shoe model"
+          ]
+        },
+        {
+          "id": "repair-check-pattern",
+          "kind": "generation-caution",
+          "status": "complete",
+          "title": "Checker and fuzzy trim retextured",
+          "detail": "Meshy retextured the pair from the clean lavender checker reference, and that improved texture is carried into both independent shoe exports.",
+          "relatedObjectIds": [],
+          "proposedParts": [
+            "Checker upper material",
+            "Lavender sole",
+            "Fuzzy trim"
+          ]
+        }
+      ]
+    },
+    {
+      "objectId": "lavender-wall-plate",
+      "notes": [
+        {
+          "id": "rebuild-as-wall-plate",
+          "kind": "generation-caution",
+          "status": "complete",
+          "title": "Clean plate geometry complete",
+          "detail": "A consistent shallow plate body and rim were rebuilt in Blender and textured from this plate's original clean artwork.",
+          "relatedObjectIds": [
+            "green-wall-plate",
+            "orange-wall-plate",
+            "purple-wall-plate"
+          ],
+          "proposedParts": [
+            "Plate body",
+            "Shallow rim",
+            "Artwork texture"
+          ]
+        }
+      ]
+    },
+    {
+      "objectId": "orange-wall-plate",
+      "notes": [
+        {
+          "id": "rebuild-as-wall-plate",
+          "kind": "generation-caution",
+          "status": "complete",
+          "title": "Clean plate geometry complete",
+          "detail": "A consistent shallow plate body and rim were rebuilt in Blender and textured from this plate's original clean artwork.",
+          "relatedObjectIds": [
+            "green-wall-plate",
+            "lavender-wall-plate",
+            "purple-wall-plate"
+          ],
+          "proposedParts": [
+            "Plate body",
+            "Shallow rim",
+            "Artwork texture"
+          ]
+        }
+      ]
+    },
+    {
+      "objectId": "piano",
+      "notes": [
+        {
+          "id": "rebuild-keyboard",
+          "kind": "generation-caution",
+          "status": "complete",
+          "title": "Integrated playable keyboard complete",
+          "detail": "The malformed generated keyboard was physically removed rather than covered. The replacement is recessed inside the original case: 52 white keys and 36 shorter black keys sit between new front and rear walnut rails, with rear-edge pivots and MIDI naming preserved.",
+          "relatedObjectIds": [],
+          "proposedParts": [
+            "52 fitted white key objects",
+            "36 shorter black key objects",
+            "Recessed keywell",
+            "Front key slip",
+            "Fallboard lip and rear felt"
+          ]
+        },
+        {
+          "id": "vid5-performance",
+          "kind": "generation-caution",
+          "status": "complete",
+          "title": "VID_5 chord performance mapped and animated",
+          "detail": "The waveform contains eight strong attacks: E, D, E, A, then E, D, E, A. Pitch-detector retriggers were discarded, the chord shapes were checked against the frames, and each voicing now moves once and sustains cleanly.",
+          "relatedObjectIds": [],
+          "proposedParts": [
+            "8 waveform-confirmed chord attacks",
+            "14 animated key objects",
+            "E–D–A progression in A major",
+            "Optional browser confirmation synth"
+          ]
+        }
+      ]
+    },
+    {
+      "objectId": "pink-lace-up-boots",
+      "notes": [
+        {
+          "id": "split-shoe-pair",
+          "kind": "split-review",
+          "status": "complete",
+          "title": "Individual shoe models complete",
+          "detail": "The archived pair mesh is preserved. Separate centered and grounded left and right GLBs are now available as independent 3D versions.",
+          "relatedObjectIds": [],
+          "proposedParts": [
+            "Left shoe model",
+            "Right shoe model"
+          ]
+        }
+      ]
+    },
+    {
+      "objectId": "purple-wall-plate",
+      "notes": [
+        {
+          "id": "rebuild-as-wall-plate",
+          "kind": "generation-caution",
+          "status": "complete",
+          "title": "Clean plate geometry complete",
+          "detail": "A consistent shallow plate body and rim were rebuilt in Blender and textured from this plate's original clean artwork.",
+          "relatedObjectIds": [
+            "green-wall-plate",
+            "lavender-wall-plate",
+            "orange-wall-plate"
+          ],
+          "proposedParts": [
+            "Plate body",
+            "Shallow rim",
+            "Artwork texture"
+          ]
+        }
+      ]
+    },
+    {
+      "objectId": "red-knee-boots",
+      "notes": [
+        {
+          "id": "split-shoe-pair",
+          "kind": "split-review",
+          "status": "complete",
+          "title": "Individual shoe models complete",
+          "detail": "The archived pair mesh is preserved. Separate centered and grounded left and right GLBs are now available as independent 3D versions.",
+          "relatedObjectIds": [],
+          "proposedParts": [
+            "Left shoe model",
+            "Right shoe model"
+          ]
+        }
+      ]
+    },
+    {
+      "objectId": "stair-railing",
+      "notes": [
+        {
+          "id": "part-of-staircase-assembly",
+          "kind": "relationship",
+          "status": "separate-asset",
+          "title": "Part of the Staircase assembly",
+          "detail": "The lower-hall source and upper-landing source show complementary sections of the same staircase. Model the railing separately, then align it to a new stair flight, landing, treads, risers, and carpet runner.",
+          "relatedObjectIds": [
+            "chandelier"
+          ],
+          "proposedParts": [
+            "Stair flight and stringers",
+            "Treads and risers",
+            "Upper landing",
+            "Newel posts",
+            "Red handrail",
+            "Multicolor balusters",
+            "Dark carpet runner"
+          ]
+        }
+      ]
+    },
+    {
+      "objectId": "teal-sculpted-corset",
+      "notes": [
+        {
+          "id": "open-corset-shell",
+          "kind": "generation-caution",
+          "status": "review",
+          "title": "Hollow multiview rerun ready",
+          "detail": "Meshy reran this garment from the front catalog image plus a generated three-quarter view that exposes the wearable interior. Review the openings before marking it production-ready.",
+          "relatedObjectIds": [
+            "ivory-striped-corset",
+            "pink-striped-corset"
+          ],
+          "proposedParts": [
+            "Outer shell",
+            "Open body cavity",
+            "Inner rim thickness"
+          ]
+        }
+      ]
+    },
+    {
+      "objectId": "wall-panel",
+      "notes": [
+        {
+          "id": "part-of-bed-setup",
+          "kind": "relationship",
+          "status": "separate-asset",
+          "title": "Part of the Bed setup",
+          "detail": "The wall panel sits behind the bed in the same source scene. Keep it linked to Bed for scene assembly, but create it as its own 3D asset.",
+          "relatedObjectIds": [
+            "bed"
+          ],
+          "proposedParts": []
+        }
+      ]
+    },
+    {
+      "objectId": "white-mega-platform-sneakers",
+      "notes": [
+        {
+          "id": "split-shoe-pair",
+          "kind": "split-review",
+          "status": "complete",
+          "title": "Individual shoe models complete",
+          "detail": "The archived pair mesh is preserved. Separate centered and grounded left and right GLBs are now available as independent 3D versions.",
+          "relatedObjectIds": [],
+          "proposedParts": [
+            "Left shoe model",
+            "Right shoe model"
+          ]
+        }
+      ]
+    },
+    {
+      "objectId": "navy-corset-vest",
+      "notes": [
+        {
+          "id": "open-corset-shell",
+          "title": "New hollow multiview repair ready",
+          "detail": "Meshy reran the vest from four views that explicitly expose the collar, both armholes, the torso interior, and the open lower hem. Review the negative space before approval.",
+          "kind": "generation-caution",
+          "status": "review",
+          "relatedObjectIds": [],
+          "proposedParts": [
+            "Thin outer shell",
+            "Open torso cavity",
+            "Open collar passage",
+            "Separate armholes",
+            "Open lower hem"
+          ]
+        }
+      ]
+    }
+  ]
+}

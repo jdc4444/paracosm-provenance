@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 2,
+  "id": "vid-5",
+  "label": "VID_5 chord performance",
+  "sourceFile": "VID_5.mov",
+  "sourceDurationSeconds": 19.3,
+  "trimmedLeadInSeconds": 1.45,
+  "durationSeconds": 17.72,
+  "tempo": "free performance",
+  "analysis": {
+    "waveform": "/archive/objects/3d/source/piano-performances/VID_5-waveform-analysis.png",
+    "method": "Smoothed spectral-flux peaks checked against the waveform envelope and chord-attack frames",
+    "sourceAttackSeconds": [
+      1.625,
+      2.276,
+      4.505,
+      6.832,
+      10.588,
+      11.175,
+      13.299,
+      15.83
+    ],
+    "reviewedAt": "2026-07-28",
+    "notes": "The pitch detector's internal note retriggers were rejected. Only the eight high-energy waveform attacks drive key motion."
+  },
+  "summary": {
+    "chordEvents": 8,
+    "distinctKeys": 14,
+    "lowestMidi": 33,
+    "highestMidi": 66,
+    "harmonicCenter": "A major",
+    "primaryChords": [
+      "E",
+      "D",
+      "A"
+    ]
+  },
+  "chordTuple": [
+    "name",
+    "start",
+    "end",
+    "velocity",
+    "midiNotes"
+  ],
+  "chords": [
+    ["E",0.175,0.72,82,[40,52,56,59,64]],
+    ["D",0.826,2.93,76,[38,50,54,57,62,66]],
+    ["E",3.055,5.25,70,[40,52,56,59,64]],
+    ["A",5.382,9.01,72,[45,52,57,61,64]],
+    ["E",9.138,9.63,82,[40,52,56,59,64]],
+    ["D",9.725,11.73,78,[38,50,54,57,62,66]],
+    ["E",11.849,14.25,70,[40,52,56,59,64]],
+    ["A",14.38,17.65,74,[33,45,52,57,61,64]]
+  ]
+}

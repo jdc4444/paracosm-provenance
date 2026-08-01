@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-07-29",
+  "subjectId": "abby-delighted-side-glance-head",
+  "primaryVersionId": "meshy-v3-compact-chin",
+  "versions": [
+    {
+      "id": "meshy-v1-flat-face",
+      "label": "Meshy v1 · flatter face",
+      "provider": "Meshy 6",
+      "model": "/archive/character-reference/abby/meshy/delighted-side-glance-head-v1/delighted-side-glance-head-meshy-v1.glb",
+      "thumbnail": "/archive/character-reference/abby/meshy/delighted-side-glance-head-v1/delighted-side-glance-head-meshy-v1.png",
+      "inputSheet": "/archive/character-reference/abby/meshy/delighted-side-glance-head-v1/input-contact-sheet.jpg",
+      "reviewSheet": "/archive/character-reference/abby/meshy/delighted-side-glance-head-v1/review-angles/front.png",
+      "createdAt": "2026-07-29",
+      "taskId": "019fade8-6ea2-746e-ad45-465d4cfd44f1",
+      "faces": 1773692,
+      "vertices": 1196650,
+      "status": "needs-fix",
+      "note": "First head-only reconstruction. Expression and hair survived, but the facial shell is too shallow through the nose, cheeks, mouth and chin."
+    },
+    {
+      "id": "meshy-v2-deeper-face",
+      "label": "Meshy v2 · deeper face",
+      "provider": "Meshy 6",
+      "model": "/archive/character-reference/abby/meshy/delighted-side-glance-head-v2/delighted-side-glance-head-meshy-v2.glb",
+      "thumbnail": "/archive/character-reference/abby/meshy/delighted-side-glance-head-v2/delighted-side-glance-head-meshy-v2.png",
+      "inputSheet": "/archive/character-reference/abby/meshy/delighted-side-glance-head-v2/input-contact-sheet.jpg",
+      "reviewSheet": "/archive/character-reference/abby/meshy/delighted-side-glance-head-v2/model-review-contact-sheet.jpg",
+      "createdAt": "2026-07-29",
+      "taskId": "019fadf2-0f74-7bc0-8752-874ecaa9c801",
+      "faces": 1697046,
+      "vertices": 890642,
+      "status": "needs-fix",
+      "note": "Depth correction added useful cheek, nose, mouth and cranium volume, but enlarged the lower face and produced a pale, washed-out material treatment."
+    },
+    {
+      "id": "meshy-v3-compact-chin",
+      "label": "Meshy v3 · compact chin",
+      "provider": "Meshy 6",
+      "model": "/archive/character-reference/abby/meshy/delighted-side-glance-head-v3/delighted-side-glance-head-meshy-v3.glb",
+      "thumbnail": "/archive/character-reference/abby/meshy/delighted-side-glance-head-v3/delighted-side-glance-head-meshy-v3.png",
+      "inputSheet": "/archive/character-reference/abby/meshy/delighted-side-glance-head-v3/input-contact-sheet.jpg",
+      "reviewSheet": "/archive/character-reference/abby/meshy/delighted-side-glance-head-v3/model-review-contact-sheet.jpg",
+      "createdAt": "2026-07-29",
+      "taskId": "019faea5-ef72-7516-bdf1-4e0e0362e5a2",
+      "faces": 1558694,
+      "vertices": 818283,
+      "status": "review",
+      "note": "Keeps the useful v2 face depth while restoring the compact chin and lower-face proportions, with richer fully opaque terracotta skin and copper hair materials."
+    }
+  ]
+}

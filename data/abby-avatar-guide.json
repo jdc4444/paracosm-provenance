@@ -1,0 +1,725 @@
+{
+  "character": {
+    "id": "abby-avatar",
+    "name": "Abby",
+    "sourceRoot": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/ZK",
+    "avatarRoot": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/ZK/0_Abby_Avatar",
+    "guidePdf": "/Users/alphaone/Downloads/Retargeting and rigging Metahuman Abby.pdf",
+    "identityRule": "Use 0_Abby_Avatar as the canonical avatar system. Use the approved frontal close-up and Final Avatar deck face studies as visual identity authority; exclude the rejected Blender and Cinema 4D diagnostic close-ups. Use the explicitly approved main-animation outfit render as the wardrobe authority for expression and performance mockups. Exclude 2_Record_Cover because it predominantly contains another avatar; retain only the explicitly approved Button avatar."
+  },
+  "summary": {
+    "renderCount": 10,
+    "canonicalSystems": 10,
+    "highestRenderLongEdge": 4000,
+    "highestSkinTextureEdge": 8192,
+    "missingExpectedPackages": 2
+  },
+  "renders": [
+    {
+      "id": "c4d-redshift-lookmatch",
+      "label": "Cinema 4D 1:1 animated match",
+      "application": "Cinema 4D 2026.1.2 / Redshift",
+      "image": "/archive/character-reference/abby/avatar-guide/c4d-redshift-lookmatch.png",
+      "video": "/archive/character-reference/abby/avatar-guide/c4d-redshift-slide7-facial-animation.mp4",
+      "width": 480,
+      "height": 270,
+      "animationDurationSeconds": 10,
+      "view": "Front",
+      "renderType": "Native MetaHuman FBX facial-mocap retarget",
+      "description": "The actual Face Archetype Skeleton Sequence 1 facial take retargeted onto the recovered Cinema 4D 1:1 look-match. The native capture drives Abby's eyes, lids, brows, cheeks, jaw and lips while the look-development body, hair and camera remain fixed.",
+      "sourcePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/ZK/0_Abby_Avatar/0_C4D/Abby_BaseMesh_Materials_face_mocap_retarget_v4_codex_072926.c4d",
+      "sourceFile": "Abby_BaseMesh_Materials_face_mocap_retarget_v4_codex_072926.c4d",
+      "motionSourcePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/ZK/0_Abby_Avatar/0_C4D/Animations/Face_Archetype_Skeleton_Sequence1.FBX",
+      "motionSourceFile": "Face_Archetype_Skeleton_Sequence1.FBX",
+      "sourceUrl": "https://docs.google.com/presentation/d/e/2PACX-1vQEBjcgzxMJupixlPzW3sPmGLNwtcA904F3hWnkJdL1G5DIP9mj1GxrEtt6pfgDyGqoKQHq95afAqPq/pub?start=false&loop=false&delayms=3000",
+      "sourceUrlLabel": "Open performance reference",
+      "fidelity": "Direct facial-only retarget from the native 300-frame, 30 fps FBX take. The derived C4D scene contains 1,594,800 captured facial keys across 843 matched FACIAL_* controls; the browser preview renders every source frame at 30 fps and 480 × 270 through a fixed face-close review camera. Canonical face and eyelash weights are restored, the earlier wide render and exploratory scenes are archived, and the original C4D master remains untouched."
+    },
+    {
+      "id": "c4d-delighted-side-glance-pose-20260729",
+      "label": "Delighted Side Glance · Cinema 4D",
+      "application": "Cinema 4D 2026.1.2 / Redshift · read-only master evaluation",
+      "image": "/archive/character-reference/abby/avatar-guide/expressions/delighted-side-glance-v17/c4d-delighted-side-glance-pose-v17.png",
+      "width": 1280,
+      "height": 720,
+      "view": "Material Closeup B camera · parallel upper-right glance",
+      "renderType": "Hand-authored MetaHuman joint pose on intact 1:1 look-development master",
+      "description": "Delighted Side Glance evaluated on Abby's intact production C4D master with the approved compact chin, raised upper teeth, parallel gaze, exact 1:1 wind-swept copper hair and untouched source skin. The v17 proof keeps v7's 0 EV exposure and 3.28 area key, then adds restrained diffuse-only Redshift fill to recover the face beneath the full hair.",
+      "sourcePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/ZK/0_Abby_Avatar/0_C4D/Abby_BaseMesh_Materials.c4d",
+      "sourceFile": "Abby_BaseMesh_Materials.c4d",
+      "sourceUrl": "/archive/character-reference/abby/avatar-guide/expressions/delighted-side-glance-v17/reference-v7-v16-v17-fill.jpg",
+      "sourceUrlLabel": "Open v7 · v16 · v17 fill comparison",
+      "fidelity": "Rendered read-only from the intact 1:1 material master with its original 66,348-point, 66,288-polygon Hair object, Clay_Hair material and complete Redshift plus Magic Bullet Looks chain. The selected v17 proof preserves v7's literal 0 EV camera exposure and 3.28 area key. Its Redshift dome is raised from 0.856 to 1.25 as fill, with reflection contribution disabled so the face opens without recreating v15's specular clipping. Abby_Face remains untouched and the source scene remains unsaved.",
+      "primaryVersionId": "c4d-delighted-v17",
+      "versions": [
+        {
+          "id": "c4d-delighted-v1",
+          "label": "C4D v1 · Initial rig pose",
+          "image": "/archive/character-reference/abby/avatar-guide/expressions/delighted-side-glance-v1/c4d-delighted-side-glance-pose.png",
+          "width": 1280,
+          "height": 1280,
+          "note": "First preserved expression-transfer proof."
+        },
+        {
+          "id": "c4d-delighted-v2",
+          "label": "C4D v2 · Gaze calibration",
+          "image": "/archive/character-reference/abby/avatar-guide/expressions/delighted-side-glance-v2/c4d-delighted-side-glance-pose-v2.png",
+          "width": 1280,
+          "height": 1280,
+          "note": "Early eye-direction and smile calibration."
+        },
+        {
+          "id": "c4d-delighted-v3",
+          "label": "C4D v3 · Head and eye refinement",
+          "image": "/archive/character-reference/abby/avatar-guide/expressions/delighted-side-glance-v3/c4d-delighted-side-glance-pose-v3.png",
+          "width": 1280,
+          "height": 1280,
+          "note": "Refined head tilt and upper-right eyeline."
+        },
+        {
+          "id": "c4d-delighted-v4",
+          "label": "C4D v4 · Reusable facial pose",
+          "image": "/archive/character-reference/abby/avatar-guide/expressions/delighted-side-glance-v4/c4d-delighted-side-glance-pose-v4.png",
+          "width": 1280,
+          "height": 1280,
+          "note": "Visual proof for the reusable 28-channel expression layer."
+        },
+        {
+          "id": "c4d-delighted-v5",
+          "label": "C4D v5 · Material-camera framing",
+          "image": "/archive/character-reference/abby/avatar-guide/expressions/delighted-side-glance-v5/c4d-delighted-side-glance-pose-v5.png",
+          "width": 1280,
+          "height": 720,
+          "note": "First widescreen pass toward the Material Closeup framing."
+        },
+        {
+          "id": "c4d-delighted-v7",
+          "label": "C4D v7 · Mouth and eyeline refinement",
+          "image": "/archive/character-reference/abby/avatar-guide/expressions/delighted-side-glance-v7/c4d-delighted-side-glance-pose-v7.png",
+          "width": 1280,
+          "height": 720,
+          "note": "Wider open smile and corrected gaze direction."
+        },
+        {
+          "id": "c4d-delighted-v9",
+          "label": "C4D v9 · Parallel gaze calibration",
+          "image": "/archive/character-reference/abby/avatar-guide/expressions/delighted-side-glance-v9/c4d-delighted-side-glance-pose-v9.png",
+          "width": 1280,
+          "height": 720,
+          "note": "Parallel upper-right gaze calibration before the 1:1 hair pass."
+        },
+        {
+          "id": "c4d-delighted-v10",
+          "label": "C4D v10 · 1:1 hair · pale conversion",
+          "image": "/archive/character-reference/abby/avatar-guide/expressions/delighted-side-glance-v10/c4d-delighted-side-glance-pose-v10.png",
+          "width": 1280,
+          "height": 720,
+          "note": "Preserved comparison with the correct hair but the rejected gamma-lifted finish and longer chin."
+        },
+        {
+          "id": "c4d-delighted-v11",
+          "label": "C4D v11 · Compact chin · full render chain",
+          "image": "/archive/character-reference/abby/avatar-guide/expressions/delighted-side-glance-v11/c4d-delighted-side-glance-pose-v11.png",
+          "width": 1280,
+          "height": 720,
+          "note": "Preserved compact-chin pass with the more extreme corner gaze, broader tooth exposure and harder split lighting."
+        },
+        {
+          "id": "c4d-delighted-v12",
+          "label": "C4D v12 · Friendly v5-v7 lighting",
+          "image": "/archive/character-reference/abby/avatar-guide/expressions/delighted-side-glance-v12/c4d-delighted-side-glance-pose-v12.png",
+          "width": 1280,
+          "height": 720,
+          "note": "Preserved softer-gaze pass with the darker face, oversized lower-face read and low upper-teeth line."
+        },
+        {
+          "id": "c4d-delighted-v13",
+          "label": "C4D v13 · Brighter · compact chin · raised teeth",
+          "image": "/archive/character-reference/abby/avatar-guide/expressions/delighted-side-glance-v13/c4d-delighted-side-glance-pose-v13.png",
+          "width": 1280,
+          "height": 720,
+          "note": "Preserved geometry and lighting pick: brighter diffuse face light, shorter chin and jaw, upper teeth reseated behind the lip, visible pupils, and intact 1:1 hair and materials."
+        },
+        {
+          "id": "c4d-delighted-v14",
+          "label": "C4D v14 · Refined skin finish",
+          "image": "/archive/character-reference/abby/avatar-guide/expressions/delighted-side-glance-v14/c4d-delighted-side-glance-pose-v14.png",
+          "width": 1280,
+          "height": 720,
+          "note": "Preserved texture experiment: approved v13 pose and lighting with softened baked nose highlights, controlled Redshift sheen and slightly stronger skin bump."
+        },
+        {
+          "id": "c4d-delighted-v15",
+          "label": "C4D v15 · v7 lighting · source skin",
+          "image": "/archive/character-reference/abby/avatar-guide/expressions/delighted-side-glance-v15/c4d-delighted-side-glance-pose-v15.png",
+          "width": 1280,
+          "height": 720,
+          "note": "Preserved brighter approximation: approved face and source skin with +0.65 EV exposure and rebalanced 1.8 / 1.8 lights; the right side clips more than v7."
+        },
+        {
+          "id": "c4d-delighted-v16",
+          "label": "C4D v16 · Exact v7 render settings",
+          "image": "/archive/character-reference/abby/avatar-guide/expressions/delighted-side-glance-v16/c4d-delighted-side-glance-pose-v16.png",
+          "width": 1280,
+          "height": 720,
+          "note": "Preserved no-fill control: approved face and full hair using v7's literal 0 EV, 0.856 dome and 3.28 area settings."
+        },
+        {
+          "id": "c4d-delighted-v17",
+          "label": "C4D v17 · Soft diffuse fill",
+          "image": "/archive/character-reference/abby/avatar-guide/expressions/delighted-side-glance-v17/c4d-delighted-side-glance-pose-v17.png",
+          "width": 1280,
+          "height": 720,
+          "note": "Current C4D pick: v16 pose and v7 key/exposure with a 1.25 diffuse-only dome fill that lifts the face without adding reflection clipping."
+        }
+      ]
+    },
+    {
+      "id": "c4d-spin-lighting-v6-f0170",
+      "label": "Spin frame 170 · C4D Redshift v6",
+      "application": "Cinema 4D 2026.1.4 / Redshift · full 0–365 animation",
+      "image": "/archive/character-reference/abby/avatar-guide/c4d-spin-lighting-v6/renders/full-animation-v078/frames/Abby_Spin_v6_motion_f0170.png",
+      "video": "/archive/character-reference/abby/avatar-guide/c4d-spin-lighting-v6/renders/full-animation-v078/Abby_Spin_C4D_RedshiftV6_FullAnimation_0_365_v078.mp4",
+      "width": 540,
+      "height": 960,
+      "animationDurationSeconds": 12.2,
+      "view": "Three-quarter full body",
+      "renderType": "Blender Spin body and facial motion transferred onto the intact C4D 1:1 look-development rig",
+      "description": "Complete 366-frame Blender Spin motion transfer onto Abby's accepted C4D rig. Version 78 preserves the v6 Redshift materials, skin, eyes, lashes, wardrobe, shoes and exact 1:1 copper hair while applying the source body motion, compact hand articulation, cached facial surface motion, blinks, eye direction and jaw motion for the full 0–365 take.",
+      "sourcePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/JD/06 Motion/Spin/_Codex Derived/Abby_Spin_C4D_RedshiftV6_BodyPose_f0170_v056.c4d",
+      "sourceFile": "Abby_Spin_C4D_RedshiftV6_BodyPose_f0170_v056.c4d",
+      "motionSourcePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/JD/06 Motion/Spin/cut0_0_365_lighting.blend",
+      "motionSourceFile": "cut0_0_365_lighting.blend · frame 170",
+      "fidelity": "The eight-joint, 28-distance normalized body signature matches Blender frame 170 with a maximum absolute difference of 0.00000288. The intact C4D master supplies all renderable geometry and materials; its saved look take, 66,348-point / 66,288-polygon Hair object, Clay_Hair material, skin, eyes, lashes, wardrobe and Redshift chain remain in place. Version 78 renders the complete 0–365 body driver plus source-space facial and eyelash point caches, native C4D eye controls and lower-teeth jaw follow. All 366 PNGs and the 12.2-second H.264 encode passed full decode QA with zero missing frames and zero retries. The source Blender and C4D files remain untouched and every output is versioned.",
+      "hashes": {
+        "motionSourceSha256": "18a069920eee998435f4f9ec7d07a0f364ebc3f0b612ff6a7b0b64549a6b7b43",
+        "lookSourceSha256": "1025125bc820703f586ceca19e40dcbf9364ee0a968ecb8c6eff5e3a4d577171",
+        "derivedProjectSha256": "8fa616cd2e051329d54c35089f8be205ee30279ad7207521296ef98c13079da2",
+        "lightingGateRenderSha256": "457579baf9a5172da590a5ede2a30756ec1d9a56ee0401d6c2b9ad69bc07c26d",
+        "renderSha256": "f08c0b93cdc1805009beaee549778cb99c25a9e8542a2aaed50e4098eb9e7202"
+      },
+      "primaryVersionId": "c4d-spin-full-v078",
+      "versions": [
+        {
+          "id": "c4d-spin-f0170-v039",
+          "label": "v39 · Direct finger transfer",
+          "image": "/archive/character-reference/abby/avatar-guide/c4d-spin-lighting-v6/renders/Abby_Spin_C4D_RedshiftV6_BodyPose_f0170_v039.png",
+          "width": 540,
+          "height": 960,
+          "note": "Rejected diagnostic: Blender finger positions distort the differently proportioned C4D hands."
+        },
+        {
+          "id": "c4d-spin-f0170-v040",
+          "label": "v40 · Corrected C4D-native hands",
+          "image": "/archive/character-reference/abby/avatar-guide/c4d-spin-lighting-v6/renders/Abby_Spin_C4D_RedshiftV6_BodyPose_f0170_v040.png",
+          "width": 540,
+          "height": 960,
+          "note": "Current pick: exact source body and wrist pose with coherent C4D-native finger articulation."
+        },
+        {
+          "id": "c4d-spin-f0170-v041",
+          "label": "v41 · Rotation-only finger test",
+          "image": "/archive/character-reference/abby/avatar-guide/c4d-spin-lighting-v6/renders/Abby_Spin_C4D_RedshiftV6_BodyPose_f0170_v041.png",
+          "width": 540,
+          "height": 960,
+          "note": "Rejected diagnostic: source and target finger axes are incompatible."
+        },
+        {
+          "id": "c4d-spin-f0170-v042",
+          "label": "v42 · Camera-fill test",
+          "image": "/archive/character-reference/abby/avatar-guide/c4d-spin-lighting-v6/renders/Abby_Spin_C4D_RedshiftV6_BodyPose_f0170_v042.png",
+          "width": 540,
+          "height": 960,
+          "note": "Preserved lighting test; rejected because the extra fill flattened the background without improving Abby."
+        },
+        {
+          "id": "c4d-spin-f0170-v043",
+          "label": "v43 · Animated-hair carrier test",
+          "image": "/archive/character-reference/abby/avatar-guide/c4d-spin-lighting-v6/renders/Abby_Spin_C4D_RedshiftV6_BodyPose_f0170_v043.png",
+          "width": 270,
+          "height": 480,
+          "note": "Rejected diagnostic: evaluated Blender hair geometry imports in the correct place but remains invisible to Redshift."
+        },
+        {
+          "id": "c4d-spin-f0170-v044",
+          "label": "v44 · Magenta hair visibility probe",
+          "image": "/archive/character-reference/abby/avatar-guide/c4d-spin-lighting-v6/renders/Abby_Spin_C4D_RedshiftV6_BodyPose_f0170_v044.png",
+          "width": 270,
+          "height": 480,
+          "note": "Rejected diagnostic: self-lit magenta material and no Redshift object tag still do not make the imported hair carrier render."
+        },
+        {
+          "id": "c4d-spin-f0170-v045",
+          "label": "v45 · Hair hierarchy probe",
+          "image": "/archive/character-reference/abby/avatar-guide/c4d-spin-lighting-v6/renders/Abby_Spin_C4D_RedshiftV6_BodyPose_f0170_v045.png",
+          "width": 270,
+          "height": 480,
+          "note": "Rejected diagnostic: parenting the imported carrier below the visible 1:1 Hair object does not make the carrier render; the accepted static hair remains visible."
+        },
+        {
+          "id": "c4d-spin-f0170-v046",
+          "label": "v46 · Distant fill 3",
+          "image": "/archive/character-reference/abby/avatar-guide/c4d-spin-lighting-v6/renders/Abby_Spin_C4D_RedshiftV6_BodyPose_f0170_v046.png",
+          "width": 270,
+          "height": 480,
+          "note": "Rejected lighting diagnostic: the distant cloned fill contributes negligibly."
+        },
+        {
+          "id": "c4d-spin-f0170-v047",
+          "label": "v47 · Distant fill 10",
+          "image": "/archive/character-reference/abby/avatar-guide/c4d-spin-lighting-v6/renders/Abby_Spin_C4D_RedshiftV6_BodyPose_f0170_v047.png",
+          "width": 270,
+          "height": 480,
+          "note": "Rejected lighting diagnostic: increasing the incorrectly placed fill confirms it still contributes negligibly."
+        },
+        {
+          "id": "c4d-spin-f0170-v048",
+          "label": "v48 · Key intensity 10",
+          "image": "/archive/character-reference/abby/avatar-guide/c4d-spin-lighting-v6/renders/Abby_Spin_C4D_RedshiftV6_BodyPose_f0170_v048.png",
+          "width": 270,
+          "height": 480,
+          "note": "Rejected lighting diagnostic: stronger key overexposes the face while the wardrobe stays too dark."
+        },
+        {
+          "id": "c4d-spin-f0170-v049",
+          "label": "v49 · Fill-axis correction",
+          "image": "/archive/character-reference/abby/avatar-guide/c4d-spin-lighting-v6/renders/Abby_Spin_C4D_RedshiftV6_BodyPose_f0170_v049.png",
+          "width": 270,
+          "height": 480,
+          "note": "Rejected diagnostic: corrects the light-axis assumption but exposes a regressed camera distance and tiny subject framing."
+        },
+        {
+          "id": "c4d-spin-f0170-v050",
+          "label": "v50 · Matched-framing axis control",
+          "image": "/archive/character-reference/abby/avatar-guide/c4d-spin-lighting-v6/renders/Abby_Spin_C4D_RedshiftV6_BodyPose_f0170_v050.png",
+          "width": 270,
+          "height": 480,
+          "note": "Preserved control: restores the accepted camera distance while testing the opposite Redshift emission axis."
+        },
+        {
+          "id": "c4d-spin-f0170-v051",
+          "label": "v51 · No-fill control",
+          "image": "/archive/character-reference/abby/avatar-guide/c4d-spin-lighting-v6/renders/Abby_Spin_C4D_RedshiftV6_BodyPose_f0170_v051.png",
+          "width": 270,
+          "height": 480,
+          "note": "Control render for pixel-level comparison against the corrected close-fill tests."
+        },
+        {
+          "id": "c4d-spin-f0170-v052",
+          "label": "v52 · Corrected close fill 3",
+          "image": "/archive/character-reference/abby/avatar-guide/c4d-spin-lighting-v6/renders/Abby_Spin_C4D_RedshiftV6_BodyPose_f0170_v052.png",
+          "width": 270,
+          "height": 480,
+          "note": "Passing lighting direction, but the fill is still too subtle for the dark wardrobe."
+        },
+        {
+          "id": "c4d-spin-f0170-v053",
+          "label": "v53 · Corrected close fill 10",
+          "image": "/archive/character-reference/abby/avatar-guide/c4d-spin-lighting-v6/renders/Abby_Spin_C4D_RedshiftV6_BodyPose_f0170_v053.png",
+          "width": 270,
+          "height": 480,
+          "note": "Rejected lighting upper bound: wardrobe separation improves, but the face becomes overexposed."
+        },
+        {
+          "id": "c4d-spin-f0170-v054",
+          "label": "v54 · Midpoint fill 5.5",
+          "image": "/archive/character-reference/abby/avatar-guide/c4d-spin-lighting-v6/renders/Abby_Spin_C4D_RedshiftV6_BodyPose_f0170_v054.png",
+          "width": 540,
+          "height": 960,
+          "note": "Visually accepted lighting midpoint, but rejected as a production project because its post-render save failed an independent reopen check."
+        },
+        {
+          "id": "c4d-spin-f0170-v055",
+          "label": "v55 · Dome fill 2.5",
+          "image": "/archive/character-reference/abby/avatar-guide/c4d-spin-lighting-v6/renders/Abby_Spin_C4D_RedshiftV6_BodyPose_f0170_v055.png",
+          "width": 270,
+          "height": 480,
+          "note": "Rejected lighting diagnostic: the stronger dome blows out the studio walls without materially improving wardrobe detail."
+        },
+        {
+          "id": "c4d-spin-f0170-v056",
+          "label": "v56 · Load-safe corrected fill",
+          "image": "/archive/character-reference/abby/avatar-guide/c4d-spin-lighting-v6/renders/Abby_Spin_C4D_RedshiftV6_BodyPose_f0170_v056.png",
+          "width": 540,
+          "height": 960,
+          "note": "Accepted lighting and framing gate: exact source body pose, coherent C4D-native hands, corrected soft fill, zero missing dependencies, and a successful independent save-reopen-render gate."
+        },
+        {
+          "id": "c4d-spin-motion-v064",
+          "label": "v64 · Full-motion hand transfer",
+          "image": "/archive/character-reference/abby/avatar-guide/c4d-spin-lighting-v6/renders/motion-preview-v064/Abby_Spin_v6_motion_f0170.png",
+          "width": 540,
+          "height": 960,
+          "note": "Accepted body-motion checkpoint: source frame 170 with compact hand-local finger articulation at Abby's native segment lengths."
+        },
+        {
+          "id": "c4d-spin-motion-v067",
+          "label": "v67 · Facial surface and blink",
+          "image": "/archive/character-reference/abby/avatar-guide/c4d-spin-lighting-v6/renders/motion-preview-v067/Abby_Spin_v6_motion_f0090.png",
+          "width": 540,
+          "height": 960,
+          "note": "Accepted facial checkpoint: transferred face and eyelash point caches preserve the source blink and facial volume on the C4D character."
+        },
+        {
+          "id": "c4d-spin-motion-v068",
+          "label": "v68 · Combined face, eyes, jaw and body",
+          "image": "/archive/character-reference/abby/avatar-guide/c4d-spin-lighting-v6/renders/motion-preview-v068/Abby_Spin_v6_motion_f0170.png",
+          "width": 540,
+          "height": 960,
+          "note": "Accepted motion proof: synchronized body and compact hands, cached face and lashes, source-driven native eye controls, jaw-following lower teeth, exact C4D hair and the accepted Redshift v6 look."
+        },
+        {
+          "id": "c4d-spin-full-v078",
+          "label": "v78 · Complete Spin animation",
+          "image": "/archive/character-reference/abby/avatar-guide/c4d-spin-lighting-v6/renders/full-animation-v078/frames/Abby_Spin_v6_motion_f0170.png",
+          "poster": "/archive/character-reference/abby/avatar-guide/c4d-spin-lighting-v6/renders/full-animation-v078/frames/Abby_Spin_v6_motion_f0170.png",
+          "video": "/archive/character-reference/abby/avatar-guide/c4d-spin-lighting-v6/renders/full-animation-v078/Abby_Spin_C4D_RedshiftV6_FullAnimation_0_365_v078.mp4",
+          "mediaType": "video",
+          "width": 540,
+          "height": 960,
+          "note": "Current pick: complete 0–365 synchronized face-and-body animation with accepted C4D Redshift v6 lighting, exact materials and hair, 366/366 frames, zero retries, and a verified 12.2-second H.264 encode."
+        }
+      ]
+    },
+    {
+      "id": "approved-front-closeup-20260729",
+      "label": "Approved frontal face close-up",
+      "application": "User-approved source render",
+      "image": "/archive/character-reference/abby/avatar-guide/approved-front-closeup-20260729.png",
+      "width": 1414,
+      "height": 1388,
+      "view": "Front",
+      "renderType": "Approved face identity reference",
+      "description": "Direct frontal authority for Abby's eye size and spacing, upper wings, lower lash strokes, cheek planes, compact nose, mouth shape, tapered jaw and spiral forelock.",
+      "sourcePath": "/Users/alphaone/Desktop/Screenshot 2026-07-29 at 2.44.46 PM.png",
+      "sourceFile": "Screenshot 2026-07-29 at 2.44.46 PM.png",
+      "fidelity": "The attached 1414 × 1388 source was copied losslessly into the guide with no crop, retouching or upscaling."
+    },
+    {
+      "id": "final-avatar-deck-slide-04",
+      "label": "Final Avatar deck face close-up",
+      "application": "Cinema 4D / Redshift · Final Avatar deck",
+      "image": "/archive/character-reference/abby/avatar-guide/final-avatar-deck-slide-04-face-closeup.png",
+      "width": 1638,
+      "height": 2048,
+      "view": "Near-front",
+      "renderType": "Approved final-avatar source render",
+      "description": "The deck's strongest neutral face study for head shape, eye construction, nose and lip projection, neck scale, hair mass and the forelock-to-brow relationship.",
+      "sourcePath": "/Users/alphaone/Documents/Backup/Google Takeout/Takeout-2/Drive/Absolutely 3D - Final Avatar.pptx",
+      "sourceFile": "Absolutely 3D - Final Avatar.pptx · slide 4",
+      "sourceUrl": "https://docs.google.com/presentation/d/e/2PACX-1vQEBjcgzxMJupixlPzW3sPmGLNwtcA904F3hWnkJdL1G5DIP9mj1GxrEtt6pfgDyGqoKQHq95afAqPq/pub?start=false&loop=false&delayms=3000&slide=id.g2d9345550ab_0_6",
+      "sourceUrlLabel": "Open deck slide",
+      "fidelity": "Original 1638 × 2048 PNG extracted losslessly from slide 4 of the local Final Avatar deck; no screenshotting or upscaling."
+    },
+    {
+      "id": "final-avatar-deck-slide-06",
+      "label": "Final Avatar deck beauty close-up",
+      "application": "Cinema 4D / Redshift · Final Avatar deck",
+      "image": "/archive/character-reference/abby/avatar-guide/final-avatar-deck-slide-06-beauty-closeup.jpg",
+      "width": 2048,
+      "height": 1152,
+      "view": "Front",
+      "renderType": "Approved final-avatar beauty render",
+      "description": "Finished visual authority for Abby's large reflective eyes, eyeliner and lower lashes, cheek blush, nose highlight, lip color, copper hair texture and soft skin response.",
+      "sourcePath": "/Users/alphaone/Documents/Backup/Google Takeout/Takeout-2/Drive/Absolutely 3D - Final Avatar.pptx",
+      "sourceFile": "Absolutely 3D - Final Avatar.pptx · slide 6",
+      "sourceUrl": "https://docs.google.com/presentation/d/e/2PACX-1vQEBjcgzxMJupixlPzW3sPmGLNwtcA904F3hWnkJdL1G5DIP9mj1GxrEtt6pfgDyGqoKQHq95afAqPq/pub?start=false&loop=false&delayms=3000&slide=id.g2d9345550ab_0_11",
+      "sourceUrlLabel": "Open deck slide",
+      "fidelity": "Original 2048 × 1152 JPEG extracted from slide 6 of the local Final Avatar deck at its embedded resolution."
+    },
+    {
+      "id": "approved-main-animation-outfit-20260729",
+      "label": "Approved main-animation outfit",
+      "application": "User-approved avatar mockup",
+      "image": "/archive/character-reference/abby/avatar-guide/approved-main-animation-outfit-20260729.png",
+      "width": 1122,
+      "height": 1402,
+      "view": "Three-quarter upper body",
+      "renderType": "Approved performance-mockup wardrobe reference",
+      "description": "Wardrobe authority for Abby performance mockups: burgundy knit base, violet inset, teal fitted vest with coral buttons, color-blocked sleeves and cuffs, and wrapped burgundy, blue and violet lower layers.",
+      "sourcePath": "/Users/alphaone/Documents/Code/paracosm-provenance/public/archive/character-reference/abby/avatar-guide/approved-main-animation-outfit-20260729.png",
+      "sourceFile": "approved-main-animation-outfit-20260729.png",
+      "fidelity": "The user-selected 1122 × 1402 render was copied losslessly into the guide and used as the fixed wardrobe reference for the complete expression and performance mockup library."
+    },
+    {
+      "id": "c4d-material-a",
+      "label": "C4D archived material close-up A",
+      "application": "Cinema 4D / Redshift",
+      "image": "/archive/character-reference/abby/avatar-guide/c4d-material-closeup-a.png",
+      "width": 1280,
+      "height": 720,
+      "view": "Three-quarter",
+      "renderType": "Archived look-development render",
+      "description": "Best surviving material reference for skin, eyes, lips, lashes, painted highlights, hair color and outfit palette.",
+      "sourcePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/ZK/0_Abby_Avatar/Renders/Visdev_Test.png",
+      "sourceFile": "Visdev_Test.png",
+      "fidelity": "Original archived render, shown at its native 1280 × 720 resolution without artificial upscaling."
+    },
+    {
+      "id": "c4d-material-b",
+      "label": "C4D archived material close-up B",
+      "application": "Cinema 4D / Redshift",
+      "image": "/archive/character-reference/abby/avatar-guide/c4d-material-closeup-b.png",
+      "width": 1280,
+      "height": 720,
+      "view": "Front",
+      "renderType": "Archived look-development render",
+      "description": "Front-facing material reference with the clearest view of Abby's large brown eyes, liner, lower lashes, cheek marks and spiral forelock.",
+      "sourcePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/ZK/0_Abby_Avatar/Renders/Visdev_Test2.png",
+      "sourceFile": "Visdev_Test2.png",
+      "fidelity": "Original archived render, shown at its native 1280 × 720 resolution without artificial upscaling."
+    },
+    {
+      "id": "button-exception",
+      "label": "Approved Button avatar",
+      "application": "Cinema 4D / Redshift",
+      "image": "/archive/character-reference/abby/avatar-guide/button-avatar-exception-4k.png",
+      "width": 4000,
+      "height": 4000,
+      "view": "Full composition",
+      "renderType": "Record Cover exception",
+      "description": "The one approved Abby identity reference inside 2_Record_Cover. Other Record Cover avatar material is intentionally excluded.",
+      "sourcePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/ZK/2_Record_Cover/renders_test/Abby_Button_Avatar.tif",
+      "sourceFile": "Abby_Button_Avatar.tif",
+      "fidelity": "Losslessly converted from the original 4000 × 4000 TIFF for browser review."
+    }
+  ],
+  "identityMarkers": [
+    {
+      "label": "Hair silhouette",
+      "description": "Copper-red sculpted tendrils with a strong leftward sweep, curled tips and a centered spiral forelock."
+    },
+    {
+      "label": "Eyes and liner",
+      "description": "Oversized brown almond eyes, extended black upper wings and three graphic lower lash strokes per side."
+    },
+    {
+      "label": "Face structure",
+      "description": "Long tapered face with a narrow jaw, high forehead, compact nose and slender neck."
+    },
+    {
+      "label": "Skin treatment",
+      "description": "Warm terracotta complexion with visible cheek blush, the source painted bridge highlight, renderer-driven sheen and small cheek beauty marks."
+    },
+    {
+      "label": "Mouth",
+      "description": "Full dark burgundy lips with a defined cupid's bow and softly projected lower lip."
+    },
+    {
+      "label": "Palette anchor",
+      "description": "Burgundy base layers with teal, blue and violet patchwork accents; copper hair remains the dominant identity color."
+    }
+  ],
+  "rigGuide": [
+    {
+      "id": "retarget-master",
+      "label": "Retarget master",
+      "status": "present",
+      "application": "Blender",
+      "fileName": "1_Abby_For_Retarget_FromUE.blend",
+      "path": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/ZK/0_Abby_Avatar/1_Blender/1_Abby_For_Retarget_FromUE.blend",
+      "purpose": "Transfer Wonder Studio body motion and Unreal facial capture to Abby.",
+      "rules": [
+        "Clothes and hair can be removed.",
+        "Hair curves and guides are included for Houdini simulation.",
+        "Generate Quick Rig only when control-rig cleanup is needed."
+      ]
+    },
+    {
+      "id": "quick-rig",
+      "label": "Quick Rig",
+      "status": "present",
+      "application": "Blender / Auto-Rig Pro",
+      "fileName": "Abby_Metahuman_QuickRig.fbx",
+      "path": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/ZK/0_Abby_Avatar/Abby_Metahuman_UE56Proj/Assets/Abby_Metahuman_QuickRig.fbx",
+      "purpose": "Animation from scratch and control-rig editing.",
+      "rules": [
+        "Includes rig controls when generated through Auto-Rig Pro Quick Rig.",
+        "Use the UE Metahuman preset and Preserve option.",
+        "Do not use this file as the retarget source."
+      ]
+    },
+    {
+      "id": "c4d-lookdev",
+      "label": "C4D material master",
+      "status": "present",
+      "application": "Cinema 4D / Redshift",
+      "fileName": "Abby_BaseMesh_Materials.c4d",
+      "path": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/ZK/0_Abby_Avatar/0_C4D/Abby_BaseMesh_Materials.c4d",
+      "purpose": "Canonical C4D face, hair, outfit and material reference.",
+      "rules": [
+        "Use the new direct Redshift look-match as the reproducible face and material reference.",
+        "Keep the archived renders beside it as provenance for the recovered framing.",
+        "Use the approved frontal close-up and Final Avatar deck studies for face identity; do not reinstate the rejected Blender or Cinema 4D diagnostic close-ups.",
+        "Keep the source file untouched; render only a disposable derived scene with Cinema 4D Commandline."
+      ]
+    },
+    {
+      "id": "c4d-slide7-facial",
+      "label": "C4D native facial-mocap retarget",
+      "status": "present",
+      "application": "Cinema 4D / Redshift",
+      "fileName": "Abby_BaseMesh_Materials_face_mocap_retarget_v4_codex_072926.c4d",
+      "path": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/ZK/0_Abby_Avatar/0_C4D/Abby_BaseMesh_Materials_face_mocap_retarget_v4_codex_072926.c4d",
+      "purpose": "Native 10-second Face Archetype Skeleton Sequence 1 mocap take retargeted onto the recovered 1:1 face and Redshift look-match.",
+      "rules": [
+        "This is a derived animation source; Abby_BaseMesh_Materials.c4d remains untouched.",
+        "Facial and eyelash weights were restored from the canonical Blender retarget master where the C4D export contained the hierarchy but no effective face weights.",
+        "The animation is transferred directly from Face_Archetype_Skeleton_Sequence1.FBX; it is not reconstructed from the slide render.",
+        "Retarget only the FACIAL_* hierarchy so the source body's incompatible rest pose cannot displace Abby's 1:1 body, hair or camera."
+      ]
+    },
+    {
+      "id": "c4d-delighted-side-glance-pose",
+      "label": "C4D Delighted Side Glance pose",
+      "status": "present",
+      "application": "Cinema 4D / Redshift",
+      "fileName": "Abby_BaseMesh_Materials_EXP_DelightedSideGlance_v4_codex_072926.c4d",
+      "path": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/ZK/0_Abby_Avatar/0_C4D/Abby_BaseMesh_Materials_EXP_DelightedSideGlance_v4_codex_072926.c4d",
+      "purpose": "Reusable one-frame production-rig transfer of the approved Delighted Side Glance expression.",
+      "rules": [
+        "Use the 28 keyed transform channels on 21 FACIAL_* controls plus the head control as the expression layer; the named EXP_DELIGHTED_SIDE_GLANCE_V4 marker identifies the pose scene.",
+        "Copy or merge the facial keys into the target animation shot while leaving the body, wardrobe, hair and material systems on their production sources.",
+        "Use the v17 read-only master proof for visual approval: it retains the exact 1:1 Hair object and Clay_Hair material, uses Material Closeup B's 74.62 mm, 1.04 sensor-scale camera, and preserves the complete Redshift and Magic Bullet Looks render chain.",
+        "The current v17 proof keeps the 0.3 chin offset, 9.75° jaw, 0.4-unit upper-teeth lift, v7's 0 EV exposure and 3.28 area key, then raises the dome to 1.25 as diffuse-only fill with reflection disabled.",
+        "All available earlier passes (v1-v5, v7 and v9-v16) remain preserved as calibration history in the right panel; use v4 for the reusable facial keys, v16 as the literal v7-settings control, and v17 for the filled current pick.",
+        "This file derives from the native facial-mocap retarget. The material master and facial-mocap source remain untouched."
+      ]
+    },
+    {
+      "id": "unreal-project",
+      "label": "MetaHuman Unreal project",
+      "status": "present",
+      "application": "Unreal Engine 5.6 / 5.7",
+      "fileName": "Abby_Metahuman_UE56.uproject",
+      "path": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/ZK/0_Abby_Avatar/Abby_Metahuman_UE56Proj",
+      "purpose": "MetaHuman facial capture, baked face materials and Unreal character delivery.",
+      "rules": [
+        "Prefer Unreal facial tracking over Wonder Studio facial output.",
+        "The tree contains both 5.6 and 5.7 project variants.",
+        "Baked face, eye, teeth and body textures are present in Content."
+      ]
+    },
+    {
+      "id": "textures",
+      "label": "Surface textures",
+      "status": "present",
+      "application": "Substance / C4D / Unreal",
+      "fileName": "2_Textures",
+      "path": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/ZK/0_Abby_Avatar/2_Textures",
+      "purpose": "Skin, body, clothes and shoe texture sets.",
+      "rules": [
+        "Face and body maps reach 4096 × 4096.",
+        "The C4D displacement/AO source reaches 8192 × 8192.",
+        "Keep C4D and Unreal texture variants paired with their target renderer."
+      ]
+    },
+    {
+      "id": "clothes",
+      "label": "Clothes source",
+      "status": "present",
+      "application": "Marvelous Designer / Substance",
+      "fileName": "Abby_Metahuman_Outfit_Walk.zprj",
+      "path": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/ZK/0_Abby_Avatar/3_Clothes/Abby_Metahuman_Outfit_Walk.zprj",
+      "purpose": "Editable walking outfit construction and cloth source.",
+      "rules": [
+        "Use this project for cloth changes rather than altering cached output.",
+        "The matching preview PNG sits beside the project.",
+        "Production texture sets are stored separately in 2_Textures."
+      ]
+    },
+    {
+      "id": "hair",
+      "label": "Houdini hair",
+      "status": "present",
+      "application": "Houdini",
+      "fileName": "Abby_Walking_Hair.hipnc",
+      "path": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/ZK/3_Houdini_Hair/Abby_Walking/Abby_Walking_Hair.hipnc",
+      "purpose": "Hair guide, sculpt and simulation work for walking and hanging states.",
+      "rules": [
+        "Hair curves and guides originate with the retarget rig.",
+        "Alembic and OBJ states are stored in the adjacent geo folder.",
+        "Treat this as hair simulation work, not the identity master."
+      ]
+    },
+    {
+      "id": "mocap",
+      "label": "Wonder Studio exports",
+      "status": "present",
+      "application": "Wonder Studio / Blender / Unreal",
+      "fileName": "WS_Mocap_Export",
+      "path": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/ZK/0_Abby_Avatar/WS_Mocap_Export",
+      "purpose": "Body-motion exports for Abby walking and hanging.",
+      "rules": [
+        "Only Abby-named exports are canonical Abby motion sources.",
+        "Aabha, Jos and Zarina files are performer or alternate-character references.",
+        "Use the PDF retarget workflow before editing motion on the control rig."
+      ]
+    },
+    {
+      "id": "ws-previz",
+      "label": "Abby_WS_Previz.zip",
+      "status": "missing",
+      "application": "Wonder Studio previz",
+      "fileName": "Abby_WS_Previz.zip",
+      "path": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/ZK/0_Abby_Avatar/WS_Compatible_Characters",
+      "purpose": "Previz-only Wonder Studio character package named by the PDF.",
+      "rules": [
+        "The PDF says facial animation is intentionally absent.",
+        "Hair guides should be included.",
+        "This ZIP is not present in the scanned local ZK tree."
+      ]
+    },
+    {
+      "id": "ws-previz-no-clothes",
+      "label": "Abby_WS_Previz_NoClothes.zip",
+      "status": "missing",
+      "application": "Wonder Studio previz",
+      "fileName": "Abby_WS_Previz_NoClothes.zip",
+      "path": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/ZK/0_Abby_Avatar/WS_Compatible_Characters",
+      "purpose": "No-clothes variant of the previz package named by the PDF.",
+      "rules": [
+        "Same limitations as the clothed previz package.",
+        "Not a facial-animation or final identity source.",
+        "This ZIP is not present in the scanned local ZK tree."
+      ]
+    }
+  ],
+  "retargetSteps": [
+    {
+      "step": 1,
+      "label": "Create body mocap",
+      "description": "Create an AI Motion Capture project in Wonder Studio and choose the AI Motion Capture template so the MetaHuman actor is available."
+    },
+    {
+      "step": 2,
+      "label": "Export USD",
+      "description": "Export from Wonder Studio as USD and import the file into Blender. The imported scene may initially appear extremely small."
+    },
+    {
+      "step": 3,
+      "label": "Detach the armature",
+      "description": "Select the imported armature, clear its parent, and switch the armature to Rest Position."
+    },
+    {
+      "step": 4,
+      "label": "Clean root motion",
+      "description": "Delete root keyframes, then clear all transforms for static-in-place motion or clear scale only when the character should travel."
+    },
+    {
+      "step": 5,
+      "label": "Retarget to Abby",
+      "description": "Copy the imported armature into the Abby retarget project, build bones in Auto-Rig Pro, keep Set as Root enabled, then run Re-Target."
+    },
+    {
+      "step": 6,
+      "label": "Attach Quick Rig",
+      "description": "Select AbbyRIG_BODY in Auto-Rig Pro Quick Rig, choose the UE Metahuman preset, run Quick Rig, and choose Preserve."
+    },
+    {
+      "step": 7,
+      "label": "Bake and refine",
+      "description": "Bake animation when needed, then use the attached controllers and IK/FK switching to repair noisy mocap."
+    }
+  ]
+}

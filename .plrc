@@ -1,0 +1,11 @@
+{
+  "family": "paracosm",
+  "port": 3497,
+  "portPolicy": "strict",
+  "category": "app",
+  "entrypoint": "scripts/dev.mjs",
+  "framework": "vinext-local",
+  "startCommand": "npm",
+  "startArgs": ["run", "dev"],
+  "capturable": true
+}

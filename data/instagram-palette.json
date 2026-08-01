@@ -1,0 +1,555 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-27",
+  "account": "the.absolutely",
+  "auditRange": {
+    "from": "2025-07-27",
+    "to": "2026-07-27"
+  },
+  "postsReviewed": 45,
+  "postsWithSavedStills": 36,
+  "sourceImageCount": 66,
+  "methodology": "Each archived still contributes an equal 56 × 56 attention crop. Pixels are clustered in OKLab space, then grouped into editorial hue families. Shares are rounded and may not sum to exactly 100.",
+  "mainColors": [
+    {
+      "id": "tone-01",
+      "name": "Stage Black",
+      "hex": "#0d0c11",
+      "family": "ink",
+      "share": 14.8,
+      "hue": 252,
+      "saturation": 17,
+      "lightness": 6
+    },
+    {
+      "id": "tone-02",
+      "name": "Black Cherry",
+      "hex": "#281918",
+      "family": "ink",
+      "share": 10,
+      "hue": 4,
+      "saturation": 25,
+      "lightness": 13
+    },
+    {
+      "id": "tone-03",
+      "name": "Oxblood Shadow",
+      "hex": "#402926",
+      "family": "red",
+      "share": 9.1,
+      "hue": 7,
+      "saturation": 25,
+      "lightness": 20
+    },
+    {
+      "id": "tone-04",
+      "name": "Oxblood",
+      "hex": "#6f2420",
+      "family": "red",
+      "share": 6.5,
+      "hue": 3,
+      "saturation": 55,
+      "lightness": 28
+    },
+    {
+      "id": "tone-05",
+      "name": "Dusty Taupe",
+      "hex": "#7c6b59",
+      "family": "copper",
+      "share": 6.3,
+      "hue": 31,
+      "saturation": 16,
+      "lightness": 42
+    },
+    {
+      "id": "tone-06",
+      "name": "Charcoal",
+      "hex": "#484448",
+      "family": "smoke",
+      "share": 6.2,
+      "hue": 300,
+      "saturation": 3,
+      "lightness": 27
+    },
+    {
+      "id": "tone-07",
+      "name": "Stage Black",
+      "hex": "#000000",
+      "family": "ink",
+      "share": 6,
+      "hue": 0,
+      "saturation": 0,
+      "lightness": 0
+    },
+    {
+      "id": "tone-08",
+      "name": "Dusty Taupe",
+      "hex": "#9f8166",
+      "family": "copper",
+      "share": 5.7,
+      "hue": 28,
+      "saturation": 23,
+      "lightness": 51
+    },
+    {
+      "id": "tone-09",
+      "name": "Rust",
+      "hex": "#734d3c",
+      "family": "copper",
+      "share": 5.4,
+      "hue": 19,
+      "saturation": 31,
+      "lightness": 34
+    },
+    {
+      "id": "tone-10",
+      "name": "Midnight Blue",
+      "hex": "#082458",
+      "family": "blue",
+      "share": 5,
+      "hue": 219,
+      "saturation": 83,
+      "lightness": 19
+    },
+    {
+      "id": "tone-11",
+      "name": "Lacquer Red",
+      "hex": "#a23229",
+      "family": "red",
+      "share": 3.8,
+      "hue": 4,
+      "saturation": 60,
+      "lightness": 40
+    },
+    {
+      "id": "tone-12",
+      "name": "Peach",
+      "hex": "#cf9469",
+      "family": "copper",
+      "share": 3.1,
+      "hue": 25,
+      "saturation": 52,
+      "lightness": 61
+    },
+    {
+      "id": "tone-13",
+      "name": "Flame Orange",
+      "hex": "#d74e34",
+      "family": "red",
+      "share": 2.9,
+      "hue": 10,
+      "saturation": 67,
+      "lightness": 52
+    },
+    {
+      "id": "tone-14",
+      "name": "Cobalt",
+      "hex": "#202ebc",
+      "family": "blue",
+      "share": 2.7,
+      "hue": 235,
+      "saturation": 71,
+      "lightness": 43
+    },
+    {
+      "id": "tone-15",
+      "name": "Silver",
+      "hex": "#afa69e",
+      "family": "smoke",
+      "share": 2.6,
+      "hue": 28,
+      "saturation": 10,
+      "lightness": 65
+    },
+    {
+      "id": "tone-16",
+      "name": "Silver",
+      "hex": "#cccdd3",
+      "family": "smoke",
+      "share": 2.4,
+      "hue": 231,
+      "saturation": 7,
+      "lightness": 81
+    }
+  ],
+  "families": [
+    {
+      "id": "ink",
+      "name": "Ink",
+      "description": "Black stage space, dark wardrobe, and near-black framing.",
+      "share": 28.1,
+      "colors": [
+        {
+          "id": "ink-1",
+          "name": "Stage Black",
+          "hex": "#0b0a0e",
+          "share": 44.6
+        },
+        {
+          "id": "ink-2",
+          "name": "Black Cherry",
+          "hex": "#201617",
+          "share": 36.5
+        },
+        {
+          "id": "ink-3",
+          "name": "Stage Black",
+          "hex": "#000000",
+          "share": 19
+        }
+      ]
+    },
+    {
+      "id": "red",
+      "name": "Oxblood + Red",
+      "description": "The central identity: lacquer, wine, cherry, and crimson.",
+      "share": 20.9,
+      "colors": [
+        {
+          "id": "red-1",
+          "name": "Oxblood",
+          "hex": "#602520",
+          "share": 54.7
+        },
+        {
+          "id": "red-2",
+          "name": "Lacquer Red",
+          "hex": "#af4939",
+          "share": 35.1
+        },
+        {
+          "id": "red-3",
+          "name": "Flame Orange",
+          "hex": "#d5988d",
+          "share": 10.2
+        }
+      ]
+    },
+    {
+      "id": "copper",
+      "name": "Copper + Rust",
+      "description": "Hair, skin warmth, amber light, and burnt-orange styling.",
+      "share": 17.3,
+      "colors": [
+        {
+          "id": "copper-1",
+          "name": "Dusty Taupe",
+          "hex": "#99704b",
+          "share": 39.5
+        },
+        {
+          "id": "copper-2",
+          "name": "Rust",
+          "hex": "#5a3922",
+          "share": 33.6
+        },
+        {
+          "id": "copper-3",
+          "name": "Peach",
+          "hex": "#d4a97a",
+          "share": 27
+        }
+      ]
+    },
+    {
+      "id": "blue",
+      "name": "Blue",
+      "description": "Cobalt stage light, midnight fabrics, and electric screen glow.",
+      "share": 12.4,
+      "colors": [
+        {
+          "id": "blue-1",
+          "name": "Midnight Blue",
+          "hex": "#132859",
+          "share": 48.1
+        },
+        {
+          "id": "blue-2",
+          "name": "Cobalt",
+          "hex": "#3450b3",
+          "share": 39.3
+        },
+        {
+          "id": "blue-3",
+          "name": "Electric Blue",
+          "hex": "#93b3e5",
+          "share": 12.6
+        }
+      ]
+    },
+    {
+      "id": "smoke",
+      "name": "Smoke",
+      "description": "Concrete gray, charcoal, silver, and desaturated transition tones.",
+      "share": 12.2,
+      "colors": [
+        {
+          "id": "smoke-1",
+          "name": "Charcoal",
+          "hex": "#383638",
+          "share": 46
+        },
+        {
+          "id": "smoke-2",
+          "name": "Smoke",
+          "hex": "#6c6a68",
+          "share": 32.7
+        },
+        {
+          "id": "smoke-3",
+          "name": "Silver",
+          "hex": "#adaaa7",
+          "share": 21.3
+        }
+      ]
+    },
+    {
+      "id": "mauve",
+      "name": "Mauve + Pink",
+      "description": "Dusty pink, mulberry, blush, and soft-magenta details.",
+      "share": 2.7,
+      "colors": [
+        {
+          "id": "mauve-1",
+          "name": "Aubergine",
+          "hex": "#42202f",
+          "share": 52.6
+        },
+        {
+          "id": "mauve-2",
+          "name": "Mulberry",
+          "hex": "#843656",
+          "share": 37.6
+        },
+        {
+          "id": "mauve-3",
+          "name": "Dusty Pink",
+          "hex": "#cb93a7",
+          "share": 9.8
+        }
+      ]
+    },
+    {
+      "id": "gold",
+      "name": "Gold + Ochre",
+      "description": "Poster stock, theatrical light, brass, and yellow-green accents.",
+      "share": 1.8,
+      "colors": [
+        {
+          "id": "gold-1",
+          "name": "Antique Gold",
+          "hex": "#838a51",
+          "share": 51.3
+        },
+        {
+          "id": "gold-2",
+          "name": "Paper Gold",
+          "hex": "#d3d4a2",
+          "share": 25.1
+        },
+        {
+          "id": "gold-3",
+          "name": "Dark Olive",
+          "hex": "#444727",
+          "share": 23.7
+        }
+      ]
+    },
+    {
+      "id": "cream",
+      "name": "Cream + Porcelain",
+      "description": "Paper, lace, white garments, and warm highlight space.",
+      "share": 1.6,
+      "colors": [
+        {
+          "id": "cream-1",
+          "name": "Porcelain",
+          "hex": "#e7e9e8",
+          "share": 35.7
+        },
+        {
+          "id": "cream-2",
+          "name": "Porcelain",
+          "hex": "#f6f8f7",
+          "share": 33.3
+        },
+        {
+          "id": "cream-3",
+          "name": "Powder Cream",
+          "hex": "#e1dbd9",
+          "share": 31
+        }
+      ]
+    },
+    {
+      "id": "teal",
+      "name": "Teal",
+      "description": "Cool cosmetic highlights and green-blue stage lighting.",
+      "share": 1.3,
+      "colors": [
+        {
+          "id": "teal-1",
+          "name": "Ice",
+          "hex": "#def2f5",
+          "share": 37.7
+        },
+        {
+          "id": "teal-2",
+          "name": "Petrol Blue",
+          "hex": "#1a3b46",
+          "share": 33.1
+        },
+        {
+          "id": "teal-3",
+          "name": "Petrol Blue",
+          "hex": "#44778a",
+          "share": 29.2
+        }
+      ]
+    },
+    {
+      "id": "violet",
+      "name": "Violet",
+      "description": "Blue-violet lighting, lilac fabric, and ultraviolet accents.",
+      "share": 0.9,
+      "colors": [
+        {
+          "id": "violet-1",
+          "name": "Electric Violet",
+          "hex": "#302667",
+          "share": 62
+        },
+        {
+          "id": "violet-2",
+          "name": "Electric Violet",
+          "hex": "#674f84",
+          "share": 28.6
+        },
+        {
+          "id": "violet-3",
+          "name": "Lilac",
+          "hex": "#bea8d5",
+          "share": 9.4
+        }
+      ]
+    },
+    {
+      "id": "moss",
+      "name": "Moss + Olive",
+      "description": "Garden greens, velvet olive, and muted natural backdrops.",
+      "share": 0.8,
+      "colors": [
+        {
+          "id": "moss-1",
+          "name": "Moss",
+          "hex": "#5e7a52",
+          "share": 39.1
+        },
+        {
+          "id": "moss-2",
+          "name": "Moss",
+          "hex": "#314731",
+          "share": 31.4
+        },
+        {
+          "id": "moss-3",
+          "name": "Sage",
+          "hex": "#cadcbf",
+          "share": 29.5
+        }
+      ]
+    }
+  ],
+  "hueFamilies": [
+    {
+      "id": "red",
+      "name": "Oxblood + Red",
+      "share": 36,
+      "colors": [
+        "#602520",
+        "#af4939",
+        "#d5988d"
+      ]
+    },
+    {
+      "id": "copper",
+      "name": "Copper + Rust",
+      "share": 29.8,
+      "colors": [
+        "#99704b",
+        "#5a3922",
+        "#d4a97a"
+      ]
+    },
+    {
+      "id": "blue",
+      "name": "Blue",
+      "share": 21.3,
+      "colors": [
+        "#132859",
+        "#3450b3",
+        "#93b3e5"
+      ]
+    },
+    {
+      "id": "mauve",
+      "name": "Mauve + Pink",
+      "share": 4.6,
+      "colors": [
+        "#42202f",
+        "#843656",
+        "#cb93a7"
+      ]
+    },
+    {
+      "id": "gold",
+      "name": "Gold + Ochre",
+      "share": 3.1,
+      "colors": [
+        "#838a51",
+        "#d3d4a2",
+        "#444727"
+      ]
+    },
+    {
+      "id": "teal",
+      "name": "Teal",
+      "share": 2.2,
+      "colors": [
+        "#def2f5",
+        "#1a3b46",
+        "#44778a"
+      ]
+    },
+    {
+      "id": "violet",
+      "name": "Violet",
+      "share": 1.5,
+      "colors": [
+        "#302667",
+        "#674f84",
+        "#bea8d5"
+      ]
+    },
+    {
+      "id": "moss",
+      "name": "Moss + Olive",
+      "share": 1.4,
+      "colors": [
+        "#5e7a52",
+        "#314731",
+        "#cadcbf"
+      ]
+    }
+  ],
+  "featuredSourceFiles": [
+    "instagram-DZgcxu_GuHT-01.jpg",
+    "instagram-DV6Gy_RlD6n-01.jpg",
+    "instagram-DYfcoqvFcBk-02.jpg",
+    "instagram-DU3rvJnkqc1-01.jpg",
+    "instagram-DancEOBld60-01.jpg",
+    "instagram-DVgp-wgiFZZ-01.jpg",
+    "instagram-DX8CFhugOPd-02.jpg",
+    "instagram-DWZpnLOkqG0-02.jpg"
+  ]
+}

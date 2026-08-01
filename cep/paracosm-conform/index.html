@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Paracosm Source Conform</title>
+    <style>
+      :root { color-scheme: dark; font-family: -apple-system, sans-serif; }
+      body { margin: 0; padding: 22px; background: #141414; color: #d7d4cc; }
+      small { color: #85827c; }
+      button {
+        width: 100%; margin: 18px 0 12px; padding: 12px; border: 0;
+        border-radius: 5px; background: #d7f452; color: #151515; font-weight: 700;
+      }
+      button:disabled { opacity: .45; }
+      pre { min-height: 64px; white-space: pre-wrap; color: #aaa69f; font-size: 11px; }
+    </style>
+  </head>
+  <body>
+    <strong>Paracosm Source Recovery</strong>
+    <p><small>Exports the clean conform, places recoveries, or creates a non-destructive frame-aligned clone from direct final-to-render comparisons.</small></p>
+    <button id="export-clean">Export Clean conform snapshot</button>
+    <button id="frame-aligned">Build frame-aligned Clean conform</button>
+    <button id="run">Insert Yellow source recoveries</button>
+    <pre id="status">Ready. The active project is exported to a new recovery project and is not saved over.</pre>
+    <script src="./panel.js"></script>
+  </body>
+</html>

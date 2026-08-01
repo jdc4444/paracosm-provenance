@@ -1,0 +1,61 @@
+import os
+
+import bpy
+
+
+ROOT = "/Users/alphaone/Documents/Code/paracosm-provenance"
+OUTPUT = os.path.join(
+    ROOT, "public/archive/objects/3d/tests/red-corset-pattern-rail-sim"
+)
+FRAME = 24
+
+scene = bpy.context.scene
+scene.frame_set(FRAME)
+
+scene.render.image_settings.file_format = "PNG"
+scene.render.image_settings.color_mode = "RGBA"
+scene.render.filepath = os.path.join(
+    OUTPUT, "red-corset-pattern-rail-sim-frame24.png"
+)
+bpy.ops.render.render(write_still=True)
+
+corset = bpy.data.objects["Red_Corset_Pattern_Rag"]
+depsgraph = bpy.context.evaluated_depsgraph_get()
+evaluated = corset.evaluated_get(depsgraph)
+settled_mesh = bpy.data.meshes.new_from_object(
+    evaluated, preserve_all_data_layers=True, depsgraph=depsgraph
+)
+settled = bpy.data.objects.new("Red_Corset_Rail_Drape_Frame24", settled_mesh)
+bpy.context.collection.objects.link(settled)
+settled.matrix_world = corset.matrix_world.copy()
+
+for obj in bpy.context.selected_objects:
+    obj.select_set(False)
+settled.select_set(True)
+bpy.context.view_layer.objects.active = settled
+bpy.ops.export_scene.gltf(
+    filepath=os.path.join(
+        OUTPUT, "red-corset-pattern-rail-sim-frame24.glb"
+    ),
+    export_format="GLB",
+    use_selection=True,
+    export_apply=True,
+)
+
+settled.hide_viewport = True
+settled.hide_render = True
+bpy.ops.wm.save_as_mainfile(
+    filepath=os.path.join(
+        OUTPUT, "red-corset-pattern-rail-sim-frame24.blend"
+    )
+)
+
+print(
+    "RAIL_FRAME_EXPORT_COMPLETE",
+    "frame",
+    FRAME,
+    "faces",
+    len(settled_mesh.polygons),
+    "output",
+    OUTPUT,
+)

@@ -1,0 +1,1032 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-07-28",
+  "purpose": "Reference-preserving hollow-garment views for Meshy multi-image reconstruction.",
+  "scope": {
+    "wardrobeObjects": 77,
+    "generatedInputSets": 56,
+    "definition": "Remaining unmodeled Wardrobe garments and containers whose wearable or functional cavities need explicit geometric evidence.",
+    "excluded": [
+      {
+        "objectId": "lime-open-knit-scarf",
+        "reason": "Flat open-knit textile with surface apertures but no enclosed wearable cavity."
+      }
+    ]
+  },
+  "viewContract": {
+    "top": "Orthographic overhead view showing the upper opening and hollow interior.",
+    "side": "Orthographic left-side view preserving exact silhouette and depth.",
+    "bottom": "Orthographic underside view showing hem, cuff, sole, or closed-base construction as applicable.",
+    "preservation": "Exact source silhouette, materials, transparency, pattern, trim, openings, and proportions; no wearer or mannequin."
+  },
+  "objects": [
+    {
+      "objectId": "argyle-high-neck-top",
+      "name": "Argyle High-Neck Top",
+      "inventoryGroupId": "wardrobe",
+      "referenceImage": "/archive/objects/wardrobe/argyle-high-neck-top.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/argyle-high-neck-top-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/argyle-high-neck-top-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/argyle-high-neck-top-side.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/argyle-high-neck-top-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/argyle-high-neck-top.png",
+        "/archive/objects/wardrobe/3d-inputs/argyle-high-neck-top-top.png",
+        "/archive/objects/wardrobe/3d-inputs/argyle-high-neck-top-side.png",
+        "/archive/objects/wardrobe/3d-inputs/argyle-high-neck-top-bottom.png"
+      ]
+    },
+    {
+      "objectId": "black-bow-bubble-skirt",
+      "name": "Black Bow Bubble Skirt",
+      "inventoryGroupId": "wardrobe-historical",
+      "referenceImage": "/archive/objects/wardrobe/black-bow-bubble-skirt.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/black-bow-bubble-skirt-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/black-bow-bubble-skirt-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/black-bow-bubble-skirt-side.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/black-bow-bubble-skirt-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/black-bow-bubble-skirt.png",
+        "/archive/objects/wardrobe/3d-inputs/black-bow-bubble-skirt-top.png",
+        "/archive/objects/wardrobe/3d-inputs/black-bow-bubble-skirt-side.png",
+        "/archive/objects/wardrobe/3d-inputs/black-bow-bubble-skirt-bottom.png"
+      ]
+    },
+    {
+      "objectId": "black-culottes",
+      "name": "Black Culottes",
+      "inventoryGroupId": "wardrobe-historical",
+      "referenceImage": "/archive/objects/wardrobe/black-culottes.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/black-culottes-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/black-culottes-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/black-culottes-side.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/black-culottes-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/black-culottes.png",
+        "/archive/objects/wardrobe/3d-inputs/black-culottes-top.png",
+        "/archive/objects/wardrobe/3d-inputs/black-culottes-side.png",
+        "/archive/objects/wardrobe/3d-inputs/black-culottes-bottom.png"
+      ]
+    },
+    {
+      "objectId": "black-deconstructed-coat-dress",
+      "name": "Black Deconstructed Coat Dress",
+      "inventoryGroupId": "wardrobe",
+      "referenceImage": "/archive/objects/wardrobe/black-deconstructed-coat-dress.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/black-deconstructed-coat-dress-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/black-deconstructed-coat-dress-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/black-deconstructed-coat-dress-side-clean.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/black-deconstructed-coat-dress-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/black-deconstructed-coat-dress.png",
+        "/archive/objects/wardrobe/3d-inputs/black-deconstructed-coat-dress-top.png",
+        "/archive/objects/wardrobe/3d-inputs/black-deconstructed-coat-dress-side-clean.png",
+        "/archive/objects/wardrobe/3d-inputs/black-deconstructed-coat-dress-bottom.png"
+      ]
+    },
+    {
+      "objectId": "black-lace-crop-top",
+      "name": "Black Lace Crop Top",
+      "inventoryGroupId": "wardrobe",
+      "referenceImage": "/archive/objects/wardrobe/black-lace-crop-top.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/black-lace-crop-top-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/black-lace-crop-top-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/black-lace-crop-top-side.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/black-lace-crop-top-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/black-lace-crop-top.png",
+        "/archive/objects/wardrobe/3d-inputs/black-lace-crop-top-top.png",
+        "/archive/objects/wardrobe/3d-inputs/black-lace-crop-top-side.png",
+        "/archive/objects/wardrobe/3d-inputs/black-lace-crop-top-bottom.png"
+      ]
+    },
+    {
+      "objectId": "black-sheer-ruffle-blouse",
+      "name": "Black Sheer Ruffle Blouse",
+      "inventoryGroupId": "wardrobe-historical",
+      "referenceImage": "/archive/objects/wardrobe/black-sheer-ruffle-blouse.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/black-sheer-ruffle-blouse-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/black-sheer-ruffle-blouse-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/black-sheer-ruffle-blouse-side.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/black-sheer-ruffle-blouse-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/black-sheer-ruffle-blouse.png",
+        "/archive/objects/wardrobe/3d-inputs/black-sheer-ruffle-blouse-top.png",
+        "/archive/objects/wardrobe/3d-inputs/black-sheer-ruffle-blouse-side.png",
+        "/archive/objects/wardrobe/3d-inputs/black-sheer-ruffle-blouse-bottom.png"
+      ]
+    },
+    {
+      "objectId": "black-sheer-striped-top",
+      "name": "Black Sheer Striped Top",
+      "inventoryGroupId": "wardrobe-historical",
+      "referenceImage": "/archive/objects/wardrobe/black-sheer-striped-top.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/black-sheer-striped-top-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/black-sheer-striped-top-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/black-sheer-striped-top-side.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/black-sheer-striped-top-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/black-sheer-striped-top.png",
+        "/archive/objects/wardrobe/3d-inputs/black-sheer-striped-top-top.png",
+        "/archive/objects/wardrobe/3d-inputs/black-sheer-striped-top-side.png",
+        "/archive/objects/wardrobe/3d-inputs/black-sheer-striped-top-bottom.png"
+      ]
+    },
+    {
+      "objectId": "black-tie-strap-crop-top",
+      "name": "Black Tie-Strap Crop Top",
+      "inventoryGroupId": "wardrobe-historical",
+      "referenceImage": "/archive/objects/wardrobe/black-tie-strap-crop-top.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/black-tie-strap-crop-top-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/black-tie-strap-crop-top-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/black-tie-strap-crop-top-side.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/black-tie-strap-crop-top-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/black-tie-strap-crop-top.png",
+        "/archive/objects/wardrobe/3d-inputs/black-tie-strap-crop-top-top.png",
+        "/archive/objects/wardrobe/3d-inputs/black-tie-strap-crop-top-side.png",
+        "/archive/objects/wardrobe/3d-inputs/black-tie-strap-crop-top-bottom.png"
+      ]
+    },
+    {
+      "objectId": "black-tiered-tulle-skirt",
+      "name": "Black Tiered Tulle Skirt",
+      "inventoryGroupId": "wardrobe-historical",
+      "referenceImage": "/archive/objects/wardrobe/black-tiered-tulle-skirt.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/black-tiered-tulle-skirt-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/black-tiered-tulle-skirt-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/black-tiered-tulle-skirt-side-clean.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/black-tiered-tulle-skirt-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/black-tiered-tulle-skirt.png",
+        "/archive/objects/wardrobe/3d-inputs/black-tiered-tulle-skirt-top.png",
+        "/archive/objects/wardrobe/3d-inputs/black-tiered-tulle-skirt-side-clean.png",
+        "/archive/objects/wardrobe/3d-inputs/black-tiered-tulle-skirt-bottom.png"
+      ]
+    },
+    {
+      "objectId": "blue-polka-dot-blouse",
+      "name": "Blue Polka-Dot Blouse",
+      "inventoryGroupId": "wardrobe-historical",
+      "referenceImage": "/archive/objects/wardrobe/blue-polka-dot-blouse.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/blue-polka-dot-blouse-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/blue-polka-dot-blouse-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/blue-polka-dot-blouse-side-clean.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/blue-polka-dot-blouse-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/blue-polka-dot-blouse.png",
+        "/archive/objects/wardrobe/3d-inputs/blue-polka-dot-blouse-top.png",
+        "/archive/objects/wardrobe/3d-inputs/blue-polka-dot-blouse-side-clean.png",
+        "/archive/objects/wardrobe/3d-inputs/blue-polka-dot-blouse-bottom.png"
+      ]
+    },
+    {
+      "objectId": "blue-striped-fuzzy-sweater",
+      "name": "Blue Striped Fuzzy Sweater",
+      "inventoryGroupId": "wardrobe-historical",
+      "referenceImage": "/archive/objects/wardrobe/blue-striped-fuzzy-sweater.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/blue-striped-fuzzy-sweater-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/blue-striped-fuzzy-sweater-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/blue-striped-fuzzy-sweater-side-clean.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/blue-striped-fuzzy-sweater-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/blue-striped-fuzzy-sweater.png",
+        "/archive/objects/wardrobe/3d-inputs/blue-striped-fuzzy-sweater-top.png",
+        "/archive/objects/wardrobe/3d-inputs/blue-striped-fuzzy-sweater-side-clean.png",
+        "/archive/objects/wardrobe/3d-inputs/blue-striped-fuzzy-sweater-bottom.png"
+      ]
+    },
+    {
+      "objectId": "bronze-abstract-gown",
+      "name": "Bronze Abstract Gown",
+      "inventoryGroupId": "wardrobe-historical",
+      "referenceImage": "/archive/objects/wardrobe/bronze-abstract-gown.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/bronze-abstract-gown-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/bronze-abstract-gown-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/bronze-abstract-gown-side-clean.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/bronze-abstract-gown-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/bronze-abstract-gown.png",
+        "/archive/objects/wardrobe/3d-inputs/bronze-abstract-gown-top.png",
+        "/archive/objects/wardrobe/3d-inputs/bronze-abstract-gown-side-clean.png",
+        "/archive/objects/wardrobe/3d-inputs/bronze-abstract-gown-bottom.png"
+      ]
+    },
+    {
+      "objectId": "brown-satin-bow-blouse",
+      "name": "Brown Satin Bow Blouse",
+      "inventoryGroupId": "wardrobe",
+      "referenceImage": "/archive/objects/wardrobe/brown-satin-bow-blouse.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/brown-satin-bow-blouse-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/brown-satin-bow-blouse-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/brown-satin-bow-blouse-side.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/brown-satin-bow-blouse-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/brown-satin-bow-blouse.png",
+        "/archive/objects/wardrobe/3d-inputs/brown-satin-bow-blouse-top.png",
+        "/archive/objects/wardrobe/3d-inputs/brown-satin-bow-blouse-side.png",
+        "/archive/objects/wardrobe/3d-inputs/brown-satin-bow-blouse-bottom.png"
+      ]
+    },
+    {
+      "objectId": "burgundy-button-corset",
+      "name": "Burgundy Button Corset",
+      "inventoryGroupId": "wardrobe-historical",
+      "referenceImage": "/archive/objects/wardrobe/burgundy-button-corset.png",
+      "assets": {
+        "top": "/archive/objects/wardrobe/3d-inputs/burgundy-button-corset-top-v4.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/burgundy-button-corset-side-v4.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/burgundy-button-corset-bottom-v4.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/burgundy-button-corset.png",
+        "/archive/objects/wardrobe/3d-inputs/burgundy-button-corset-top-v4.png",
+        "/archive/objects/wardrobe/3d-inputs/burgundy-button-corset-side-v4.png",
+        "/archive/objects/wardrobe/3d-inputs/burgundy-button-corset-bottom-v4.png"
+      ]
+    },
+    {
+      "objectId": "burgundy-cape-keyhole-top",
+      "name": "Burgundy Cape Keyhole Top",
+      "inventoryGroupId": "wardrobe-historical",
+      "referenceImage": "/archive/objects/wardrobe/burgundy-cape-keyhole-top.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/burgundy-cape-keyhole-top-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/burgundy-cape-keyhole-top-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/burgundy-cape-keyhole-top-side-clean.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/burgundy-cape-keyhole-top-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/burgundy-cape-keyhole-top.png",
+        "/archive/objects/wardrobe/3d-inputs/burgundy-cape-keyhole-top-top.png",
+        "/archive/objects/wardrobe/3d-inputs/burgundy-cape-keyhole-top-side-clean.png",
+        "/archive/objects/wardrobe/3d-inputs/burgundy-cape-keyhole-top-bottom.png"
+      ]
+    },
+    {
+      "objectId": "burgundy-orange-circle-dress",
+      "name": "Burgundy Orange Circle Dress",
+      "inventoryGroupId": "wardrobe-historical",
+      "referenceImage": "/archive/objects/wardrobe/burgundy-orange-circle-dress.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/burgundy-orange-circle-dress-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/burgundy-orange-circle-dress-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/burgundy-orange-circle-dress-side.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/burgundy-orange-circle-dress-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/burgundy-orange-circle-dress.png",
+        "/archive/objects/wardrobe/3d-inputs/burgundy-orange-circle-dress-top.png",
+        "/archive/objects/wardrobe/3d-inputs/burgundy-orange-circle-dress-side.png",
+        "/archive/objects/wardrobe/3d-inputs/burgundy-orange-circle-dress-bottom.png"
+      ]
+    },
+    {
+      "objectId": "burgundy-sheer-column-dress",
+      "name": "Burgundy Sheer Column Dress",
+      "inventoryGroupId": "wardrobe-historical",
+      "referenceImage": "/archive/objects/wardrobe/burgundy-sheer-column-dress.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/burgundy-sheer-column-dress-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/burgundy-sheer-column-dress-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/burgundy-sheer-column-dress-side.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/burgundy-sheer-column-dress-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/burgundy-sheer-column-dress.png",
+        "/archive/objects/wardrobe/3d-inputs/burgundy-sheer-column-dress-top.png",
+        "/archive/objects/wardrobe/3d-inputs/burgundy-sheer-column-dress-side.png",
+        "/archive/objects/wardrobe/3d-inputs/burgundy-sheer-column-dress-bottom.png"
+      ]
+    },
+    {
+      "objectId": "champagne-ruffle-corset-dress",
+      "name": "Champagne Ruffle Corset Dress",
+      "inventoryGroupId": "wardrobe-historical",
+      "referenceImage": "/archive/objects/wardrobe/champagne-ruffle-corset-dress.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/champagne-ruffle-corset-dress-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/champagne-ruffle-corset-dress-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/champagne-ruffle-corset-dress-side.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/champagne-ruffle-corset-dress-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/champagne-ruffle-corset-dress.png",
+        "/archive/objects/wardrobe/3d-inputs/champagne-ruffle-corset-dress-top.png",
+        "/archive/objects/wardrobe/3d-inputs/champagne-ruffle-corset-dress-side.png",
+        "/archive/objects/wardrobe/3d-inputs/champagne-ruffle-corset-dress-bottom.png"
+      ]
+    },
+    {
+      "objectId": "cream-cargo-trousers",
+      "name": "Cream Cargo Trousers",
+      "inventoryGroupId": "wardrobe-historical",
+      "referenceImage": "/archive/objects/wardrobe/cream-cargo-trousers.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/cream-cargo-trousers-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/cream-cargo-trousers-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/cream-cargo-trousers-side.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/cream-cargo-trousers-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/cream-cargo-trousers.png",
+        "/archive/objects/wardrobe/3d-inputs/cream-cargo-trousers-top.png",
+        "/archive/objects/wardrobe/3d-inputs/cream-cargo-trousers-side.png",
+        "/archive/objects/wardrobe/3d-inputs/cream-cargo-trousers-bottom.png"
+      ]
+    },
+    {
+      "objectId": "geometric-striped-tights",
+      "name": "Geometric Striped Tights",
+      "inventoryGroupId": "wardrobe-historical",
+      "referenceImage": "/archive/objects/wardrobe/geometric-striped-tights.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/geometric-striped-tights-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/geometric-striped-tights-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/geometric-striped-tights-side.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/geometric-striped-tights-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/geometric-striped-tights.png",
+        "/archive/objects/wardrobe/3d-inputs/geometric-striped-tights-top.png",
+        "/archive/objects/wardrobe/3d-inputs/geometric-striped-tights-side.png",
+        "/archive/objects/wardrobe/3d-inputs/geometric-striped-tights-bottom.png"
+      ]
+    },
+    {
+      "objectId": "gray-bustle-dress",
+      "name": "Gray Bustle Dress",
+      "inventoryGroupId": "wardrobe",
+      "referenceImage": "/archive/objects/wardrobe/gray-bustle-dress.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/gray-bustle-dress-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/gray-bustle-dress-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/gray-bustle-dress-side.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/gray-bustle-dress-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/gray-bustle-dress.png",
+        "/archive/objects/wardrobe/3d-inputs/gray-bustle-dress-top.png",
+        "/archive/objects/wardrobe/3d-inputs/gray-bustle-dress-side.png",
+        "/archive/objects/wardrobe/3d-inputs/gray-bustle-dress-bottom.png"
+      ]
+    },
+    {
+      "objectId": "gray-opera-gloves",
+      "name": "Gray Opera Gloves",
+      "inventoryGroupId": "wardrobe",
+      "referenceImage": "/archive/objects/wardrobe/gray-opera-gloves.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/gray-opera-gloves-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/gray-opera-gloves-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/gray-opera-gloves-side.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/gray-opera-gloves-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/gray-opera-gloves.png",
+        "/archive/objects/wardrobe/3d-inputs/gray-opera-gloves-top.png",
+        "/archive/objects/wardrobe/3d-inputs/gray-opera-gloves-side.png",
+        "/archive/objects/wardrobe/3d-inputs/gray-opera-gloves-bottom.png"
+      ]
+    },
+    {
+      "objectId": "gray-technical-jacket",
+      "name": "Gray Technical Jacket",
+      "inventoryGroupId": "wardrobe-historical",
+      "referenceImage": "/archive/objects/wardrobe/gray-technical-jacket.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/gray-technical-jacket-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/gray-technical-jacket-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/gray-technical-jacket-side.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/gray-technical-jacket-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/gray-technical-jacket.png",
+        "/archive/objects/wardrobe/3d-inputs/gray-technical-jacket-top.png",
+        "/archive/objects/wardrobe/3d-inputs/gray-technical-jacket-side.png",
+        "/archive/objects/wardrobe/3d-inputs/gray-technical-jacket-bottom.png"
+      ]
+    },
+    {
+      "objectId": "green-knit-mini-skirt",
+      "name": "Green Knit Mini Skirt",
+      "inventoryGroupId": "wardrobe-historical",
+      "referenceImage": "/archive/objects/wardrobe/green-knit-mini-skirt.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/green-knit-mini-skirt-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/green-knit-mini-skirt-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/green-knit-mini-skirt-side.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/green-knit-mini-skirt-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/green-knit-mini-skirt.png",
+        "/archive/objects/wardrobe/3d-inputs/green-knit-mini-skirt-top.png",
+        "/archive/objects/wardrobe/3d-inputs/green-knit-mini-skirt-side.png",
+        "/archive/objects/wardrobe/3d-inputs/green-knit-mini-skirt-bottom.png"
+      ]
+    },
+    {
+      "objectId": "ivory-pleated-skirt",
+      "name": "Ivory Pleated Skirt",
+      "inventoryGroupId": "wardrobe",
+      "referenceImage": "/archive/objects/wardrobe/ivory-pleated-skirt.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/ivory-pleated-skirt-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/ivory-pleated-skirt-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/ivory-pleated-skirt-side-clean.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/ivory-pleated-skirt-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/ivory-pleated-skirt.png",
+        "/archive/objects/wardrobe/3d-inputs/ivory-pleated-skirt-top.png",
+        "/archive/objects/wardrobe/3d-inputs/ivory-pleated-skirt-side-clean.png",
+        "/archive/objects/wardrobe/3d-inputs/ivory-pleated-skirt-bottom.png"
+      ]
+    },
+    {
+      "objectId": "multicolor-mesh-top",
+      "name": "Multicolor Mesh Top",
+      "inventoryGroupId": "wardrobe-historical",
+      "referenceImage": "/archive/objects/wardrobe/multicolor-mesh-top.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/multicolor-mesh-top-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/multicolor-mesh-top-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/multicolor-mesh-top-side-clean.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/multicolor-mesh-top-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/multicolor-mesh-top.png",
+        "/archive/objects/wardrobe/3d-inputs/multicolor-mesh-top-top.png",
+        "/archive/objects/wardrobe/3d-inputs/multicolor-mesh-top-side-clean.png",
+        "/archive/objects/wardrobe/3d-inputs/multicolor-mesh-top-bottom.png"
+      ]
+    },
+    {
+      "objectId": "multicolor-ribbed-top",
+      "name": "Multicolor Ribbed Top",
+      "inventoryGroupId": "wardrobe-historical",
+      "referenceImage": "/archive/objects/wardrobe/multicolor-ribbed-top.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/multicolor-ribbed-top-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/multicolor-ribbed-top-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/multicolor-ribbed-top-side-clean.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/multicolor-ribbed-top-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/multicolor-ribbed-top.png",
+        "/archive/objects/wardrobe/3d-inputs/multicolor-ribbed-top-top.png",
+        "/archive/objects/wardrobe/3d-inputs/multicolor-ribbed-top-side-clean.png",
+        "/archive/objects/wardrobe/3d-inputs/multicolor-ribbed-top-bottom.png"
+      ]
+    },
+    {
+      "objectId": "mustard-military-jacket",
+      "name": "Mustard Military Jacket",
+      "inventoryGroupId": "wardrobe",
+      "referenceImage": "/archive/objects/wardrobe/mustard-military-jacket.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/mustard-military-jacket-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/mustard-military-jacket-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/mustard-military-jacket-side.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/mustard-military-jacket-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/mustard-military-jacket.png",
+        "/archive/objects/wardrobe/3d-inputs/mustard-military-jacket-top.png",
+        "/archive/objects/wardrobe/3d-inputs/mustard-military-jacket-side.png",
+        "/archive/objects/wardrobe/3d-inputs/mustard-military-jacket-bottom.png"
+      ]
+    },
+    {
+      "objectId": "navy-bubble-skirt",
+      "name": "Navy Bubble Skirt",
+      "inventoryGroupId": "wardrobe-historical",
+      "referenceImage": "/archive/objects/wardrobe/navy-bubble-skirt.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/navy-bubble-skirt-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/navy-bubble-skirt-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/navy-bubble-skirt-side-clean.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/navy-bubble-skirt-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/navy-bubble-skirt.png",
+        "/archive/objects/wardrobe/3d-inputs/navy-bubble-skirt-top.png",
+        "/archive/objects/wardrobe/3d-inputs/navy-bubble-skirt-side-clean.png",
+        "/archive/objects/wardrobe/3d-inputs/navy-bubble-skirt-bottom.png"
+      ]
+    },
+    {
+      "objectId": "navy-pinstripe-ruffle-dress",
+      "name": "Navy Pinstripe Ruffle Dress",
+      "inventoryGroupId": "wardrobe-historical",
+      "referenceImage": "/archive/objects/wardrobe/navy-pinstripe-ruffle-dress.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/navy-pinstripe-ruffle-dress-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/navy-pinstripe-ruffle-dress-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/navy-pinstripe-ruffle-dress-side-clean.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/navy-pinstripe-ruffle-dress-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/navy-pinstripe-ruffle-dress.png",
+        "/archive/objects/wardrobe/3d-inputs/navy-pinstripe-ruffle-dress-top.png",
+        "/archive/objects/wardrobe/3d-inputs/navy-pinstripe-ruffle-dress-side-clean.png",
+        "/archive/objects/wardrobe/3d-inputs/navy-pinstripe-ruffle-dress-bottom.png"
+      ]
+    },
+    {
+      "objectId": "navy-striped-velvet-skirt",
+      "name": "Navy Striped Velvet Skirt",
+      "inventoryGroupId": "wardrobe-historical",
+      "referenceImage": "/archive/objects/wardrobe/navy-striped-velvet-skirt.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/navy-striped-velvet-skirt-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/navy-striped-velvet-skirt-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/navy-striped-velvet-skirt-side.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/navy-striped-velvet-skirt-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/navy-striped-velvet-skirt.png",
+        "/archive/objects/wardrobe/3d-inputs/navy-striped-velvet-skirt-top.png",
+        "/archive/objects/wardrobe/3d-inputs/navy-striped-velvet-skirt-side.png",
+        "/archive/objects/wardrobe/3d-inputs/navy-striped-velvet-skirt-bottom.png"
+      ]
+    },
+    {
+      "objectId": "navy-taffeta-dress",
+      "name": "Navy Taffeta Dress",
+      "inventoryGroupId": "wardrobe",
+      "referenceImage": "/archive/objects/wardrobe/navy-taffeta-dress.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/navy-taffeta-dress-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/navy-taffeta-dress-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/navy-taffeta-dress-side.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/navy-taffeta-dress-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/navy-taffeta-dress.png",
+        "/archive/objects/wardrobe/3d-inputs/navy-taffeta-dress-top.png",
+        "/archive/objects/wardrobe/3d-inputs/navy-taffeta-dress-side.png",
+        "/archive/objects/wardrobe/3d-inputs/navy-taffeta-dress-bottom.png"
+      ]
+    },
+    {
+      "objectId": "olive-crochet-bag",
+      "name": "Olive Crochet Bag",
+      "inventoryGroupId": "wardrobe-historical",
+      "referenceImage": "/archive/objects/wardrobe/olive-crochet-bag.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/olive-crochet-bag-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/olive-crochet-bag-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/olive-crochet-bag-side.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/olive-crochet-bag-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/olive-crochet-bag.png",
+        "/archive/objects/wardrobe/3d-inputs/olive-crochet-bag-top.png",
+        "/archive/objects/wardrobe/3d-inputs/olive-crochet-bag-side.png",
+        "/archive/objects/wardrobe/3d-inputs/olive-crochet-bag-bottom.png"
+      ]
+    },
+    {
+      "objectId": "olive-cropped-military-jacket",
+      "name": "Olive Cropped Military Jacket",
+      "inventoryGroupId": "wardrobe-historical",
+      "referenceImage": "/archive/objects/wardrobe/olive-cropped-military-jacket.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/olive-cropped-military-jacket-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/olive-cropped-military-jacket-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/olive-cropped-military-jacket-side.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/olive-cropped-military-jacket-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/olive-cropped-military-jacket.png",
+        "/archive/objects/wardrobe/3d-inputs/olive-cropped-military-jacket-top.png",
+        "/archive/objects/wardrobe/3d-inputs/olive-cropped-military-jacket-side.png",
+        "/archive/objects/wardrobe/3d-inputs/olive-cropped-military-jacket-bottom.png"
+      ]
+    },
+    {
+      "objectId": "orange-sheer-shoulder-cape",
+      "name": "Orange Sheer Shoulder Cape",
+      "inventoryGroupId": "wardrobe",
+      "referenceImage": "/archive/objects/wardrobe/orange-sheer-shoulder-cape.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/orange-sheer-shoulder-cape-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/orange-sheer-shoulder-cape-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/orange-sheer-shoulder-cape-side-clean.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/orange-sheer-shoulder-cape-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/orange-sheer-shoulder-cape.png",
+        "/archive/objects/wardrobe/3d-inputs/orange-sheer-shoulder-cape-top.png",
+        "/archive/objects/wardrobe/3d-inputs/orange-sheer-shoulder-cape-side-clean.png",
+        "/archive/objects/wardrobe/3d-inputs/orange-sheer-shoulder-cape-bottom.png"
+      ]
+    },
+    {
+      "objectId": "pale-blue-brocade-jacket",
+      "name": "Pale Blue Brocade Jacket",
+      "inventoryGroupId": "wardrobe",
+      "referenceImage": "/archive/objects/wardrobe/pale-blue-brocade-jacket.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/pale-blue-brocade-jacket-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/pale-blue-brocade-jacket-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/pale-blue-brocade-jacket-side.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/pale-blue-brocade-jacket-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/pale-blue-brocade-jacket.png",
+        "/archive/objects/wardrobe/3d-inputs/pale-blue-brocade-jacket-top.png",
+        "/archive/objects/wardrobe/3d-inputs/pale-blue-brocade-jacket-side.png",
+        "/archive/objects/wardrobe/3d-inputs/pale-blue-brocade-jacket-bottom.png"
+      ]
+    },
+    {
+      "objectId": "pink-ruffle-mini-skirt",
+      "name": "Pink Ruffle Mini Skirt",
+      "inventoryGroupId": "wardrobe-historical",
+      "referenceImage": "/archive/objects/wardrobe/pink-ruffle-mini-skirt.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/pink-ruffle-mini-skirt-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/pink-ruffle-mini-skirt-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/pink-ruffle-mini-skirt-side.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/pink-ruffle-mini-skirt-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/pink-ruffle-mini-skirt.png",
+        "/archive/objects/wardrobe/3d-inputs/pink-ruffle-mini-skirt-top.png",
+        "/archive/objects/wardrobe/3d-inputs/pink-ruffle-mini-skirt-side.png",
+        "/archive/objects/wardrobe/3d-inputs/pink-ruffle-mini-skirt-bottom.png"
+      ]
+    },
+    {
+      "objectId": "pink-ruffle-top",
+      "name": "Pink Ruffle Top",
+      "inventoryGroupId": "wardrobe-historical",
+      "referenceImage": "/archive/objects/wardrobe/pink-ruffle-top.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/pink-ruffle-top-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/pink-ruffle-top-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/pink-ruffle-top-side.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/pink-ruffle-top-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/pink-ruffle-top.png",
+        "/archive/objects/wardrobe/3d-inputs/pink-ruffle-top-top.png",
+        "/archive/objects/wardrobe/3d-inputs/pink-ruffle-top-side.png",
+        "/archive/objects/wardrobe/3d-inputs/pink-ruffle-top-bottom.png"
+      ]
+    },
+    {
+      "objectId": "pink-ruffle-trousers",
+      "name": "Pink Ruffle Trousers",
+      "inventoryGroupId": "wardrobe",
+      "referenceImage": "/archive/objects/wardrobe/pink-ruffle-trousers.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/pink-ruffle-trousers-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/pink-ruffle-trousers-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/pink-ruffle-trousers-side.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/pink-ruffle-trousers-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/pink-ruffle-trousers.png",
+        "/archive/objects/wardrobe/3d-inputs/pink-ruffle-trousers-top.png",
+        "/archive/objects/wardrobe/3d-inputs/pink-ruffle-trousers-side.png",
+        "/archive/objects/wardrobe/3d-inputs/pink-ruffle-trousers-bottom.png"
+      ]
+    },
+    {
+      "objectId": "pink-striped-shag-sweater",
+      "name": "Pink Striped Shag Sweater",
+      "inventoryGroupId": "wardrobe-historical",
+      "referenceImage": "/archive/objects/wardrobe/pink-striped-shag-sweater.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/pink-striped-shag-sweater-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/pink-striped-shag-sweater-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/pink-striped-shag-sweater-side-clean.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/pink-striped-shag-sweater-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/pink-striped-shag-sweater.png",
+        "/archive/objects/wardrobe/3d-inputs/pink-striped-shag-sweater-top.png",
+        "/archive/objects/wardrobe/3d-inputs/pink-striped-shag-sweater-side-clean.png",
+        "/archive/objects/wardrobe/3d-inputs/pink-striped-shag-sweater-bottom.png"
+      ]
+    },
+    {
+      "objectId": "pink-tie-dye-tights",
+      "name": "Pink Tie-Dye Tights",
+      "inventoryGroupId": "wardrobe-historical",
+      "referenceImage": "/archive/objects/wardrobe/pink-tie-dye-tights.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/pink-tie-dye-tights-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/pink-tie-dye-tights-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/pink-tie-dye-tights-side.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/pink-tie-dye-tights-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/pink-tie-dye-tights.png",
+        "/archive/objects/wardrobe/3d-inputs/pink-tie-dye-tights-top.png",
+        "/archive/objects/wardrobe/3d-inputs/pink-tie-dye-tights-side.png",
+        "/archive/objects/wardrobe/3d-inputs/pink-tie-dye-tights-bottom.png"
+      ]
+    },
+    {
+      "objectId": "pink-tiered-mini-skirt",
+      "name": "Pink Tiered Mini Skirt",
+      "inventoryGroupId": "wardrobe",
+      "referenceImage": "/archive/objects/wardrobe/pink-tiered-mini-skirt.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/pink-tiered-mini-skirt-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/pink-tiered-mini-skirt-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/pink-tiered-mini-skirt-side.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/pink-tiered-mini-skirt-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/pink-tiered-mini-skirt.png",
+        "/archive/objects/wardrobe/3d-inputs/pink-tiered-mini-skirt-top.png",
+        "/archive/objects/wardrobe/3d-inputs/pink-tiered-mini-skirt-side.png",
+        "/archive/objects/wardrobe/3d-inputs/pink-tiered-mini-skirt-bottom.png"
+      ]
+    },
+    {
+      "objectId": "purple-plaid-tights",
+      "name": "Purple Plaid Tights",
+      "inventoryGroupId": "wardrobe-historical",
+      "referenceImage": "/archive/objects/wardrobe/purple-plaid-tights.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/purple-plaid-tights-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/purple-plaid-tights-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/purple-plaid-tights-side-clean.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/purple-plaid-tights-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/purple-plaid-tights.png",
+        "/archive/objects/wardrobe/3d-inputs/purple-plaid-tights-top.png",
+        "/archive/objects/wardrobe/3d-inputs/purple-plaid-tights-side-clean.png",
+        "/archive/objects/wardrobe/3d-inputs/purple-plaid-tights-bottom.png"
+      ]
+    },
+    {
+      "objectId": "purple-pleated-skirt",
+      "name": "Purple Pleated Skirt",
+      "inventoryGroupId": "wardrobe-historical",
+      "referenceImage": "/archive/objects/wardrobe/purple-pleated-skirt.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/purple-pleated-skirt-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/purple-pleated-skirt-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/purple-pleated-skirt-side.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/purple-pleated-skirt-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/purple-pleated-skirt.png",
+        "/archive/objects/wardrobe/3d-inputs/purple-pleated-skirt-top.png",
+        "/archive/objects/wardrobe/3d-inputs/purple-pleated-skirt-side.png",
+        "/archive/objects/wardrobe/3d-inputs/purple-pleated-skirt-bottom.png"
+      ]
+    },
+    {
+      "objectId": "purple-ruffle-skirt",
+      "name": "Purple Ruffle Skirt",
+      "inventoryGroupId": "wardrobe",
+      "referenceImage": "/archive/objects/wardrobe/purple-ruffle-skirt.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/purple-ruffle-skirt-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/purple-ruffle-skirt-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/purple-ruffle-skirt-side.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/purple-ruffle-skirt-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/purple-ruffle-skirt.png",
+        "/archive/objects/wardrobe/3d-inputs/purple-ruffle-skirt-top.png",
+        "/archive/objects/wardrobe/3d-inputs/purple-ruffle-skirt-side.png",
+        "/archive/objects/wardrobe/3d-inputs/purple-ruffle-skirt-bottom.png"
+      ]
+    },
+    {
+      "objectId": "red-crochet-tights",
+      "name": "Red Crochet Tights",
+      "inventoryGroupId": "wardrobe-historical",
+      "referenceImage": "/archive/objects/wardrobe/red-crochet-tights.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/red-crochet-tights-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/red-crochet-tights-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/red-crochet-tights-side.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/red-crochet-tights-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/red-crochet-tights.png",
+        "/archive/objects/wardrobe/3d-inputs/red-crochet-tights-top.png",
+        "/archive/objects/wardrobe/3d-inputs/red-crochet-tights-side.png",
+        "/archive/objects/wardrobe/3d-inputs/red-crochet-tights-bottom.png"
+      ]
+    },
+    {
+      "objectId": "red-ribbed-tights",
+      "name": "Red Ribbed Tights",
+      "inventoryGroupId": "wardrobe-historical",
+      "referenceImage": "/archive/objects/wardrobe/red-ribbed-tights.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/red-ribbed-tights-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/red-ribbed-tights-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/red-ribbed-tights-side.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/red-ribbed-tights-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/red-ribbed-tights.png",
+        "/archive/objects/wardrobe/3d-inputs/red-ribbed-tights-top.png",
+        "/archive/objects/wardrobe/3d-inputs/red-ribbed-tights-side.png",
+        "/archive/objects/wardrobe/3d-inputs/red-ribbed-tights-bottom.png"
+      ]
+    },
+    {
+      "objectId": "red-shaggy-coat",
+      "name": "Red Shaggy Coat",
+      "inventoryGroupId": "wardrobe",
+      "referenceImage": "/archive/objects/wardrobe/red-shaggy-coat.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/red-shaggy-coat-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/red-shaggy-coat-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/red-shaggy-coat-side-clean.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/red-shaggy-coat-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/red-shaggy-coat.png",
+        "/archive/objects/wardrobe/3d-inputs/red-shaggy-coat-top.png",
+        "/archive/objects/wardrobe/3d-inputs/red-shaggy-coat-side-clean.png",
+        "/archive/objects/wardrobe/3d-inputs/red-shaggy-coat-bottom.png"
+      ]
+    },
+    {
+      "objectId": "red-tiered-maxi-skirt",
+      "name": "Red Tiered Maxi Skirt",
+      "inventoryGroupId": "wardrobe-historical",
+      "referenceImage": "/archive/objects/wardrobe/red-tiered-maxi-skirt.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/red-tiered-maxi-skirt-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/red-tiered-maxi-skirt-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/red-tiered-maxi-skirt-side-clean.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/red-tiered-maxi-skirt-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/red-tiered-maxi-skirt.png",
+        "/archive/objects/wardrobe/3d-inputs/red-tiered-maxi-skirt-top.png",
+        "/archive/objects/wardrobe/3d-inputs/red-tiered-maxi-skirt-side-clean.png",
+        "/archive/objects/wardrobe/3d-inputs/red-tiered-maxi-skirt-bottom.png"
+      ]
+    },
+    {
+      "objectId": "silver-puff-sleeve-dress",
+      "name": "Silver Puff-Sleeve Dress",
+      "inventoryGroupId": "wardrobe",
+      "referenceImage": "/archive/objects/wardrobe/silver-puff-sleeve-dress.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/silver-puff-sleeve-dress-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/silver-puff-sleeve-dress-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/silver-puff-sleeve-dress-side-clean.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/silver-puff-sleeve-dress-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/silver-puff-sleeve-dress.png",
+        "/archive/objects/wardrobe/3d-inputs/silver-puff-sleeve-dress-top.png",
+        "/archive/objects/wardrobe/3d-inputs/silver-puff-sleeve-dress-side-clean.png",
+        "/archive/objects/wardrobe/3d-inputs/silver-puff-sleeve-dress-bottom.png"
+      ]
+    },
+    {
+      "objectId": "star-knee-socks",
+      "name": "Star Knee Socks",
+      "inventoryGroupId": "wardrobe-historical",
+      "referenceImage": "/archive/objects/wardrobe/star-knee-socks.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/star-knee-socks-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/star-knee-socks-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/star-knee-socks-side.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/star-knee-socks-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/star-knee-socks.png",
+        "/archive/objects/wardrobe/3d-inputs/star-knee-socks-top.png",
+        "/archive/objects/wardrobe/3d-inputs/star-knee-socks-side.png",
+        "/archive/objects/wardrobe/3d-inputs/star-knee-socks-bottom.png"
+      ]
+    },
+    {
+      "objectId": "striped-long-sleeve-bodysuit",
+      "name": "Striped Long-Sleeve Bodysuit",
+      "inventoryGroupId": "wardrobe",
+      "referenceImage": "/archive/objects/wardrobe/striped-long-sleeve-bodysuit.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/striped-long-sleeve-bodysuit-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/striped-long-sleeve-bodysuit-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/striped-long-sleeve-bodysuit-side-clean.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/striped-long-sleeve-bodysuit-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/striped-long-sleeve-bodysuit.png",
+        "/archive/objects/wardrobe/3d-inputs/striped-long-sleeve-bodysuit-top.png",
+        "/archive/objects/wardrobe/3d-inputs/striped-long-sleeve-bodysuit-side-clean.png",
+        "/archive/objects/wardrobe/3d-inputs/striped-long-sleeve-bodysuit-bottom.png"
+      ]
+    },
+    {
+      "objectId": "striped-short-sleeve-top",
+      "name": "Striped Short-Sleeve Top",
+      "inventoryGroupId": "wardrobe",
+      "referenceImage": "/archive/objects/wardrobe/striped-short-sleeve-top.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/striped-short-sleeve-top-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/striped-short-sleeve-top-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/striped-short-sleeve-top-side-clean.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/striped-short-sleeve-top-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/striped-short-sleeve-top.png",
+        "/archive/objects/wardrobe/3d-inputs/striped-short-sleeve-top-top.png",
+        "/archive/objects/wardrobe/3d-inputs/striped-short-sleeve-top-side-clean.png",
+        "/archive/objects/wardrobe/3d-inputs/striped-short-sleeve-top-bottom.png"
+      ]
+    },
+    {
+      "objectId": "tartan-coat-dress",
+      "name": "Tartan Coat Dress",
+      "inventoryGroupId": "wardrobe",
+      "referenceImage": "/archive/objects/wardrobe/tartan-coat-dress.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/tartan-coat-dress-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/tartan-coat-dress-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/tartan-coat-dress-side-clean.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/tartan-coat-dress-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/tartan-coat-dress.png",
+        "/archive/objects/wardrobe/3d-inputs/tartan-coat-dress-top.png",
+        "/archive/objects/wardrobe/3d-inputs/tartan-coat-dress-side-clean.png",
+        "/archive/objects/wardrobe/3d-inputs/tartan-coat-dress-bottom.png"
+      ]
+    },
+    {
+      "objectId": "teal-pleated-skirt",
+      "name": "Teal Pleated Skirt",
+      "inventoryGroupId": "wardrobe",
+      "referenceImage": "/archive/objects/wardrobe/teal-pleated-skirt.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/teal-pleated-skirt-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/teal-pleated-skirt-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/teal-pleated-skirt-side-clean.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/teal-pleated-skirt-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/teal-pleated-skirt.png",
+        "/archive/objects/wardrobe/3d-inputs/teal-pleated-skirt-top.png",
+        "/archive/objects/wardrobe/3d-inputs/teal-pleated-skirt-side-clean.png",
+        "/archive/objects/wardrobe/3d-inputs/teal-pleated-skirt-bottom.png"
+      ]
+    },
+    {
+      "objectId": "white-lilac-corset-dress",
+      "name": "White Lilac Corset Dress",
+      "inventoryGroupId": "wardrobe",
+      "referenceImage": "/archive/objects/wardrobe/white-lilac-corset-dress.png",
+      "assets": {
+        "multiview": "/archive/objects/wardrobe/3d-inputs/white-lilac-corset-dress-multiview.png",
+        "top": "/archive/objects/wardrobe/3d-inputs/white-lilac-corset-dress-top.png",
+        "side": "/archive/objects/wardrobe/3d-inputs/white-lilac-corset-dress-side-clean.png",
+        "bottom": "/archive/objects/wardrobe/3d-inputs/white-lilac-corset-dress-bottom.png"
+      },
+      "meshyInputOrder": [
+        "/archive/objects/wardrobe/white-lilac-corset-dress.png",
+        "/archive/objects/wardrobe/3d-inputs/white-lilac-corset-dress-top.png",
+        "/archive/objects/wardrobe/3d-inputs/white-lilac-corset-dress-side-clean.png",
+        "/archive/objects/wardrobe/3d-inputs/white-lilac-corset-dress-bottom.png"
+      ]
+    }
+  ],
+  "updatedAt": "2026-07-28T15:10:28.084Z"
+}

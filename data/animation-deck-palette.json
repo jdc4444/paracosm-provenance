@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-28",
+  "sourceDeck": "/Users/alphaone/Documents/Archive/Document Files/ANIMATION.key",
+  "slideCount": 18,
+  "sampledPixels": 1036800,
+  "methodology": "All 18 slides were rendered at a consistent size and sampled at 320 × 180 pixels per slide. The combined field was quantized, then reduced to recurring presentation roles so photographic one-offs did not displace the deck's repeated borders, panels, cards, wallpaper, and cool counterpoints.",
+  "summary": "The deck intensifies the existing oxblood-and-copper base into a warmer storybook system: saturated red and orange carry the structure, faded rose and cream soften it, and midnight blue, plum, and aged teal keep the result from becoming uniformly warm.",
+  "addedShades": [
+    {
+      "id": "deck-01",
+      "name": "Storybook Red",
+      "hex": "#7f0d02",
+      "family": "red",
+      "hue": 5,
+      "saturation": 97,
+      "lightness": 25,
+      "role": "The deck's structural color: title blocks, body panels, banners, and repeated framing."
+    },
+    {
+      "id": "deck-02",
+      "name": "Wonder Orange",
+      "hex": "#da6001",
+      "family": "copper",
+      "hue": 26,
+      "saturation": 99,
+      "lightness": 43,
+      "role": "A saturated storybook accent used across the references and key-word pages."
+    },
+    {
+      "id": "deck-03",
+      "name": "Marigold",
+      "hex": "#f1b34e",
+      "family": "gold",
+      "hue": 37,
+      "saturation": 85,
+      "lightness": 63,
+      "role": "Warm emphasis for headings, stars, labels, and moments of wonder."
+    },
+    {
+      "id": "deck-04",
+      "name": "Lamplight Cream",
+      "hex": "#f4e495",
+      "family": "cream",
+      "hue": 50,
+      "saturation": 81,
+      "lightness": 77,
+      "role": "A glowing paper tone for cards, copy, and nostalgic interior light."
+    },
+    {
+      "id": "deck-05",
+      "name": "Faded Wallpaper",
+      "hex": "#b48175",
+      "family": "mauve",
+      "hue": 11,
+      "saturation": 30,
+      "lightness": 58,
+      "role": "The dusty rose bridge between the deck's domestic setting and its theatrical reds."
+    },
+    {
+      "id": "deck-06",
+      "name": "Midnight Story",
+      "hex": "#0e2546",
+      "family": "blue",
+      "hue": 215,
+      "saturation": 67,
+      "lightness": 16,
+      "role": "The principal cool field for night scenes, house-evolution framing, and visual depth."
+    },
+    {
+      "id": "deck-07",
+      "name": "Velvet Plum",
+      "hex": "#6e1528",
+      "family": "mauve",
+      "hue": 347,
+      "saturation": 68,
+      "lightness": 26,
+      "role": "A wine-toned secondary accent for labels, shadows, and bittersweet emotional notes."
+    },
+    {
+      "id": "deck-08",
+      "name": "Patina Teal",
+      "hex": "#5b7d77",
+      "family": "teal",
+      "hue": 169,
+      "saturation": 16,
+      "lightness": 42,
+      "role": "An aged green-blue counterpoint drawn from dim rooms and expressionist references."
+    }
+  ]
+}
