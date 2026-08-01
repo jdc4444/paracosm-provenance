@@ -1,13 +1,16 @@
 # Paracosm
 
-The application source is mirrored to GitHub; the live site is deployed with
-its full browser-ready media bundle. See [HOSTING.md](HOSTING.md) for why the
-multi-gigabyte media archive is kept out of Git history.
-
 A local, read-only production atlas for the Paracosm film. The Pipeline view
 traces each current shot back through Premiere, Resolve, After Effects, rendered
 media, Cinema 4D projects, and cameras. The Feedback view attaches normalized
 notes to those same shots.
+
+Hosted library: <https://paracosm-provenance.josdiazcontreras.chatgpt.site>
+
+The hosted build contains the browser-ready images, videos, GIFs, and GLB
+models. Local-only production actions—Finder reveals, creative-application
+launches, rescans, and access to editable scene/cache files—remain in the
+canonical Mac working copy.
 
 Creative files and Dropbox are read-only. Generated state, thumbnails, proxies,
 and the feedback working copy live inside this app.

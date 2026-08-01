@@ -21,6 +21,7 @@ from urllib3.util.retry import Retry
 PART_SIZE = 16 * 1024 * 1024
 SIMPLE_UPLOAD_LIMIT = 64 * 1024 * 1024
 STATE_LOCK = threading.Lock()
+SESSION_LOCAL = threading.local()
 WEB_SUFFIXES = {
     ".csv",
     ".gif",
@@ -53,6 +54,14 @@ def session(token: str, access_token: str) -> requests.Session:
         allowed_methods=["HEAD", "PUT", "POST", "DELETE"],
     )
     client.mount("https://", HTTPAdapter(max_retries=retry))
+    return client
+
+
+def thread_session(token: str, access_token: str) -> requests.Session:
+    client = getattr(SESSION_LOCAL, "client", None)
+    if client is None:
+        client = session(token, access_token)
+        SESSION_LOCAL.client = client
     return client
 
 
@@ -162,7 +171,7 @@ def upload_one(
     relative = path.relative_to(archive_root).as_posix()
     remote_path = f"archive/{relative}"
     size = path.stat().st_size
-    client = session(token, access_token)
+    client = thread_session(token, access_token)
     url = media_url(base_url, relative)
 
     if remote_size(client, url) == size:
