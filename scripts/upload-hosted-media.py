@@ -21,11 +21,31 @@ from urllib3.util.retry import Retry
 PART_SIZE = 16 * 1024 * 1024
 SIMPLE_UPLOAD_LIMIT = 64 * 1024 * 1024
 STATE_LOCK = threading.Lock()
+WEB_SUFFIXES = {
+    ".csv",
+    ".gif",
+    ".glb",
+    ".gltf",
+    ".jpeg",
+    ".jpg",
+    ".json",
+    ".md",
+    ".mid",
+    ".mov",
+    ".mp4",
+    ".png",
+    ".svg",
+    ".tif",
+    ".tiff",
+    ".webm",
+    ".webp",
+}
 
 
-def session(token: str) -> requests.Session:
+def session(token: str, access_token: str) -> requests.Session:
     client = requests.Session()
     client.headers["x-paracosm-upload-key"] = token
+    client.headers["OAI-Sites-Authorization"] = f"Bearer {access_token}"
     retry = Retry(
         total=5,
         backoff_factor=1,
@@ -133,6 +153,7 @@ def write_state(path: Path, state: dict[str, object]) -> None:
 def upload_one(
     base_url: str,
     token: str,
+    access_token: str,
     archive_root: Path,
     path: Path,
     state_path: Path,
@@ -141,7 +162,7 @@ def upload_one(
     relative = path.relative_to(archive_root).as_posix()
     remote_path = f"archive/{relative}"
     size = path.stat().st_size
-    client = session(token)
+    client = session(token, access_token)
     url = media_url(base_url, relative)
 
     if remote_size(client, url) == size:
@@ -173,13 +194,26 @@ def main() -> int:
         "--token-env",
         default="PARACOSM_MEDIA_UPLOAD_TOKEN",
     )
+    parser.add_argument(
+        "--access-token-env",
+        default="PARACOSM_SITES_ACCESS_TOKEN",
+    )
     args = parser.parse_args()
 
     token = os.environ.get(args.token_env)
     if not token:
         raise SystemExit(f"Missing environment variable {args.token_env}")
+    access_token = os.environ.get(args.access_token_env)
+    if not access_token:
+        raise SystemExit(
+            f"Missing environment variable {args.access_token_env}"
+        )
     archive_root = args.archive_root.resolve()
-    files = sorted(path for path in archive_root.rglob("*") if path.is_file())
+    files = sorted(
+        path
+        for path in archive_root.rglob("*")
+        if path.is_file() and path.suffix.lower() in WEB_SUFFIXES
+    )
 
     state: dict[str, object]
     if args.state.exists():
@@ -201,6 +235,7 @@ def main() -> int:
                 upload_one,
                 args.base_url,
                 token,
+                access_token,
                 archive_root,
                 path,
                 args.state,

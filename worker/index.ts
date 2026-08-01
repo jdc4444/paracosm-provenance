@@ -153,7 +153,7 @@ async function serveMedia(request: Request, env: Env): Promise<Response> {
   );
 
   let status = 200;
-  if ("range" in object && object.range) {
+  if (request.headers.has("range") && "range" in object && object.range) {
     const { offset, length } = object.range;
     headers.set(
       "content-range",
