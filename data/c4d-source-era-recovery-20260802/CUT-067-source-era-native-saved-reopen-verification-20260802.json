@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "status": "verified",
+  "project": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/SG/C4D/_codex_072826/5B_Pearl_GG_v001_codex_mainframe_complete_v4_073026.c4d",
+  "take": "Main",
+  "frame": 337,
+  "sourcePreserved": true,
+  "mappingCount": 386,
+  "strictDependencyRenderSafe": true,
+  "sourceAudit": "data/c4d-source-runtime-recovery-20260730/CUT-067-mainframe-complete-v4-saved-reopen-dependency-audit.json",
+  "postRelinkDependencyAudit": {
+    "collectorResult": 1,
+    "dependencyReferences": 455,
+    "linkedReferences": 455,
+    "renderCriticalUnresolvedReferences": 0,
+    "renderCriticalUnresolvedFiles": 0,
+    "renderCriticalUnresolvedPaths": []
+  },
+  "projectWidePostRelinkDependencyAudit": {
+    "collectorResult": 1,
+    "assetReferences": 455,
+    "pictureReferences": 455,
+    "linkedReferences": 455,
+    "unresolvedPictureReferences": 0,
+    "unresolvedPictureFiles": 0,
+    "unresolvedPicturePaths": [],
+    "strictDependencyRenderSafe": true
+  },
+  "notes": "Normalized publication wrapper around the saved-reopen collector audit. It does not change the underlying evidence: all 455 collected references are linked with zero render-critical missing or unresolved files."
+}

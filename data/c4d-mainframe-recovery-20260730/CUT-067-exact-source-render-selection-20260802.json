@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 2,
+  "cutId": "CUT-067",
+  "status": "selected_source_era_near_match_with_localized_chair_state_drift",
+  "proofTier": "yellow",
+  "visualMatch": false,
+  "allowIncompleteDependencies": false,
+  "sourceProject": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/SG/C4D/5B_Pearl_GG_v001.c4d",
+  "project": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/SG/C4D/_codex_072826/5B_Pearl_GG_v001_codex_mainframe_complete_v4_073026.c4d",
+  "sourcePreserved": true,
+  "savedReopenVerified": true,
+  "take": "Main",
+  "cameraPath": "Hero-Moment/RS Camera",
+  "renderData": "My Render Setting",
+  "frame": 337,
+  "selectedProjectFrame": 337,
+  "productionRuntime": "Cinema 4D 2026.1.2 with Redshift 2026.1.1 source-era runtime",
+  "canonicalReference": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/SG/C4D/_renders/0109/5B_Pearl_v001/5B_Pearl_v001_0337.png",
+  "render": "public/archive/redshift-source-era-recovery-20260802/CUT-067/CUT-067-native-batch-C4D2026p1p2-RS2026p1p1-f0337-1280x720_0337.png",
+  "contactSheet": "public/archive/redshift-source-era-recovery-20260802/CUT-067/CUT-067-canonical-left-vs-native-source-era-right-f0337-contact.png",
+  "comparison": "data/c4d-source-era-recovery-20260802/CUT-067-native-batch-C4D2026p1p2-RS2026p1p1-f0337-1280x720-display-compare.json",
+  "strictManifest": "data/c4d-source-runtime-recovery-20260730/CUT-067-full-picture-relink-manifest-mainframe-complete.json",
+  "strictVerification": "data/c4d-source-era-recovery-20260802/CUT-067-source-era-native-saved-reopen-verification-20260802.json",
+  "saveReceipt": "data/c4d-source-runtime-recovery-20260730/CUT-067-mainframe-complete-v4-save-result.json",
+  "exactMappingCount": 386,
+  "meanAbsoluteError": 0.0016455510631203651,
+  "perChannelCorrelation": [
+    0.996030675196159,
+    0.9972640692757662,
+    0.9977893567620597
+  ],
+  "elements": {
+    "camera": "match",
+    "pearl_simulation": "match",
+    "floating_objects": "match",
+    "lighting": "match",
+    "materials": "near_match_localized_chair_state_drift"
+  },
+  "notes": "Alternate thumbnail only. Camera, pearl simulation, floating objects, lighting, and visible materials match closely; the small chair below the long scissor-like object retains a localized yellow-blue state instead of the canonical dark state."
+}
