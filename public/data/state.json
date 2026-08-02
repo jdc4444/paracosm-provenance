@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-02T14:08:30.710335+00:00",
-  "scanStartedAt": "2026-08-02T14:07:45.423097+00:00",
+  "generatedAt": "2026-08-02T14:03:22.353429+00:00",
+  "scanStartedAt": "2026-08-02T14:02:34.929854+00:00",
   "readOnly": true,
   "groundTruth": {
     "title": "Paracosm 050726",
@@ -14624,7 +14624,7 @@
           "Require the independent saved-reopen audit to retain zero render-critical unresolved files before rendering.",
           "Compare the fresh full-color proof to /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/SG/C4D/_renders/0227/1A_Window_Final_v003/1A_Window_Final_v003_0754.tif using data/c4d-mainframe-recovery-20260730/CUT-002-exact-window-farm-v006-packaged-reopen-f0754-480-vs-canonical-comparison-20260801.json."
         ],
-        "auditedAt": "2026-08-02T14:08:30.844235+00:00",
+        "auditedAt": "2026-08-02T14:03:22.559428+00:00",
         "rawRenderCriticalMissingFiles": 0,
         "exactCutAudit": {
           "authority": "Exact-source selection plus strict second-pass Cinema dependency verification",
@@ -14680,7 +14680,7 @@
         "label": "Exact-source full-color match",
         "detail": "Exact shot-authored state \u00b7 Dolly \u00b7 Dolly_Window \u00b7 Dolly_Final \u00b7 frame 754 \u00b7 21 exact active dependency mappings \u00b7 MAE 0.007367 \u00b7 RGB correlation 0.996149/0.995524/0.996178. The untouched shot-authored farm project was relinked only to exact authored assets, including the recovered 4,219,654,860-byte Subdivision_Surface.1.abc with SHA-256 a4d24f2d640e0c49a66e539afc2de0078c85028f091e6a8dcc343cf3a17fa00. Cinema 4D Save Project collected 429 assets into a dated recovery package with zero missing files. An independent fresh reopen resolved all 489 dependency references without additional relinking, and a new full-color Redshift render from Dolly, Dolly_Window, Dolly_Final, frame 754 visually matches the canonical hair, face, wardrobe, environment, lighting, and materials. The source project remains untouched.",
         "strictLinked": true,
-        "reviewedAt": "2026-08-02T14:08:30.844235+00:00",
+        "reviewedAt": "2026-08-02T14:03:22.559428+00:00",
         "authority": "Exact-source saved/reopened render selection plus retained production-frame comparison",
         "elements": {
           "location": "match",
@@ -16483,7 +16483,7 @@
           "Require the independent saved-reopen audit to retain zero render-critical unresolved files before rendering.",
           "Compare the fresh full-color proof to /Users/alphaone/Documents/Code/paracosm-provenance/public/archive/as-finishing-historical-camera-proofs-20260727/CUT-004/CUT-004__RS-Camera__v007__f0168__historical-redshift.png using data/c4d-mainframe-recovery-20260730/CUT-004-exact-source-zero-missing-vs-historical-f0168.json."
         ],
-        "auditedAt": "2026-08-02T14:08:30.844545+00:00",
+        "auditedAt": "2026-08-02T14:03:22.560104+00:00",
         "rawRenderCriticalMissingFiles": 0
       },
       "c4dSceneState": {
@@ -16610,7 +16610,7 @@
         "label": "Exact-source full-color match",
         "detail": "Exact shot-authored state \u00b7 Main \u00b7 Camera_Drop_Cup/Camera/RS Camera \u00b7 Denoiser \u00b7 frame 168 \u00b7 0 exact active dependency mappings \u00b7 MAE 0.007027 \u00b7 RGB correlation 0.985862/0.996126/0.994234. The untouched 6.16 GB v007 source was relinked only in a dated sibling beside the original. A fresh independent audit and cold reopen resolve all 3,658 project-wide picture references with zero missing files and require no further relink. The normal full-color render from Main, Denoiser, the saved RS Camera, and frame 168 matches the retained same-frame production image without exposure or display calibration.",
         "strictLinked": true,
-        "reviewedAt": "2026-08-02T14:08:30.844545+00:00",
+        "reviewedAt": "2026-08-02T14:03:22.560104+00:00",
         "authority": "Exact-source saved/reopened render selection plus retained production-frame comparison",
         "elements": {
           "location": "match",
@@ -17353,7 +17353,7 @@
         "verificationBlockers": [],
         "manifestPath": "data/c4d-exact-source-recovery-20260801-large/CUT-005-1C_1E_A_Teardrop_Transition_v008-strict-relink-manifest.json",
         "verificationPath": "data/c4d-mainframe-recovery-20260730/CUT-005-projectwide-exact-saved-reopen-verification-20260802.json",
-        "auditedAt": "2026-08-02T14:08:30.844839+00:00",
+        "auditedAt": "2026-08-02T14:03:22.560896+00:00",
         "rawRenderCriticalMissingFiles": 0
       },
       "c4dSceneState": {
@@ -17480,7 +17480,7 @@
         "label": "Exact-source full-color match",
         "detail": "Exact shot-authored state \u00b7 Main \u00b7 Camera_Drop_Cup/Camera/RS Camera \u00b7 Denoiser \u00b7 frame 230 \u00b7 16 exact active dependency mappings \u00b7 MAE 0.009189 \u00b7 RGB correlation 0.987100/0.994093/0.993417. Strict green exact-source proof. The exact dormant cloth Alembic was recovered by exact local path translation, combined with the 15 prior exact relinks, and saved from the untouched v008 project under Cinema 4D 2026.1.2. Independent reopen verifies 3658/3658 project-wide dependencies linked with zero unresolved files. The fresh full-color frame uses the authored Main take, Camera_Drop_Cup/Camera/RS Camera, Denoiser setting, frame 230, and preserved legacy Redshift camera; it remains visually canonical-matching, with only render-noise residual.",
         "strictLinked": true,
-        "reviewedAt": "2026-08-02T14:08:30.844839+00:00",
+        "reviewedAt": "2026-08-02T14:03:22.560896+00:00",
         "authority": "Exact-source saved/reopened render selection plus retained production-frame comparison",
         "elements": {
           "location": "match",
@@ -18583,7 +18583,7 @@
         "projectWideStrictDependencyRenderSafe": true,
         "manifestPath": "data/c4d-source-era-recovery-20260802/CUT-006-projectwide-dormant-alembic-relink-manifest-v2.json",
         "verificationPath": "data/c4d-source-era-recovery-20260802/CUT-006-source-era-projectwide-saved-reopen-verification-v2.json",
-        "auditedAt": "2026-08-02T14:08:30.845097+00:00",
+        "auditedAt": "2026-08-02T14:03:22.561516+00:00",
         "rawRenderCriticalMissingFiles": 0
       },
       "c4dSceneState": {
@@ -18624,7 +18624,7 @@
         "label": "Exact-source full-color match",
         "detail": "Exact shot-authored state \u00b7 CU_01 \u00b7 RS Camera.6 \u00b7 CU_Final \u00b7 frame 166 \u00b7 18 exact active dependency mappings \u00b7 MAE 0.003654 \u00b7 RGB correlation 0.999144/0.999474/0.999451. Preferred recovered thumbnail. The authored 1920x1080 source-era render matches the retained canonical frame with only stochastic high-frequency variation, and the saved project independently reopens with 2,379 of 2,379 references linked and zero unresolved files.",
         "strictLinked": true,
-        "reviewedAt": "2026-08-02T14:08:30.845097+00:00",
+        "reviewedAt": "2026-08-02T14:03:22.561516+00:00",
         "authority": "Exact-source saved/reopened render selection plus retained production-frame comparison",
         "elements": {
           "location": "match",
@@ -19315,7 +19315,7 @@
           "Rerender full color and compare 1:1 to /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/SG/C4D/_renders/0225/1C_1E_TopDown_v007/1C_1E_TopDown_v007_0206.tif.",
           "Only after zero active dependency blockers and a visual match, save a dated sibling and independently reopen it."
         ],
-        "auditedAt": "2026-08-02T14:08:30.850321+00:00",
+        "auditedAt": "2026-08-02T14:03:22.567138+00:00",
         "rawRenderCriticalMissingFiles": 2083,
         "exactCutAudit": {
           "authority": "Exact-source selection with explicit unresolved active dependency audit",
@@ -19452,7 +19452,7 @@
         "label": "Exact-source visual match \u00b7 project dependency closure pending",
         "detail": "Exact shot-authored state \u00b7 Top-Down \u00b7 RS Camera.1 \u00b7 Denoiser - Top \u00b7 frame 206 \u00b7 16 exact active dependency mappings \u00b7 MAE 0.012093 \u00b7 RGB correlation 0.972680/0.971935/0.956713. Yellow visual match only. Untouched shot-authored v010 source and exact frame 206 contract. A dated sibling copy preserves the source directory as its relative-path base; all 16 active-frame exact mappings survived save and an independent reopen. Texture equivalence is SHA-256 based and no basename-only mapping was accepted. The reopened project still reports 2,083 unresolved project-wide paths, dominated by dormant animated proxy sequence residue plus one cloth Alembic. The atlas has no dormant-residue exception, so this cannot be strict green until the exact project is closed project-wide and saved/reopened cleanly.",
         "strictLinked": false,
-        "reviewedAt": "2026-08-02T14:08:30.850321+00:00",
+        "reviewedAt": "2026-08-02T14:03:22.567138+00:00",
         "authority": "Exact-source saved/reopened render selection plus retained production-frame comparison",
         "elements": {},
         "notes": "Yellow visual match only. Untouched shot-authored v010 source and exact frame 206 contract. A dated sibling copy preserves the source directory as its relative-path base; all 16 active-frame exact mappings survived save and an independent reopen. Texture equivalence is SHA-256 based and no basename-only mapping was accepted. The reopened project still reports 2,083 unresolved project-wide paths, dominated by dormant animated proxy sequence residue plus one cloth Alembic. The atlas has no dormant-residue exception, so this cannot be strict green until the exact project is closed project-wide and saved/reopened cleanly.",
@@ -20101,7 +20101,7 @@
         "projectPath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/SG/C4D/1F_A_InsideStorm_v005_codex_exact_full_relink_080226.c4d",
         "projectName": "1F_A_InsideStorm_v005_codex_exact_full_relink_080226.c4d",
         "take": "CU",
-        "auditedAt": "2026-08-02T14:08:30.850864+00:00",
+        "auditedAt": "2026-08-02T14:03:22.568408+00:00",
         "method": "Exact-source selection plus strict second-pass Cinema dependency verification",
         "objectCount": 183,
         "renderEnabledObjectCount": 70,
@@ -20374,7 +20374,7 @@
         "label": "Exact-source full-color match",
         "detail": "Exact shot-authored state \u00b7 CU \u00b7 cameras/CU \u00b7 WIDE \u00b7 frame 62 \u00b7 0 exact active dependency mappings \u00b7 MAE 0.004254 \u00b7 RGB correlation 0.996055/0.998426/0.997796. The untouched exact v005 source and JDC queue log identify frame 62, the CU take and cameras/CU, and WIDE output. Three project-wide GSG Ceramic Celadon Mango paths omitted by the earlier active-frame audit were recovered from byte-identical pre-canonical-render library files, eliminating the black missing-texture response without importing or replacing the authored material. The dated sibling cold-opens in its source-relative directory with all 1,538 picture references linked, zero missing paths, and zero additional mappings. A fresh 1280x720 full-color render reproduces the retained production frame without camera reconstruction, donor material, exposure or color calibration, geometry changes, or any temporary scene override.",
         "strictLinked": true,
-        "reviewedAt": "2026-08-02T14:08:30.850864+00:00",
+        "reviewedAt": "2026-08-02T14:03:22.568408+00:00",
         "authority": "Exact-source saved/reopened render selection plus retained production-frame comparison",
         "elements": {
           "location": "match_storm_ocean",
@@ -21064,7 +21064,7 @@
           "Rerender full color and compare 1:1 to /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/SG/C4D/_renders/0224/1F_A_InsideStorm_Wide_v004/1F_A_InsideStorm_Wide_v004_0110.tif.",
           "Only after zero active dependency blockers and a visual match, save a dated sibling and independently reopen it."
         ],
-        "auditedAt": "2026-08-02T14:08:30.854636+00:00",
+        "auditedAt": "2026-08-02T14:03:22.573067+00:00",
         "rawRenderCriticalMissingFiles": 2081,
         "exactCutAudit": {
           "authority": "Exact-source selection with explicit unresolved active dependency audit",
@@ -21201,7 +21201,7 @@
         "label": "Exact-source full-color recovery \u00b7 residual drift",
         "detail": "Exact shot-authored state \u00b7 Main \u00b7 cameras/WIDE \u00b7 My Render Setting.2 \u00b7 frame 110 \u00b7 16 exact active dependency mappings \u00b7 MAE 0.072577 \u00b7 RGB correlation 0.932764/0.877755/0.809188. The selected evidence uses the untouched v004 project in Cinema 4D 2026.1.2 with the authored Main take, cameras/WIDE legacy Redshift camera preserved in place, My Render Setting.2, frame 110, and all 16 active dependencies relinked by exact authored path or byte-identical SHA-256. This improves on the native-camera bridge and strongly registers the cup, character, and wave layout, but material ocean shading and color-response drift remain obvious; it stays yellow. A source-era-host test in Cinema 4D 2025.3.3 produced the same drift with slightly worse metrics, so it is retained only as a rejected diagnostic.",
         "strictLinked": false,
-        "reviewedAt": "2026-08-02T14:08:30.854636+00:00",
+        "reviewedAt": "2026-08-02T14:03:22.573067+00:00",
         "authority": "Exact-source saved/reopened render selection plus retained production-frame comparison",
         "elements": {},
         "notes": "The selected evidence uses the untouched v004 project in Cinema 4D 2026.1.2 with the authored Main take, cameras/WIDE legacy Redshift camera preserved in place, My Render Setting.2, frame 110, and all 16 active dependencies relinked by exact authored path or byte-identical SHA-256. This improves on the native-camera bridge and strongly registers the cup, character, and wave layout, but material ocean shading and color-response drift remain obvious; it stays yellow. A source-era-host test in Cinema 4D 2025.3.3 produced the same drift with slightly worse metrics, so it is retained only as a rejected diagnostic.",
@@ -21967,7 +21967,7 @@
           "Require the independent saved-reopen audit to retain zero render-critical unresolved files before rendering.",
           "Compare the fresh full-color proof to /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/SG/C4D/_renders/0126/ND_Underwater_01_v001/ND_Underwater_01_v001_0335.tif using data/c4d-source-runtime-recovery-20260730/CUT-010-mainframe-complete-saved-reopen-f0335-vs-source-result.json."
         ],
-        "auditedAt": "2026-08-02T14:08:30.855039+00:00",
+        "auditedAt": "2026-08-02T14:03:22.574251+00:00",
         "rawRenderCriticalMissingFiles": 0,
         "exactCutAudit": {
           "authority": "Exact-source selection plus strict second-pass Cinema dependency verification",
@@ -22023,7 +22023,7 @@
         "label": "Exact-source full-color match",
         "detail": "Exact shot-authored state \u00b7 CU_01 \u00b7 RS Camera \u00b7 Denoiser - Top \u00b7 frame 335 \u00b7 0 exact active dependency mappings \u00b7 MAE 0.001506 \u00b7 RGB correlation 0.999871/0.999929/0.999906. The dated recovery preserves the exact shot-authored underwater project state and its source-era texture bridge. An independent cold reopen at CU_01 frame 335 resolved all 3,379 picture references with zero missing files and required no additional relink. The fresh full-color render reproduces the retained fork, plate, spoon, water surface, bubbles, materials, lighting, and camera at near-pixel identity; no cross-shot asset or comparison-derived calibration was used.",
         "strictLinked": true,
-        "reviewedAt": "2026-08-02T14:08:30.855039+00:00",
+        "reviewedAt": "2026-08-02T14:03:22.574251+00:00",
         "authority": "Exact-source saved/reopened render selection plus retained production-frame comparison",
         "elements": {
           "location": "match",
@@ -22905,7 +22905,7 @@
           "Require the independent saved-reopen audit to retain zero render-critical unresolved files before rendering.",
           "Compare the fresh full-color proof to /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/SG/C4D/_renders/0126/ND_Underwater_01_v001/ND_Underwater_01_v001_0262.tif using data/c4d-source-runtime-recovery-20260730/CUT-011-mainframe-complete-saved-reopen-f0262-vs-source-result.json."
         ],
-        "auditedAt": "2026-08-02T14:08:30.855289+00:00",
+        "auditedAt": "2026-08-02T14:03:22.575078+00:00",
         "rawRenderCriticalMissingFiles": 0,
         "exactCutAudit": {
           "authority": "Exact-source selection plus strict second-pass Cinema dependency verification",
@@ -22961,7 +22961,7 @@
         "label": "Exact-source full-color match",
         "detail": "Exact shot-authored state \u00b7 CU_01 \u00b7 RS Camera \u00b7 Denoiser - Top \u00b7 frame 262 \u00b7 0 exact active dependency mappings \u00b7 MAE 0.001558 \u00b7 RGB correlation 0.999836/0.999903/0.999873. The dated recovery preserves the exact shot-authored underwater project state and its source-era texture bridge. An independent cold reopen at CU_01 frame 262 resolved all 3,379 picture references with zero missing files and required no additional relink. The fresh full-color beauty reproduces the retained utensil arrangement, water surface, bubbles, materials, lighting, and camera at near-pixel identity; no cross-shot asset or comparison-derived calibration was used.",
         "strictLinked": true,
-        "reviewedAt": "2026-08-02T14:08:30.855289+00:00",
+        "reviewedAt": "2026-08-02T14:03:22.575078+00:00",
         "authority": "Exact-source saved/reopened render selection plus retained production-frame comparison",
         "elements": {
           "location": "match",
@@ -23980,7 +23980,7 @@
           "Require the independent saved-reopen audit to retain zero render-critical unresolved files before rendering.",
           "Compare the fresh full-color proof to /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/SG/C4D/_renders/0225/1F_A_1114_Behind_v008/1F_A_1114_Behind_v008_0081.tif using data/c4d-mainframe-recovery-20260730/CUT-012-exact-original-v008-c4d-2026-1-2-legacy-camera-f0081-vs-canonical.json."
         ],
-        "auditedAt": "2026-08-02T14:08:30.855584+00:00",
+        "auditedAt": "2026-08-02T14:03:22.576019+00:00",
         "rawRenderCriticalMissingFiles": 0,
         "exactCutAudit": {
           "authority": "Exact-source selection plus strict second-pass Cinema dependency verification",
@@ -24036,7 +24036,7 @@
         "label": "Exact-source full-color match",
         "detail": "Exact shot-authored state \u00b7 Main \u00b7 cameras/1F \u00b7 Wide-Denoise \u00b7 frame 81 \u00b7 16 exact active dependency mappings \u00b7 MAE 0.016367 \u00b7 RGB correlation 0.978188/0.972511/0.942967. Exact v008 source-era scene evaluated in Cinema 4D 2026.1.2 with the authored Main take, cameras/1F legacy Redshift camera, Wide-Denoise setting, and frame 81. Camera, character, cup, ocean, grade, and depth of field visually match the retained production frame. The residual is high-frequency Redshift noise: after an 8-pixel blur the normalized MAE is 0.001963, inside the established Cut 5/Cut 6 green range. All 16 active dependencies and the full project verify exact. The relinked state was saved to a versioned sibling without altering the source and independently reopened with zero unresolved dependencies.",
         "strictLinked": true,
-        "reviewedAt": "2026-08-02T14:08:30.855584+00:00",
+        "reviewedAt": "2026-08-02T14:03:22.576019+00:00",
         "authority": "Exact-source saved/reopened render selection plus retained production-frame comparison",
         "elements": {
           "location": "match",
@@ -25555,7 +25555,7 @@
           "Require the independent saved-reopen audit to retain zero render-critical unresolved files before rendering.",
           "Compare the fresh full-color proof to /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/SG/C4D/_renders/0209/1H A 1115 whirlpool_CU_v002/1H A 1115 whirlpool_CU_v002_0046.tif using data/c4d-mainframe-recovery-20260730/CUT-014-projectwide-exact-saved-reopen-CU-Camera-CU-f0046-480-vs-canonical-20260802.json."
         ],
-        "auditedAt": "2026-08-02T14:08:30.855850+00:00",
+        "auditedAt": "2026-08-02T14:03:22.576873+00:00",
         "rawRenderCriticalMissingFiles": 0,
         "exactCutAudit": {
           "authority": "Exact-source selection plus strict second-pass Cinema dependency verification",
@@ -25782,7 +25782,7 @@
         "label": "Exact-source full-color match",
         "detail": "Exact shot-authored state \u00b7 CU \u00b7 Camera_CU \u00b7 CU-Denoise \u00b7 frame 46 \u00b7 4 exact active dependency mappings \u00b7 MAE 0.015643 \u00b7 RGB correlation 0.989651/0.995165/0.996240. Strict green exact-source proof. The retained v002 render log names IH A 1115 Whirlpool_SG_v006.c4d as the producer family, and the post-render v006 file preserves the authored CU take, Camera_CU, CU-Denoise setting whose saved output path targets the exact retained CU-v002 sequence, and frame 46. Four exact authored paths were relinked without substitutions; the dated sibling copy independently reopens with 2910/2910 picture dependencies linked and zero project-wide unresolved files. A fresh full-color render from that reopened copy is visually canonical-matching; the remaining small residual is render noise. The log's recorded Main/Camera WIDE contract renders the separate wide composition and is retained as rejected evidence for this close-up cut.",
         "strictLinked": true,
-        "reviewedAt": "2026-08-02T14:08:30.855850+00:00",
+        "reviewedAt": "2026-08-02T14:03:22.576873+00:00",
         "authority": "Exact-source saved/reopened render selection plus retained production-frame comparison",
         "elements": {
           "location": "match",
@@ -26449,7 +26449,7 @@
           "Require the independent saved-reopen audit to retain zero render-critical unresolved files before rendering.",
           "Compare the fresh full-color proof to /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/SG/C4D/_renders/0224/1H_1H1_A_1110_Whirlpool_sim_SG_v006/1H_1H1_A_1110_Whirlpool_sim_SG_v006_0183.tif using data/c4d-mainframe-recovery-20260730/CUT-015-v006-CODEX-RECOVERED-PROJECTWIDE-LEGACYCAM-TARGETFREE-FRAME0183-display-comparison-20260802.json."
         ],
-        "auditedAt": "2026-08-02T14:08:30.865483+00:00",
+        "auditedAt": "2026-08-02T14:03:22.595504+00:00",
         "rawRenderCriticalMissingFiles": 0,
         "exactCutAudit": {
           "authority": "Exact-source selection plus strict second-pass Cinema dependency verification",
@@ -26505,7 +26505,7 @@
         "label": "Exact-source full-color match",
         "detail": "Exact shot-authored state \u00b7 Main \u00b7 1 H2 CODEX SOURCE FRAME 183 STATIC LEGACY RECOVERY \u00b7 My Render Setting.8 \u00b7 frame 183 \u00b7 3351 exact active dependency mappings \u00b7 MAE 0.021105 \u00b7 RGB correlation 0.936321/0.960142/0.973608. CUT-015 is the shot-authored v006 whirlpool project at Main/My Render Setting.8/frame 183. Its original Group/1 H2 legacy Redshift camera carried a Target expression that current evaluation re-aimed after complete dependency relinking, so the exact first source-frame evaluation was preserved in an adjacent static legacy-camera recovery copy with the inherited Target expression and animation tracks removed. Reopening that saved copy retains the exact source-frame world matrix. All 3,351 recovered path identities were saved non-destructively; the strict second-pass audit required zero further relinks and verified 4,054/4,054 project-wide picture references. A fresh full-color Redshift render from the reopened copy preserves the canonical camera, character, teacup, whirlpool state, palette, motion blur, depth of field, and composition. The residual is high-frequency Redshift sampling noise, consistent with the prior direct-source proof.",
         "strictLinked": true,
-        "reviewedAt": "2026-08-02T14:08:30.865483+00:00",
+        "reviewedAt": "2026-08-02T14:03:22.595504+00:00",
         "authority": "Exact-source saved/reopened render selection plus retained production-frame comparison",
         "elements": {
           "location": "match",
@@ -28208,7 +28208,7 @@
           "Compare camera, location, character, hair, wardrobe, props, materials, and lighting against /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/SG/C4D/_renders/0217/2A_OpeningMTN_v002/2A_OpeningMTN_v002_0131.tif; any visible difference keeps the shot non-strict.",
           "Only after the proof matches, save the new recovery as /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/AS/0 Finishing/02 Projects/02 NTH/2B_2E A 1111 mountains/_codex_072826/2A_OpeningMTN_v002_codex_072826.c4d; retain the source, archives, and all earlier dated recovery copies."
         ],
-        "auditedAt": "2026-08-02T14:08:30.830104+00:00",
+        "auditedAt": "2026-08-02T14:03:22.520903+00:00",
         "rawRenderCriticalMissingFiles": 0
       },
       "c4dSceneState": {
@@ -28244,7 +28244,7 @@
         "label": "Visual match only \u00b7 2 exact CLO maps unresolved",
         "detail": "The fresh source render remains a useful visual and camera match, but the exact project is not dependency-complete: two authored CLO wool maps are still unresolved. They are dormant in this landscape frame, yet strict canonical proof requires project-wide exact closure plus a dated save/reopen audit.",
         "strictLinked": false,
-        "reviewedAt": "2026-08-02T14:08:30.830104+00:00",
+        "reviewedAt": "2026-08-02T14:03:22.520903+00:00",
         "authority": "Exact source project, fresh source render, direct visual comparison, and the 2026-08-02 project-wide exact dependency manifest",
         "elements": {
           "location": "match",
@@ -29041,7 +29041,7 @@
           "Compare camera, location, character, hair, wardrobe, props, materials, and lighting against /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/SG/C4D/_renders/0217/2B_MTN-Orbit_v001/2B_MTN-Orbit_v001_i27_0115.tif; any visible difference keeps the shot non-strict.",
           "Only after the proof matches, save the new recovery as /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/AS/0 Finishing/02 Projects/02 NTH/2B_2E A 1111 mountains/_codex_072826/2B_MTN-Orbit_v001_codex_072826.c4d; retain the source, archives, and all earlier dated recovery copies."
         ],
-        "auditedAt": "2026-08-02T14:08:30.830354+00:00",
+        "auditedAt": "2026-08-02T14:03:22.521900+00:00",
         "rawRenderCriticalMissingFiles": 0
       },
       "c4dSceneState": {
@@ -29077,7 +29077,7 @@
         "label": "Visual match only \u00b7 2 exact CLO maps unresolved",
         "detail": "The fresh source render remains a useful visual and camera match, but the exact project is not dependency-complete: two authored CLO wool maps are still unresolved. They are dormant in this landscape frame, yet strict canonical proof requires project-wide exact closure plus a dated save/reopen audit.",
         "strictLinked": false,
-        "reviewedAt": "2026-08-02T14:08:30.830354+00:00",
+        "reviewedAt": "2026-08-02T14:03:22.521900+00:00",
         "authority": "Exact source project, fresh source render, direct visual comparison, and the 2026-08-02 project-wide exact dependency manifest",
         "elements": {
           "location": "match",
@@ -31032,7 +31032,7 @@
           "Require the independent saved-reopen audit to retain zero render-critical unresolved files before rendering.",
           "Compare the fresh full-color proof to /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/SG/C4D/_renders/0319/2D_A_MTNS_Abby-Running_v002MainWide/2D_A_MTNS_Abby-Running_v002MainWide_i41_0060.tif using data/c4d-mainframe-recovery-20260730/CUT-021-exact-source-mainframe-vs-canonical-f0060-20260802.json."
         ],
-        "auditedAt": "2026-08-02T14:08:30.866403+00:00",
+        "auditedAt": "2026-08-02T14:03:22.597308+00:00",
         "rawRenderCriticalMissingFiles": 0,
         "exactCutAudit": {
           "authority": "Exact-source selection plus strict second-pass Cinema dependency verification",
@@ -31195,7 +31195,7 @@
         "label": "Exact-source full-color match",
         "detail": "Exact shot-authored state \u00b7 MainWide \u00b7 2D_2_MAIN \u00b7 My Render Setting.2 \u00b7 frame 60 \u00b7 0 exact active dependency mappings \u00b7 MAE 0.042863 \u00b7 RGB correlation 0.914378/0.927926/0.949794. The dated recovery derives from the untouched final pre-render backup and preserves the exact Mainframe Run Forward proxy sequence, all 23 proxy-embedded textures, and Gobo2. An independent Cinema 4D 2026.1.4 cold reopen at MainWide frame 60 resolves all 383 project-wide picture references plus the exact local private Redshift proxy path with zero missing files and applies no further relink. The fresh full-color render reproduces the retained canyon corridor, 2D_2_MAIN framing, running character, curled hair, patchwork wardrobe, road, materials, and color response without cross-shot substitution or comparison-derived calibration.",
         "strictLinked": true,
-        "reviewedAt": "2026-08-02T14:08:30.866403+00:00",
+        "reviewedAt": "2026-08-02T14:03:22.597308+00:00",
         "authority": "Exact-source saved/reopened render selection plus retained production-frame comparison",
         "elements": {
           "location": "match",
@@ -31947,7 +31947,7 @@
           "Render the exact settings clone and compare the result against /archive/cuts/CUT-022.jpg.",
           "Require zero render-critical missing files; retain the 52 inactive garment-material warnings as noncritical evidence."
         ],
-        "auditedAt": "2026-08-02T14:08:30.830862+00:00",
+        "auditedAt": "2026-08-02T14:03:22.524544+00:00",
         "rawRenderCriticalMissingFiles": 0
       },
       "c4dSceneState": {
@@ -31983,7 +31983,7 @@
         "label": "Visual match only \u00b7 2 exact CLO maps unresolved",
         "detail": "The fresh source render remains a useful visual and camera match, but the exact project is not dependency-complete: two authored CLO wool maps are still unresolved. They are dormant in this landscape frame, yet strict canonical proof requires project-wide exact closure plus a dated save/reopen audit.",
         "strictLinked": false,
-        "reviewedAt": "2026-08-02T14:08:30.830862+00:00",
+        "reviewedAt": "2026-08-02T14:03:22.524544+00:00",
         "authority": "Exact source project, fresh source render, direct visual comparison, and the 2026-08-02 project-wide exact dependency manifest",
         "elements": {
           "location": "match",
@@ -36684,7 +36684,7 @@
           "Require the independent saved-reopen audit to retain zero render-critical unresolved files before rendering.",
           "Compare the fresh full-color proof to /Users/alphaone/Documents/Code/paracosm-provenance/public/archive/cuts/CUT-028.jpg using data/c4d-source-runtime-recovery-20260730/CUT-028-f0151-exact-premiere-center-crop-vs-canonical-20260802.json."
         ],
-        "auditedAt": "2026-08-02T14:08:30.866774+00:00",
+        "auditedAt": "2026-08-02T14:03:22.597933+00:00",
         "rawRenderCriticalMissingFiles": 0,
         "exactCutAudit": {
           "authority": "Exact-source selection plus strict second-pass Cinema dependency verification",
@@ -36740,7 +36740,7 @@
         "label": "Exact-source full-color match",
         "detail": "Exact shot-authored state \u00b7 Main \u00b7 CAMERAS/RS Camera \u00b7 My Render Setting \u00b7 frame 151 \u00b7 0 exact active dependency mappings \u00b7 MAE 0.015623 \u00b7 RGB correlation 0.996119/0.998016/0.998126. The dated Cinema 4D recovery copy cold-opens with 17 / 17 picture references linked and requires no new relink. Authoritative Paracosm0226.prproj XML proves the 1920x1080 cloth sequence uses default motion inside the 1280x720 Nested Sequence 01, yielding the exact centered 1280x720 crop; the parent sequence scales that nested result uniformly by 300 percent to fill 3840x2160 with centered position, zero rotation, and zero crop. The canonical card is sampled at the confirmed cut midpoint, which maps to source frame 151. A fresh full-color frame 151 reproduces the retained production frame and, after only that authored editorial transform, reproduces the canonical cut card without comparison-derived camera, exposure, color, geometry, or crop calibration.",
         "strictLinked": true,
-        "reviewedAt": "2026-08-02T14:08:30.866774+00:00",
+        "reviewedAt": "2026-08-02T14:03:22.597933+00:00",
         "authority": "Exact-source saved/reopened render selection plus retained production-frame comparison",
         "elements": {
           "location": "match_authored_sky_environment",
@@ -59419,7 +59419,7 @@
           "Require the dependency audit to report 342 / 342 linked with zero unresolved picture files.",
           "Change only exposure/OCIO/display behavior while comparing against the canonical production TIFF."
         ],
-        "auditedAt": "2026-08-02T14:08:30.834483+00:00",
+        "auditedAt": "2026-08-02T14:03:22.540406+00:00",
         "rawRenderCriticalMissingFiles": 0,
         "manifestPath": null,
         "verificationPath": "data/c4d-mainframe-recovery-20260730/CUT-056-f1190-saved-exact191-render-buffer-480-result.json"
@@ -59457,7 +59457,7 @@
         "label": "Fresh full-color current recovery \u00b7 fully linked \u00b7 display match pending",
         "detail": "The current saved recovery resolves 342 / 342 picture references and preserves authored character, long hair, room, InsideRip take, and Inside_Rip camera. Geometry, character, hair, wardrobe, materials, take and camera are present; only the current-runtime brightness/display match remains incomplete.",
         "strictLinked": false,
-        "reviewedAt": "2026-08-02T14:08:30.834483+00:00",
+        "reviewedAt": "2026-08-02T14:03:22.540406+00:00",
         "authority": "Fresh Cinema 4D 2026.1 Redshift render from the saved-and-reopened exact Mainframe recovery",
         "elements": {
           "location": "match",
@@ -60156,7 +60156,7 @@
           "Require the dependency audit to report 342 / 342 linked with zero unresolved picture files.",
           "Change only exposure/OCIO/display behavior while comparing against the canonical production TIFF."
         ],
-        "auditedAt": "2026-08-02T14:08:30.834658+00:00",
+        "auditedAt": "2026-08-02T14:03:22.541080+00:00",
         "rawRenderCriticalMissingFiles": 0,
         "manifestPath": null,
         "verificationPath": "data/c4d-mainframe-recovery-20260730/CUT-057-f1350-saved-exact191-render-buffer-480-result.json"
@@ -60194,7 +60194,7 @@
         "label": "Fresh full-color current recovery \u00b7 fully linked \u00b7 display match pending",
         "detail": "The current saved recovery resolves 342 / 342 picture references and preserves authored character, face, wardrobe, long hair, room, RipReveal take, and camera. Geometry, character, hair, wardrobe, materials, take and camera are present; only the current-runtime brightness/display match remains incomplete.",
         "strictLinked": false,
-        "reviewedAt": "2026-08-02T14:08:30.834658+00:00",
+        "reviewedAt": "2026-08-02T14:03:22.541080+00:00",
         "authority": "Fresh Cinema 4D 2026.1 Redshift render from the saved-and-reopened exact Mainframe recovery",
         "elements": {
           "location": "match",
@@ -60945,7 +60945,7 @@
           "Require the dependency audit to report 342 / 342 linked with zero unresolved picture files.",
           "Change only exposure/OCIO/display behavior while comparing against the canonical production TIFF."
         ],
-        "auditedAt": "2026-08-02T14:08:30.834819+00:00",
+        "auditedAt": "2026-08-02T14:03:22.541979+00:00",
         "rawRenderCriticalMissingFiles": 0,
         "manifestPath": null,
         "verificationPath": "data/c4d-mainframe-recovery-20260730/CUT-058-f1376-saved-exact191-render-buffer-480-result.json"
@@ -60983,7 +60983,7 @@
         "label": "Fresh full-color current recovery \u00b7 fully linked \u00b7 display match pending",
         "detail": "The current saved recovery resolves 342 / 342 picture references and preserves authored character, pose, long hair, room geometry, WideRip take, and camera. Geometry, character, hair, wardrobe, materials, take and camera are present; only the current-runtime brightness/display match remains incomplete.",
         "strictLinked": false,
-        "reviewedAt": "2026-08-02T14:08:30.834819+00:00",
+        "reviewedAt": "2026-08-02T14:03:22.541979+00:00",
         "authority": "Fresh Cinema 4D 2026.1 Redshift render from the saved-and-reopened exact Mainframe recovery",
         "elements": {
           "location": "match",
@@ -65220,7 +65220,7 @@
           "Require the independent saved-reopen audit to retain zero render-critical unresolved files before rendering.",
           "Compare the fresh full-color proof to public/archive/c4d-source-frames-20260726/CUT-064.png using data/c4d-mainframe-recovery-20260730/CUT-064-v002-CODEX-RECOVERED-reopen-C4DOCIO-ACES1SDR-C4D2025-f0069-display-comparison-20260802.json."
         ],
-        "auditedAt": "2026-08-02T14:08:30.868342+00:00",
+        "auditedAt": "2026-08-02T14:03:22.599642+00:00",
         "rawRenderCriticalMissingFiles": 0,
         "exactCutAudit": {
           "authority": "Exact-source selection plus strict second-pass Cinema dependency verification",
@@ -65276,7 +65276,7 @@
         "label": "Exact-source full-color match",
         "detail": "Exact shot-authored state \u00b7 Main \u00b7 CAMERAS/1 \u00b7 My Render Setting \u00b7 frame 69 \u00b7 349 exact active dependency mappings \u00b7 MAE 0.007645 \u00b7 RGB correlation 0.911305/0.852688/0.830340. CUT-064 is the v002 FloatSpin NewFit project at authored Main/CAMERAS/1/My Render Setting/frame 69. The retained full-resolution NEWFIT0069 TIFF is pixel-exact to the canonical PNG, proving the frame and source lineage. All 349 recovered path identities were saved non-destructively into an adjacent CODEX recovery copy; reopening that copy in Cinema 4D 2025.3.3 required zero further relinks and audited 490/490 linked project-wide references. A fresh full-color Redshift render from the reopened copy preserves the canonical camera, pose, production materials, lighting, and composition. Its saved ACEScg to sRGB ACES 1.0 SDR-video view was applied with zero exposure adjustment using the source-era Cinema OCIO configuration.",
         "strictLinked": true,
-        "reviewedAt": "2026-08-02T14:08:30.868342+00:00",
+        "reviewedAt": "2026-08-02T14:03:22.599642+00:00",
         "authority": "Exact-source saved/reopened render selection plus retained production-frame comparison",
         "elements": {
           "location": "match",
@@ -68027,7 +68027,7 @@
           "Compare camera, location, character, hair, wardrobe, props, materials, and lighting against /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/SG/C4D/_renders/0109/5B_Pearl_v001/5B_Pearl_v001_0337.png; any visible difference keeps the shot non-strict.",
           "Only after the proof matches, save the new recovery as /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/SG/C4D/_codex_072826/5B_Pearl_GG_v001_codex_mainframe_complete_v4_073026_codex_072826.c4d; retain the source, archives, and all earlier dated recovery copies."
         ],
-        "auditedAt": "2026-08-02T14:08:30.869863+00:00",
+        "auditedAt": "2026-08-02T14:03:22.601453+00:00",
         "rawRenderCriticalMissingFiles": 0,
         "exactCutAudit": {
           "authority": "Exact-source selection plus strict second-pass Cinema dependency verification",
@@ -68078,7 +68078,7 @@
         "label": "Exact-source full-color recovery \u00b7 residual drift",
         "detail": "Exact shot-authored state \u00b7 Main \u00b7 Hero-Moment/RS Camera \u00b7 My Render Setting \u00b7 frame 337 \u00b7 386 exact active dependency mappings \u00b7 MAE 0.001646 \u00b7 RGB correlation 0.996031/0.997264/0.997789. Alternate thumbnail only. Camera, pearl simulation, floating objects, lighting, and visible materials match closely; the small chair below the long scissor-like object retains a localized yellow-blue state instead of the canonical dark state.",
         "strictLinked": true,
-        "reviewedAt": "2026-08-02T14:08:30.869863+00:00",
+        "reviewedAt": "2026-08-02T14:03:22.601453+00:00",
         "authority": "Exact-source saved/reopened render selection plus retained production-frame comparison",
         "elements": {
           "location": "match",
@@ -68808,7 +68808,7 @@
           "Require the independent saved-reopen audit to retain zero render-critical unresolved files before rendering.",
           "Compare the fresh full-color proof to /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/SG/C4D/_renders/AS/final 0208/5E_FLOATspinUPscaleReveal_closeup/5E_FLOATspinUPscaleReveal_closeup0035.tif using data/c4d-mainframe-recovery-20260730/CUT-068-CODEX-RECOVERED-CLOTHV5-LEGACYCAM-FRAME0035-display-comparison-20260802.json."
         ],
-        "auditedAt": "2026-08-02T14:08:30.871581+00:00",
+        "auditedAt": "2026-08-02T14:03:22.603725+00:00",
         "rawRenderCriticalMissingFiles": 0,
         "exactCutAudit": {
           "authority": "Exact-source selection plus strict second-pass Cinema dependency verification",
@@ -68864,7 +68864,7 @@
         "label": "Exact-source full-color match",
         "detail": "Exact shot-authored state \u00b7 Main \u00b7 RS Camera CODEX SOURCE FRAME 35 STATIC LEGACY RECOVERY \u00b7 My Render Setting.1 \u00b7 frame 35 \u00b7 404 exact active dependency mappings \u00b7 MAE 0.063283. CUT-068 is the shot-authored close-up state from Main / My Render Setting.1 / CAMERAS/2/RS Camera at frame 35. The prior 428/428 picture-asset audit omitted the unresolved Alembic garment cache, so otherwise healthy authored materials rendered against a missing wardrobe mesh. Explicit recovery of the exact float_spin-new-clothv5.abc path restores the complete patchwork costume. The adjacent recovery copy saves 399 exact picture mappings plus the cloth cache and four exact scissor maps, preserves the source-frame 106.9 mm legacy camera as a static recovery camera, and reopens without requiring any additional relinks. A fresh full-color Redshift render from that reopened project matches the canonical character pose, wardrobe, camera, chair/prop registration, palette, and composition; remaining difference is predominantly source-era versus current-runtime display brightness and sampling noise.",
         "strictLinked": true,
-        "reviewedAt": "2026-08-02T14:08:30.871581+00:00",
+        "reviewedAt": "2026-08-02T14:03:22.603725+00:00",
         "authority": "Exact-source saved/reopened render selection plus retained production-frame comparison",
         "elements": {
           "location": "match",
@@ -69589,7 +69589,7 @@
           "Require the independent saved-reopen audit to retain zero render-critical unresolved files before rendering.",
           "Compare the fresh full-color proof to /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/SG/C4D/_renders/AS/0209/5E_FLOATspinUPscaleReveal_1920/5E_FLOATspinUPscaleReveal0114.tif using data/c4d-mainframe-recovery-20260730/CUT-069-CODEX-RECOVERED-CLOTHV5-LEGACYCAM-FRAME0114-display-comparison-20260802.json."
         ],
-        "auditedAt": "2026-08-02T14:08:30.873364+00:00",
+        "auditedAt": "2026-08-02T14:03:22.606657+00:00",
         "rawRenderCriticalMissingFiles": 0,
         "exactCutAudit": {
           "authority": "Exact-source selection plus strict second-pass Cinema dependency verification",
@@ -69645,7 +69645,7 @@
         "label": "Exact-source full-color match",
         "detail": "Exact shot-authored state \u00b7 Main \u00b7 RS Camera CODEX SOURCE FRAME 114 STATIC LEGACY RECOVERY \u00b7 My Render Setting \u00b7 frame 114 \u00b7 404 exact active dependency mappings \u00b7 MAE 0.058704. CUT-069 shares the exact authored 5E project with CUT-068 but uses Main / My Render Setting / the second duplicate CAMERAS/2/RS Camera, distinguished by its exact 35 mm focal length, at frame 114. Explicit recovery of float_spin-new-clothv5.abc restores the complete patchwork wardrobe. The adjacent recovery copy saves the same 399 exact picture mappings plus the cloth cache and four exact scissor maps, freezes the evaluated 35 mm source camera as a unique static legacy camera, and reopens with zero further relinks. The fresh full-color Redshift render matches the canonical character pose, wardrobe, camera, suitcase and orbiting-prop registration, palette, depth of field, and composition at luminance correlation 0.976017; the remaining residual is predominantly source-era versus current-runtime display brightness and sampling noise.",
         "strictLinked": true,
-        "reviewedAt": "2026-08-02T14:08:30.873364+00:00",
+        "reviewedAt": "2026-08-02T14:03:22.606657+00:00",
         "authority": "Exact-source saved/reopened render selection plus retained production-frame comparison",
         "elements": {
           "location": "match",
@@ -71835,7 +71835,7 @@
           "Compare camera, location, character, hair, wardrobe, props, materials, and lighting against /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/SG/C4D/_renders/AS/FINAL 0207/5h_exit/5h_Closetexit0503.tif; any visible difference keeps the shot non-strict.",
           "Only after the proof matches, save the new recovery as /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/SG/C4D/_codex_072826/5H_ExitCloset_GG_v004 as_CODEX_RECOVERED_SOURCEERA_TEXTURES_CLOTH_DORMANTPROXYREMOVED_RSCAM_SCISSORTEXTURES_FRAME0503_20260802_codex_072826.c4d; retain the source, archives, and all earlier dated recovery copies."
         ],
-        "auditedAt": "2026-08-02T14:08:30.873746+00:00",
+        "auditedAt": "2026-08-02T14:03:22.607715+00:00",
         "rawRenderCriticalMissingFiles": 0,
         "exactCutAudit": {
           "authority": "Exact-source selection plus strict second-pass Cinema dependency verification",
@@ -71886,7 +71886,7 @@
         "label": "Exact-source full-color recovery \u00b7 residual drift",
         "detail": "Exact shot-authored state \u00b7 Main \u00b7 RS Camera CODEX SOURCE FRAME 503 STATIC LEGACY RECOVERY \u00b7 My Render Setting \u00b7 frame 503 \u00b7 458 exact active dependency mappings \u00b7 manual comparison recorded. CUT-072 now has a source-era Cinema 4D 2026.1.2 recovery that cold-reopens with collector success code 1, resolves all 522 picture references, needs zero further relinks, and produces a fresh full-color Redshift frame from Main / My Render Setting / the saved 80.6 mm source camera at frame 503. The exact float_towards_FULL2.abc cache and ten additional source-folder textures are restored, and five classic bitmap slots in scissor_mat_PBS are explicitly repaired to their complete authored filenames. One separate reaching-out Redshift proxy object was saved render-disabled and is removed in the versioned recovery because its 0618-0858 source-era sequence remains unavailable; the strict cold-reopen audit confirms no remaining project dependency failures. The environment, lighting, camera axis, and broad composition register, but Abby's placement and scale retain visible drift against the canonical frame, consistent with a source-era character-cache revision mismatch. This frame is therefore published only as yellow residual-drift evidence and is not counted as a canonical visual match.",
         "strictLinked": true,
-        "reviewedAt": "2026-08-02T14:08:30.873746+00:00",
+        "reviewedAt": "2026-08-02T14:03:22.607715+00:00",
         "authority": "Exact-source saved/reopened render selection plus retained production-frame comparison",
         "elements": {
           "location": "match",
@@ -82062,7 +82062,7 @@
           "Require the independent saved-reopen audit to retain zero render-critical unresolved files before rendering.",
           "Compare the fresh full-color proof to /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/SG/C4D/_renders/AS/IJDKYY/0416/dancing through upstairs hallway 2/dancing through upstairs hallway1322.png using data/c4d-mainframe-recovery-20260730/CUT-083-exact-v5-reopened-f1322-vs-canonical-20260802.json."
         ],
-        "auditedAt": "2026-08-02T14:08:30.874238+00:00",
+        "auditedAt": "2026-08-02T14:03:22.608743+00:00",
         "rawRenderCriticalMissingFiles": 0,
         "exactCutAudit": {
           "authority": "Exact-source selection plus strict second-pass Cinema dependency verification",
@@ -82118,7 +82118,7 @@
         "label": "Exact-source full-color match",
         "detail": "Exact shot-authored state \u00b7 Main \u00b7 cams/up hallway 2 \u00b7 My Render Setting.2 \u00b7 frame 1322 \u00b7 67 exact active dependency mappings \u00b7 MAE 0.010837 \u00b7 RGB correlation 0.990466/0.991966/0.991896. The dated non-overwriting recovery preserves the exact shot-authored frame, camera, take, render setting, character cache, hair, materials, and lighting. Cinema linked all 355 project references with zero unresolved dependencies both before save and after an independent cold reopen. The fresh full-color render visually matches the canonical frame; no gray override, donor material, same-basename cache substitution, or cross-shot asset substitution was used.",
         "strictLinked": true,
-        "reviewedAt": "2026-08-02T14:08:30.874238+00:00",
+        "reviewedAt": "2026-08-02T14:03:22.608743+00:00",
         "authority": "Exact-source saved/reopened render selection plus retained production-frame comparison",
         "elements": {
           "location": "match",
@@ -82739,7 +82739,7 @@
           "Require the independent saved-reopen audit to retain zero render-critical unresolved files before rendering.",
           "Compare the fresh full-color proof to /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/SG/C4D/_renders/AS/IJDKYY/0416/dance upstairs 1/dance upstairs 1_i34_0990.png using data/c4d-mainframe-recovery-20260730/CUT-084-exact-v5-reopened-f0990-vs-canonical-20260802.json."
         ],
-        "auditedAt": "2026-08-02T14:08:30.874772+00:00",
+        "auditedAt": "2026-08-02T14:03:22.609707+00:00",
         "rawRenderCriticalMissingFiles": 0,
         "exactCutAudit": {
           "authority": "Exact-source selection plus strict second-pass Cinema dependency verification",
@@ -82795,7 +82795,7 @@
         "label": "Exact-source full-color match",
         "detail": "Exact shot-authored state \u00b7 Main \u00b7 cams/hallway cam \u00b7 My Render Setting.1 \u00b7 frame 990 \u00b7 67 exact active dependency mappings \u00b7 MAE 0.012797 \u00b7 RGB correlation 0.994114/0.996045/0.995824. The dated non-overwriting recovery preserves the exact shot-authored frame, camera, take, render setting, character cache, hair, materials, and lighting. Cinema linked all 355 project references with zero unresolved dependencies both before save and after an independent cold reopen. The fresh full-color render visually matches the canonical frame; no gray override, donor material, same-basename cache substitution, or cross-shot asset substitution was used.",
         "strictLinked": true,
-        "reviewedAt": "2026-08-02T14:08:30.874772+00:00",
+        "reviewedAt": "2026-08-02T14:03:22.609707+00:00",
         "authority": "Exact-source saved/reopened render selection plus retained production-frame comparison",
         "elements": {
           "location": "match",
@@ -83416,7 +83416,7 @@
           "Require the independent saved-reopen audit to retain zero render-critical unresolved files before rendering.",
           "Compare the fresh full-color proof to /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/SG/C4D/_renders/AS/IJDKYY/0408/6K_Dancing_0408/6K_Dancing_0408_i33_0246.png using data/c4d-mainframe-recovery-20260730/CUT-085-exact-v5-reopened-f0246-vs-canonical-20260802.json."
         ],
-        "auditedAt": "2026-08-02T14:08:30.876031+00:00",
+        "auditedAt": "2026-08-02T14:03:22.611630+00:00",
         "rawRenderCriticalMissingFiles": 0,
         "exactCutAudit": {
           "authority": "Exact-source selection plus strict second-pass Cinema dependency verification",
@@ -83472,7 +83472,7 @@
         "label": "Exact-source full-color match",
         "detail": "Exact shot-authored state \u00b7 Main \u00b7 cams/main dance \u00b7 My Render Setting.1 \u00b7 frame 246 \u00b7 285 exact active dependency mappings \u00b7 MAE 0.008568 \u00b7 RGB correlation 0.997708/0.998142/0.998774. The dated non-overwriting recovery preserves the exact shot-authored frame, camera, take, render setting, character, cloth, hair, room, materials, and lighting. Cinema linked all 882 project references with zero unresolved dependencies both before save and after an independent cold reopen. The recovered native Blender Image_0.001 packed base-color payload resolves the final directory-only decor reference with its exact authored bytes. The fresh full-color render visually matches the canonical frame; no gray override, donor material, same-basename cache substitution, or cross-shot asset substitution was used.",
         "strictLinked": true,
-        "reviewedAt": "2026-08-02T14:08:30.876031+00:00",
+        "reviewedAt": "2026-08-02T14:03:22.611630+00:00",
         "authority": "Exact-source saved/reopened render selection plus retained production-frame comparison",
         "elements": {
           "location": "match",
@@ -84072,7 +84072,7 @@
           "Rerender full color and compare 1:1 to /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/SG/C4D/_renders/AS/IJDKYY/0416/house zoom out/house zoom out0242.tif.",
           "Only after zero active dependency blockers and a visual match, save a dated sibling and independently reopen it."
         ],
-        "auditedAt": "2026-08-02T14:08:30.878647+00:00",
+        "auditedAt": "2026-08-02T14:03:22.614842+00:00",
         "rawRenderCriticalMissingFiles": 71,
         "exactCutAudit": {
           "authority": "Exact-source selection with explicit unresolved active dependency audit",
@@ -84123,7 +84123,7 @@
         "label": "Exact-source visual match \u00b7 project dependency closure pending",
         "detail": "Exact shot-authored state \u00b7 Main \u00b7 RS Camera CODEX NATIVE BRIDGE \u00b7 My Render Setting \u00b7 frame 242 \u00b7 375 exact active dependency mappings \u00b7 MAE 0.065180. Alternate thumbnail only. The exterior window composition and active-frame materials are a strong visual match, but the project-wide collector still reports unresolved dormant dependencies; keep this yellow until the full project closes and independently reopens cleanly.",
         "strictLinked": false,
-        "reviewedAt": "2026-08-02T14:08:30.878647+00:00",
+        "reviewedAt": "2026-08-02T14:03:22.614842+00:00",
         "authority": "Exact-source saved/reopened render selection plus retained production-frame comparison",
         "elements": {},
         "notes": "Alternate thumbnail only. The exterior window composition and active-frame materials are a strong visual match, but the project-wide collector still reports unresolved dormant dependencies; keep this yellow until the full project closes and independently reopens cleanly.",
@@ -84514,7 +84514,7 @@
         {
           "kind": "cinema4d",
           "label": "zoom out house v2_codex_20260802_source-era-exact-relink-v2.c4d",
-          "detail": "Dated source-era recovery copy with 376 exact path mappings persisted. Its active frame independently reopens with zero render-critical missing or relink-required paths; dormant project residue remains.",
+          "detail": "Saved and independently reopened exact recovery derived from the untouched shot-authored source.",
           "path": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/AS/0 Finishing/02 Projects/06 IJDKYY/_codex_072526/zoom out house v2_codex_20260802_source-era-exact-relink-v2.c4d",
           "projectPath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/AS/0 Finishing/02 Projects/06 IJDKYY/_codex_072526/zoom out house v2_codex_20260802_source-era-exact-relink-v2.c4d",
           "evidence": "confirmed",
@@ -84522,23 +84522,30 @@
           "canonical": false,
           "visualVerificationStatus": "near_match_localized_house_edit_state_mismatch",
           "dependencyAuditPath": "data/c4d-source-era-recovery-20260802/CUT-087-source-era-exact-relink-v2-saved-reopen-active-dependency-audit-20260802.json",
-          "assessmentPath": "data/c4d-source-era-recovery-20260802/CUT-087-source-era-saved-reopen-assessment-20260802.json"
+          "assessmentPath": "data/c4d-source-era-recovery-20260802/CUT-087-source-era-saved-reopen-assessment-20260802.json",
+          "assetHealth": {
+            "status": "missing_sources",
+            "label": "Exact source retained with active blockers",
+            "take": "Main",
+            "frame": 174,
+            "strictDependencyRenderSafe": false
+          }
         },
         {
           "kind": "camera_proof",
-          "label": "Source-era saved/reopened full-color near match \u00b7 MAIN \u00b7 frame 174",
-          "detail": "The independently reopened v2 recovery renders with no temporary relinks and recovers the camera, forest, flowers, sky, lighting, and nearly all house shading. The upper front facade remains wood-like instead of the canonical orange/red house_edit production state.",
+          "label": "Exact-source visual match \u00b7 project dependency closure pending \u00b7 frame 174",
+          "detail": "Exact shot-authored state \u00b7 Main \u00b7 MAIN CODEX NATIVE BRIDGE \u00b7 My Render Setting.1 \u00b7 frame 174 \u00b7 375 exact active dependency mappings \u00b7 MAE 0.020055. Alternate thumbnail only. The full-house frame is a strong saved-reopen visual match, but the project-wide collector still reports unresolved dormant dependencies; preserve it as yellow evidence rather than a strict green promotion.",
           "path": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/AS/0 Finishing/02 Projects/06 IJDKYY/_codex_072526/zoom out house v2_codex_20260802_source-era-exact-relink-v2.c4d",
           "projectPath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/AS/0 Finishing/02 Projects/06 IJDKYY/_codex_072526/zoom out house v2_codex_20260802_source-era-exact-relink-v2.c4d",
           "comparisonImage": "/archive/redshift-source-era-recovery-20260802/CUT-087/CUT-087-source-era-saved-reopen-v2-no-temporary-relinks-f0174-480x270.png",
           "comparisonContactSheet": "/archive/redshift-source-era-recovery-20260802/CUT-087/CUT-087-canonical-left-vs-source-era-saved-reopen-v2-right-f0174-contact.png",
-          "confirmationMethod": "source-era Redshift render from independently reopened dated project with no temporary relinks, direct canonical contact sheet, and active-frame dependency audit",
+          "confirmationMethod": "Exact-source Redshift render plus retained-frame metrics",
           "evidence": "partial",
-          "proofStatus": "rendered_source_era_saved_reopen_near_match_house_edit_state_blocked",
+          "proofStatus": "rendered_exact_source_visual_match_dependency_incomplete",
           "targetFrame": 174,
           "cameraTake": "Main",
           "cameraRenderData": "My Render Setting.1",
-          "cameraObjectPath": "Group.2/MAIN",
+          "cameraObjectPath": "MAIN CODEX NATIVE BRIDGE",
           "recoveryProof": true,
           "primaryRecoveryProof": true,
           "redshiftProof": true,
@@ -84566,7 +84573,10 @@
             },
             "notes": "Normalized MAE is 0.020056 with luminance correlation 0.992310. The saved/reopened render matches the in-memory recovery at MAE 0.000209. The remaining upper-facade difference is visible source-state drift shared with CUT-086, not stochastic Redshift noise."
           },
-          "recoveryPrescription": "Recover the exact 2026-04-16/17 house_edit material graph or byte-distinct BaseColor state from JDC/Mainframe history, verify it against both CUT-086 and CUT-087, close the dormant project-wide dependency residue, then repeat save, reopen, audit, and no-temporary-relink rendering."
+          "recoveryPrescription": "Recover the exact 2026-04-16/17 house_edit material graph or byte-distinct BaseColor state from JDC/Mainframe history, verify it against both CUT-086 and CUT-087, close the dormant project-wide dependency residue, then repeat save, reopen, audit, and no-temporary-relink rendering.",
+          "renderData": "My Render Setting.1",
+          "visualMatch": true,
+          "comparisonResult": "data/c4d-source-era-recovery-20260802/CUT-087-source-era-saved-reopen-v2-no-temporary-relinks-vs-canonical-20260802.json"
         },
         {
           "kind": "camera",
@@ -84585,17 +84595,17 @@
         },
         {
           "kind": "c4d_dependency_audit",
-          "label": "Active-frame dependency audit passed \u00b7 project-wide closure pending",
-          "detail": "Frame 174 \u00b7 take Main \u00b7 803 of 957 project-wide dependencies linked \u00b7 0 unresolved render-critical files \u00b7 active frame render-critical closure passed",
-          "path": "/Users/alphaone/Documents/Code/paracosm-provenance/data/c4d-source-era-recovery-20260802/CUT-087-source-era-exact-relink-v2-saved-reopen-active-dependency-audit-20260802.json",
+          "label": "Current-path render dependencies missing",
+          "detail": "Frame 174 \u00b7 take Main \u00b7 803 of 957 save/reopen dependencies linked \u00b7 71 unresolved render-critical files",
+          "path": "/Users/alphaone/Documents/Code/paracosm-provenance/data/c4d-source-era-recovery-20260802/CUT-087-active-frame-complete-safe-verification-v2-20260802.json",
           "projectPath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/AS/0 Finishing/02 Projects/06 IJDKYY/_codex_072526/zoom out house v2_codex_20260802_source-era-exact-relink-v2.c4d",
           "evidence": "confirmed",
           "take": "Main",
           "frame": 174,
           "strictDependencyRenderSafe": false,
-          "mappedPaths": 376,
-          "unresolvedFiles": 0,
-          "currentPathIdentityConfirmed": null,
+          "mappedPaths": 375,
+          "unresolvedFiles": 71,
+          "currentPathIdentityConfirmed": true,
           "sourceEraProxyIdentityConfirmed": null
         },
         {
@@ -84710,72 +84720,97 @@
         ]
       },
       "c4dLinkStatus": {
-        "status": "active_frame_linked_saved_reopen",
-        "label": "Active-frame dependency audit passed \u00b7 project-wide closure pending",
-        "detail": "Frame 174 \u00b7 take Main \u00b7 803 of 957 project-wide dependencies linked \u00b7 0 unresolved render-critical files \u00b7 active frame render-critical closure passed",
+        "status": "missing_sources",
+        "label": "Current-path render dependencies missing",
+        "detail": "Frame 174 \u00b7 take Main \u00b7 803 of 957 save/reopen dependencies linked \u00b7 71 unresolved render-critical files",
         "projectPath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/AS/0 Finishing/02 Projects/06 IJDKYY/_codex_072526/zoom out house v2_codex_20260802_source-era-exact-relink-v2.c4d",
         "projectName": "zoom out house v2_codex_20260802_source-era-exact-relink-v2.c4d",
         "take": "Main",
-        "method": "Source-era saved-project independent reopen audit and no-temporary-relink render",
+        "method": "Exact-source selection with explicit unresolved active dependency audit",
         "dependencyReferences": 957,
         "linkedReferences": 803,
-        "missingReferences": 154,
-        "renderCriticalMissingReferences": 0,
-        "renderCriticalMissingFiles": 0,
-        "renderCriticalExactRecoveries": 376,
-        "renderCriticalUnresolvedFiles": 0,
-        "missingExamples": [],
-        "dependencyLabel": "Active frame 0 unresolved \u00b7 project-wide 154 dormant unresolved",
+        "missingReferences": 0,
+        "renderCriticalMissingReferences": 71,
+        "renderCriticalMissingFiles": 71,
+        "renderCriticalExactRecoveries": 375,
+        "renderCriticalUnresolvedFiles": 71,
+        "missingExamples": [
+          "./Mainframe/ASSETS/MOCAP/ABSOLUTELY/Greece/Teacup/01NDA1_Placing_dishes_at_sink__v1/alembic/Subdivision_Surface.abc",
+          "./Mainframe/ASSETS/MOCAP/ABSOLUTELY/Greece/ijdkyy/alembic/Subdivision_Surface.4.abc",
+          "./hourse_V2.fbm/uv1_BaseColor.1001.png",
+          "/ASSETS/MOCAP/ABSOLUTELY/Greece/Fall_v1/tex/GSG_MC023_A001_ClayDohWhite01_4k_basecolor.tif",
+          "/ASSETS/MOCAP/ABSOLUTELY/Greece/Fall_v1/tex/GSG_MC023_A001_ClayDohWhite01_4k_height.exr",
+          "/ASSETS/MOCAP/ABSOLUTELY/Greece/Fall_v1/tex/GSG_MC023_A001_ClayDohWhite01_4k_normal.tif",
+          "/ASSETS/MOCAP/ABSOLUTELY/Greece/Fall_v1/tex/GSG_MC023_A001_ClayDohWhite01_4k_roughness.tif",
+          "/C:/Users/sguas/Guassian Dropbox/Steven Guas/Absolutely/AS/Exterior house/house_colorful/tex/BaseColor/roof_retexture_BaseColor.1001.png",
+          "/C:/Users/sguas/Guassian Dropbox/Steven Guas/Absolutely/AS/Exterior house/house_colorful/tex/BaseColor/roof_trim_BaseColor.1001.png",
+          "/C:/Users/sguas/Guassian Dropbox/Steven Guas/Absolutely/AS/Exterior house/house_colorful/tex/Normal/roof_trim_Normal.1001.png",
+          "01NDA1 Placing dishes at sink_332-998-CLOTH.abc",
+          "Abby_eye_1_1.png",
+          "Dinner_Plate_07___Pattern_02_1.abc",
+          "Eyelashes_S_Sparse_Coverage.PNG",
+          "Eyes_Color.png",
+          "Eyes_Color_Iris.png",
+          "... 55 additional exact paths retained in the strict verification audit"
+        ],
+        "dependencyLabel": "Exact active dependency recovery incomplete",
         "components": [],
         "strictLinked": false,
         "visualReview": {
           "status": "partial_match",
-          "elements": {
-            "location": "match",
-            "camera": "match",
-            "environment": "match",
-            "lighting": "match",
-            "materials": "near_match_upper_front_house_edit_mismatch"
-          },
-          "notes": "The saved/reopened no-temporary-relink frame is a strong near match, but the upper front facade uses the wrong house_edit production state."
+          "elements": {},
+          "notes": "Alternate thumbnail only. The full-house frame is a strong saved-reopen visual match, but the project-wide collector still reports unresolved dormant dependencies; preserve it as yellow evidence rather than a strict green promotion."
         },
         "materialCompatibilityAudit": {
-          "status": "source_compatible_runtime_and_original_cache_required",
-          "productionRuntime": "Use the exact IJDKYY 0416 project-compatible Redshift runtime; verify 2026.1.4 first"
+          "status": "rendered_visual_match_dependency_incomplete",
+          "outputPath": "/archive/redshift-source-era-recovery-20260802/CUT-087/CUT-087-source-era-saved-reopen-v2-no-temporary-relinks-f0174-480x270.png",
+          "publicPath": "/archive/redshift-source-era-recovery-20260802/CUT-087/CUT-087-source-era-saved-reopen-v2-no-temporary-relinks-f0174-480x270.png",
+          "comparisonPath": "/archive/redshift-source-era-recovery-20260802/CUT-087/CUT-087-canonical-left-vs-source-era-saved-reopen-v2-right-f0174-contact.png",
+          "comparisonResult": "data/c4d-source-era-recovery-20260802/CUT-087-source-era-saved-reopen-v2-no-temporary-relinks-vs-canonical-20260802.json",
+          "fullColor": true,
+          "fullColorProof": true,
+          "freshAuditRender": true,
+          "strictDependencyRenderSafe": false,
+          "productionRuntime": "Cinema 4D 2026.1.2 with Redshift 2026.1.1 source-era runtime",
+          "runtimeDetail": "Exact shot-authored state \u00b7 Main \u00b7 MAIN CODEX NATIVE BRIDGE \u00b7 My Render Setting.1 \u00b7 frame 174 \u00b7 375 exact active dependency mappings \u00b7 MAE 0.020055. Alternate thumbnail only. The full-house frame is a strong saved-reopen visual match, but the project-wide collector still reports unresolved dormant dependencies; preserve it as yellow evidence rather than a strict green promotion."
         },
         "frame": 174,
         "strictDependencyRenderSafe": false,
         "savedReopenVerified": true,
         "activeFrameSafe": true,
         "projectWideSafe": false,
-        "recoveryPrescription": "Recover the exact 2026-04-16/17 house_edit material graph or byte-distinct BaseColor state from JDC/Mainframe history, verify both CUT-086 and CUT-087, close all dormant project-wide dependency residue, and repeat saved/reopened rendering.",
+        "recoveryPrescription": "Recover every unresolved authored path retained in the exact manifest without cross-shot substitution; rerender the exact take, camera, render data, and frame; then save a dated sibling and independently reopen it before green promotion.",
         "agentReadyChecklist": [
-          "Lock visual authority to /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/SG/C4D/_renders/AS/IJDKYY/0416/house zoom out - Copy/house zoom out0172.tif; preserve the canonical Premiere source interval and do not retime or substitute a later render.",
-          "Open /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/AS/0 Finishing/02 Projects/06 IJDKYY/_codex_072526/zoom out house v2_codex_20260802_source-era-exact-relink-v2.c4d read-only first; make no change to the source or any earlier Codex recovery copy.",
-          "Recover and identity-check these exact authored files on their active owner objects; never substitute another shot's character, hair, wardrobe, proxy, cache, material, or object: Mainframe/ASSETS/MOCAP/ABSOLUTELY/Greece/ijdkyy/alembic/Subdivision_Surface.3.abc.",
-          "Select take Main, render data My Render Setting.1, camera Group.2/MAIN, and frame 174.",
-          "Render both a neutral Redshift camera/geometry proof and a production-material proof using Use the exact IJDKYY 0416 project-compatible Redshift runtime; verify 2026.1.4 first.",
-          "Compare camera, location, character, hair, wardrobe, props, materials, and lighting against /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/SG/C4D/_renders/AS/IJDKYY/0416/house zoom out - Copy/house zoom out0172.tif; any visible difference keeps the shot non-strict.",
-          "Only after the proof matches, save the new recovery as /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/AS/0 Finishing/02 Projects/06 IJDKYY/_codex_072826/zoom out house v2_codex_20260802_source-era-exact-relink-v2_codex_072826.c4d; retain the source, archives, and all earlier dated recovery copies."
+          "Open /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/AS/0 Finishing/02 Projects/06 IJDKYY/_codex_072526/zoom out house v2_codex_20260802_source-era-exact-relink-v2.c4d read-only and preserve the recovered source unchanged.",
+          "Select take Main, camera MAIN CODEX NATIVE BRIDGE, render data My Render Setting.1, and frame 174.",
+          "Recover and identity-check these exact active authored dependencies: ./Mainframe/ASSETS/MOCAP/ABSOLUTELY/Greece/Teacup/01NDA1_Placing_dishes_at_sink__v1/alembic/Subdivision_Surface.abc; ./Mainframe/ASSETS/MOCAP/ABSOLUTELY/Greece/ijdkyy/alembic/Subdivision_Surface.4.abc; ./hourse_V2.fbm/uv1_BaseColor.1001.png; /ASSETS/MOCAP/ABSOLUTELY/Greece/Fall_v1/tex/GSG_MC023_A001_ClayDohWhite01_4k_basecolor.tif; /ASSETS/MOCAP/ABSOLUTELY/Greece/Fall_v1/tex/GSG_MC023_A001_ClayDohWhite01_4k_height.exr; /ASSETS/MOCAP/ABSOLUTELY/Greece/Fall_v1/tex/GSG_MC023_A001_ClayDohWhite01_4k_normal.tif; /ASSETS/MOCAP/ABSOLUTELY/Greece/Fall_v1/tex/GSG_MC023_A001_ClayDohWhite01_4k_roughness.tif; /C:/Users/sguas/Guassian Dropbox/Steven Guas/Absolutely/AS/Exterior house/house_colorful/tex/BaseColor/roof_retexture_BaseColor.1001.png; /C:/Users/sguas/Guassian Dropbox/Steven Guas/Absolutely/AS/Exterior house/house_colorful/tex/BaseColor/roof_trim_BaseColor.1001.png; /C:/Users/sguas/Guassian Dropbox/Steven Guas/Absolutely/AS/Exterior house/house_colorful/tex/Normal/roof_trim_Normal.1001.png; 01NDA1 Placing dishes at sink_332-998-CLOTH.abc; Abby_eye_1_1.png; Dinner_Plate_07___Pattern_02_1.abc; Eyelashes_S_Sparse_Coverage.PNG; Eyes_Color.png; Eyes_Color_Iris.png; ... 55 additional exact paths retained in the strict verification audit",
+          "Rerender full color and compare 1:1 to /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/SG/C4D/_renders/AS/IJDKYY/0416/house zoom out - Copy/house zoom out0174.tif.",
+          "Only after zero active dependency blockers and a visual match, save a dated sibling and independently reopen it."
         ],
-        "auditedAt": "2026-08-02T14:08:30.836575+00:00",
-        "rawRenderCriticalMissingFiles": 0,
+        "missingFiles": 71,
+        "projectWideStrictDependencyRenderSafe": false,
+        "verificationStatus": "partial",
+        "verificationBlockers": [
+          "camera_or_asset_visual_mismatch"
+        ],
         "manifestPath": "data/c4d-source-era-recovery-20260802/CUT-087-active-frame-complete-safe-merged-manifest-v2-20260802.json",
-        "verificationPath": "data/c4d-source-era-recovery-20260802/CUT-087-source-era-exact-relink-v2-saved-reopen-active-dependency-audit-20260802.json",
+        "verificationPath": "data/c4d-source-era-recovery-20260802/CUT-087-active-frame-complete-safe-verification-v2-20260802.json",
+        "auditedAt": "2026-08-02T14:03:22.618193+00:00",
+        "rawRenderCriticalMissingFiles": 71,
         "exactCutAudit": {
-          "authority": "Source-era saved-project independent reopen audit and no-temporary-relink render",
-          "rawAuditPath": "data/c4d-source-era-recovery-20260802/CUT-087-source-era-exact-relink-v2-saved-reopen-active-dependency-audit-20260802.json",
+          "authority": "Exact-source selection with explicit unresolved active dependency audit",
+          "rawAuditPath": "data/c4d-source-era-recovery-20260802/CUT-087-active-frame-complete-safe-verification-v2-20260802.json",
           "manifestPath": "data/c4d-source-era-recovery-20260802/CUT-087-active-frame-complete-safe-merged-manifest-v2-20260802.json",
-          "verificationPath": "data/c4d-source-era-recovery-20260802/CUT-087-source-era-exact-relink-v2-saved-reopen-active-dependency-audit-20260802.json",
-          "evidencePath": null,
-          "mappedPaths": 376,
-          "manifestUnresolvedPaths": 0,
-          "postRelinkUnresolvedFiles": 0,
-          "postRelinkUnresolvedReferences": 0,
+          "verificationPath": "data/c4d-source-era-recovery-20260802/CUT-087-active-frame-complete-safe-verification-v2-20260802.json",
+          "evidencePath": "data/c4d-mainframe-recovery-20260730/CUT-087-exact-source-render-selection-20260802.json",
+          "mappedPaths": 375,
+          "manifestUnresolvedPaths": 71,
+          "postRelinkUnresolvedFiles": 71,
+          "postRelinkUnresolvedReferences": 71,
           "strictDependencyRenderSafe": false,
-          "currentPathIdentityConfirmed": null,
+          "currentPathIdentityConfirmed": true,
           "sourceEraProxyIdentityConfirmed": null,
-          "scope": "active_frame_safe_saved_reopen"
+          "scope": "project_wide_exact_dependency_closure"
         }
       },
       "c4dSceneState": {
@@ -84807,41 +84842,48 @@
         "records": []
       },
       "c4dVerification": {
-        "status": "partial_match",
-        "label": "Source-era saved/reopened near match \u00b7 house_edit production state still missing",
-        "detail": "Frame 174 renders from the independently reopened dated v2 project with no temporary relinks. All 957 active references are render-safe, but the upper facade visibly differs from canonical and 154 dormant project-wide references remain unresolved.",
+        "status": "partial",
+        "label": "Exact-source visual match \u00b7 project dependency closure pending",
+        "detail": "Exact shot-authored state \u00b7 Main \u00b7 MAIN CODEX NATIVE BRIDGE \u00b7 My Render Setting.1 \u00b7 frame 174 \u00b7 375 exact active dependency mappings \u00b7 MAE 0.020055. Alternate thumbnail only. The full-house frame is a strong saved-reopen visual match, but the project-wide collector still reports unresolved dormant dependencies; preserve it as yellow evidence rather than a strict green promotion.",
         "strictLinked": false,
-        "reviewedAt": "2026-08-02T14:08:30.836575+00:00",
-        "authority": "Preserved source, dated save receipt, independent reopen audit, no-temporary-relink Redshift render, and direct canonical contact sheet",
-        "elements": {
-          "location": "match",
-          "camera": "match",
-          "environment": "match",
-          "lighting": "match",
-          "materials": "near_match_upper_front_house_edit_mismatch"
-        },
-        "notes": "The saved/reopened no-temporary-relink frame is a strong near match, but the upper front facade uses the wrong house_edit production state.",
+        "reviewedAt": "2026-08-02T14:03:22.618193+00:00",
+        "authority": "Exact-source saved/reopened render selection plus retained production-frame comparison",
+        "elements": {},
+        "notes": "Alternate thumbnail only. The full-house frame is a strong saved-reopen visual match, but the project-wide collector still reports unresolved dormant dependencies; preserve it as yellow evidence rather than a strict green promotion.",
         "blockers": [
-          "house_edit_production_state_missing",
-          "project_wide_dependency_residue"
+          "./Mainframe/ASSETS/MOCAP/ABSOLUTELY/Greece/Teacup/01NDA1_Placing_dishes_at_sink__v1/alembic/Subdivision_Surface.abc",
+          "./Mainframe/ASSETS/MOCAP/ABSOLUTELY/Greece/ijdkyy/alembic/Subdivision_Surface.4.abc",
+          "./hourse_V2.fbm/uv1_BaseColor.1001.png",
+          "/ASSETS/MOCAP/ABSOLUTELY/Greece/Fall_v1/tex/GSG_MC023_A001_ClayDohWhite01_4k_basecolor.tif",
+          "/ASSETS/MOCAP/ABSOLUTELY/Greece/Fall_v1/tex/GSG_MC023_A001_ClayDohWhite01_4k_height.exr",
+          "/ASSETS/MOCAP/ABSOLUTELY/Greece/Fall_v1/tex/GSG_MC023_A001_ClayDohWhite01_4k_normal.tif",
+          "/ASSETS/MOCAP/ABSOLUTELY/Greece/Fall_v1/tex/GSG_MC023_A001_ClayDohWhite01_4k_roughness.tif",
+          "/C:/Users/sguas/Guassian Dropbox/Steven Guas/Absolutely/AS/Exterior house/house_colorful/tex/BaseColor/roof_retexture_BaseColor.1001.png",
+          "/C:/Users/sguas/Guassian Dropbox/Steven Guas/Absolutely/AS/Exterior house/house_colorful/tex/BaseColor/roof_trim_BaseColor.1001.png",
+          "/C:/Users/sguas/Guassian Dropbox/Steven Guas/Absolutely/AS/Exterior house/house_colorful/tex/Normal/roof_trim_Normal.1001.png",
+          "01NDA1 Placing dishes at sink_332-998-CLOTH.abc",
+          "Abby_eye_1_1.png",
+          "Dinner_Plate_07___Pattern_02_1.abc",
+          "Eyelashes_S_Sparse_Coverage.PNG",
+          "Eyes_Color.png",
+          "Eyes_Color_Iris.png",
+          "... 55 additional exact paths retained in the strict verification audit"
         ],
         "remediation": [
-          "Recover the exact 2026-04-16/17 house_edit material graph or byte-distinct BaseColor state from JDC/Mainframe history, verify both CUT-086 and CUT-087, close all dormant project-wide dependency residue, and repeat saved/reopened rendering.",
-          "Lock visual authority to /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/SG/C4D/_renders/AS/IJDKYY/0416/house zoom out - Copy/house zoom out0172.tif; preserve the canonical Premiere source interval and do not retime or substitute a later render.",
-          "Open /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/AS/0 Finishing/02 Projects/06 IJDKYY/_codex_072526/zoom out house v2_codex_20260802_source-era-exact-relink-v2.c4d read-only first; make no change to the source or any earlier Codex recovery copy.",
-          "Recover and identity-check these exact authored files on their active owner objects; never substitute another shot's character, hair, wardrobe, proxy, cache, material, or object: Mainframe/ASSETS/MOCAP/ABSOLUTELY/Greece/ijdkyy/alembic/Subdivision_Surface.3.abc.",
-          "Select take Main, render data My Render Setting.1, camera Group.2/MAIN, and frame 174.",
-          "Render both a neutral Redshift camera/geometry proof and a production-material proof using Use the exact IJDKYY 0416 project-compatible Redshift runtime; verify 2026.1.4 first.",
-          "Compare camera, location, character, hair, wardrobe, props, materials, and lighting against /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/SG/C4D/_renders/AS/IJDKYY/0416/house zoom out - Copy/house zoom out0172.tif; any visible difference keeps the shot non-strict.",
-          "Only after the proof matches, save the new recovery as /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/AS/0 Finishing/02 Projects/06 IJDKYY/_codex_072826/zoom out house v2_codex_20260802_source-era-exact-relink-v2_codex_072826.c4d; retain the source, archives, and all earlier dated recovery copies."
+          "Recover every unresolved authored path retained in the exact manifest without cross-shot substitution; rerender the exact take, camera, render data, and frame; then save a dated sibling and independently reopen it before green promotion.",
+          "Open /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/AS/0 Finishing/02 Projects/06 IJDKYY/_codex_072526/zoom out house v2_codex_20260802_source-era-exact-relink-v2.c4d read-only and preserve the recovered source unchanged.",
+          "Select take Main, camera MAIN CODEX NATIVE BRIDGE, render data My Render Setting.1, and frame 174.",
+          "Recover and identity-check these exact active authored dependencies: ./Mainframe/ASSETS/MOCAP/ABSOLUTELY/Greece/Teacup/01NDA1_Placing_dishes_at_sink__v1/alembic/Subdivision_Surface.abc; ./Mainframe/ASSETS/MOCAP/ABSOLUTELY/Greece/ijdkyy/alembic/Subdivision_Surface.4.abc; ./hourse_V2.fbm/uv1_BaseColor.1001.png; /ASSETS/MOCAP/ABSOLUTELY/Greece/Fall_v1/tex/GSG_MC023_A001_ClayDohWhite01_4k_basecolor.tif; /ASSETS/MOCAP/ABSOLUTELY/Greece/Fall_v1/tex/GSG_MC023_A001_ClayDohWhite01_4k_height.exr; /ASSETS/MOCAP/ABSOLUTELY/Greece/Fall_v1/tex/GSG_MC023_A001_ClayDohWhite01_4k_normal.tif; /ASSETS/MOCAP/ABSOLUTELY/Greece/Fall_v1/tex/GSG_MC023_A001_ClayDohWhite01_4k_roughness.tif; /C:/Users/sguas/Guassian Dropbox/Steven Guas/Absolutely/AS/Exterior house/house_colorful/tex/BaseColor/roof_retexture_BaseColor.1001.png; /C:/Users/sguas/Guassian Dropbox/Steven Guas/Absolutely/AS/Exterior house/house_colorful/tex/BaseColor/roof_trim_BaseColor.1001.png; /C:/Users/sguas/Guassian Dropbox/Steven Guas/Absolutely/AS/Exterior house/house_colorful/tex/Normal/roof_trim_Normal.1001.png; 01NDA1 Placing dishes at sink_332-998-CLOTH.abc; Abby_eye_1_1.png; Dinner_Plate_07___Pattern_02_1.abc; Eyelashes_S_Sparse_Coverage.PNG; Eyes_Color.png; Eyes_Color_Iris.png; ... 55 additional exact paths retained in the strict verification audit",
+          "Rerender full color and compare 1:1 to /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/SG/C4D/_renders/AS/IJDKYY/0416/house zoom out - Copy/house zoom out0174.tif.",
+          "Only after zero active dependency blockers and a visual match, save a dated sibling and independently reopen it."
         ],
         "checks": {
           "projectLinked": true,
           "dependencyAudited": true,
           "dependencyRenderSafe": false,
-          "proxyRenderSafe": true,
+          "proxyRenderSafe": false,
           "cameraProofRendered": true,
-          "visualMatch": false,
+          "visualMatch": true,
           "exactSourceProjectLinked": true,
           "activeFrameDependencySafe": true,
           "projectWideDependencySafe": false,
@@ -84849,52 +84891,83 @@
           "cameraProofMatched": true
         },
         "cameraProof": "/archive/redshift-source-era-recovery-20260802/CUT-087/CUT-087-source-era-saved-reopen-v2-no-temporary-relinks-f0174-480x270.png",
-        "cameraName": "MAIN",
+        "cameraName": "MAIN CODEX NATIVE BRIDGE",
         "comparisonImage": "/archive/redshift-source-era-recovery-20260802/CUT-087/CUT-087-canonical-left-vs-source-era-saved-reopen-v2-right-f0174-contact.png",
-        "renderReference": null,
-        "dependencyAuditPath": "data/c4d-source-era-recovery-20260802/CUT-087-source-era-exact-relink-v2-saved-reopen-active-dependency-audit-20260802.json",
+        "renderReference": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/SG/C4D/_renders/AS/IJDKYY/0416/house zoom out - Copy/house zoom out0174.tif",
+        "dependencyAuditPath": "data/c4d-source-era-recovery-20260802/CUT-087-active-frame-complete-safe-verification-v2-20260802.json",
         "linkageAudit": {
           "authoritativeForCurrentRecovery": true,
-          "authority": "Source-era saved-project independent reopen audit and no-temporary-relink render",
-          "status": "active_frame_linked_saved_reopen",
+          "authority": "Exact-source selection with explicit unresolved active dependency audit",
+          "status": "missing_sources",
+          "currentPathIdentityConfirmed": true,
           "savedReopenVerified": true,
-          "mappedPaths": 376,
+          "mappedPaths": 375,
+          "renderCriticalExactRecoveries": 375,
           "manifestPath": "data/c4d-source-era-recovery-20260802/CUT-087-active-frame-complete-safe-merged-manifest-v2-20260802.json",
           "dependencyReferences": 957,
           "linkedReferences": 803,
-          "missingReferences": 154,
-          "renderCriticalMissingReferences": 0,
-          "renderCriticalMissingFiles": 0,
+          "missingReferences": 0,
+          "renderCriticalMissingReferences": 71,
+          "renderCriticalMissingFiles": 71,
+          "renderCriticalUnresolvedFiles": 71,
           "strictDependencyRenderSafe": false,
-          "inMemoryRenderDependencySafe": true,
-          "activeFrameSafe": true,
-          "projectWideSafe": false,
-          "auditPath": "data/c4d-source-era-recovery-20260802/CUT-087-source-era-exact-relink-v2-saved-reopen-active-dependency-audit-20260802.json",
+          "rawRenderCriticalMissingFiles": 71,
+          "missingExamples": [
+            "./Mainframe/ASSETS/MOCAP/ABSOLUTELY/Greece/Teacup/01NDA1_Placing_dishes_at_sink__v1/alembic/Subdivision_Surface.abc",
+            "./Mainframe/ASSETS/MOCAP/ABSOLUTELY/Greece/ijdkyy/alembic/Subdivision_Surface.4.abc",
+            "./hourse_V2.fbm/uv1_BaseColor.1001.png",
+            "/ASSETS/MOCAP/ABSOLUTELY/Greece/Fall_v1/tex/GSG_MC023_A001_ClayDohWhite01_4k_basecolor.tif",
+            "/ASSETS/MOCAP/ABSOLUTELY/Greece/Fall_v1/tex/GSG_MC023_A001_ClayDohWhite01_4k_height.exr",
+            "/ASSETS/MOCAP/ABSOLUTELY/Greece/Fall_v1/tex/GSG_MC023_A001_ClayDohWhite01_4k_normal.tif",
+            "/ASSETS/MOCAP/ABSOLUTELY/Greece/Fall_v1/tex/GSG_MC023_A001_ClayDohWhite01_4k_roughness.tif",
+            "/C:/Users/sguas/Guassian Dropbox/Steven Guas/Absolutely/AS/Exterior house/house_colorful/tex/BaseColor/roof_retexture_BaseColor.1001.png",
+            "/C:/Users/sguas/Guassian Dropbox/Steven Guas/Absolutely/AS/Exterior house/house_colorful/tex/BaseColor/roof_trim_BaseColor.1001.png",
+            "/C:/Users/sguas/Guassian Dropbox/Steven Guas/Absolutely/AS/Exterior house/house_colorful/tex/Normal/roof_trim_Normal.1001.png",
+            "01NDA1 Placing dishes at sink_332-998-CLOTH.abc",
+            "Abby_eye_1_1.png",
+            "Dinner_Plate_07___Pattern_02_1.abc",
+            "Eyelashes_S_Sparse_Coverage.PNG",
+            "Eyes_Color.png",
+            "Eyes_Color_Iris.png",
+            "... 55 additional exact paths retained in the strict verification audit"
+          ],
+          "projectWideStrictDependencyRenderSafe": false,
+          "auditPath": "data/c4d-source-era-recovery-20260802/CUT-087-active-frame-complete-safe-verification-v2-20260802.json",
+          "evidencePath": "data/c4d-mainframe-recovery-20260730/CUT-087-exact-source-render-selection-20260802.json",
           "auditProject": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/AS/0 Finishing/02 Projects/06 IJDKYY/_codex_072526/zoom out house v2_codex_20260802_source-era-exact-relink-v2.c4d",
+          "sourceProject": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/AS/0 Finishing/02 Projects/06 IJDKYY/zoom out house/zoom out house v2.c4d",
           "auditTake": "Main",
           "auditFrame": 174,
           "activeProofFrame": 174,
-          "scope": "active_frame_safe_saved_reopen",
+          "scope": "project_wide_exact_dependency_closure",
           "matchesActiveProject": true,
-          "matchesActiveFrame": true,
-          "assessmentPath": "data/c4d-source-era-recovery-20260802/CUT-087-source-era-saved-reopen-assessment-20260802.json",
-          "remoteRequestPath": "data/c4d-source-era-recovery-20260802/CUT-086-house-edit-production-state-remote-request-20260802.json",
-          "missingExactFiles": []
+          "matchesActiveFrame": true
         },
         "materialCompatibilityAudit": {
-          "status": "source_compatible_runtime_and_original_cache_required",
-          "productionRuntime": "Use the exact IJDKYY 0416 project-compatible Redshift runtime; verify 2026.1.4 first"
+          "status": "rendered_visual_match_dependency_incomplete",
+          "outputPath": "/archive/redshift-source-era-recovery-20260802/CUT-087/CUT-087-source-era-saved-reopen-v2-no-temporary-relinks-f0174-480x270.png",
+          "publicPath": "/archive/redshift-source-era-recovery-20260802/CUT-087/CUT-087-source-era-saved-reopen-v2-no-temporary-relinks-f0174-480x270.png",
+          "comparisonPath": "/archive/redshift-source-era-recovery-20260802/CUT-087/CUT-087-canonical-left-vs-source-era-saved-reopen-v2-right-f0174-contact.png",
+          "comparisonResult": "data/c4d-source-era-recovery-20260802/CUT-087-source-era-saved-reopen-v2-no-temporary-relinks-vs-canonical-20260802.json",
+          "fullColor": true,
+          "fullColorProof": true,
+          "freshAuditRender": true,
+          "strictDependencyRenderSafe": false,
+          "productionRuntime": "Cinema 4D 2026.1.2 with Redshift 2026.1.1 source-era runtime",
+          "runtimeDetail": "Exact shot-authored state \u00b7 Main \u00b7 MAIN CODEX NATIVE BRIDGE \u00b7 My Render Setting.1 \u00b7 frame 174 \u00b7 375 exact active dependency mappings \u00b7 MAE 0.020055. Alternate thumbnail only. The full-house frame is a strong saved-reopen visual match, but the project-wide collector still reports unresolved dormant dependencies; preserve it as yellow evidence rather than a strict green promotion."
         },
-        "recoveryPrescription": "Recover the exact 2026-04-16/17 house_edit material graph or byte-distinct BaseColor state from JDC/Mainframe history, verify both CUT-086 and CUT-087, close all dormant project-wide dependency residue, and repeat saved/reopened rendering.",
+        "recoveryPrescription": "Recover every unresolved authored path retained in the exact manifest without cross-shot substitution; rerender the exact take, camera, render data, and frame; then save a dated sibling and independently reopen it before green promotion.",
         "agentReadyChecklist": [
-          "Lock visual authority to /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/SG/C4D/_renders/AS/IJDKYY/0416/house zoom out - Copy/house zoom out0172.tif; preserve the canonical Premiere source interval and do not retime or substitute a later render.",
-          "Open /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/AS/0 Finishing/02 Projects/06 IJDKYY/_codex_072526/zoom out house v2_codex_20260802_source-era-exact-relink-v2.c4d read-only first; make no change to the source or any earlier Codex recovery copy.",
-          "Recover and identity-check these exact authored files on their active owner objects; never substitute another shot's character, hair, wardrobe, proxy, cache, material, or object: Mainframe/ASSETS/MOCAP/ABSOLUTELY/Greece/ijdkyy/alembic/Subdivision_Surface.3.abc.",
-          "Select take Main, render data My Render Setting.1, camera Group.2/MAIN, and frame 174.",
-          "Render both a neutral Redshift camera/geometry proof and a production-material proof using Use the exact IJDKYY 0416 project-compatible Redshift runtime; verify 2026.1.4 first.",
-          "Compare camera, location, character, hair, wardrobe, props, materials, and lighting against /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/SG/C4D/_renders/AS/IJDKYY/0416/house zoom out - Copy/house zoom out0172.tif; any visible difference keeps the shot non-strict.",
-          "Only after the proof matches, save the new recovery as /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/AS/0 Finishing/02 Projects/06 IJDKYY/_codex_072826/zoom out house v2_codex_20260802_source-era-exact-relink-v2_codex_072826.c4d; retain the source, archives, and all earlier dated recovery copies."
-        ]
+          "Open /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/AS/0 Finishing/02 Projects/06 IJDKYY/_codex_072526/zoom out house v2_codex_20260802_source-era-exact-relink-v2.c4d read-only and preserve the recovered source unchanged.",
+          "Select take Main, camera MAIN CODEX NATIVE BRIDGE, render data My Render Setting.1, and frame 174.",
+          "Recover and identity-check these exact active authored dependencies: ./Mainframe/ASSETS/MOCAP/ABSOLUTELY/Greece/Teacup/01NDA1_Placing_dishes_at_sink__v1/alembic/Subdivision_Surface.abc; ./Mainframe/ASSETS/MOCAP/ABSOLUTELY/Greece/ijdkyy/alembic/Subdivision_Surface.4.abc; ./hourse_V2.fbm/uv1_BaseColor.1001.png; /ASSETS/MOCAP/ABSOLUTELY/Greece/Fall_v1/tex/GSG_MC023_A001_ClayDohWhite01_4k_basecolor.tif; /ASSETS/MOCAP/ABSOLUTELY/Greece/Fall_v1/tex/GSG_MC023_A001_ClayDohWhite01_4k_height.exr; /ASSETS/MOCAP/ABSOLUTELY/Greece/Fall_v1/tex/GSG_MC023_A001_ClayDohWhite01_4k_normal.tif; /ASSETS/MOCAP/ABSOLUTELY/Greece/Fall_v1/tex/GSG_MC023_A001_ClayDohWhite01_4k_roughness.tif; /C:/Users/sguas/Guassian Dropbox/Steven Guas/Absolutely/AS/Exterior house/house_colorful/tex/BaseColor/roof_retexture_BaseColor.1001.png; /C:/Users/sguas/Guassian Dropbox/Steven Guas/Absolutely/AS/Exterior house/house_colorful/tex/BaseColor/roof_trim_BaseColor.1001.png; /C:/Users/sguas/Guassian Dropbox/Steven Guas/Absolutely/AS/Exterior house/house_colorful/tex/Normal/roof_trim_Normal.1001.png; 01NDA1 Placing dishes at sink_332-998-CLOTH.abc; Abby_eye_1_1.png; Dinner_Plate_07___Pattern_02_1.abc; Eyelashes_S_Sparse_Coverage.PNG; Eyes_Color.png; Eyes_Color_Iris.png; ... 55 additional exact paths retained in the strict verification audit",
+          "Rerender full color and compare 1:1 to /Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/SG/C4D/_renders/AS/IJDKYY/0416/house zoom out - Copy/house zoom out0174.tif.",
+          "Only after zero active dependency blockers and a visual match, save a dated sibling and independently reopen it."
+        ],
+        "projectPath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/AS/0 Finishing/02 Projects/06 IJDKYY/_codex_072526/zoom out house v2_codex_20260802_source-era-exact-relink-v2.c4d",
+        "targetFrame": 174,
+        "cameraTake": "Main",
+        "renderData": "My Render Setting.1"
       },
       "canonicalChapterEdit": {
         "sectionCode": "IJDKYY",
@@ -125604,7 +125677,7 @@
   },
   "c4dEvidenceIntegration": {
     "authority": "Final per-cut C4D evidence integration with explicit audit scope",
-    "generatedAt": "2026-08-02T14:08:30.836636+00:00",
+    "generatedAt": "2026-08-02T14:03:22.548438+00:00",
     "dependencyAuditDirectory": "data/c4d-cut-dependency-audits-20260728",
     "dependencyAuditLinks": 85,
     "linkageAuditLinks": 85,
@@ -125615,8 +125688,8 @@
   },
   "c4dExactSourceRenderSelections": {
     "authority": "Manually compared exact-source selection records with strict second-pass dependency verification; explicitly incomplete selections remain yellow and cannot count as visual matches",
-    "generatedAt": "2026-08-02T14:08:30.878729+00:00",
-    "selectedRenders": 23,
+    "generatedAt": "2026-08-02T14:03:22.618217+00:00",
+    "selectedRenders": 24,
     "visualMatches": 18,
     "strictDependencySafe": 20
   },
@@ -125630,7 +125703,7 @@
   },
   "c4dCurrentStatusRollup": {
     "authority": "AGENTS.md green/yellow/black/grey verification contract",
-    "generatedAt": "2026-08-02T14:08:31.121784+00:00",
+    "generatedAt": "2026-08-02T14:03:22.926827+00:00",
     "statusAudit": "/data/c4d-status-consistency-audit-20260728.json",
     "counts": {
       "pictureCuts": 85,
