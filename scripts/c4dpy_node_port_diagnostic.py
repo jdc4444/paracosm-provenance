@@ -43,6 +43,9 @@ def main() -> None:
     parser.add_argument("--frame", type=int, required=True)
     parser.add_argument("--take", default="Main")
     parser.add_argument("--material-term", action="append", default=[])
+    parser.add_argument(
+        "--material-index", action="append", type=int, default=[]
+    )
     parser.add_argument("--path-term", action="append", default=[])
     parser.add_argument("--result-json", type=Path, required=True)
     args = parser.parse_args()
@@ -80,18 +83,26 @@ def main() -> None:
         material_terms = tuple(
             item.casefold() for item in args.material_term if item
         )
+        material_indexes = set(args.material_index)
         records: list[dict[str, object]] = []
         material = doc.GetFirstMaterial()
+        material_index = 0
         while material:
+            if material_indexes and material_index not in material_indexes:
+                material = material.GetNext()
+                material_index += 1
+                continue
             if material_terms and not any(
                 term in material.GetName().casefold()
                 for term in material_terms
             ):
                 material = material.GetNext()
+                material_index += 1
                 continue
             reference = material.GetNodeMaterialReference()
             if not reference.HasSpace(node_space):
                 material = material.GetNext()
+                material_index += 1
                 continue
             graph = reference.GetGraph(node_space)
             root = graph.GetRoot()
@@ -112,6 +123,7 @@ def main() -> None:
                 records.append(
                     {
                         "material": material.GetName(),
+                        "materialIndex": material_index,
                         "path": path,
                         "kind": safe_value(
                             lambda graph_item=item: graph_item.GetKind()
@@ -120,11 +132,13 @@ def main() -> None:
                     }
                 )
             material = material.GetNext()
+            material_index += 1
         payload = {
             "project": str(project),
             "frame": args.frame,
             "take": args.take,
             "materialTerms": list(material_terms),
+            "materialIndexes": sorted(material_indexes),
             "pathTerms": list(terms),
             "matches": records,
         }
@@ -139,6 +153,7 @@ def main() -> None:
                     "frame": args.frame,
                     "take": args.take,
                     "materialTerms": list(material_terms),
+                    "materialIndexes": sorted(material_indexes),
                     "pathTerms": list(terms),
                     "matchCount": len(records),
                     "resultJson": str(output),
@@ -153,6 +168,7 @@ def main() -> None:
             "frame": args.frame,
             "take": args.take,
             "materialTerms": list(args.material_term),
+            "materialIndexes": list(args.material_index),
             "pathTerms": list(args.path_term),
             "error": f"{type(error).__name__}: {error}",
         }

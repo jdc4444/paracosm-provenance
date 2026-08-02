@@ -87,8 +87,18 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("first", type=Path)
     parser.add_argument("second", type=Path)
+    parser.add_argument(
+        "--output",
+        type=Path,
+        help="Optional path for the structured comparison JSON.",
+    )
     args = parser.parse_args()
-    print(json.dumps(compare(args.first, args.second), indent=2))
+    result = compare(args.first, args.second)
+    if args.output is not None:
+        output = args.output.expanduser().resolve()
+        output.parent.mkdir(parents=True, exist_ok=True)
+        output.write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps(result, indent=2))
 
 
 if __name__ == "__main__":

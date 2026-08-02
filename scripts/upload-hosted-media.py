@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import concurrent.futures
+from datetime import datetime
 import json
 import mimetypes
 import os
@@ -167,6 +168,7 @@ def upload_one(
     path: Path,
     state_path: Path,
     state: dict[str, object],
+    force: bool,
 ) -> tuple[str, int, str]:
     relative = path.relative_to(archive_root).as_posix()
     remote_path = f"archive/{relative}"
@@ -174,7 +176,7 @@ def upload_one(
     client = thread_session(token, access_token)
     url = media_url(base_url, relative)
 
-    if remote_size(client, url) == size:
+    if not force and remote_size(client, url) == size:
         result = (remote_path, size, "present")
     else:
         if size < SIMPLE_UPLOAD_LIMIT:
@@ -199,6 +201,10 @@ def main() -> int:
     parser.add_argument("--archive-root", type=Path, required=True)
     parser.add_argument("--state", type=Path, required=True)
     parser.add_argument("--workers", type=int, default=6)
+    parser.add_argument(
+        "--force-newer-than",
+        help="Re-upload files whose modification time is newer than this ISO timestamp.",
+    )
     parser.add_argument(
         "--token-env",
         default="PARACOSM_MEDIA_UPLOAD_TOKEN",
@@ -237,6 +243,11 @@ def main() -> int:
     write_state(args.state, state)
 
     total_bytes = sum(path.stat().st_size for path in files)
+    force_newer_than = (
+        datetime.fromisoformat(args.force_newer_than.replace("Z", "+00:00")).timestamp()
+        if args.force_newer_than
+        else None
+    )
     uploaded_bytes = 0
     with concurrent.futures.ThreadPoolExecutor(args.workers) as executor:
         futures = [
@@ -249,6 +260,8 @@ def main() -> int:
                 path,
                 args.state,
                 state,
+                force_newer_than is not None
+                and path.stat().st_mtime >= force_newer_than,
             )
             for path in files
         ]

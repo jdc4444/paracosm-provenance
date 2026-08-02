@@ -40,6 +40,16 @@ def main() -> None:
     parser.add_argument("--prefer-dir", type=Path, action="append", default=[])
     parser.add_argument("--index-cache", type=Path)
     parser.add_argument("--hash-cache", type=Path)
+    parser.add_argument(
+        "--include-base-unresolved",
+        action="store_true",
+        help=(
+            "Resolve the union of the render-observed missing paths and "
+            "the base manifest's unresolved paths. This preserves an "
+            "already runtime-relinked dependency when it no longer appears "
+            "in the latest render result."
+        ),
+    )
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
 
@@ -49,12 +59,17 @@ def main() -> None:
     result = load_json(result_path)
     base = load_json(base_path)
     post = result.get("postRelinkDependencyAudit") or {}
+    render_unresolved = {
+        str(item)
+        for item in post.get("unresolvedPicturePaths", [])
+        if str(item)
+    }
+    base_unresolved = {
+        str(item) for item in base.get("unresolved", []) if str(item)
+    }
     unresolved = sorted(
-        {
-            str(item)
-            for item in post.get("unresolvedPicturePaths", [])
-            if str(item)
-        }
+        render_unresolved
+        | (base_unresolved if args.include_base_unresolved else set())
     )
     if not unresolved:
         raise RuntimeError(
@@ -141,24 +156,44 @@ def main() -> None:
         }
     )
     records = list(mappings.values())
+    phase_mappings = list(phase.get("mappings") or [])
+    phase_unresolved = list(phase.get("unresolved") or [])
     payload = {
         **base,
         "schemaVersion": max(int(base.get("schemaVersion") or 1), 1),
         "generatedAt": utc_now(),
         "authority": (
-            "Base frame-active relink manifest plus exact unresolved picture "
-            "paths observed by a failed material-enabled Redshift render"
+            "Base relink manifest plus exact unresolved picture paths "
+            "observed by a failed material-enabled Redshift render"
+            + (
+                " and every unresolved requirement retained by the base "
+                "manifest"
+                if args.include_base_unresolved
+                else ""
+            )
         ),
         "sourceBaseManifest": str(base_path),
         "sourceRenderResult": str(result_path),
         "renderCriticalOnly": False,
         "summary": {
             "baseMappedPaths": len(base.get("mappings") or []),
-            "renderObservedMissingPaths": len(unresolved),
-            "renderObservedMappedPaths": len(phase.get("mappings") or []),
-            "renderObservedUnresolvedPaths": len(
-                phase.get("unresolved") or []
+            "renderObservedMissingPaths": len(render_unresolved),
+            "baseUnresolvedPathsIncluded": (
+                len(base_unresolved)
+                if args.include_base_unresolved
+                else 0
             ),
+            "phaseRequiredPaths": len(unresolved),
+            "renderObservedMappedPaths": sum(
+                str(item.get("requiredPath") or "") in render_unresolved
+                for item in phase_mappings
+            ),
+            "renderObservedUnresolvedPaths": sum(
+                str(item) in render_unresolved
+                for item in phase_unresolved
+            ),
+            "phaseMappedPaths": len(phase_mappings),
+            "phaseUnresolvedPaths": len(phase_unresolved),
             "totalMappedPaths": len(records),
             "totalUnresolvedPaths": len(unresolved_after),
         },

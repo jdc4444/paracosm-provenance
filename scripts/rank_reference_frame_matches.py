@@ -44,6 +44,12 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--reference", type=Path, required=True)
     parser.add_argument("--directory", type=Path, action="append", required=True)
+    parser.add_argument(
+        "--include-term",
+        action="append",
+        default=[],
+        help="Require at least one case-insensitive term in the full path.",
+    )
     parser.add_argument("--exclude-term", action="append", default=[])
     parser.add_argument(
         "--recursive",
@@ -53,6 +59,7 @@ def main() -> None:
     parser.add_argument("--top", type=int, default=20)
     parser.add_argument("--width", type=int, default=160)
     parser.add_argument("--height", type=int, default=90)
+    parser.add_argument("--output", type=Path)
     args = parser.parse_args()
 
     reference = args.reference.expanduser().resolve()
@@ -60,6 +67,7 @@ def main() -> None:
         reference, args.width, args.height
     )
     exclude_terms = tuple(term.casefold() for term in args.exclude_term)
+    include_terms = tuple(term.casefold() for term in args.include_term)
     candidates: list[Path] = []
     for directory in args.directory:
         root = directory.expanduser().resolve()
@@ -69,6 +77,10 @@ def main() -> None:
             for path in paths
             if path.is_file()
             and path.suffix.casefold() in IMAGE_SUFFIXES
+            and (
+                not include_terms
+                or any(term in str(path).casefold() for term in include_terms)
+            )
             and not any(
                 term in path.name.casefold() for term in exclude_terms
             )
@@ -95,19 +107,20 @@ def main() -> None:
             }
         )
     results.sort(key=lambda item: item["score"], reverse=True)
-    print(
-        json.dumps(
-            {
-                "reference": str(reference),
-                "candidateCount": len(candidates),
-                "readableCount": len(results),
-                "unreadableCount": len(unreadable),
-                "top": results[: args.top],
-                "unreadable": unreadable[:20],
-            },
-            indent=2,
-        )
-    )
+    report = {
+        "reference": str(reference),
+        "candidateCount": len(candidates),
+        "readableCount": len(results),
+        "unreadableCount": len(unreadable),
+        "top": results[: args.top],
+        "unreadable": unreadable[:20],
+    }
+    output = json.dumps(report, indent=2) + "\n"
+    if args.output:
+        destination = args.output.expanduser().resolve()
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        destination.write_text(output, encoding="utf-8")
+    print(output, end="")
 
 
 if __name__ == "__main__":

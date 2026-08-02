@@ -33,6 +33,22 @@ TERMS = (
     "exposure",
 )
 
+EXPLICIT_CAMERA_PARAMETERS = (
+    ("projection", "RSCAMERAOBJECT_PROJECTION", 1001),
+    ("focalLength", "RSCAMERAOBJECT_FOCAL_LENGTH", 500),
+    ("sensorSizePreset", "RSCAMERAOBJECT_SENSOR_SIZE_PRESET", 7001),
+    ("sensorSize", "RSCAMERAOBJECT_SENSOR_SIZE", 7002),
+    ("sensorSizeFloat", "RSCAMERAOBJECT_SENSOR_SIZE_FLOAT", 7003),
+    ("sensorSizeLockRatio", "RSCAMERAOBJECT_SENSOR_SIZE_LOCK_RATIO", 7004),
+    ("sensorSizeFitMode", "RSCAMERAOBJECT_SENSOR_SIZE_FIT_MODE", 7005),
+    ("sensorShift", "RSCAMERAOBJECT_SENSOR_SHIFT", 7012),
+    (
+        "focalLengthEquivalent",
+        "RSCAMERAOBJECT_FOCAL_LENGTH_EQUIVALENT",
+        7021,
+    ),
+)
+
 
 def walk(op):
     while op:
@@ -52,6 +68,31 @@ def object_path(op) -> str:
 
 def vector(value) -> dict[str, float]:
     return {"x": value.x, "y": value.y, "z": value.z}
+
+
+def json_value(value):
+    if isinstance(value, c4d.Vector):
+        return vector(value)
+    if isinstance(value, (str, int, float, bool, type(None))):
+        return value
+    return str(value)
+
+
+def explicit_parameter_payload(op) -> list[dict[str, object]]:
+    result = []
+    for name, symbol, fallback_id in EXPLICIT_CAMERA_PARAMETERS:
+        parameter_id = int(getattr(c4d, symbol, fallback_id))
+        record = {
+            "name": name,
+            "symbol": symbol,
+            "id": parameter_id,
+        }
+        try:
+            record["value"] = json_value(op[parameter_id])
+        except Exception as error:
+            record["error"] = f"{type(error).__name__}: {error}"
+        result.append(record)
+    return result
 
 
 def parameter_payload(op) -> list[dict[str, object]]:
@@ -123,6 +164,7 @@ def main() -> None:
                         "v2": vector(matrix.v2),
                         "v3": vector(matrix.v3),
                     },
+                    "explicitParameters": explicit_parameter_payload(op),
                     "parameters": parameter_payload(op),
                 }
             )

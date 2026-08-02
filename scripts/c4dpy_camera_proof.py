@@ -29,6 +29,46 @@ def bridge_legacy_redshift_camera(source_camera):
         native_camera[c4d.CAMERA_FOCUS] = float(source_camera[500])
     except Exception:
         pass
+    # Retired Redshift cameras keep an explicit two-axis sensor gate and fit
+    # mode. For the authored perspective cameras used by Paracosm, horizontal
+    # fit maps exactly to Cinema's native film-aperture width. Do not rely on
+    # the native camera default even when both happen to be 36 mm.
+    try:
+        sensor = source_camera[
+            getattr(c4d, "RSCAMERAOBJECT_SENSOR_SIZE", 7002)
+        ]
+        fit_mode = int(
+            source_camera[
+                getattr(c4d, "RSCAMERAOBJECT_SENSOR_SIZE_FIT_MODE", 7005)
+            ]
+        )
+        if isinstance(sensor, c4d.Vector) and fit_mode == 1:
+            native_camera[c4d.CAMERAOBJECT_APERTURE] = float(sensor.x)
+    except Exception:
+        pass
+    try:
+        projection = int(
+            source_camera[
+                getattr(c4d, "RSCAMERAOBJECT_PROJECTION", 1001)
+            ]
+        )
+        projection_map = {
+            getattr(c4d, "RSCAMERAOBJECT_PROJECTION_PERSPECTIVE", 0): (
+                c4d.CAMERA_PERSPECTIVE
+            ),
+            getattr(c4d, "RSCAMERAOBJECT_PROJECTION_ORTHOGRAPHIC", 1): (
+                c4d.CAMERA_PARALLEL
+            ),
+            getattr(c4d, "RSCAMERAOBJECT_PROJECTION_SPHERICAL", 14): (
+                c4d.CAMERA_SPHERICAL
+            ),
+        }
+        if projection in projection_map:
+            native_camera[c4d.CAMERAOBJECT_PROJECTION] = projection_map[
+                projection
+            ]
+    except Exception:
+        pass
     # Legacy Redshift cameras store their two-axis film shift in parameter
     # 7012. The hardware renderer cannot look through those camera objects
     # directly, so preserve the shift on the temporary native camera too.
@@ -39,11 +79,16 @@ def bridge_legacy_redshift_camera(source_camera):
             native_camera[c4d.CAMERAOBJECT_FILM_OFFSET_Y] = float(shift.y)
     except Exception:
         pass
-    # The retired Redshift object exposes its projection through an obsolete
-    # plugin container (14007), not the modern 1001 parameter. Reading 1001
-    # emits a C4D container stop even when caught, so retain the native
-    # perspective default. Non-perspective legacy cameras must be marked
-    # unverified rather than silently translated.
+    for source_id, target_id in (
+        (1010, c4d.CAMERAOBJECT_TARGETDISTANCE),
+        (1201, c4d.CAMERAOBJECT_FNUMBER_VALUE),
+        (1212, c4d.CAMERAOBJECT_SHUTTER_ANGLE),
+        (1220, c4d.CAMERAOBJECT_EXPOSURE),
+    ):
+        try:
+            native_camera[target_id] = source_camera[source_id]
+        except Exception:
+            pass
     return native_camera
 
 

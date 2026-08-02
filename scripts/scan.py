@@ -5338,6 +5338,11 @@ def apply_exact_cut_dependency_audits(
                 current_linkage.get("savedReopenVerified")
                 or "saved_reopen" in status.lower()
             )
+            in_memory_render_safe = bool(
+                current_linkage.get("inMemoryRenderDependencySafe")
+                and not unresolved_file_count
+                and not unresolved_reference_count
+            )
             label = (
                 (
                     "Saved/reopened dependency audit passed"
@@ -5345,7 +5350,11 @@ def apply_exact_cut_dependency_audits(
                     else "Current in-memory dependency audit passed"
                 )
                 if strict_safe
-                else "Current-path render dependencies missing"
+                else (
+                    "In-memory dependency audit passed · save/reopen pending"
+                    if in_memory_render_safe
+                    else "Current-path render dependencies missing"
+                )
             )
             linked_scope_label = (
                 "save/reopen dependencies"
@@ -6954,6 +6963,427 @@ def integrate_current_c4d_verification_evidence(
                             "sourceCameraLineage": True,
                         }
                     )
+
+                # The visually closer donor-materials render above is a
+                # reconstructed hybrid, not a recovered shot-authored project
+                # state.  The untouched exact v012 source now has a zero-
+                # render-critical in-memory relink and a fresh render of its
+                # saved CU_01 state, but that frame does not reproduce the
+                # canonical retained frame.  Publish the exact-source mismatch
+                # as the active yellow evidence and retain the hybrid only as
+                # rejected process history.  Numeric similarity cannot promote
+                # a material transplant through the canonical recovery gate.
+                exact_source_project = (
+                    "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/"
+                    "Absolutely/SG/C4D/1C_1E_A_CloseUps_v012.c4d"
+                )
+                exact_source_render = (
+                    "/archive/redshift-mainframe-recovery-20260730/"
+                    "CUT-006/CUT-006-exact-original-v012-all-exact-"
+                    "relinks-f0166-480.png"
+                )
+                exact_source_contact = (
+                    "/archive/redshift-mainframe-recovery-20260730/"
+                    "CUT-006/CUT-006-retained-final-f0166-left-vs-"
+                    "exact-original-v012-right.jpg"
+                )
+                exact_source_assessment = (
+                    "data/c4d-mainframe-recovery-20260730/"
+                    "CUT-006-exact-original-v012-render-assessment-"
+                    "20260801.json"
+                )
+                exact_source_verification = (
+                    "data/c4d-exact-source-recovery-20260801/"
+                    "CUT-006-1C_1E_A_CloseUps_v012-strict-relink-"
+                    "verification.json"
+                )
+
+                for node in lineage:
+                    if node.get("kind") == "cinema4d":
+                        node["sourceApplicationPrimary"] = False
+                exact_source_node = next(
+                    (
+                        node
+                        for node in lineage
+                        if node.get("kind") == "cinema4d"
+                        and node_project(node) == exact_source_project
+                    ),
+                    None,
+                )
+                if exact_source_node is None:
+                    exact_source_node = {
+                        "kind": "cinema4d",
+                        "label": Path(exact_source_project).name,
+                    }
+                    lineage.append(exact_source_node)
+                exact_source_node.update(
+                    {
+                        "detail": (
+                            "Untouched exact v012 source project · CU_01 / "
+                            "CU_Final / RS Camera.6 / frame 166 · fresh exact-"
+                            "dependency render remains a visual mismatch"
+                        ),
+                        "path": exact_source_project,
+                        "projectPath": exact_source_project,
+                        "evidence": "confirmed",
+                        "sourceApplicationPrimary": True,
+                        "canonical": True,
+                        "dependencyAuditPath": exact_source_verification,
+                        "visualVerificationStatus": (
+                            "rendered_exact_source_visual_mismatch"
+                        ),
+                    }
+                )
+                current_c4d_node.update(
+                    {
+                        "detail": (
+                            "Rejected reconstructed hybrid · exact target "
+                            "geometry plus material graphs transplanted from "
+                            "a sibling v012 project · visually close but not "
+                            "shot-authored source state"
+                        ),
+                        "evidence": "partial",
+                        "sourceApplicationPrimary": False,
+                        "canonical": False,
+                        "visualVerificationStatus": (
+                            "rejected_reconstructed_hybrid_not_exact_source"
+                        ),
+                    }
+                )
+                active_proof.update(
+                    {
+                        "label": (
+                            "Rejected reconstructed hybrid · RS Camera.6 · "
+                            "frame 166"
+                        ),
+                        "detail": (
+                            "Visually close Redshift diagnostic made by "
+                            "transplanting sibling-project material graphs; "
+                            "retained as process evidence only."
+                        ),
+                        "evidence": "partial",
+                        "proofStatus": (
+                            "rejected_reconstructed_hybrid_not_exact_source"
+                        ),
+                        "recoveryProof": False,
+                        "primaryRecoveryProof": False,
+                        "strictLinked": False,
+                        "visualVerificationStatus": (
+                            "rejected_reconstructed_hybrid_not_exact_source"
+                        ),
+                    }
+                )
+
+                exact_source_proof = next(
+                    (
+                        node
+                        for node in lineage
+                        if node.get("kind") == "camera_proof"
+                        and node.get("comparisonImage") == exact_source_render
+                    ),
+                    None,
+                )
+                if exact_source_proof is None:
+                    exact_source_proof = {"kind": "camera_proof"}
+                    lineage.append(exact_source_proof)
+                    camera_nodes_added += 1
+                for node in lineage:
+                    if node.get("kind") == "camera_proof":
+                        node["primaryRecoveryProof"] = False
+                exact_source_proof.update(
+                    {
+                        "label": (
+                            "Fresh exact-source visual mismatch · RS Camera.6 "
+                            "· frame 166"
+                        ),
+                        "detail": (
+                            "Fresh Redshift render from the untouched exact "
+                            "v012 source after exact in-memory relinks. The "
+                            "saved source state does not reproduce the retained "
+                            "canonical frame closely enough."
+                        ),
+                        "path": exact_source_project,
+                        "projectPath": exact_source_project,
+                        "comparisonImage": exact_source_render,
+                        "comparisonContactSheet": exact_source_contact,
+                        "confirmationMethod": (
+                            "Untouched exact project plus exact in-memory "
+                            "dependency relinks, fresh frame 166 render, and "
+                            f"direct comparison recorded in {exact_source_assessment}"
+                        ),
+                        "evidence": "partial",
+                        "proofStatus": (
+                            "rendered_exact_source_visual_mismatch"
+                        ),
+                        "targetFrame": 166,
+                        "cameraTake": "CU_01",
+                        "cameraRenderData": "CU_Final",
+                        "cameraObjectPath": "RS Camera.6",
+                        "recoveryProof": False,
+                        "primaryRecoveryProof": True,
+                        "redshiftProof": True,
+                        "fullColorProof": True,
+                        "fullColorRender": True,
+                        "freshAuditRender": True,
+                        "productionSourceReference": False,
+                        "historicalProductionReference": False,
+                        "strictLinked": False,
+                        "visualVerificationStatus": (
+                            "rendered_exact_source_visual_mismatch"
+                        ),
+                        "resultPath": exact_source_assessment,
+                        "visualReview": {
+                            "status": "rendered_visual_mismatch",
+                            "elements": {
+                                "location": "match",
+                                "camera": "match",
+                                "character": "match",
+                                "hair": "match",
+                                "wardrobe": "match_geometry",
+                                "teacup": "match_geometry",
+                                "ocean": "match_geometry",
+                                "materials": "mismatch_source_state",
+                                "lighting": "mismatch_source_state",
+                            },
+                            "notes": (
+                                "The exact source render has MAE 0.030442, "
+                                "RMSE 0.076193, and RGB correlations 0.923990, "
+                                "0.975205, and 0.986713. The closer hybrid is "
+                                "rejected because it transplants material graphs "
+                                "from a sibling project."
+                            ),
+                        },
+                        "processImages": [
+                            {
+                                "publicPath": current_batch_public_path,
+                                "label": (
+                                    "Rejected sibling-material hybrid"
+                                ),
+                                "detail": (
+                                    "Exact target geometry with material graphs "
+                                    "transplanted from a sibling v012 project; "
+                                    "visually close but not exact shot-authored "
+                                    "source state."
+                                ),
+                                "evidence": "partial",
+                                "status": (
+                                    "rejected_reconstructed_hybrid_not_exact_source"
+                                ),
+                            }
+                        ],
+                    }
+                )
+
+                verification.update(
+                    {
+                        "status": (
+                            "rendered_exact_source_visual_mismatch"
+                        ),
+                        "label": (
+                            "Fresh exact-source Cut 6 visual mismatch · "
+                            "hybrid match rejected"
+                        ),
+                        "detail": (
+                            "The untouched exact v012 project renders after "
+                            "exact in-memory dependency relinks, but its saved "
+                            "materials and lighting do not reproduce the "
+                            "canonical retained frame. The closer donor-"
+                            "materials render is a reconstruction, not source "
+                            "proof."
+                        ),
+                        "strictLinked": False,
+                        "reviewedAt": now_iso(),
+                        "authority": (
+                            "Untouched exact v012 source project, exact relink "
+                            "manifest, fresh source render, direct canonical "
+                            "comparison, and rejected hybrid provenance"
+                        ),
+                        "elements": dict(
+                            exact_source_proof["visualReview"]["elements"]
+                        ),
+                        "notes": exact_source_proof["visualReview"]["notes"],
+                        "blockers": [
+                            "exact_render_time_project_revision_missing",
+                            "exact_source_saved_state_visual_mismatch",
+                            "saved_reopen_verification_not_completed",
+                        ],
+                        "remediation": [
+                            (
+                                "Recover the exact render-time v012 revision or "
+                                "autosave whose authored materials and lighting "
+                                "produced FINAL_NA CU C3_AS 0316."
+                            ),
+                            (
+                                "Save a dated dependency-complete copy, reopen "
+                                "it, and render frame 166 without donor-graph "
+                                "transplants."
+                            ),
+                        ],
+                        "checks": {
+                            **(verification.get("checks") or {}),
+                            "projectLinked": True,
+                            "dependencyAudited": True,
+                            "dependencyRenderSafe": True,
+                            "savedReopenVerified": False,
+                            "cameraProofRendered": True,
+                            "cameraProofMatched": False,
+                            "visualMatch": False,
+                            "exactSourceProjectLinked": True,
+                        },
+                        "cameraProof": exact_source_render,
+                        "cameraName": "RS Camera.6",
+                        "comparisonImage": exact_source_contact,
+                        "dependencyAuditPath": exact_source_verification,
+                        "materialCompatibilityAudit": {
+                            "status": (
+                                "fresh_exact_source_material_visual_mismatch"
+                            ),
+                            "outputPath": exact_source_render,
+                            "publicPath": exact_source_render,
+                            "runtimeDetail": (
+                                "Fresh exact-source frame from the untouched "
+                                "v012 project after exact in-memory dependency "
+                                "relinks; the saved material and lighting state "
+                                "does not match the canonical retained frame."
+                            ),
+                        },
+                        "recoveryPrescription": (
+                            "Recover the exact render-time v012 revision, "
+                            "autosave, material state, lighting, and source-era "
+                            "runtime settings. Do not promote the sibling-"
+                            "material transplant even though its numeric image "
+                            "match is closer."
+                        ),
+                    }
+                )
+
+                link_status.update(
+                    {
+                        "status": (
+                            "exact_source_in_memory_linked_visual_mismatch"
+                        ),
+                        "label": (
+                            "Exact source linked in memory · visual mismatch"
+                        ),
+                        "detail": (
+                            "Untouched v012 source has 0 render-critical "
+                            "unresolved dependencies after exact in-memory "
+                            "relinks, but the project has not passed a dated "
+                            "save/reopen gate and its fresh frame mismatches "
+                            "the canonical retained render."
+                        ),
+                        "projectPath": exact_source_project,
+                        "projectName": Path(exact_source_project).name,
+                        "take": "CU_01",
+                        "frame": 166,
+                        "dependencyReferences": 2379,
+                        "linkedReferences": 2379,
+                        "missingReferences": 0,
+                        "renderCriticalMissingReferences": 0,
+                        "renderCriticalMissingFiles": 0,
+                        "renderCriticalUnresolvedFiles": 0,
+                        "missingExamples": [],
+                        "dependencyLabel": (
+                            "0 render-critical unresolved after in-memory relink"
+                        ),
+                        "strictDependencyRenderSafe": False,
+                        "strictLinked": False,
+                        "savedReopenVerified": False,
+                        "inMemoryRenderDependencySafe": True,
+                        "exactCutAudit": {
+                            "authority": (
+                                "Untouched exact-source in-memory relink audit"
+                            ),
+                            "verificationPath": exact_source_verification,
+                            "rawAuditPath": exact_source_verification,
+                            "mappedPaths": 15,
+                            "manifestUnresolvedPaths": 0,
+                            "postRelinkUnresolvedFiles": 0,
+                            "postRelinkUnresolvedReferences": 0,
+                            "strictDependencyRenderSafe": False,
+                            "inMemoryRenderDependencySafe": True,
+                            "savedReopenVerified": False,
+                            "take": "CU_01",
+                            "frame": 166,
+                            "project": exact_source_project,
+                        },
+                        "visualReview": dict(
+                            exact_source_proof["visualReview"]
+                        ),
+                        "materialCompatibilityAudit": dict(
+                            verification["materialCompatibilityAudit"]
+                        ),
+                        "recoveryPrescription": verification[
+                            "recoveryPrescription"
+                        ],
+                    }
+                )
+                cut["c4dLinkStatus"] = link_status
+                existing_linkage = {
+                    "authoritativeForCurrentRecovery": True,
+                    "authority": (
+                        "Untouched exact-source in-memory relink audit"
+                    ),
+                    "status": (
+                        "exact_source_in_memory_linked_visual_mismatch"
+                    ),
+                    "savedReopenVerified": False,
+                    "mappedPaths": 15,
+                    "manifestPath": (
+                        "data/c4d-exact-source-recovery-20260801/"
+                        "CUT-006-1C_1E_A_CloseUps_v012-strict-relink-"
+                        "manifest.json"
+                    ),
+                    "currentPathIdentityConfirmed": True,
+                    "sourceEraProxyIdentityConfirmed": True,
+                    "dependencyReferences": 2379,
+                    "linkedReferences": 2379,
+                    "missingReferences": 0,
+                    "renderCriticalMissingReferences": 0,
+                    "renderCriticalMissingFiles": 0,
+                    "strictDependencyRenderSafe": False,
+                    "inMemoryRenderDependencySafe": True,
+                    "missingExactFiles": [],
+                    "auditPath": exact_source_verification,
+                    "auditProject": exact_source_project,
+                    "auditTake": "CU_01",
+                    "auditFrame": 166,
+                    "activeProofFrame": 166,
+                    "scope": "active_project_take_and_frame",
+                    "matchesActiveProject": True,
+                    "matchesActiveFrame": True,
+                }
+                authoritative_current_recovery = True
+                current_mainframe_audit_path = exact_source_verification
+                current_mainframe_audit_selected = False
+                active_project = exact_source_project
+                active_frame = 166
+                for node in lineage:
+                    if node.get("kind") != "camera":
+                        continue
+                    node.update(
+                        {
+                            "label": "RS Camera.6",
+                            "detail": (
+                                "Distinct source-camera identity for CU_01 / "
+                                "CU_Final at frame 166 in the untouched exact "
+                                "v012 source; the fresh source render remains a "
+                                "visual mismatch."
+                            ),
+                            "path": exact_source_project,
+                            "projectPath": exact_source_project,
+                            "comparisonImage": exact_source_render,
+                            "evidence": "confirmed",
+                            "confirmationMethod": (
+                                "exact source project plus fresh source-state "
+                                "Redshift render"
+                            ),
+                            "targetFrame": 166,
+                            "cameraTake": "CU_01",
+                            "cameraRenderData": "CU_Final",
+                            "sourceCameraLineage": True,
+                        }
+                    )
         current_na_recoveries = {
             "CUT-056": {
                 "take": "InsideRip",
@@ -7804,6 +8234,242 @@ def integrate_current_c4d_verification_evidence(
             )
             camera_nodes_added += 1
 
+        # CUT-017, CUT-018, and CUT-022 share two exact CLO library maps that
+        # remain absent from the recovered project-wide dependency closure.
+        # The garment materials are dormant in these landscape frames, so the
+        # fresh renders can remain useful visual/camera matches.  They cannot,
+        # however, pass the canonical project's strict save/reopen gate.  The
+        # atlas deliberately has no dormant-residue exception.
+        if cut_id in {"CUT-017", "CUT-018", "CUT-022"}:
+            missing_clo_maps = [
+                (
+                    "/C:/Users/PC/AppData/Local/CLO/Marvelous Designer 9 "
+                    "Enterprise/14612/1040/"
+                    "Texture_FCL1-PSW001-002_Super 120s Wool_BLANK.jpg"
+                ),
+                (
+                    "/C:/Users/PC/AppData/Local/CLO/Marvelous Designer 9 "
+                    "Enterprise/14612/1040/"
+                    "Texture_FCL1-PSW001-002_Super 120s Wool_BLANK_NORMAL.png"
+                ),
+            ]
+            exact_residue_manifest = (
+                "data/c4d-mainframe-recovery-20260730/"
+                f"{cut_id}-exact-v5-gsg5-relink-manifest-20260802.json"
+            )
+            residue_status = "visual_match_exact_dependency_incomplete"
+            residue_notes = (
+                "The fresh source render remains a useful visual and camera "
+                "match, but the exact project is not dependency-complete: two "
+                "authored CLO wool maps are still unresolved. They are dormant "
+                "in this landscape frame, yet strict canonical proof requires "
+                "project-wide exact closure plus a dated save/reopen audit."
+            )
+            exact_project = str(
+                active_project
+                or verification.get("projectPath")
+                or link_status.get("projectPath")
+                or ""
+            )
+            residue_linkage = {
+                **(verification.get("linkageAudit") or {}),
+                "authoritativeForCurrentRecovery": True,
+                "authority": (
+                    "Exact project-wide dependency manifest with no dormant-"
+                    "residue exception"
+                ),
+                "status": "exact_dependencies_missing",
+                "savedReopenVerified": False,
+                "manifestPath": exact_residue_manifest,
+                "auditPath": exact_residue_manifest,
+                "auditProject": exact_project,
+                "auditTake": audit_take,
+                "auditFrame": active_frame,
+                "activeProofFrame": active_frame,
+                "scope": "project_wide_exact_dependency_closure",
+                "matchesActiveProject": True,
+                "matchesActiveFrame": True,
+                "renderCriticalMissingReferences": 2,
+                "renderCriticalMissingFiles": 2,
+                "renderCriticalUnresolvedFiles": 2,
+                "strictDependencyRenderSafe": False,
+                "projectWideStrictDependencyRenderSafe": False,
+                "missingExactFiles": missing_clo_maps,
+            }
+            verification.update(
+                {
+                    "status": residue_status,
+                    "label": (
+                        "Visual match only · 2 exact CLO maps unresolved"
+                    ),
+                    "detail": residue_notes,
+                    "strictLinked": False,
+                    "reviewedAt": now_iso(),
+                    "authority": (
+                        "Exact source project, fresh source render, direct "
+                        "visual comparison, and the 2026-08-02 project-wide "
+                        "exact dependency manifest"
+                    ),
+                    "elements": {
+                        **(verification.get("elements") or {}),
+                        "materials": (
+                            "visual_match_exact_project_dependencies_incomplete"
+                        ),
+                    },
+                    "notes": residue_notes,
+                    "blockers": [
+                        "two_exact_clo_wool_maps_unresolved",
+                        "project_wide_save_reopen_gate_not_passed",
+                    ],
+                    "checks": {
+                        **(verification.get("checks") or {}),
+                        "projectLinked": True,
+                        "dependencyAudited": True,
+                        "dependencyRenderSafe": False,
+                        "savedReopenVerified": False,
+                        "cameraProofRendered": True,
+                        "cameraProofMatched": True,
+                        "visualMatch": True,
+                        "exactSourceProjectLinked": True,
+                    },
+                    "linkageAudit": residue_linkage,
+                    "dependencyAuditPath": exact_residue_manifest,
+                    "materialCompatibilityAudit": {
+                        **(
+                            verification.get("materialCompatibilityAudit")
+                            or {}
+                        ),
+                        "status": residue_status,
+                        "strictDependencyRenderSafe": False,
+                        "unresolvedExactProjectFiles": 2,
+                        "missingExactFiles": missing_clo_maps,
+                        "runtimeDetail": residue_notes,
+                    },
+                    "recoveryPrescription": (
+                        "Recover the two exact CLO wool maps from the authored "
+                        "CLO library or the original render machine, relink "
+                        "them without substitutes, save a new dated project "
+                        "copy, reopen it, verify zero project-wide unresolved "
+                        "dependencies, and rerender the saved shot state."
+                    ),
+                }
+            )
+            link_status.update(
+                {
+                    "status": "exact_dependencies_missing",
+                    "label": (
+                        "Visual match only · 2 exact CLO maps unresolved"
+                    ),
+                    "detail": residue_notes,
+                    "projectPath": exact_project,
+                    "projectName": (
+                        Path(exact_project).name if exact_project else None
+                    ),
+                    "take": audit_take,
+                    "frame": active_frame,
+                    "renderCriticalMissingReferences": 2,
+                    "renderCriticalMissingFiles": 2,
+                    "renderCriticalUnresolvedFiles": 2,
+                    "strictDependencyRenderSafe": False,
+                    "strictLinked": False,
+                    "savedReopenVerified": False,
+                    "manifestPath": exact_residue_manifest,
+                    "verificationPath": exact_residue_manifest,
+                    "missingExamples": [
+                        {
+                            "filename": missing_path,
+                            "owner": "Authored CLO garment material",
+                            "category": "texture",
+                            "characterRelated": True,
+                            "renderCritical": True,
+                        }
+                        for missing_path in missing_clo_maps
+                    ],
+                    "exactCutAudit": {
+                        "authority": residue_linkage["authority"],
+                        "rawAuditPath": exact_residue_manifest,
+                        "manifestPath": exact_residue_manifest,
+                        "verificationPath": exact_residue_manifest,
+                        "mappedPaths": 51,
+                        "manifestUnresolvedPaths": 2,
+                        "postRelinkUnresolvedFiles": 2,
+                        "postRelinkUnresolvedReferences": 2,
+                        "strictDependencyRenderSafe": False,
+                        "savedReopenVerified": False,
+                        "scope": "project_wide_exact_dependency_closure",
+                    },
+                    "visualReview": {
+                        "status": residue_status,
+                        "elements": dict(verification["elements"]),
+                        "notes": residue_notes,
+                    },
+                    "materialCompatibilityAudit": dict(
+                        verification["materialCompatibilityAudit"]
+                    ),
+                    "recoveryPrescription": verification[
+                        "recoveryPrescription"
+                    ],
+                }
+            )
+            cut["c4dLinkStatus"] = link_status
+            for node in lineage:
+                if node.get("kind") == "camera_proof" and node.get(
+                    "primaryRecoveryProof"
+                ):
+                    node.update(
+                        {
+                            "evidence": "partial",
+                            "proofStatus": residue_status,
+                            "strictLinked": False,
+                            "visualVerificationStatus": residue_status,
+                            "dependencyAuditPath": exact_residue_manifest,
+                            "linkageAudit": dict(residue_linkage),
+                            "materialCompatibilityAudit": dict(
+                                verification["materialCompatibilityAudit"]
+                            ),
+                            "visualReview": {
+                                "status": residue_status,
+                                "elements": dict(verification["elements"]),
+                                "notes": residue_notes,
+                            },
+                            "recoveryPrescription": verification[
+                                "recoveryPrescription"
+                            ],
+                        }
+                    )
+                elif node.get("kind") == "cinema4d" and node_project(
+                    node
+                ) == normalized_project(exact_project):
+                    node.update(
+                        {
+                            "visualVerificationStatus": residue_status,
+                            "dependencyAuditPath": exact_residue_manifest,
+                            "linkageAudit": dict(residue_linkage),
+                            "materialCompatibilityAudit": dict(
+                                verification["materialCompatibilityAudit"]
+                            ),
+                        }
+                    )
+                elif node.get("kind") == "c4d_dependency_audit":
+                    node.update(
+                        {
+                            "label": (
+                                "Project-wide exact dependency audit blocked"
+                            ),
+                            "detail": (
+                                "2 exact CLO wool maps unresolved · strict "
+                                "save/reopen gate not passed"
+                            ),
+                            "path": str(APP_ROOT / exact_residue_manifest),
+                            "projectPath": exact_project,
+                            "strictDependencyRenderSafe": False,
+                            "unresolvedFiles": 2,
+                            "scope": (
+                                "project_wide_exact_dependency_closure"
+                            ),
+                        }
+                    )
+
         cut["c4dVerification"] = verification
         cut["lineage"] = lineage
 
@@ -7847,9 +8513,44 @@ def integrate_exact_source_render_selections(
     """
 
     evidence_dir = DATA_DIR / "c4d-mainframe-recovery-20260730"
-    selection_paths = sorted(
+    candidate_selection_paths = sorted(
         set(evidence_dir.glob("CUT-???-exact-source-*-selection-*.json"))
         | set(evidence_dir.glob("CUT-???-exact-source-frame-selection-*.json"))
+    )
+    # A cut can retain an earlier yellow selection after a later green
+    # saved/reopened recovery is proven.  Filename ordering is not evidence
+    # ordering (for example, ``frame-selection`` sorts before
+    # ``render-selection``), so publishing every record in sequence can let
+    # stale process history overwrite the best current proof.  Select exactly
+    # one record per cut, preferring a green visual match that passed the
+    # saved/reopen gate, then other visual matches, then the newest remaining
+    # dated record.
+    best_selection_by_cut: dict[str, tuple[tuple[int, int], Path]] = {}
+    for candidate_path in candidate_selection_paths:
+        try:
+            candidate = json.loads(
+                candidate_path.read_text(encoding="utf-8")
+            )
+        except (OSError, json.JSONDecodeError):
+            continue
+        candidate_cut_id = str(candidate.get("cutId") or "")
+        if not candidate_cut_id:
+            continue
+        green_saved_match = bool(
+            str(candidate.get("proofTier") or "").casefold() == "green"
+            and candidate.get("visualMatch") is True
+            and candidate.get("savedReopenVerified") is True
+        )
+        visual_match = bool(candidate.get("visualMatch") is True)
+        quality = 3 if green_saved_match else (2 if visual_match else 1)
+        date_token = candidate_path.stem.rsplit("-", 1)[-1]
+        dated_rank = int(date_token) if date_token.isdigit() else 0
+        rank = (quality, dated_rank)
+        current = best_selection_by_cut.get(candidate_cut_id)
+        if current is None or rank > current[0]:
+            best_selection_by_cut[candidate_cut_id] = (rank, candidate_path)
+    selection_paths = sorted(
+        item[1] for item in best_selection_by_cut.values()
     )
     cuts_by_id = {
         str(cut.get("id") or ""): cut
@@ -7905,14 +8606,26 @@ def integrate_exact_source_render_selections(
             )
         except (OSError, json.JSONDecodeError):
             continue
+        project_wide = (
+            strict_verification.get("projectWidePostRelinkDependencyAudit")
+            or {}
+        )
+        project_wide_explicitly_blocked = bool(
+            project_wide
+            and project_wide.get("strictDependencyRenderSafe") is False
+        )
+        project_wide_safe = bool(
+            project_wide
+            and project_wide.get("strictDependencyRenderSafe") is True
+        )
         strict_safe = bool(
             strict_verification.get("status") == "verified"
             and strict_verification.get("strictDependencyRenderSafe") is True
+            and project_wide_safe
         )
         allow_incomplete = bool(
             selection.get("allowIncompleteDependencies") is True
             and str(selection.get("proofTier") or "").casefold() == "yellow"
-            and selection.get("visualMatch") is not True
         )
         if not strict_safe and not allow_incomplete:
             continue
@@ -7932,17 +8645,22 @@ def integrate_exact_source_render_selections(
             except (OSError, json.JSONDecodeError):
                 manifest = {}
         mapping_count = int(
-            strict_verification.get("mappingCount")
+            proof.get("exactMappingCount")
+            or selection.get("exactMappingCount")
+            or strict_verification.get("mappingCount")
             or (manifest.get("summary") or {}).get("mappedPaths")
             or (manifest.get("summary") or {}).get("totalMappedPaths")
             or len(manifest.get("mappings") or [])
             or 0
         )
-        unresolved_count = int(
+        unresolved_count = max(
+            int(
             (manifest.get("summary") or {}).get("unresolvedPaths")
             or (manifest.get("summary") or {}).get("totalUnresolvedPaths")
             or len(manifest.get("unresolved") or [])
             or 0
+            ),
+            int(project_wide.get("unresolvedPictureFiles") or 0),
         )
         if not strict_safe and unresolved_count < 1:
             continue
@@ -7952,10 +8670,18 @@ def integrate_exact_source_render_selections(
             or post.get("unresolvedPictureReferences")
             or unresolved_count
         )
-        project_wide = (
-            strict_verification.get("projectWidePostRelinkDependencyAudit")
-            or {}
+        all_unresolved_project_paths = list(
+            manifest.get("unresolved")
+            or project_wide.get("unresolvedPicturePaths")
+            or []
         )
+        unresolved_project_paths = all_unresolved_project_paths[:16]
+        if len(all_unresolved_project_paths) > len(unresolved_project_paths):
+            unresolved_project_paths.append(
+                "... "
+                f"{len(all_unresolved_project_paths) - 16} additional exact "
+                "paths retained in the strict verification audit"
+            )
         project = str(selection.get("project") or "")
         source_project = str(selection.get("sourceProject") or project)
         frame = selection.get("selectedProjectFrame", selection.get("frame"))
@@ -7991,7 +8717,12 @@ def integrate_exact_source_render_selections(
             "Exact-source full-color match"
             if canonical_match
             else (
-                "Exact-source visual match · save/reopen pending"
+                (
+                    "Exact-source visual match · project dependency closure "
+                    "pending"
+                    if project_wide_explicitly_blocked
+                    else "Exact-source visual match · save/reopen pending"
+                )
                 if visual_match
                 else "Exact-source full-color recovery · residual drift"
             )
@@ -8084,7 +8815,12 @@ def integrate_exact_source_render_selections(
                 "proofStatus": (
                     "rendered_exact_source_match"
                     if canonical_match
-                    else "rendered_exact_source_residual_drift"
+                    else (
+                        "rendered_exact_source_visual_match_dependency_"
+                        "incomplete"
+                        if visual_match
+                        else "rendered_exact_source_residual_drift"
+                    )
                 ),
                 "primaryRecoveryProof": True,
                 "redshiftProof": True,
@@ -8120,11 +8856,17 @@ def integrate_exact_source_render_selections(
             "renderCriticalExactRecoveries": mapping_count,
             "manifestPath": manifest_rel or None,
             "dependencyReferences": int(
-                post.get("pictureReferences")
+                project_wide.get("pictureReferences")
+                or project_wide.get("assetReferences")
+                or post.get("pictureReferences")
                 or post.get("dependencyReferences")
                 or 0
             ),
-            "linkedReferences": int(post.get("linkedReferences") or 0),
+            "linkedReferences": int(
+                post.get("linkedReferences")
+                or project_wide.get("linkedReferences")
+                or 0
+            ),
             "missingReferences": int(
                 post.get("renderCriticalUnresolvedReferences")
                 or post.get("unresolvedPictureReferences")
@@ -8145,9 +8887,9 @@ def integrate_exact_source_render_selections(
                 if strict_safe
                 else int(post.get("unresolvedPictureFiles") or unresolved_count)
             ),
-            "missingExamples": list(manifest.get("unresolved") or []),
+            "missingExamples": unresolved_project_paths,
             "projectWideStrictDependencyRenderSafe": bool(
-                project_wide.get("strictDependencyRenderSafe")
+                project_wide_safe
             ),
             "auditPath": strict_verification_rel,
             "evidencePath": str(selection_path.relative_to(APP_ROOT)),
@@ -8156,7 +8898,11 @@ def integrate_exact_source_render_selections(
             "auditTake": take,
             "auditFrame": frame,
             "activeProofFrame": frame,
-            "scope": "active_project_take_and_frame",
+            "scope": (
+                "project_wide_exact_dependency_closure"
+                if project_wide
+                else "active_project_take_and_frame"
+            ),
             "matchesActiveProject": True,
             "matchesActiveFrame": True,
         }
@@ -8179,6 +8925,11 @@ def integrate_exact_source_render_selections(
                 "status": "match" if canonical_match else "partial",
                 "label": proof_label,
                 "detail": detail,
+                "reviewedAt": now_iso(),
+                "authority": (
+                    "Exact-source saved/reopened render selection plus "
+                    "retained production-frame comparison"
+                ),
                 "projectPath": project,
                 "targetFrame": frame,
                 "cameraTake": take,
@@ -8195,7 +8946,11 @@ def integrate_exact_source_render_selections(
                     "status": (
                         "rendered_match"
                         if canonical_match
-                        else "rendered_residual_source_state_drift"
+                        else (
+                            "rendered_visual_match_dependency_incomplete"
+                            if visual_match
+                            else "rendered_residual_source_state_drift"
+                        )
                     ),
                     "outputPath": render_public,
                     "publicPath": render_public,
@@ -8211,7 +8966,7 @@ def integrate_exact_source_render_selections(
             }
         )
         if not strict_safe:
-            unresolved_paths = list(manifest.get("unresolved") or [])
+            unresolved_paths = unresolved_project_paths
             recovery_prescription = (
                 "Recover every unresolved authored path retained in the exact "
                 "manifest without cross-shot substitution; rerender the exact "
@@ -8248,6 +9003,19 @@ def integrate_exact_source_render_selections(
                 }
             )
         if canonical_match:
+            canonical_elements = dict(selection.get("elements") or {})
+            if not canonical_elements:
+                canonical_elements = {
+                    "location": "match",
+                    "camera": "match",
+                    "character": "match",
+                    "hair": "match",
+                    "wardrobe": "match",
+                    "teacup": "match",
+                    "ocean": "match",
+                    "materials": "match",
+                    "lighting": "match",
+                }
             recovery_prescription = (
                 "Preserve the untouched shot-authored source, dated saved "
                 "recovery, strict relink manifest, independent reopen audit, "
@@ -8267,17 +9035,7 @@ def integrate_exact_source_render_selections(
             ]
             verification.update(
                 {
-                    "elements": {
-                        "location": "match",
-                        "camera": "match",
-                        "character": "match",
-                        "hair": "match",
-                        "wardrobe": "match",
-                        "teacup": "match",
-                        "ocean": "match",
-                        "materials": "match",
-                        "lighting": "match",
-                    },
+                    "elements": canonical_elements,
                     "notes": str(selection.get("notes") or ""),
                     "blockers": [],
                     "remediation": [
@@ -8310,6 +9068,10 @@ def integrate_exact_source_render_selections(
             "projectName": Path(project).name,
             "take": take,
             "frame": frame,
+            "dependencyReferences": linkage["dependencyReferences"],
+            "linkedReferences": linkage["linkedReferences"],
+            "missingReferences": linkage["missingReferences"],
+            "missingFiles": 0 if strict_safe else unresolved_count,
             "renderCriticalExactRecoveries": mapping_count,
             "renderCriticalMissingReferences": (
                 0 if strict_safe else unresolved_reference_count
@@ -8321,9 +9083,19 @@ def integrate_exact_source_render_selections(
                 0 if strict_safe else unresolved_count
             ),
             "strictDependencyRenderSafe": strict_safe,
+            "projectWideStrictDependencyRenderSafe": project_wide_safe,
+            "strictLinked": strict_safe,
+            "verificationStatus": (
+                "match" if canonical_match else "partial"
+            ),
+            "verificationBlockers": (
+                []
+                if canonical_match
+                else ["camera_or_asset_visual_mismatch"]
+            ),
             "manifestPath": manifest_rel or None,
             "verificationPath": strict_verification_rel,
-            "missingExamples": list(manifest.get("unresolved") or []),
+            "missingExamples": unresolved_project_paths,
             "dependencyLabel": (
                 "Exact active dependencies verified"
                 if strict_safe
@@ -8351,6 +9123,59 @@ def integrate_exact_source_render_selections(
                 else verification.get("recoveryPrescription")
             ),
         }
+        if strict_safe:
+            # Component rows come from an earlier broad project audit and can
+            # otherwise retain stale warnings after a different exact source
+            # project has passed the saved/reopened project-wide collector.
+            # Preserve the category inventory, but make its link status agree
+            # with the authoritative zero-missing verification.
+            refreshed_components = []
+            for component in cut["c4dLinkStatus"].get("components") or []:
+                refreshed = dict(component)
+                refreshed.update(
+                    {
+                        "missingReferences": 0,
+                        "missingFiles": 0,
+                        "renderCriticalMissingReferences": 0,
+                        "renderCriticalMissingFiles": 0,
+                    }
+                )
+                if refreshed.get("status") not in {"embedded", "not_used"}:
+                    refreshed["status"] = "linked"
+                    refreshed["summary"] = (
+                        f"{refreshed.get('label') or 'Component'} linked"
+                    )
+                refreshed_components.append(refreshed)
+            cut["c4dLinkStatus"]["components"] = refreshed_components
+        if canonical_match and cut.get("c4dProxyAudit"):
+            historical_proxy_audit = dict(cut["c4dProxyAudit"])
+            historical_proxy_audit.update(
+                {
+                    "required": False,
+                    "status": "superseded_by_exact_source_recovery",
+                    "label": "Superseded by exact-source recovery",
+                    "detail": (
+                        "The earlier proxy diagnosis belongs to a rejected "
+                        "project revision. The selected exact-source project "
+                        "now renders the canonical character and shot state, "
+                        "passes the saved/reopened dependency gate, and is "
+                        "authoritative for current recovery."
+                    ),
+                    "historicalOnly": True,
+                    "authoritativeForCurrentRecovery": False,
+                }
+            )
+            cut["c4dProxyAudit"] = historical_proxy_audit
+        if canonical_match and cut.get("c4dSceneState"):
+            historical_scene_state = dict(cut["c4dSceneState"])
+            historical_scene_state.update(
+                {
+                    "historicalOnly": True,
+                    "authoritativeForCurrentRecovery": False,
+                    "supersededBy": project,
+                }
+            )
+            cut["c4dSceneState"] = historical_scene_state
         selected += 1
         visual_matches += int(canonical_match)
         dependency_safe += int(strict_safe)

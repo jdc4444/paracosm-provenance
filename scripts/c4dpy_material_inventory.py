@@ -26,6 +26,26 @@ def object_path(op) -> str:
     return "/".join(names)
 
 
+def walk_shaders(shader):
+    while shader:
+        yield shader
+        if shader.GetDown():
+            yield from walk_shaders(shader.GetDown())
+        shader = shader.GetNext()
+
+
+def shader_record(shader) -> dict[str, object]:
+    record: dict[str, object] = {
+        "name": shader.GetName(),
+        "typeId": shader.GetType(),
+    }
+    if shader.CheckType(c4d.Xbitmap):
+        record["filename"] = str(
+            shader[c4d.BITMAPSHADER_FILENAME] or ""
+        )
+    return record
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--project", type=Path, required=True)
@@ -63,6 +83,12 @@ def main() -> None:
                         "name": name,
                         "typeId": material.GetType(),
                         "nodeSpaces": spaces,
+                        "classicShaders": [
+                            shader_record(shader)
+                            for shader in walk_shaders(
+                                material.GetFirstShader()
+                            )
+                        ],
                     }
                 )
             material = material.GetNext()

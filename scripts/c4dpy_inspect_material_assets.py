@@ -240,6 +240,13 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--project", type=Path, required=True)
     parser.add_argument("--material", required=True)
+    parser.add_argument(
+        "--material-index",
+        type=int,
+        action="append",
+        default=[],
+        help="Restrict matching to one or more zero-based material indexes.",
+    )
     parser.add_argument("--term", action="append", default=[])
     parser.add_argument(
         "--asset",
@@ -274,6 +281,8 @@ def main() -> None:
             )
         ]
         for index, material in enumerate(materials):
+            if args.material_index and index not in args.material_index:
+                continue
             owner_asset = next(
                 (
                     asset
@@ -326,6 +335,7 @@ def main() -> None:
                 {
                     "project": str(project),
                     "material": args.material,
+                    "materialIndexes": args.material_index,
                     "terms": list(terms),
                     "matchCount": len(matches),
                     "matches": matches,

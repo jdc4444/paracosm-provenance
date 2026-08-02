@@ -83,7 +83,26 @@ def exact_local_translation(required: str, root: Path) -> Path | None:
     if not parts:
         return None
     candidate = root.joinpath(*parts)
-    return candidate if candidate.is_file() else None
+    return candidate if candidate.exists() else None
+
+
+def directory_tree_sha256(
+    path: Path, cache: dict[str, dict[str, int | str]]
+) -> tuple[str, int]:
+    """Fingerprint an exact translated directory and every file below it."""
+
+    digest = hashlib.sha256()
+    files = sorted(
+        (item for item in path.rglob("*") if item.is_file()),
+        key=lambda item: item.relative_to(path).as_posix(),
+    )
+    for item in files:
+        relative = item.relative_to(path).as_posix()
+        digest.update(relative.encode("utf-8"))
+        digest.update(b"\0")
+        digest.update(sha256(item, cache).encode("ascii"))
+        digest.update(b"\0")
+    return digest.hexdigest(), len(files)
 
 
 def maxon_asset_id(required: str) -> tuple[str, str] | None:
@@ -330,6 +349,29 @@ def main() -> None:
         ).get("files", {})
     for required in missing_paths:
         basename = Path(required.replace("\\", "/")).name
+        exact_translation = exact_local_translation(required, root)
+        if (
+            exact_translation is not None
+            and exact_translation.is_dir()
+            and not unsafe_relink_target_reason(str(exact_translation))
+        ):
+            tree_digest, entry_count = directory_tree_sha256(
+                exact_translation, hash_cache
+            )
+            mappings.append(
+                {
+                    "requiredPath": required,
+                    "targetPath": str(exact_translation),
+                    "basename": basename,
+                    "selectionBasis": "exact_local_directory_translation",
+                    "targetTreeSha256": tree_digest,
+                    "targetEntryCount": entry_count,
+                    "candidateCount": 1,
+                    "distinctCandidateHashes": 1,
+                    "candidateHashGroups": [],
+                }
+            )
+            continue
         candidates = by_basename.get(basename.casefold(), [])
         maxon_candidates = maxon_asset_cache_candidates(
             required, maxon_cache_roots
@@ -398,7 +440,6 @@ def main() -> None:
                 }
             )
             continue
-        exact_translation = exact_local_translation(required, root)
         ranked = sorted(
             candidates,
             key=lambda item: (
@@ -496,6 +537,11 @@ def main() -> None:
             "unresolvedPaths": len(unresolved),
             "exactLocalTranslations": sum(
                 item["selectionBasis"] == "exact_local_path_translation"
+                for item in mappings
+            ),
+            "exactLocalDirectoryTranslations": sum(
+                item["selectionBasis"]
+                == "exact_local_directory_translation"
                 for item in mappings
             ),
             "preferredFolderSelections": sum(

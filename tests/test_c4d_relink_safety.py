@@ -3,6 +3,8 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 
 from scripts.build_c4d_material_relink_manifest import (
+    directory_tree_sha256,
+    exact_local_translation,
     maxon_asset_cache_candidates,
     maxon_asset_id,
 )
@@ -14,6 +16,22 @@ from scripts.c4d_relink_safety import (
 
 
 class C4DRelinkSafetyTests(unittest.TestCase):
+    def test_exact_local_translation_accepts_authored_directory(self):
+        with TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            directory = root / "ZK" / "Kitchen" / "decor.fbm"
+            directory.mkdir(parents=True)
+            (directory / "base.png").write_bytes(b"base")
+            required = (
+                "C:/Users/artist/Dropbox/Absolutely/ZK/Kitchen/decor.fbm"
+            )
+            self.assertEqual(
+                exact_local_translation(required, root), directory
+            )
+            digest, entry_count = directory_tree_sha256(directory, {})
+            self.assertEqual(entry_count, 1)
+            self.assertEqual(len(digest), 64)
+
     def test_maxon_asset_id_requires_exact_hashed_basename(self):
         self.assertEqual(
             maxon_asset_id(

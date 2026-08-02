@@ -33,6 +33,20 @@ def main() -> None:
     parser.add_argument("--path-prefix")
     parser.add_argument("--frame", type=int, default=0)
     parser.add_argument("--no-materials", action="store_true")
+    parser.add_argument(
+        "--skip-evaluation",
+        action="store_true",
+        help=(
+            "Inspect the document's saved hierarchy without SetTime or "
+            "ExecutePasses. Useful for diagnosing scenes whose expressions "
+            "cannot be evaluated in the current runtime."
+        ),
+    )
+    parser.add_argument(
+        "--max-depth",
+        type=int,
+        help="Only emit hierarchy paths at or above this slash depth.",
+    )
     args = parser.parse_args()
     project = args.project.expanduser().resolve()
     load_flags = (
@@ -48,19 +62,22 @@ def main() -> None:
     if doc is None:
         raise RuntimeError(f"Could not load {project}")
     try:
-        doc.SetTime(c4d.BaseTime(args.frame, doc.GetFps()))
-        doc.ExecutePasses(
-            None,
-            True,
-            True,
-            True,
-            getattr(c4d, "BUILDFLAGS_NONE", 0),
-        )
+        if not args.skip_evaluation:
+            doc.SetTime(c4d.BaseTime(args.frame, doc.GetFps()))
+            doc.ExecutePasses(
+                None,
+                True,
+                True,
+                True,
+                getattr(c4d, "BUILDFLAGS_NONE", 0),
+            )
         terms = [item.casefold() for item in args.match]
         records = []
         for op in walk(doc.GetFirstObject()):
             path = object_path(op)
             if args.path_prefix and not path.startswith(args.path_prefix):
+                continue
+            if args.max_depth is not None and path.count("/") > args.max_depth:
                 continue
             if terms and not any(term in path.casefold() for term in terms):
                 continue
@@ -128,6 +145,7 @@ def main() -> None:
                 {
                     "project": str(project),
                     "frame": args.frame,
+                    "evaluated": not args.skip_evaluation,
                     "objectCount": len(records),
                     "objects": records,
                 },

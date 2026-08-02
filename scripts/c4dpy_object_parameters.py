@@ -132,6 +132,15 @@ def main() -> None:
     parser.add_argument("--frame", type=int, default=0)
     parser.add_argument("--take")
     parser.add_argument("--raw-data", action="store_true")
+    parser.add_argument(
+        "--skip-evaluation",
+        action="store_true",
+        help=(
+            "Read the object's saved values without SetTime or "
+            "ExecutePasses. This keeps failing expressions and generators "
+            "from blocking static scene-state inspection."
+        ),
+    )
     parser.add_argument("--result-json", type=Path)
     args = parser.parse_args()
 
@@ -151,10 +160,11 @@ def main() -> None:
             take_data.SetCurrentTake(take)
         elif args.take:
             raise RuntimeError(f"Take not found: {args.take}")
-        doc.SetTime(c4d.BaseTime(args.frame, fps))
-        doc.ExecutePasses(
-            None, True, True, True, getattr(c4d, "BUILDFLAGS_NONE", 0)
-        )
+        if not args.skip_evaluation:
+            doc.SetTime(c4d.BaseTime(args.frame, fps))
+            doc.ExecutePasses(
+                None, True, True, True, getattr(c4d, "BUILDFLAGS_NONE", 0)
+            )
         target = next(
             (
                 op
@@ -192,6 +202,7 @@ def main() -> None:
             "objectType": target.GetType(),
             "fps": fps,
             "frame": args.frame,
+            "evaluated": not args.skip_evaluation,
             "take": take.GetName() if take else None,
             "globalMatrix": serialize(target.GetMg(), fps),
             "parameters": parameters,

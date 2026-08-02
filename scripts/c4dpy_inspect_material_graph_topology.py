@@ -80,6 +80,14 @@ def main() -> None:
             stage = "inspect_graph_item"
             path = safe(item.GetPath)
             kind = safe(item.GetKind)
+            if not first_methods:
+                first_methods = sorted(
+                    name
+                    for name in dir(type(item))
+                    if "connect" in name.casefold()
+                    or "remove" in name.casefold()
+                    or "wire" in name.casefold()
+                )
             connections = []
             if kind in {"8", "16"}:
                 for direction_name, direction in (

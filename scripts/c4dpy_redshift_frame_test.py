@@ -9,6 +9,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import struct
 import time
 from pathlib import Path
@@ -32,6 +33,9 @@ REDSHIFT_PROXY_OBJECT_ID = 1038649
 REDSHIFT_VOLUME_OBJECT_ID = 1038655
 REDSHIFT_NODE_SPACE_ID = (
     "com.redshift3d.redshift4c4d.class.nodespace"
+)
+CODEX_CAMERA_MATRIX_DRIVER_TAG = (
+    "CODEX Exact Source Frame World Matrix Driver"
 )
 
 
@@ -920,6 +924,209 @@ def relink_node_material_assets(
     return changes
 
 
+def set_node_boolean_ports(
+    doc, requested_overrides: list[str]
+) -> list[dict[str, object]]:
+    """Set explicitly requested existing boolean ports for one render.
+
+    This is a narrow source-era compatibility diagnostic. It does not create
+    nodes, ports, or connections, and callers must identify both the material
+    index and the complete authored port path.
+    """
+
+    changes: list[dict[str, object]] = []
+    if not requested_overrides:
+        return changes
+    parsed: list[tuple[int, str, bool]] = []
+    for spec in requested_overrides:
+        try:
+            raw_index, port_path, raw_value = spec.split("|", 2)
+            material_index = int(raw_index)
+        except (ValueError, TypeError) as error:
+            raise RuntimeError(
+                "--set-node-bool must be "
+                "MATERIAL_INDEX|PORT_PATH|true|false; "
+                f"received {spec!r}"
+            ) from error
+        folded_value = raw_value.casefold()
+        if folded_value not in {"true", "false"}:
+            raise RuntimeError(
+                "--set-node-bool value must be true or false; "
+                f"received {spec!r}"
+            )
+        parsed.append((material_index, port_path, folded_value == "true"))
+
+    node_space_id = "com.redshift3d.redshift4c4d.class.nodespace"
+    node_space = maxon.Id(node_space_id)
+
+    def parse_boolean_port_value(value) -> bool:
+        if isinstance(value, bool):
+            return value
+        text = str(value).strip().casefold()
+        if text in {"true", "1"}:
+            return True
+        if text in {"false", "0"}:
+            return False
+        raise RuntimeError(
+            "Could not parse Redshift boolean port value: "
+            f"{type(value).__name__}({value!s})"
+        )
+
+    materials: list[c4d.BaseMaterial] = []
+    material = doc.GetFirstMaterial()
+    while material:
+        materials.append(material)
+        material = material.GetNext()
+    for material_index, port_path, requested_value in parsed:
+        if material_index < 0 or material_index >= len(materials):
+            raise RuntimeError(
+                f"Node-port material index not found: {material_index}"
+            )
+        material = materials[material_index]
+        reference = material.GetNodeMaterialReference()
+        if not reference.HasSpace(node_space):
+            raise RuntimeError(
+                "Requested node-port material has no Redshift graph: "
+                f"material[{material_index}]/{material.GetName()}"
+            )
+        graph = reference.GetGraph(node_space)
+        root = graph.GetRoot()
+        port = next(
+            (
+                item
+                for item in root.GetInnerNodes(
+                    maxon.NODE_KIND.ALL_MASK, True
+                )
+                if str(item.GetPath()) == port_path
+            ),
+            None,
+        )
+        if port is None:
+            raise RuntimeError(
+                "Requested authored node port not found: "
+                f"material[{material_index}]/{material.GetName()} · "
+                f"{port_path}"
+            )
+        value_before = port.GetPortValue()
+        with graph.BeginTransaction() as transaction:
+            port.SetPortValue(requested_value)
+            transaction.Commit()
+        value_after = port.GetPortValue()
+        parsed_value_before = parse_boolean_port_value(value_before)
+        parsed_value_after = parse_boolean_port_value(value_after)
+        if parsed_value_after != requested_value:
+            raise RuntimeError(
+                "Requested node boolean did not verify: "
+                f"{port_path} -> {value_after!r}"
+            )
+        changes.append(
+            {
+                "materialIndex": material_index,
+                "material": material.GetName(),
+                "nodeSpace": node_space_id,
+                "portPath": port_path,
+                "valueBefore": parsed_value_before,
+                "valueAfter": parsed_value_after,
+                "rawValueBefore": str(value_before),
+                "rawValueAfter": str(value_after),
+                "rawValueTypeBefore": type(value_before).__name__,
+                "rawValueTypeAfter": type(value_after).__name__,
+            }
+        )
+    return changes
+
+
+def disconnect_node_input_ports(
+    doc, requested_ports: list[str]
+) -> list[dict[str, object]]:
+    """Temporarily remove existing value wires from exact input ports."""
+
+    changes: list[dict[str, object]] = []
+    if not requested_ports:
+        return changes
+    parsed: list[tuple[int, str]] = []
+    for spec in requested_ports:
+        try:
+            raw_index, port_path = spec.split("|", 1)
+            material_index = int(raw_index)
+        except (ValueError, TypeError) as error:
+            raise RuntimeError(
+                "--disconnect-node-input must be MATERIAL_INDEX|PORT_PATH; "
+                f"received {spec!r}"
+            ) from error
+        parsed.append((material_index, port_path))
+
+    node_space_id = "com.redshift3d.redshift4c4d.class.nodespace"
+    node_space = maxon.Id(node_space_id)
+    materials: list[c4d.BaseMaterial] = []
+    material = doc.GetFirstMaterial()
+    while material:
+        materials.append(material)
+        material = material.GetNext()
+    for material_index, port_path in parsed:
+        if material_index < 0 or material_index >= len(materials):
+            raise RuntimeError(
+                f"Node-input material index not found: {material_index}"
+            )
+        material = materials[material_index]
+        reference = material.GetNodeMaterialReference()
+        if not reference.HasSpace(node_space):
+            raise RuntimeError(
+                "Requested node-input material has no Redshift graph: "
+                f"material[{material_index}]/{material.GetName()}"
+            )
+        graph = reference.GetGraph(node_space)
+        root = graph.GetRoot()
+        port = next(
+            (
+                item
+                for item in root.GetInnerNodes(
+                    maxon.NODE_KIND.ALL_MASK, True
+                )
+                if str(item.GetPath()) == port_path
+            ),
+            None,
+        )
+        if port is None:
+            raise RuntimeError(
+                "Requested authored node input not found: "
+                f"material[{material_index}]/{material.GetName()} · "
+                f"{port_path}"
+            )
+        connections = [
+            (source, wires)
+            for source, wires in port.GetConnections(maxon.PORT_DIR.INPUT)
+            if "Value:0" not in str(wires)
+        ]
+        if connections:
+            with graph.BeginTransaction() as transaction:
+                for source, _wires in connections:
+                    maxon.GraphModelHelper.RemoveConnection(source, port)
+                transaction.Commit()
+        remaining = [
+            (source, wires)
+            for source, wires in port.GetConnections(maxon.PORT_DIR.INPUT)
+            if "Value:0" not in str(wires)
+        ]
+        if remaining:
+            raise RuntimeError(
+                "Requested node input still has value connections: "
+                f"{port_path}"
+            )
+        changes.append(
+            {
+                "materialIndex": material_index,
+                "material": material.GetName(),
+                "nodeSpace": node_space_id,
+                "portPath": port_path,
+                "removedSourcePaths": [
+                    str(source.GetPath()) for source, _wires in connections
+                ],
+            }
+        )
+    return changes
+
+
 def relink_scene_assets(
     doc, requested_relinks: dict[str, str]
 ) -> list[dict[str, object]]:
@@ -1493,21 +1700,56 @@ def all_cameras(doc):
     ]
 
 
-def find_camera(doc, name: str, expected_path: str | None = None):
+def find_camera(
+    doc,
+    name: str,
+    expected_path: str | None = None,
+    expected_focal: float | None = None,
+):
     cameras = all_cameras(doc)
+
+    def focal_matches(camera) -> bool:
+        if expected_focal is None:
+            return True
+        for parameter_id in (
+            getattr(c4d, "RSCAMERAOBJECT_FOCAL_LENGTH", 500),
+            getattr(c4d, "CAMERA_FOCUS", 500),
+        ):
+            try:
+                return abs(float(camera[parameter_id]) - expected_focal) < 1e-6
+            except Exception:
+                continue
+        return False
+
     if expected_path:
         exact_path = next(
-            (op for op in cameras if object_path(op) == expected_path),
+            (
+                op
+                for op in cameras
+                if object_path(op) == expected_path and focal_matches(op)
+            ),
             None,
         )
         if exact_path:
             return exact_path
-    exact = next((op for op in cameras if op.GetName() == name), None)
+    exact = next(
+        (
+            op
+            for op in cameras
+            if op.GetName() == name and focal_matches(op)
+        ),
+        None,
+    )
     if exact:
         return exact
     folded = name.casefold()
     return next(
-        (op for op in cameras if op.GetName().casefold() == folded), None
+        (
+            op
+            for op in cameras
+            if op.GetName().casefold() == folded and focal_matches(op)
+        ),
+        None,
     )
 
 
@@ -1687,6 +1929,39 @@ def main() -> None:
         ),
     )
     parser.add_argument(
+        "--render-without-document-clone",
+        action="store_true",
+        help=(
+            "Pass Cinema's RENDERFLAGS_NODOCUMENTCLONE so Redshift consumes "
+            "the already evaluated and audited in-memory scene. This is "
+            "required when Cinema's internal render clone re-normalizes a "
+            "recovered legacy camera after its exact matrix is applied."
+        ),
+    )
+    parser.add_argument(
+        "--render-with-source-render-data",
+        action="store_true",
+        help=(
+            "Use the requested RenderData object directly in the isolated "
+            "in-memory document instead of cloning it. This preserves "
+            "legacy VideoPost-private asset state when cloning the exact "
+            "chain makes Cinema report a false asset-missing result. Only "
+            "single-frame/output overrides are changed, and the source "
+            "document is never saved."
+        ),
+    )
+    parser.add_argument(
+        "--skip-post-relink-dependency-audit",
+        action="store_true",
+        help=(
+            "Skip the final GetAllAssetsNew collector call immediately before "
+            "RenderDocument. Some legacy documents retain the collector's "
+            "non-picture asset-missing status and abort an otherwise valid "
+            "picture render. Use only with a separately recorded active-frame "
+            "dependency audit; the omission is recorded in the result."
+        ),
+    )
+    parser.add_argument(
         "--save-error-buffer",
         action="store_true",
         help=(
@@ -1703,6 +1978,14 @@ def main() -> None:
     parser.add_argument("--frame", type=int, required=True)
     parser.add_argument("--camera", required=True)
     parser.add_argument("--camera-path")
+    parser.add_argument(
+        "--camera-focal-match",
+        type=float,
+        help=(
+            "Disambiguate duplicate authored camera names/paths by exact "
+            "evaluated focal length."
+        ),
+    )
     parser.add_argument(
         "--reconstruct-camera-position",
         nargs=3,
@@ -1758,6 +2041,16 @@ def main() -> None:
         ),
     )
     parser.add_argument(
+        "--apply-codex-camera-matrix-driver",
+        action="store_true",
+        help=(
+            "After scene evaluation, apply the four numeric vectors stored "
+            "in the requested camera's named Codex matrix-driver tag. The "
+            "tag code is never executed; arbitrary project scripts remain "
+            "disabled."
+        ),
+    )
+    parser.add_argument(
         "--grey-override",
         action="store_true",
         help=(
@@ -1794,6 +2087,32 @@ def main() -> None:
         ),
     )
     parser.add_argument(
+        "--enable-animation-tracks",
+        action="append",
+        default=[],
+        metavar="OBJECT_PATH",
+        help=(
+            "Temporarily enable every existing CTrack on one exact object "
+            "before frame evaluation. This restores authored-but-disabled "
+            "animation without creating, retiming, or changing any keys; "
+            "the source document is never saved."
+        ),
+    )
+    parser.add_argument(
+        "--sample-disabled-animation-tracks",
+        action="append",
+        default=[],
+        metavar="OBJECT_PATH",
+        help=(
+            "Temporarily set an exact object's parameters to the values of "
+            "its existing authored curves at --frame while leaving the "
+            "saved disabled-track flags unchanged. This is a still-frame "
+            "diagnostic for legacy scenes that crash when disabled tracks "
+            "are re-enabled; no keys are created or modified and the source "
+            "document is never saved."
+        ),
+    )
+    parser.add_argument(
         "--keep-root",
         action="append",
         default=[],
@@ -1812,6 +2131,20 @@ def main() -> None:
             "before evaluation. Repeat for multiple roots. This can bypass "
             "a legacy simulation container that current Cinema 4D cannot "
             "initialize; the source document is never saved."
+        ),
+    )
+    parser.add_argument(
+        "--remove-object",
+        action="append",
+        default=[],
+        metavar="OBJECT_PATH",
+        help=(
+            "Remove one exact hierarchy path from the in-memory diagnostic "
+            "before evaluation. This is intended for an already-disabled "
+            "legacy object whose unresolved private dependency still makes "
+            "Cinema abort the entire render during asset preflight. The "
+            "removed object's saved modes and type are recorded, and the "
+            "source document is never saved."
         ),
     )
     parser.add_argument(
@@ -1854,6 +2187,29 @@ def main() -> None:
             "Load exact node-material relinks from a JSON manifest containing "
             "a mappings array of requiredPath/targetPath records. The source "
             "document is never saved."
+        ),
+    )
+    parser.add_argument(
+        "--set-node-bool",
+        action="append",
+        default=[],
+        metavar="MATERIAL_INDEX|PORT_PATH|true|false",
+        help=(
+            "Temporarily set one existing authored Redshift boolean port by "
+            "exact material index and full graph path. Repeat for multiple "
+            "ports; no nodes or connections are created and the source "
+            "document is never saved."
+        ),
+    )
+    parser.add_argument(
+        "--disconnect-node-input",
+        action="append",
+        default=[],
+        metavar="MATERIAL_INDEX|PORT_PATH",
+        help=(
+            "Temporarily remove existing value wires from one exact authored "
+            "Redshift input port. The node and its saved constant value are "
+            "preserved; the source document is never saved."
         ),
     )
     parser.add_argument(
@@ -2047,6 +2403,21 @@ def main() -> None:
                 if root.GetName() not in keep_roots:
                     removed_roots.append(root.GetName())
                     root.Remove()
+        removed_objects = []
+        for target in args.remove_object:
+            scene_object = find_object(doc, target)
+            if scene_object is None:
+                raise RuntimeError(f"Object {target!r} not found")
+            removed_objects.append(
+                {
+                    "objectPath": object_path(scene_object),
+                    "name": scene_object.GetName(),
+                    "typeId": scene_object.GetType(),
+                    "editorMode": scene_object.GetEditorMode(),
+                    "renderMode": scene_object.GetRenderMode(),
+                }
+            )
+            scene_object.Remove()
         inventory = enumerate_scene(doc)
         result["inventory"] = inventory
 
@@ -2153,9 +2524,17 @@ def main() -> None:
         temporary_scene_material_relinks = relink_scene_assets(
             doc, requested_material_relinks
         )
+        temporary_node_boolean_overrides = set_node_boolean_ports(
+            doc, args.set_node_bool
+        )
+        temporary_node_input_disconnects = disconnect_node_input_ports(
+            doc, args.disconnect_node_input
+        )
         frozen_redshift_proxies = freeze_redshift_proxy_frames(
             doc, args.freeze_redshift_proxy
         )
+        sampled_disabled_animation_tracks = []
+        enabled_animation_tracks = []
         # Legacy Redshift camera objects can be animated and take-overridden.
         # Evaluate the requested frame/take before cloning one into a native
         # camera; cloning at the document's load-time frame silently freezes
@@ -2192,9 +2571,137 @@ def main() -> None:
                 True,
                 getattr(c4d, "BUILDFLAGS_NONE", 0),
             )
-        camera = find_camera(doc, args.camera, args.camera_path)
+        # Some old Alembic generator hierarchies crash when their disabled
+        # animation tracks are switched on before the document has completed
+        # one stable evaluation pass. Initialize the saved scene first, then
+        # enable only the explicitly requested authored tracks. The later
+        # camera/render evaluation pass consumes the newly enabled curves.
+        for target in args.enable_animation_tracks:
+            scene_object = find_object(doc, target)
+            if scene_object is None:
+                raise RuntimeError(f"Object {target!r} not found")
+            track_records = []
+            for track in scene_object.GetCTracks():
+                description = track.GetDescriptionID()
+                was_off = bool(track[c4d.ID_CTRACK_ANIMOFF])
+                track[c4d.ID_CTRACK_ANIMOFF] = False
+                track.Message(c4d.MSG_UPDATE)
+                track_records.append(
+                    {
+                        "description": [
+                            int(description[index].id)
+                            for index in range(description.GetDepth())
+                        ],
+                        "keyCount": (
+                            track.GetCurve().GetKeyCount()
+                            if track.GetCurve() is not None
+                            else 0
+                        ),
+                        "wasAnimationOff": was_off,
+                        "isAnimationOff": bool(
+                            track[c4d.ID_CTRACK_ANIMOFF]
+                        ),
+                    }
+                )
+            if not track_records:
+                raise RuntimeError(
+                    f"Object {target!r} has no animation tracks"
+                )
+            scene_object.Message(c4d.MSG_UPDATE)
+            enabled_animation_tracks.append(
+                {
+                    "objectPath": object_path(scene_object),
+                    "tracks": track_records,
+                }
+            )
+        if enabled_animation_tracks:
+            c4d.EventAdd()
+        # Some legacy render-time scenes contain the complete authored motion
+        # curves but save them disabled. Let the document initialize in its
+        # stable saved state first, then sample only the requested exact
+        # objects at the target frame. Re-enabling these tracks before the
+        # first pass can crash old Alembic generator hierarchies.
+        sample_time = c4d.BaseTime(args.frame, fps)
+        for target in args.sample_disabled_animation_tracks:
+            scene_object = find_object(doc, target)
+            if scene_object is None:
+                raise RuntimeError(f"Object {target!r} not found")
+            track_records = []
+            sampled_vectors = {
+                903: c4d.Vector(scene_object.GetRelPos()),
+                904: c4d.Vector(scene_object.GetRelRot()),
+                905: c4d.Vector(scene_object.GetRelScale()),
+            }
+            sampled_vector_ids = set()
+            for track in scene_object.GetCTracks():
+                curve = track.GetCurve()
+                if curve is None:
+                    continue
+                description = track.GetDescriptionID()
+                value = float(curve.GetValue(sample_time))
+                was_off = bool(track[c4d.ID_CTRACK_ANIMOFF])
+                parameter_ids = [
+                    int(description[index].id)
+                    for index in range(description.GetDepth())
+                ]
+                if (
+                    len(parameter_ids) >= 2
+                    and parameter_ids[0] in sampled_vectors
+                    and parameter_ids[1] in (1000, 1001, 1002)
+                ):
+                    component = parameter_ids[1] - 1000
+                    sampled_vectors[parameter_ids[0]][component] = value
+                    sampled_vector_ids.add(parameter_ids[0])
+                elif not scene_object.SetParameter(
+                    description,
+                    value,
+                    getattr(c4d, "DESCFLAGS_SET_0", 0),
+                ):
+                    raise RuntimeError(
+                        "Could not sample authored curve for "
+                        f"{target!r} at {parameter_ids}"
+                    )
+                track_records.append(
+                    {
+                        "description": parameter_ids,
+                        "keyCount": curve.GetKeyCount(),
+                        "sampledFrame": args.frame,
+                        "sampledValue": value,
+                        "animationOff": was_off,
+                    }
+                )
+            if 903 in sampled_vector_ids:
+                scene_object.SetRelPos(sampled_vectors[903])
+            if 904 in sampled_vector_ids:
+                scene_object.SetRelRot(sampled_vectors[904])
+            if 905 in sampled_vector_ids:
+                scene_object.SetRelScale(sampled_vectors[905])
+            if not track_records:
+                raise RuntimeError(
+                    f"Object {target!r} has no animation curves"
+                )
+            scene_object.Message(c4d.MSG_UPDATE)
+            sampled_disabled_animation_tracks.append(
+                {
+                    "objectPath": object_path(scene_object),
+                    "tracks": track_records,
+                }
+            )
+        if sampled_disabled_animation_tracks:
+            c4d.EventAdd()
+        camera = find_camera(
+            doc,
+            args.camera,
+            args.camera_path,
+            args.camera_focal_match,
+        )
         fallback_to_take_camera = False
-        if camera is None and take_data and take:
+        if (
+            camera is None
+            and args.camera_focal_match is None
+            and take_data
+            and take
+        ):
             effective_camera = take.GetEffectiveCamera(take_data)
             camera = (
                 effective_camera[0]
@@ -2341,6 +2848,14 @@ def main() -> None:
         post_evaluation_scene_material_relinks = relink_scene_assets(
             doc, requested_material_relinks
         )
+        post_evaluation_node_boolean_overrides = set_node_boolean_ports(
+            doc, args.set_node_bool
+        )
+        post_evaluation_node_input_disconnects = (
+            disconnect_node_input_ports(
+                doc, args.disconnect_node_input
+            )
+        )
         post_evaluation_frozen_redshift_proxies = (
             freeze_redshift_proxy_frames(
                 doc, args.freeze_redshift_proxy
@@ -2382,6 +2897,41 @@ def main() -> None:
                     "editorMode": scene_object.GetEditorMode(),
                 }
             )
+        post_evaluation_enabled_animation_tracks = []
+        for target in args.enable_animation_tracks:
+            scene_object = find_object(doc, target)
+            if scene_object is None:
+                raise RuntimeError(
+                    f"Object {target!r} disappeared after evaluation"
+                )
+            track_records = []
+            for track in scene_object.GetCTracks():
+                description = track.GetDescriptionID()
+                track[c4d.ID_CTRACK_ANIMOFF] = False
+                track.Message(c4d.MSG_UPDATE)
+                track_records.append(
+                    {
+                        "description": [
+                            int(description[index].id)
+                            for index in range(description.GetDepth())
+                        ],
+                        "keyCount": (
+                            track.GetCurve().GetKeyCount()
+                            if track.GetCurve() is not None
+                            else 0
+                        ),
+                        "isAnimationOff": bool(
+                            track[c4d.ID_CTRACK_ANIMOFF]
+                        ),
+                    }
+                )
+            scene_object.Message(c4d.MSG_UPDATE)
+            post_evaluation_enabled_animation_tracks.append(
+                {
+                    "objectPath": object_path(scene_object),
+                    "tracks": track_records,
+                }
+            )
         temporary_material_relinks.extend(
             post_evaluation_material_relinks
         )
@@ -2402,9 +2952,111 @@ def main() -> None:
                 tuple(args.diagnostic_material_color),
             )
         )
-        post_relink_dependency_audit = collect_post_relink_assets(
-            doc, project
-        )
+        camera_matrix_driver = None
+        if args.apply_codex_camera_matrix_driver:
+            matrix_driver_tag = next(
+                (
+                    tag
+                    for tag in camera.GetTags()
+                    if tag.GetType() == c4d.Tpython
+                    and tag.GetName() == CODEX_CAMERA_MATRIX_DRIVER_TAG
+                ),
+                None,
+            )
+            if matrix_driver_tag is None:
+                raise RuntimeError(
+                    "Requested camera has no named Codex matrix driver"
+                )
+            matrix_driver_code = str(
+                matrix_driver_tag[c4d.TPYTHON_CODE] or ""
+            )
+            number = (
+                r"[-+]?(?:\d+(?:\.\d*)?|\.\d+)"
+                r"(?:[eE][-+]?\d+)?"
+            )
+            vector_pattern = re.compile(
+                rf"c4d\.Vector\(\s*({number})\s*,\s*"
+                rf"({number})\s*,\s*({number})\s*\)"
+            )
+            vector_values = [
+                tuple(float(value) for value in match)
+                for match in vector_pattern.findall(matrix_driver_code)
+            ]
+            if len(vector_values) != 4:
+                raise RuntimeError(
+                    "Named Codex matrix driver must contain exactly four "
+                    "literal c4d.Vector triples"
+                )
+            matrix_before = camera.GetMg()
+            camera.SetMg(
+                c4d.Matrix(
+                    *(c4d.Vector(*value) for value in vector_values)
+                )
+            )
+            camera.Message(c4d.MSG_UPDATE)
+            matrix_after = camera.GetMg()
+            camera_matrix_driver = {
+                "tag": matrix_driver_tag.GetName(),
+                "codeExecuted": False,
+                "literalVectorCount": len(vector_values),
+                "matrixBefore": {
+                    "off": [
+                        matrix_before.off.x,
+                        matrix_before.off.y,
+                        matrix_before.off.z,
+                    ],
+                    "v1": [
+                        matrix_before.v1.x,
+                        matrix_before.v1.y,
+                        matrix_before.v1.z,
+                    ],
+                    "v2": [
+                        matrix_before.v2.x,
+                        matrix_before.v2.y,
+                        matrix_before.v2.z,
+                    ],
+                    "v3": [
+                        matrix_before.v3.x,
+                        matrix_before.v3.y,
+                        matrix_before.v3.z,
+                    ],
+                },
+                "matrixAfter": {
+                    "off": [
+                        matrix_after.off.x,
+                        matrix_after.off.y,
+                        matrix_after.off.z,
+                    ],
+                    "v1": [
+                        matrix_after.v1.x,
+                        matrix_after.v1.y,
+                        matrix_after.v1.z,
+                    ],
+                    "v2": [
+                        matrix_after.v2.x,
+                        matrix_after.v2.y,
+                        matrix_after.v2.z,
+                    ],
+                    "v3": [
+                        matrix_after.v3.x,
+                        matrix_after.v3.y,
+                        matrix_after.v3.z,
+                    ],
+                },
+            }
+        if args.skip_post_relink_dependency_audit:
+            post_relink_dependency_audit = {
+                "skipped": True,
+                "reason": (
+                    "Explicitly skipped because Cinema retains a non-picture "
+                    "collector asset-missing status into RenderDocument; a "
+                    "separate active-frame audit is required."
+                ),
+            }
+        else:
+            post_relink_dependency_audit = collect_post_relink_assets(
+                doc, project
+            )
 
         # RenderData owns its VideoPost/PostFX chain separately from its base
         # container. Passing only a cloned GetData() container can therefore
@@ -2415,31 +3067,36 @@ def main() -> None:
         # clone. The source document is never saved.
         requested_render_data_name = render_data.GetName()
         source_video_posts = render_data_video_posts(render_data)
-        exact_render_data = render_data.GetClone(
-            getattr(c4d, "COPYFLAGS_NONE", 0)
-        )
-        if exact_render_data is None:
-            raise RuntimeError(
-                f"Could not clone render data {requested_render_data_name!r}"
+        exact_render_data_clone = not args.render_with_source_render_data
+        if args.render_with_source_render_data:
+            doc.SetActiveRenderData(render_data)
+            cloned_video_posts = source_video_posts
+        else:
+            exact_render_data = render_data.GetClone(
+                getattr(c4d, "COPYFLAGS_NONE", 0)
             )
-        exact_render_data.SetName(
-            requested_render_data_name + " CODEX EXACT IN-MEMORY COPY"
-        )
-        doc.InsertRenderData(exact_render_data)
-        doc.SetActiveRenderData(exact_render_data)
-        cloned_video_posts = render_data_video_posts(exact_render_data)
-        if cloned_video_posts != source_video_posts:
-            raise RuntimeError(
-                "Exact render-data clone changed the VideoPost chain: "
-                + json.dumps(
-                    {
-                        "source": source_video_posts,
-                        "clone": cloned_video_posts,
-                    },
-                    separators=(",", ":"),
+            if exact_render_data is None:
+                raise RuntimeError(
+                    f"Could not clone render data {requested_render_data_name!r}"
                 )
+            exact_render_data.SetName(
+                requested_render_data_name + " CODEX EXACT IN-MEMORY COPY"
             )
-        render_data = exact_render_data
+            doc.InsertRenderData(exact_render_data)
+            doc.SetActiveRenderData(exact_render_data)
+            cloned_video_posts = render_data_video_posts(exact_render_data)
+            if cloned_video_posts != source_video_posts:
+                raise RuntimeError(
+                    "Exact render-data clone changed the VideoPost chain: "
+                    + json.dumps(
+                        {
+                            "source": source_video_posts,
+                            "clone": cloned_video_posts,
+                        },
+                        separators=(",", ":"),
+                    )
+                )
+            render_data = exact_render_data
         settings = render_data.GetDataInstance()
         source_renderer_id = settings[c4d.RDATA_RENDERENGINE]
         source_format_depth = settings[c4d.RDATA_FORMATDEPTH]
@@ -2520,10 +3177,11 @@ def main() -> None:
                 "cameraReconstructionTemplateType": (
                     camera_reconstruction_template_type
                 ),
+                "cameraMatrixDriver": camera_matrix_driver,
                 "take": take.GetName() if take else None,
                 "renderData": requested_render_data_name,
                 "activeRenderData": render_data.GetName(),
-                "exactRenderDataClone": True,
+                "exactRenderDataClone": exact_render_data_clone,
                 "sourceVideoPosts": source_video_posts,
                 "clonedVideoPosts": cloned_video_posts,
                 "sourceRendererId": source_renderer_id,
@@ -2537,6 +3195,15 @@ def main() -> None:
                 ),
                 "postEvaluationDisabledObjects": (
                     post_evaluation_disabled_objects
+                ),
+                "temporarilyEnabledAnimationTracks": (
+                    enabled_animation_tracks
+                ),
+                "postEvaluationEnabledAnimationTracks": (
+                    post_evaluation_enabled_animation_tracks
+                ),
+                "sampledDisabledAnimationTracks": (
+                    sampled_disabled_animation_tracks
                 ),
                 "temporarilyOffsetObjects": offset_objects,
                 "temporaryExactDependencyRelinks": (
@@ -2554,6 +3221,18 @@ def main() -> None:
                 "postEvaluationExactSceneMaterialRelinks": (
                     post_evaluation_scene_material_relinks
                 ),
+                "temporaryNodeBooleanOverrides": (
+                    temporary_node_boolean_overrides
+                ),
+                "postEvaluationNodeBooleanOverrides": (
+                    post_evaluation_node_boolean_overrides
+                ),
+                "temporaryNodeInputDisconnects": (
+                    temporary_node_input_disconnects
+                ),
+                "postEvaluationNodeInputDisconnects": (
+                    post_evaluation_node_input_disconnects
+                ),
                 "frozenRedshiftProxies": frozen_redshift_proxies,
                 "postEvaluationFrozenRedshiftProxies": (
                     post_evaluation_frozen_redshift_proxies
@@ -2570,6 +3249,7 @@ def main() -> None:
                 "simulationStartFrame": args.simulation_start_frame,
                 "simulationFramesStepped": simulation_frames_stepped,
                 "removedTopLevelObjects": removed_roots,
+                "removedObjects": removed_objects,
                 "greyOverride": args.grey_override,
                 "proofLightBrightness": args.proof_light_brightness,
                 "removedTextureTags": removed_texture_tags,
@@ -2654,6 +3334,16 @@ def main() -> None:
         render_flags = (
             c4d.RENDERFLAGS_SHOWERRORS | c4d.RENDERFLAGS_EXTERNAL
         )
+        no_document_clone_flag = getattr(
+            c4d, "RENDERFLAGS_NODOCUMENTCLONE", None
+        )
+        if args.render_without_document_clone:
+            if no_document_clone_flag is None:
+                raise RuntimeError(
+                    "Cinema 4D does not expose "
+                    "RENDERFLAGS_NODOCUMENTCLONE"
+                )
+            render_flags |= no_document_clone_flag
         ocio_render_flag = getattr(
             c4d, "RENDERFLAGS_OCIO_BAKE_RENDERING", None
         )
@@ -2675,6 +3365,14 @@ def main() -> None:
                     "RDATA_BAKE_OCIO_VIEW_TRANSFORM_RENDER"
                 )
         result["renderFlags"] = int(render_flags)
+        result["noDocumentCloneRequested"] = bool(
+            args.render_without_document_clone
+        )
+        result["noDocumentCloneFlagValue"] = (
+            int(no_document_clone_flag)
+            if no_document_clone_flag is not None
+            else None
+        )
         result["ocioRenderBakeFlagRequested"] = (
             args.render_with_ocio_bake_flag
         )

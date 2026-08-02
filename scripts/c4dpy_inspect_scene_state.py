@@ -165,6 +165,22 @@ def visibility_payload(op, doc=None) -> dict[str, object]:
         "localBoundsCenter": local_bounds_center,
         "localBoundsRadius": local_bounds_radius,
         "worldBoundsCenter": world_bounds_center,
+        "animationOffBit": bool(op.GetBit(c4d.BIT_ANIM_OFF)),
+        "tracks": [
+            {
+                "description": [
+                    int(track.GetDescriptionID()[index].id)
+                    for index in range(track.GetDescriptionID().GetDepth())
+                ],
+                "keyCount": (
+                    track.GetCurve().GetKeyCount()
+                    if track.GetCurve() is not None
+                    else 0
+                ),
+                "animationOff": bool(track[c4d.ID_CTRACK_ANIMOFF]),
+            }
+            for track in op.GetCTracks()
+        ],
     }
 
 
@@ -182,7 +198,9 @@ def render_data_payload(item, fps: int) -> dict[str, object] | None:
     }
 
 
-def take_records(doc, terms: tuple[str, ...]) -> list[dict[str, object]]:
+def take_records(
+    doc, terms: tuple[str, ...], *, evaluate: bool = True
+) -> list[dict[str, object]]:
     take_data = doc.GetTakeData()
     if not take_data:
         return []
@@ -194,9 +212,14 @@ def take_records(doc, terms: tuple[str, ...]) -> list[dict[str, object]]:
         current = take
         while current:
             take_data.SetCurrentTake(current)
-            doc.ExecutePasses(
-                None, True, True, True, getattr(c4d, "BUILDFLAGS_NONE", 0)
-            )
+            if evaluate:
+                doc.ExecutePasses(
+                    None,
+                    True,
+                    True,
+                    True,
+                    getattr(c4d, "BUILDFLAGS_NONE", 0),
+                )
             camera_result = current.GetEffectiveCamera(take_data)
             camera = (
                 camera_result[0]
@@ -256,9 +279,10 @@ def take_records(doc, terms: tuple[str, ...]) -> list[dict[str, object]]:
         visit(take_data.GetMainTake())
     finally:
         take_data.SetCurrentTake(original)
-        doc.ExecutePasses(
-            None, True, True, True, getattr(c4d, "BUILDFLAGS_NONE", 0)
-        )
+        if evaluate:
+            doc.ExecutePasses(
+                None, True, True, True, getattr(c4d, "BUILDFLAGS_NONE", 0)
+            )
     return records
 
 
@@ -268,6 +292,12 @@ def main() -> None:
     parser.add_argument("--frame", type=int, default=0)
     parser.add_argument("--term", action="append", default=[])
     parser.add_argument("--camera-only", action="store_true")
+    parser.add_argument(
+        "--skip-evaluation",
+        action="store_true",
+        help="Inspect saved take overrides without ExecutePasses.",
+    )
+    parser.add_argument("--result-json", type=Path)
     args = parser.parse_args()
     project = args.project.expanduser().resolve()
     terms = tuple(
@@ -290,18 +320,20 @@ def main() -> None:
     )
     flags = (
         c4d.SCENEFILTER_OBJECTS
-        | c4d.SCENEFILTER_MATERIALS
         | c4d.SCENEFILTER_DONTCORRECTOUTPUTFORMAT
     )
+    if not args.skip_evaluation:
+        flags |= c4d.SCENEFILTER_MATERIALS
     doc = c4d.documents.LoadDocument(str(project), flags)
     if doc is None:
         raise RuntimeError(f"Could not load {project}")
     try:
         fps = doc.GetFps()
-        doc.SetTime(c4d.BaseTime(args.frame, fps))
-        doc.ExecutePasses(
-            None, True, True, True, getattr(c4d, "BUILDFLAGS_NONE", 0)
-        )
+        if not args.skip_evaluation:
+            doc.SetTime(c4d.BaseTime(args.frame, fps))
+            doc.ExecutePasses(
+                None, True, True, True, getattr(c4d, "BUILDFLAGS_NONE", 0)
+            )
         cameras = [
             camera_payload(op)
             for op in walk_objects(doc.GetFirstObject())
@@ -385,8 +417,16 @@ def main() -> None:
                 for op in walk_objects(doc.GetFirstObject())
                 if object_path(op).count("/") <= 1
             ],
-            "takes": take_records(doc, terms),
+            "takes": take_records(
+                doc, terms, evaluate=not args.skip_evaluation
+            ),
         }
+        if args.result_json is not None:
+            result_json = args.result_json.expanduser().resolve()
+            result_json.parent.mkdir(parents=True, exist_ok=True)
+            result_json.write_text(
+                json.dumps(payload, indent=2), encoding="utf-8"
+            )
         print(
             "PARACOSM_SCENE_STATE_JSON="
             + json.dumps(payload, separators=(",", ":")),
