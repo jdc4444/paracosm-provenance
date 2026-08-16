@@ -1,0 +1,102 @@
+{
+  "cutId": "CUT-041",
+  "generatedAt": "2026-08-14T13:08:23+07:00",
+  "status": "rejected_runtime_diagnostic",
+  "strictProof": false,
+  "promoteToStrict": false,
+  "purpose": "Bounded source-era runtime A/B test after the exact archived Redshift 2026.2 module became locally runnable.",
+  "sourceLineage": {
+    "untouchedArchivePath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/AS/0 Finishing/02 Projects/03 TH/_codex_072526/history_originals/3A AS 0422 horses_history_20260425_0446.c4d",
+    "untouchedArchiveSha256": "1b4fae1077678cc6a7e62c644510a572b3a162699963932478340c4f418addd4",
+    "workingCopyPath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/AS/0 Finishing/02 Projects/03 TH/_codex_072526/3A AS 0422 horses_history_20260425_0446_codex_072526.c4d",
+    "workingCopySha256": "60025f97f9c61b5aa2f19c1dcf5947dc04831ac26eec7fc904cedb44ad51c4fe",
+    "sourceProjectPreserved": true,
+    "sourceProjectSaved": false
+  },
+  "selection": {
+    "frame": 98,
+    "take": "Main",
+    "camera": "horse galloping",
+    "cameraPath": "2 horse galloping/horse galloping",
+    "renderData": "My Render Setting.11",
+    "sampledDisabledAnimationTrackObjectPaths": [
+      "2 horse galloping/horse galloping.1",
+      "2 horse galloping/horse galloping.6"
+    ],
+    "selectionEvidencePath": "data/c4d-local-recovery-20260809/CUT-041-source-era-local-recovery-diagnosis-20260809.json"
+  },
+  "runtime": {
+    "host": "Cinema 4D 2026.1.2 archived c4dpy",
+    "redshiftModule": "Redshift 2026.2.0 exact original backup",
+    "c4dpyPath": "/Users/alphaone/Paracosm_Runtime_Archive_20260802/Maxon Cinema 4D 2026.1.2 with Redshift 2026.1.1/c4dpy.app/Contents/MacOS/c4dpy",
+    "modulePathSuffix": "/Users/alphaone/Paracosm_Runtime_Archive_20260802/Redshift_2026.2.0_ORIGINAL_BACKUP",
+    "redshiftCoreDataPath": "/Applications/redshift",
+    "isolatedPreferences": true,
+    "renderSeconds": 159.77
+  },
+  "appliedRecoveryManifests": [
+    "data/c4d-cut-dependency-audits-20260728/CUT-041-relink-manifest.json",
+    "data/c4d-local-recovery-20260809/CUT-041-exact-identical-hash-consensus-gsg-relink-manifest-20260809.json",
+    "data/c4d-local-recovery-20260809/CUT-041-exact-authored-path-local-relink-manifest-20260809.json"
+  ],
+  "runtimeGraphAudit": {
+    "temporaryExactMaterialRelinksApplied": 74,
+    "temporaryExactSceneMaterialRelinksApplied": 43,
+    "assetReferencesEnumerated": 315,
+    "pictureReferencesEnumerated": 314,
+    "linkedReferences": 233,
+    "unresolvedPictureFiles": 36,
+    "strictDependencyRenderSafe": false,
+    "interpretation": "Redshift 2026.2 enumerates a materially different legacy-node reference set than the prior Redshift 2026.1.1 audit, which enumerated 329 references, linked 277, and left six unresolved files after the exact Teacup recovery. This mismatch is additional node-database incompatibility evidence; the new run is not a dependency-complete proof."
+  },
+  "canonicalReference": {
+    "path": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/SG/C4D/_renders/AS/TH/0420/3j_horses gallop/3j_horses gallop0098.png",
+    "sha256": "26392206345d83f336968f380b75dcee548a5dc11c8f8ab7ca3f234f03f58009"
+  },
+  "diagnosticRender": {
+    "publicPath": "/archive/c4d-local-recovery-20260814/CUT-041/CUT-041-c4d2026p1p2-rs2026p2-sampled-horse-curves-f0098-240.png",
+    "filesystemPath": "/Users/alphaone/Documents/Code/paracosm-provenance/public/archive/c4d-local-recovery-20260814/CUT-041/CUT-041-c4d2026p1p2-rs2026p2-sampled-horse-curves-f0098-240.png",
+    "sha256": "22565d77ec254ee8c8a117baa11fecbc5db7cd3e123f4879af6d88fbfd9cdc82",
+    "width": 240,
+    "height": 135,
+    "resultPath": "data/c4d-local-recovery-20260814/CUT-041-c4d2026p1p2-rs2026p2-sampled-horse-curves-f0098-240-result.json",
+    "resultSha256": "220703e714a5706fdd6aa7ac446150939c603135541e48b44d2964ec4edc0189",
+    "displayComparisonPath": "data/c4d-local-recovery-20260814/CUT-041-c4d2026p1p2-rs2026p2-sampled-horse-curves-f0098-240-display-comparison.json",
+    "displayComparisonSha256": "ca3f163a9953093ab9a086d7ad87b7d00065fc4bda3fef18d469f10d6f176df0",
+    "advancedComparisonPath": "data/c4d-local-recovery-20260814/CUT-041-c4d2026p1p2-rs2026p2-sampled-horse-curves-f0098-240-advanced-comparison.json",
+    "advancedComparisonSha256": "7802ed60b8a99f959f00dc83cf4f68d87e0d20724acef5c39b13a4b385ffeb1c",
+    "contactSheetPublicPath": "/archive/c4d-local-recovery-20260814/CUT-041/CUT-041-canonical-left-vs-c4d2026p1p2-rs2026p2-right-f0098-240-contact.png",
+    "contactSheetSha256": "08043dcd739cc9ef131905bbf238ffbdd2323b9c6e9fbf18c978159f6feaa842"
+  },
+  "comparison": {
+    "displayMeanAbsoluteError": 0.46633777022361755,
+    "displayRootMeanSquareError": 0.5156521797180176,
+    "perChannelCorrelation": [
+      -0.19038821455093483,
+      0.16161952881797104,
+      0.03833849329327009
+    ],
+    "normalizedMeanAbsoluteError": 0.26406,
+    "luminanceCorrelation": 0.033513,
+    "edgeCorrelation": 0.311668,
+    "visualFinding": "The authored camera and sampled horse placement are visible, but the render is decisively saturated red and is not a canonical visual match."
+  },
+  "priorRedshift2026p1p1Comparison": {
+    "displayMeanAbsoluteError": 0.43154075741767883,
+    "normalizedMeanAbsoluteError": 0.201461,
+    "luminanceCorrelation": 0.326065,
+    "edgeCorrelation": 0.339981,
+    "finding": "The Redshift 2026.2 diagnostic is worse than the already-rejected Redshift 2026.1.1 diagnostic on every recorded aggregate comparison metric."
+  },
+  "exactFilesStillRequired": [
+    "./Mainframe/ASSETS/MOCAP/ABSOLUTELY/Greece/TH/alembic/Subdivision_Surface.5.abc",
+    "GB House-2_Deco_Beads_Diffuse.png",
+    "GB House-2_Deco_Beads_Gloss.png",
+    "GB House-2_Deco_Beads_Normal.png"
+  ],
+  "presentButLegacyGraphInaccessible": [
+    "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/AS/0 Finishing/02 Projects/03 TH/AKFX-RS-ProceduralFrost-Shader/tex/Frost-Seamless.jpg",
+    "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/AS/0 Finishing/02 Projects/03 TH/AKFX-RS-ProceduralFrost-Shader/tex/IceBlock008_OVERLAY_6K.jpg"
+  ],
+  "conclusion": "Reject the local Cinema 4D 2026.1.2 plus Redshift 2026.2 route for CUT-041. Preserve the neutral camera/geometry proof as the atlas selection. Continue only with the production Cinema 4D 2026.1.4 host and matching Redshift 2026.1.x node implementation/asset database, plus the four absent exact files and accessible bindings for the two local Frost maps."
+}

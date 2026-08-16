@@ -139,6 +139,10 @@ export function resolveC4DEvidenceStatus(
     verification?.checks?.cameraProofMatched === true ||
     cameraResult === "match" ||
     cameraResult.startsWith("match_") ||
+    cameraResult === "strong_match" ||
+    cameraResult.startsWith("strong_match_") ||
+    cameraResult === "close_match" ||
+    cameraResult.startsWith("close_match_") ||
     cameraResult.startsWith("confirmed_exact_");
   const proofRendered = Boolean(
     verification?.checks?.cameraProofRendered === true &&
