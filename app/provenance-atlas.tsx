@@ -955,6 +955,8 @@ function isCompositeEvidenceImage(path?: string) {
 const browserEvidenceImageOverrides: Record<string, string> = {
   "/archive/c4d-local-recovery-20260809/CUT-061/full-gui-host/CUT-061-full-gui-c4d2026p1p4-exact-source-f0342-160x90-20260812_0342.tif":
     "/archive/c4d-local-recovery-20260809/CUT-061/full-gui-host/CUT-061-full-gui-c4d2026p1p4-exact-source-f0342-160x90-20260812_0342.png",
+  "/archive/redshift-source-era-recovery-20260812/CUT-071/CUT-071-native-source-era-EV0-authored-TIFF-f0534-1056_0534.tif":
+    "/archive/redshift-source-era-recovery-20260812/CUT-071/CUT-071-native-source-era-EV0-authored-TIFF-f0534-1056_0534.png",
 };
 
 function publicEvidenceImagePath(path?: string) {
