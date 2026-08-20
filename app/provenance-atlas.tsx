@@ -945,19 +945,30 @@ function isCompositeEvidenceImage(path?: string) {
   const name = fileName(path);
   return (
     /(?:contact|comparison|composite|sheet)/i.test(name) ||
-    /(?:^|[._-])pair(?:[._-]|$)/i.test(name)
+    /(?:^|[._-])pair(?:[._-]|$)/i.test(name) ||
+    /(?:^|[._-])(?:vs|side[-_]by[-_]side|split[-_]screen)(?:[._-]|$)/i.test(
+      name,
+    )
   );
 }
+
+const browserEvidenceImageOverrides: Record<string, string> = {
+  "/archive/c4d-local-recovery-20260809/CUT-061/full-gui-host/CUT-061-full-gui-c4d2026p1p4-exact-source-f0342-160x90-20260812_0342.tif":
+    "/archive/c4d-local-recovery-20260809/CUT-061/full-gui-host/CUT-061-full-gui-c4d2026p1p4-exact-source-f0342-160x90-20260812_0342.png",
+};
 
 function publicEvidenceImagePath(path?: string) {
   if (!path) return undefined;
   const publicMarker = "/paracosm-provenance/public/";
   const publicIndex = path.indexOf(publicMarker);
+  let publicPath: string | undefined;
   if (publicIndex >= 0) {
-    return `/${path.slice(publicIndex + publicMarker.length)}`;
+    publicPath = `/${path.slice(publicIndex + publicMarker.length)}`;
+  } else if (path.startsWith("/archive/") || path.startsWith("/data/")) {
+    publicPath = path;
   }
-  return path.startsWith("/archive/") || path.startsWith("/data/")
-    ? path
+  return publicPath
+    ? browserEvidenceImageOverrides[publicPath] || publicPath
     : undefined;
 }
 

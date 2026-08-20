@@ -2873,6 +2873,12 @@ test("Pipeline can filter by authoritative C4D states and switch to a thumbnail 
   assert.match(atlas, /eligibleColorPreview/);
   assert.match(atlas, /isFreshFullColorEvidence/);
   assert.ok(atlas.includes("/(?:^|[._-])pair(?:[._-]|$)/i"));
+  assert.ok(
+    atlas.includes(
+      "/(?:^|[._-])(?:vs|side[-_]by[-_]side|split[-_]screen)(?:[._-]|$)/i",
+    ),
+  );
+  assert.match(atlas, /browserEvidenceImageOverrides/);
   assert.doesNotMatch(
     atlas,
     /\(\?:contact\|comparison\|composite\|pair\|sheet\)/,
