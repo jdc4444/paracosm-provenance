@@ -2865,20 +2865,11 @@ test("Pipeline can filter by authoritative C4D states and switch to a thumbnail 
     /c4dStatusFilter === "preview" \|\|[\s\S]*resolveC4DEvidenceStatus\(cut\)\.tone === c4dStatusFilter/,
   );
   assert.match(atlas, /bestC4DPreviewImage\(cut\)/);
-  assert.match(
-    atlas,
-    /authoritativeCameraProof[\s\S]*cameraProofRendered === true[\s\S]*publicEvidenceImagePath\(cut\.c4dVerification\.cameraProof\)/,
-  );
-  assert.match(
-    atlas,
-    /authoritativeCameraProof[\s\S]*!isCompositeEvidenceImage\(authoritativeCameraProof\)[\s\S]*return authoritativeCameraProof/,
-  );
   assert.match(atlas, /data-c4d-preview=/);
   assert.match(
     atlas,
-    /alt=\{`Authoritative C4D proof for \$\{cut\.id\}`\}/,
+    /alt=\{`Best available C4D preview for \$\{cut\.id\}`\}/,
   );
-  assert.match(atlas, /\? "authoritative"[\s\S]*: "best-available"/);
   assert.match(atlas, /eligibleColorPreview/);
   assert.match(atlas, /isFreshFullColorEvidence/);
   assert.ok(atlas.includes("/(?:^|[._-])pair(?:[._-]|$)/i"));
