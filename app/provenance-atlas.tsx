@@ -990,6 +990,16 @@ type C4DNavMode = "all" | "preview" | C4DCameraProofTone;
 
 function bestC4DPreviewImage(cut: Cut) {
   const resolved = resolveC4DEvidenceStatus(cut);
+  const authoritativeCameraProof =
+    cut.c4dVerification?.checks.cameraProofRendered === true
+      ? publicEvidenceImagePath(cut.c4dVerification.cameraProof)
+      : undefined;
+  if (
+    authoritativeCameraProof &&
+    !isCompositeEvidenceImage(authoritativeCameraProof)
+  ) {
+    return authoritativeCameraProof;
+  }
   const materialAudit = cut.c4dVerification?.materialCompatibilityAudit;
   const reviewedFullColorCameraProof =
     cut.c4dVerification?.checks.cameraProofRendered &&
@@ -2612,20 +2622,14 @@ export function ProvenanceAtlas() {
                   plannedDescription: shot?.description,
                 });
                 const previewMode = c4dStatusFilter === "preview";
-                const directFullColorCameraProof =
-                  publicEvidenceImagePath(
-                    cut.c4dVerification?.cameraProof,
-                  );
+                const authoritativeCameraProof =
+                  cut.c4dVerification?.checks.cameraProofRendered === true
+                    ? publicEvidenceImagePath(
+                        cut.c4dVerification.cameraProof,
+                      )
+                    : undefined;
                 const previewImage = previewMode
-                  ? directFullColorCameraProof &&
-                    /(?:full[-_]color|donor[-_]materials|exact191[-_]ocio)/i.test(
-                      directFullColorCameraProof,
-                    ) &&
-                    !isCompositeEvidenceImage(
-                      directFullColorCameraProof,
-                    )
-                    ? directFullColorCameraProof
-                    : bestC4DPreviewImage(cut)
+                  ? bestC4DPreviewImage(cut)
                   : undefined;
                 return (
                   <article
@@ -2635,12 +2639,14 @@ export function ProvenanceAtlas() {
                     data-c4d-preview={
                       previewMode
                         ? previewImage
-                          ? "best-available"
+                          ? previewImage === authoritativeCameraProof
+                            ? "authoritative"
+                            : "best-available"
                           : "missing"
                         : undefined
                     }
                     data-c4d-preview-image={previewImage}
-                    data-c4d-direct-proof={directFullColorCameraProof}
+                    data-c4d-direct-proof={authoritativeCameraProof}
                     className={`cut-card ${
                       selected?.shotId === cut.shotId ? "selected" : ""
                     }`}
@@ -2688,7 +2694,7 @@ export function ProvenanceAtlas() {
                                   key={previewImage}
                                   className="c4d-preview-proof"
                                   src={previewImage}
-                                  alt={`Best available C4D preview for ${cut.id}`}
+                                  alt={`Authoritative C4D proof for ${cut.id}`}
                                 />
                               ) : (
                                 <div
