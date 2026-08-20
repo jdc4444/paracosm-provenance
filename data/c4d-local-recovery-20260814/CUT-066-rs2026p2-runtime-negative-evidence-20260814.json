@@ -1,0 +1,114 @@
+{
+  "cutId": "CUT-066",
+  "generatedAt": "2026-08-14T13:34:31+07:00",
+  "status": "rejected_runtime_diagnostic",
+  "strictProof": false,
+  "promoteToStrict": false,
+  "purpose": "Bounded runtime-only A/B test of the exact archived Redshift 2026.2 module against the strongest dependency-complete CUT-066 saved project at the editorially proven authored frame 762.",
+  "sourceLineage": {
+    "strictSavedProjectPath": "/Users/alphaone/Futuro Dropbox/Futuro Team Folder/Absolutely/SG/C4D/_codex_072826/5C_ButtonNewFit_NA_v003_as_CODEX_SOURCEERA_STRICT_20260813.c4d",
+    "strictSavedProjectSha256": "933af0fedd09a130a87b1e7b24a18371e5d0bf9e09086790de19481fb0ac0d28",
+    "strictSavedProjectBytes": 12347065586,
+    "sourceProjectPreserved": true,
+    "sourceProjectSavedDuringTest": false,
+    "savedReopenEvidencePath": "data/c4d-local-recovery-20260809/CUT-066-source-era-projectwide-strict-saved-reopen-verification-f0755-20260813.json"
+  },
+  "selection": {
+    "frame": 762,
+    "take": "Main",
+    "camera": "RS Camera",
+    "cameraPath": "CAMERAS/RS Camera",
+    "renderData": "My Render Setting",
+    "selectionEvidencePath": "data/c4d-local-recovery-20260809/CUT-066-authored-frame0762-camera-recovery-evidence-20260813.json"
+  },
+  "runtime": {
+    "host": "Cinema 4D 2026.1.2 archived c4dpy",
+    "redshiftModule": "Redshift 2026.2.0 exact original backup",
+    "redshiftModuleSha256": "26fd9412673e5aa55b825ee50728dc37c2dba71a3426dab203ed856f4e4a609d",
+    "c4dpyPath": "/Users/alphaone/Paracosm_Runtime_Archive_20260802/Maxon Cinema 4D 2026.1.2 with Redshift 2026.1.1/c4dpy.app/Contents/MacOS/c4dpy",
+    "modulePathSuffix": "/Users/alphaone/Paracosm_Runtime_Archive_20260802/Maxon Cinema 4D 2026.1.2 with Redshift 2026.1.1/Redshift_2026.2.0_ORIGINAL_BACKUP",
+    "redshiftCoreDataPath": "/Applications/redshift",
+    "isolatedPreferences": true,
+    "licenseMethod": "Maxon App",
+    "renderSeconds": 424.44
+  },
+  "dependencyAudit": {
+    "assetReferences": 168,
+    "pictureReferences": 167,
+    "linkedReferences": 167,
+    "unresolvedPictureReferences": 0,
+    "unresolvedPictureFiles": 0,
+    "strictDependencyRenderSafe": true,
+    "temporaryExactDependencyRelinks": 0,
+    "temporaryExactMaterialRelinks": 0,
+    "temporaryExactSceneMaterialRelinks": 0
+  },
+  "historicalSourceReference": {
+    "path": "/Users/alphaone/Documents/Code/paracosm-provenance/public/archive/redshift-historical-production-source-20260810/CUT-066/CUT-066-5C-BUTTONS-i10-f0762-historical-source-1280x720.png",
+    "sha256": "782719640974c6efb02ae7506bf37552a18958623d7a5e0dbb6bee496a60339c",
+    "derivedFromExactSourceFrame": true
+  },
+  "diagnosticRender": {
+    "publicPath": "/archive/c4d-local-recovery-20260814/CUT-066/CUT-066-strict-saved-rs2026p2-f0762-240x135.png",
+    "filesystemPath": "/Users/alphaone/Documents/Code/paracosm-provenance/public/archive/c4d-local-recovery-20260814/CUT-066/CUT-066-strict-saved-rs2026p2-f0762-240x135.png",
+    "sha256": "969d4b1a6711ca41fae8c8a49ff77e65901b384d57bac6c0641881da1c1ce73e",
+    "width": 240,
+    "height": 135,
+    "resultPath": "data/c4d-local-recovery-20260814/CUT-066-strict-saved-rs2026p2-f0762-240x135-result.json",
+    "resultSha256": "e80737d0fdf22f9de10c5cfac79cee0b160b2784eb88a44e1a8c749b2d9a8980",
+    "displayComparisonPath": "data/c4d-local-recovery-20260814/CUT-066-strict-saved-rs2026p2-f0762-240x135-display-comparison.json",
+    "displayComparisonSha256": "bf91c955d4143e1d2eb5e59f98201aad12f121acce1a3e6e38a8afc8cdf32170",
+    "advancedComparisonPath": "data/c4d-local-recovery-20260814/CUT-066-strict-saved-rs2026p2-f0762-240x135-advanced-comparison.json",
+    "advancedComparisonSha256": "476bb8fcd896bca74507a9ca58bec94389239ce4f52bfd660f416b61a640ad41",
+    "contactSheetPublicPath": "/archive/c4d-local-recovery-20260814/CUT-066/CUT-066-historical-source-left-vs-rs2026p2-right-f0762-240-contact.png",
+    "contactSheetSha256": "d1b507c72c6acaab4098b4144da6f15e23588bccb50a94f30193b636bfedc72b"
+  },
+  "redshift2026p2Comparison": {
+    "candidateMeanRgb": [
+      0.08045339584350586,
+      0.04396820813417435,
+      0.020225701853632927
+    ],
+    "referenceMeanRgb": [
+      0.15701422095298767,
+      0.07741477340459824,
+      0.03473450616002083
+    ],
+    "displayMeanAbsoluteError": 0.04983393847942352,
+    "displayRootMeanSquareError": 0.10147291421890259,
+    "perChannelCorrelation": [
+      0.8474417303864815,
+      0.8591882164446352,
+      0.8351157403614041
+    ],
+    "normalizedMeanAbsoluteError": 0.068956,
+    "luminanceCorrelation": 0.862259,
+    "edgeCorrelation": 0.46743,
+    "visualFinding": "The exact wardrobe, pose, authored camera movement and depth-of-field pattern remain present, but the frame is visibly darker than the exact historical source."
+  },
+  "fairNormalizedRedshift2026p1p1Baseline": {
+    "candidateSourcePath": "/Users/alphaone/Documents/Code/paracosm-provenance/public/archive/c4d-local-recovery-20260809/CUT-066/native-authored-frame0762-20260813/CUT-066-source-era-native-authored-camera-f0762-480x270-20260813.png",
+    "normalizedWidth": 240,
+    "normalizedHeight": 135,
+    "displayComparisonPath": "data/c4d-local-recovery-20260814/CUT-066-rs2026p1p1-f0762-240x135-normalized-display-comparison.json",
+    "displayComparisonSha256": "291142d8994a60f2ad38ef85ed1e4e8aebeb027d78e7bd7fd918db18359849f2",
+    "advancedComparisonPath": "data/c4d-local-recovery-20260814/CUT-066-rs2026p1p1-f0762-240x135-normalized-advanced-comparison.json",
+    "advancedComparisonSha256": "c185177d2bc3acce3d4ab054ac5a65a560b3d2491160e6c6cbc53b302a339505",
+    "candidateMeanRgb": [
+      0.08501565456390381,
+      0.04571613296866417,
+      0.020256968215107918
+    ],
+    "displayMeanAbsoluteError": 0.047935694456100464,
+    "displayRootMeanSquareError": 0.09545540064573288,
+    "perChannelCorrelation": [
+      0.8580027935331027,
+      0.8719337647094094,
+      0.8388455773914464
+    ],
+    "normalizedMeanAbsoluteError": 0.066213,
+    "luminanceCorrelation": 0.876057,
+    "edgeCorrelation": 0.573845
+  },
+  "conclusion": "Reject the exact archived Redshift 2026.2 runtime as a CUT-066 recovery route. At a common 240x135 comparison size it is darker and worse than Redshift 2026.1.1 on display MAE, RMSE, every RGB correlation, normalized MAE, luminance correlation and edge correlation. Preserve the existing Redshift 2026.1.1 authored-frame-762 partial proof and continue only with recovery of the exact final-GG-0203 producer project/render-job or unsaved render-time state; do not hand-grade or comparison-fit the C4D proof."
+}

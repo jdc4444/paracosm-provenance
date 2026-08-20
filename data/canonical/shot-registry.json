@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "identityRule": "Persistent shotId reconciled by source media; CUT-### is current display order only.",
-  "updatedAt": "2026-08-02T05:29:14.116315+00:00",
+  "updatedAt": "2026-08-16T04:30:22.642158+00:00",
   "currentOrder": [
     "SHOT-066829309B70",
     "SHOT-D5E125ED41A0",
@@ -107,7 +107,7 @@
       "lastRecordInFrame": 0,
       "lastRecordOutFrame": 353,
       "sectionCode": "ND",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-D5E125ED41A0",
@@ -123,7 +123,7 @@
       "lastRecordInFrame": 353,
       "lastRecordOutFrame": 453,
       "sectionCode": "ND",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-D398125B8881",
@@ -139,7 +139,7 @@
       "lastRecordInFrame": 453,
       "lastRecordOutFrame": 611,
       "sectionCode": "ND",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-C70BBBF80539",
@@ -155,7 +155,7 @@
       "lastRecordInFrame": 611,
       "lastRecordOutFrame": 657,
       "sectionCode": "ND",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-0F5A472F49B5",
@@ -171,7 +171,7 @@
       "lastRecordInFrame": 657,
       "lastRecordOutFrame": 723,
       "sectionCode": "ND",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-5998E15FAF89",
@@ -187,7 +187,7 @@
       "lastRecordInFrame": 723,
       "lastRecordOutFrame": 820,
       "sectionCode": "ND",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-74B2820EF88D",
@@ -203,7 +203,7 @@
       "lastRecordInFrame": 820,
       "lastRecordOutFrame": 894,
       "sectionCode": "ND",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-E05FA211C519",
@@ -219,7 +219,7 @@
       "lastRecordInFrame": 894,
       "lastRecordOutFrame": 965,
       "sectionCode": "ND",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-D3D6571454AA",
@@ -235,7 +235,7 @@
       "lastRecordInFrame": 965,
       "lastRecordOutFrame": 1032,
       "sectionCode": "ND",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-FE60DA1B4E4C",
@@ -251,7 +251,7 @@
       "lastRecordInFrame": 1032,
       "lastRecordOutFrame": 1067,
       "sectionCode": "ND",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-FC0146FCA758",
@@ -267,7 +267,7 @@
       "lastRecordInFrame": 1067,
       "lastRecordOutFrame": 1103,
       "sectionCode": "ND",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-30DA429A687E",
@@ -283,7 +283,7 @@
       "lastRecordInFrame": 1103,
       "lastRecordOutFrame": 1184,
       "sectionCode": "ND",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-48FABDFAE8CC",
@@ -299,7 +299,7 @@
       "lastRecordInFrame": 1184,
       "lastRecordOutFrame": 1211,
       "sectionCode": "ND",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-E579157079F6",
@@ -315,7 +315,7 @@
       "lastRecordInFrame": 1211,
       "lastRecordOutFrame": 1418,
       "sectionCode": "ND",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-5079D9717ADC",
@@ -331,7 +331,7 @@
       "lastRecordInFrame": 1418,
       "lastRecordOutFrame": 1495,
       "sectionCode": "ND",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-1D4C7423A02A",
@@ -347,7 +347,7 @@
       "lastRecordInFrame": 1495,
       "lastRecordOutFrame": 1671,
       "sectionCode": "ND",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-7FFDA06AC6C7",
@@ -363,7 +363,7 @@
       "lastRecordInFrame": 1671,
       "lastRecordOutFrame": 1886,
       "sectionCode": "NTH",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-A11733C13162",
@@ -379,7 +379,7 @@
       "lastRecordInFrame": 1886,
       "lastRecordOutFrame": 2044,
       "sectionCode": "NTH",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-EE13F756EA6D",
@@ -412,7 +412,7 @@
       "lastRecordInFrame": 2217,
       "lastRecordOutFrame": 2338,
       "sectionCode": "NTH",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-25A3D2C30AF0",
@@ -428,7 +428,7 @@
       "lastRecordInFrame": 2338,
       "lastRecordOutFrame": 2406,
       "sectionCode": "NTH",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-1F0BD4F9ADAC",
@@ -444,7 +444,7 @@
       "lastRecordInFrame": 2406,
       "lastRecordOutFrame": 2476,
       "sectionCode": "NTH",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-0281778FBD5F",
@@ -460,7 +460,7 @@
       "lastRecordInFrame": 2476,
       "lastRecordOutFrame": 2605,
       "sectionCode": "NTH",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-DEC542FBBE49",
@@ -476,7 +476,7 @@
       "lastRecordInFrame": 2605,
       "lastRecordOutFrame": 2689,
       "sectionCode": "NTH",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-943FBF890F94",
@@ -492,7 +492,7 @@
       "lastRecordInFrame": 2689,
       "lastRecordOutFrame": 2940,
       "sectionCode": "NTH",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-BCD1F12294CC",
@@ -508,7 +508,7 @@
       "lastRecordInFrame": 2940,
       "lastRecordOutFrame": 2975,
       "sectionCode": "NTH",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-DA1D04185830",
@@ -524,7 +524,7 @@
       "lastRecordInFrame": 2975,
       "lastRecordOutFrame": 3011,
       "sectionCode": "NTH",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-A6D340C51FD7",
@@ -540,7 +540,7 @@
       "lastRecordInFrame": 3011,
       "lastRecordOutFrame": 3080,
       "sectionCode": "NTH",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-8CF532DFEA9F",
@@ -556,7 +556,7 @@
       "lastRecordInFrame": 3080,
       "lastRecordOutFrame": 3171,
       "sectionCode": "NTH",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-A5A5096D6788",
@@ -572,7 +572,7 @@
       "lastRecordInFrame": 3171,
       "lastRecordOutFrame": 3346,
       "sectionCode": "NTH",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-5DEFD7DBD0D3",
@@ -588,7 +588,7 @@
       "lastRecordInFrame": 3346,
       "lastRecordOutFrame": 3616,
       "sectionCode": "TH",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-9053CE6A2547",
@@ -604,7 +604,7 @@
       "lastRecordInFrame": 3616,
       "lastRecordOutFrame": 3701,
       "sectionCode": "TH",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-A65570260CB4",
@@ -620,7 +620,7 @@
       "lastRecordInFrame": 3701,
       "lastRecordOutFrame": 3848,
       "sectionCode": "TH",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-ABE5DCD3DA6A",
@@ -636,7 +636,7 @@
       "lastRecordInFrame": 3848,
       "lastRecordOutFrame": 3931,
       "sectionCode": "TH",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-AF7673202D2E",
@@ -652,7 +652,7 @@
       "lastRecordInFrame": 3931,
       "lastRecordOutFrame": 4021,
       "sectionCode": "TH",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-08C2B3387DC3",
@@ -668,7 +668,7 @@
       "lastRecordInFrame": 4021,
       "lastRecordOutFrame": 4149,
       "sectionCode": "TH",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-A372FAEED07F",
@@ -684,7 +684,7 @@
       "lastRecordInFrame": 4149,
       "lastRecordOutFrame": 4344,
       "sectionCode": "TH",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-86294C618FA6",
@@ -700,7 +700,7 @@
       "lastRecordInFrame": 4344,
       "lastRecordOutFrame": 4429,
       "sectionCode": "TH",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-B61B41783D14",
@@ -716,7 +716,7 @@
       "lastRecordInFrame": 4429,
       "lastRecordOutFrame": 4530,
       "sectionCode": "TH",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-8B3CE24C7DB2",
@@ -732,7 +732,7 @@
       "lastRecordInFrame": 4530,
       "lastRecordOutFrame": 4599,
       "sectionCode": "TH",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-6C1737A47F55",
@@ -748,7 +748,7 @@
       "lastRecordInFrame": 4599,
       "lastRecordOutFrame": 4727,
       "sectionCode": "TH",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-47D35038298C",
@@ -764,7 +764,7 @@
       "lastRecordInFrame": 4727,
       "lastRecordOutFrame": 4832,
       "sectionCode": "TH",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-B04F6091ECDA",
@@ -797,7 +797,7 @@
       "lastRecordInFrame": 4832,
       "lastRecordOutFrame": 4948,
       "sectionCode": "TH",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-30291D8112AF",
@@ -813,7 +813,7 @@
       "lastRecordInFrame": 4948,
       "lastRecordOutFrame": 4981,
       "sectionCode": "TH",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-F5F7D4C21B2B",
@@ -829,7 +829,7 @@
       "lastRecordInFrame": 4981,
       "lastRecordOutFrame": 5060,
       "sectionCode": "TH",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-0BD7D551A7BC",
@@ -845,7 +845,7 @@
       "lastRecordInFrame": 5060,
       "lastRecordOutFrame": 5150,
       "sectionCode": "TH",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-E4E099BB0EDF",
@@ -861,7 +861,7 @@
       "lastRecordInFrame": 5150,
       "lastRecordOutFrame": 5244,
       "sectionCode": "NA",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-0659E177DFD1",
@@ -877,7 +877,7 @@
       "lastRecordInFrame": 5244,
       "lastRecordOutFrame": 5340,
       "sectionCode": "NA",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-C64F982ECC2A",
@@ -893,7 +893,7 @@
       "lastRecordInFrame": 5340,
       "lastRecordOutFrame": 5551,
       "sectionCode": "NA",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-7EF1FAB45AF3",
@@ -909,7 +909,7 @@
       "lastRecordInFrame": 5551,
       "lastRecordOutFrame": 5665,
       "sectionCode": "NA",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-457ED4607779",
@@ -925,7 +925,7 @@
       "lastRecordInFrame": 5665,
       "lastRecordOutFrame": 5722,
       "sectionCode": "NA",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-C71C3F034E3E",
@@ -941,7 +941,7 @@
       "lastRecordInFrame": 5722,
       "lastRecordOutFrame": 5779,
       "sectionCode": "NA",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-F12187D26EC9",
@@ -957,7 +957,7 @@
       "lastRecordInFrame": 5779,
       "lastRecordOutFrame": 5837,
       "sectionCode": "NA",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-8F86AEA12856",
@@ -973,7 +973,7 @@
       "lastRecordInFrame": 5837,
       "lastRecordOutFrame": 5933,
       "sectionCode": "NA",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-7CB6F6C0EBD4",
@@ -989,7 +989,7 @@
       "lastRecordInFrame": 5933,
       "lastRecordOutFrame": 5956,
       "sectionCode": "NA",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-F83DA3BB4EBD",
@@ -1005,7 +1005,7 @@
       "lastRecordInFrame": 5956,
       "lastRecordOutFrame": 6031,
       "sectionCode": "NA",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-D600D17D7348",
@@ -1021,7 +1021,7 @@
       "lastRecordInFrame": 6031,
       "lastRecordOutFrame": 6168,
       "sectionCode": "NA",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-20DAC97C2F4D",
@@ -1038,7 +1038,7 @@
       "lastRecordInFrame": 6168,
       "lastRecordOutFrame": 6764,
       "sectionCode": "NA",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "GAP-016E79CBF3CC",
@@ -1054,7 +1054,7 @@
       "lastRecordInFrame": 6764,
       "lastRecordOutFrame": 6837,
       "sectionCode": "NA",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-B821DB2A0D55",
@@ -1070,7 +1070,7 @@
       "lastRecordInFrame": 6837,
       "lastRecordOutFrame": 7380,
       "sectionCode": "GG",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-B216744DF31B",
@@ -1086,7 +1086,7 @@
       "lastRecordInFrame": 7380,
       "lastRecordOutFrame": 7513,
       "sectionCode": "GG",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-81E575065A54",
@@ -1102,7 +1102,7 @@
       "lastRecordInFrame": 7513,
       "lastRecordOutFrame": 7678,
       "sectionCode": "GG",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-38F61416B1FF",
@@ -1118,7 +1118,7 @@
       "lastRecordInFrame": 7678,
       "lastRecordOutFrame": 7732,
       "sectionCode": "GG",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-B59EE440070C",
@@ -1134,7 +1134,7 @@
       "lastRecordInFrame": 7732,
       "lastRecordOutFrame": 7783,
       "sectionCode": "GG",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-46A44A9D3B90",
@@ -1151,7 +1151,7 @@
       "lastRecordInFrame": 7783,
       "lastRecordOutFrame": 7863,
       "sectionCode": "GG",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-050EACA537B5",
@@ -1167,7 +1167,7 @@
       "lastRecordInFrame": 7863,
       "lastRecordOutFrame": 7925,
       "sectionCode": "GG",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-E28F42299AE0",
@@ -1183,7 +1183,7 @@
       "lastRecordInFrame": 7925,
       "lastRecordOutFrame": 7980,
       "sectionCode": "GG",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-9C9296A0CBCA",
@@ -1199,7 +1199,7 @@
       "lastRecordInFrame": 7980,
       "lastRecordOutFrame": 8087,
       "sectionCode": "GG",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-BBE2C64560CA",
@@ -1216,7 +1216,7 @@
       "lastRecordInFrame": 8087,
       "lastRecordOutFrame": 8229,
       "sectionCode": "GG",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-49E6C303D5B2",
@@ -1232,7 +1232,7 @@
       "lastRecordInFrame": 8229,
       "lastRecordOutFrame": 8359,
       "sectionCode": "GG",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-AACD0C7A55B7",
@@ -1248,7 +1248,7 @@
       "lastRecordInFrame": 8359,
       "lastRecordOutFrame": 8589,
       "sectionCode": "GG",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "GAP-9E38AB8D06B8",
@@ -1264,7 +1264,7 @@
       "lastRecordInFrame": 8589,
       "lastRecordOutFrame": 8639,
       "sectionCode": "IJDKYY",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-410D369076A7",
@@ -1280,7 +1280,7 @@
       "lastRecordInFrame": 8639,
       "lastRecordOutFrame": 8810,
       "sectionCode": "IJDKYY",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-B0EAF0D71661",
@@ -1296,7 +1296,7 @@
       "lastRecordInFrame": 8810,
       "lastRecordOutFrame": 8833,
       "sectionCode": "IJDKYY",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-AB100CB59492",
@@ -1312,7 +1312,7 @@
       "lastRecordInFrame": 8833,
       "lastRecordOutFrame": 8894,
       "sectionCode": "IJDKYY",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-56840EBE6C40",
@@ -1328,7 +1328,7 @@
       "lastRecordInFrame": 8894,
       "lastRecordOutFrame": 8979,
       "sectionCode": "IJDKYY",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-6A165F3F7488",
@@ -1344,7 +1344,7 @@
       "lastRecordInFrame": 8979,
       "lastRecordOutFrame": 9036,
       "sectionCode": "IJDKYY",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-9321BB9398CC",
@@ -1360,7 +1360,7 @@
       "lastRecordInFrame": 9036,
       "lastRecordOutFrame": 9111,
       "sectionCode": "IJDKYY",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-454BD2868273",
@@ -1376,7 +1376,7 @@
       "lastRecordInFrame": 9111,
       "lastRecordOutFrame": 9166,
       "sectionCode": "IJDKYY",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-400191C77357",
@@ -1392,7 +1392,7 @@
       "lastRecordInFrame": 9166,
       "lastRecordOutFrame": 9236,
       "sectionCode": "IJDKYY",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-41B9F1E16EEB",
@@ -1408,7 +1408,7 @@
       "lastRecordInFrame": 9236,
       "lastRecordOutFrame": 9332,
       "sectionCode": "IJDKYY",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-44CD5679B185",
@@ -1424,7 +1424,7 @@
       "lastRecordInFrame": 9332,
       "lastRecordOutFrame": 9440,
       "sectionCode": "IJDKYY",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-9085C1C7C2C9",
@@ -1440,7 +1440,7 @@
       "lastRecordInFrame": 9440,
       "lastRecordOutFrame": 9612,
       "sectionCode": "IJDKYY",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-DCFC0A9CB615",
@@ -1456,7 +1456,7 @@
       "lastRecordInFrame": 9612,
       "lastRecordOutFrame": 9804,
       "sectionCode": "IJDKYY",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-C37DC048DEFC",
@@ -1504,7 +1504,7 @@
       "lastRecordInFrame": 2044,
       "lastRecordOutFrame": 2165,
       "sectionCode": "NTH",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-066FAAB75E9C",
@@ -1518,7 +1518,7 @@
       "lastRecordInFrame": 2165,
       "lastRecordOutFrame": 2217,
       "sectionCode": "NTH",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-2682F221F4BA",
@@ -1530,7 +1530,7 @@
       "lastRecordInFrame": 9804,
       "lastRecordOutFrame": 10198,
       "sectionCode": "IJDKYY",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-A1FE9A1EB1B8",
@@ -1542,7 +1542,7 @@
       "lastRecordInFrame": 10198,
       "lastRecordOutFrame": 10489,
       "sectionCode": "IJDKYY",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     },
     {
       "shotId": "SHOT-950A65D7124E",
@@ -1554,7 +1554,7 @@
       "lastRecordInFrame": 10489,
       "lastRecordOutFrame": 10508,
       "sectionCode": "IJDKYY",
-      "lastSeenAt": "2026-08-02T05:29:14.116315+00:00"
+      "lastSeenAt": "2026-08-16T04:30:22.642158+00:00"
     }
   ],
   "canonicalEdl": "/Users/alphaone/Documents/Code/paracosm-provenance/data/canonical/paracosm-current.edl",
